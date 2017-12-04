@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+    <title>出租房快刷</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!--Preview CSS-->
+    <link rel="stylesheet" href="wapportal/content/css/core-bs.css">
+    <link rel="stylesheet" href="wapportal/content/css/common-bs.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!--Custom BS CSS-->
+    <link rel="stylesheet" href="wapportal/content/css/nav-mb.css">
+    <link rel="stylesheet" href="wapportal/content/css/yiniao-mb.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body class="footer-space">
+
+<!--bottom float bar-->
+<div class="bot_float">
+    <div>
+        <a href="javascript:void(0);" onclick="phoneSubmit()">
+            <img src="wapportal/content/images/botPhone.png" alt="">
+            <p>联系电话</p>
+        </a>
+    </div>
+    <div>
+                 <!--<a class="bot_cnt" href="javascript:pop(53);">-->
+
+        <!--             <p><span>200</span>元维修基金</p> -->
+        <a class="bot_cnt" href="http://shop.m.taobao.com/shop/shop_index.htm?shop_id=128158636">
+            <img class="img-gif-11" src="wapportal/content/images/botHand-2.gif" alt="">
+            <img class="img-bot-hand" src="wapportal/content/images/botHand.png" alt="">
+            <p>进入活动现场</p>
+        </a>
+    </div>
+    <div>
+        <a class="bot_rt" href="http://p.qiao.baidu.com/cps/chat?siteId=11215089&amp;userId=24505650">
+            <img class="img-bot-talk" src="wapportal/content/images/botTalk.png" alt="">
+            <p>在线咨询</p>
+        </a>
+    </div>
+</div>
+
+<!--navigaation for mb-->
+<div class="navigation">
+    <span>墙面刷新</span>
+    <a href="wapportal/index.do" class="navigation_back">
+        <img src="wapportal/content/images/backImg.png" alt=""/>
+        <span>首页</span>
+    </a>
+    <a class="navigation_select" href=""><img src="wapportal/content/images/nav.png" alt=""/></a>
+
+    <div class="navigation_pop">
+        <a href="wapportal/topic/wsjls.do"   style="border-top:none; ">
+            <img src="wapportal/content/images/nav1.png" alt=""/>
+            <span>厨卫漏水</span>
+        </a>
+        <a href="wapportal/topic/qmls.do" >
+            <img src="wapportal/content/images/nav2.png" alt=""/>
+            <span>墙面渗水</span>
+        </a>
+        <a href="wapportal/topic/pcls.do" >
+            <img src="wapportal/content/images/nav3.png" alt=""/>
+            <span>飘窗漏水</span>
+        </a>
+        <a href="wapportal/topic/wdls.do" >
+            <img src="wapportal/content/images/nav4.png" alt=""/>
+            <span>屋顶漏水</span>
+        </a>
+        <a href="wapportal/topic/sgls.do" >
+            <img src="wapportal/content/images/nav5.png" alt=""/>
+            <span>管道漏水</span>
+        </a>
+        <a href="wapportal/topic/qiangmian.do" class="active">
+            <img src="wapportal/content/images/acnav6.png" alt=""/>
+            <span>墙面翻新</span>
+        </a>
+        <a href="wapportal/topic/qzqb.do" >
+            <img src="wapportal/content/images/nav8.png" alt=""/>
+            <span>墙纸墙布</span>
+        </a>
+        <a href="wapportal/topic/chufang.do" >
+            <img src="wapportal/content/images/nav7.png" alt=""/>
+            <span>局部改造</span>
+        </a>
+    </div>
+</div>
+
+<div class="pop_shadow"></div>
+
+
+<!--index page head-->
+<!--<div class="index_head">-->
+    <!--<div class="logo">益鸟维修</div>-->
+    <!--<a href="javascript:void(0);" onclick="phoneSubmit()">-->
+        <!--<span>4000-987-009</span>-->
+    <!--</a>-->
+<!--</div>-->
+<div class="clearfix"></div>
+
+<!-- Header Poster -->
+<div class="sec-poster container-fluid">
+    <div class="row">
+
+        <div class="img-poster-wrapper">
+        <img class="img-fluid img-poster" src="wapportal/content/images/rent-house-brushing/poster.jpg" />
+
+        <a class="ico-appointment" href="#" title="点击预约"><img class="img-fluid"
+                                                              src="wapportal/content/images/rent-house-brushing/ico-appointment.png"
+                                                              alt=""></a>
+        <a class="ico-400" href="#" title="点击预约"><img class="img-fluid"
+                                                      src="wapportal/content/images/rent-house-brushing/ico-400.png"
+                                                      alt=""></a>
+    </div>
+    </div>
+</div>
+<!-- sec-advantage -->
+<div class="container-fluid text-center sec sec-banner sec-advantage">
+    <div class="row">
+        <div class="block-title">
+            <h6>VALUATION RULES</h6>
+            <h2>益鸟优势</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <img class="ico-advantage" src="wapportal/content/images/rent-house-brushing/advantage/_0000_detail.png"/>
+            <div class="dec-note">注重细节</div>
+        </div>
+        <div class="col-3">
+            <img class="ico-advantage" src="wapportal/content/images/rent-house-brushing/advantage/_0001_time.png"/>
+            <div class="dec-note">节省时间</div>
+        </div>
+        <div class="col-3">
+            <img class="ico-advantage" src="wapportal/content/images/rent-house-brushing/advantage/_0002_price.png"/>
+            <div class="dec-note">价格实惠</div>
+        </div>
+        <div class="col-3">
+            <img class="ico-advantage" src="wapportal/content/images/rent-house-brushing/advantage/_0003_care.png"/>
+            <div class="dec-note">放心质保</div>
+        </div>
+    </div>
+</div>
+
+<!-- sec-process -->
+<div class="container text-center sec sec-process">
+    <div class="row">
+        <div class="block-title">
+            <h6>BESMEAR BRUSHS PROCESS</h6>
+            <h2>快刷工序</h2>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table-layout last">
+            <tr>
+                <td>
+                    <div class="stack">
+                        <img class="img-fluid"
+                             src="wapportal/content/images/rent-house-brushing/process/_0000_funture.jpg">
+                        <div class="title">家具搬移</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="stack">
+                        <img class="img-fluid"
+                             src="wapportal/content/images/rent-house-brushing/process/_0001_cover.jpg">
+                        <div class="title">遮蔽保护</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="stack">
+                        <img class="img-fluid"
+                             src="wapportal/content/images/rent-house-brushing/process/_0002_ground.jpg">
+                        <div class="title">地面保护</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="no-padding">
+                    <table class="table-layout">
+                        <tr>
+                            <td>
+                                <div class="stack stack-sm">
+                                    <img class="img-fluid"
+                                         src="wapportal/content/images/rent-house-brushing/process/_0000_wall-polish.jpg">
+                                    <div class="title">墙面局部打磨（不含修补）</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="stack stack-sm">
+                                    <img class="img-fluid"
+                                         src="wapportal/content/images/rent-house-brushing/process/_0001_wall-brushing.jpg">
+                                    <div class="title">墙漆刷新，面漆两遍</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="stack stack-sm">
+                                    <img class="img-fluid"
+                                         src="wapportal/content/images/rent-house-brushing/process/_0002_cleaning.jpg">
+                                    <div class="title">整体清理</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="stack stack-sm">
+                                    <img class="img-fluid"
+                                         src="wapportal/content/images/rent-house-brushing/process/_0003_garbage.jpg">
+                                    <div class="title">垃圾清运（不含外运）</div>
+                                </div>
+
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+
+
+        </table>
+    </div>
+</div>
+
+<!--sec-service-->
+<div class="container-fluid text-center sec sec-banner sec-service">
+    <div class="row">
+        <div class="block-title">
+            <h6>THE LENGTH</h6>
+            <h2>服务承诺时长</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="banner-block-bg rounded-md last">
+                <table class="table-layout table-service">
+                    <tr>
+                        <td>
+                            1、 50平米内：1个工作日；
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2、50～150平米：3工作日；
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3、150~300平米：4个工作日；
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4、300平米以上按照实际情况进行评估；
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--sec-protection-->
+<div class="container text-center sec sec-protection">
+    <div class="row">
+        <div class="block-title">
+            <h6>FINISHED PRODUCT PROTECTION</h6>
+            <h2>益鸟成品保护</h2>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table-layout">
+            <tr>
+                <td>
+                    <div class="stack stack-up">
+                        <div class="title">地面保护（保护到电梯口）</div>
+                        <img class="img-fluid"
+                             src="wapportal/content/images/rent-house-brushing/protection/_0000_ground.jpg">
+                    </div>
+                </td>
+                <td>
+                    <div class="stack stack-up">
+                        <div class="title">开关、插线孔保护</div>
+                        <img class="img-fluid"
+                             src="wapportal/content/images/rent-house-brushing/protection/_0001_switcher.jpg">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="stack stack-up">
+                        <div class="title">家具保护</div>
+                        <img class="img-fluid"
+                             src="wapportal/content/images/rent-house-brushing/protection/_0002_funture.jpg">
+                    </div>
+                </td>
+                <td>
+                    <div class="stack stack-up">
+                        <div class="title">门窗保护</div>
+                        <img class="img-fluid"
+                             src="wapportal/content/images/rent-house-brushing/protection/_0003_door-window.jpg">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="stack stack-up">
+                        <div class="title">灯具保护</div>
+                        <img class="img-fluid"
+                             src="wapportal/content/images/rent-house-brushing/protection/_0004_lighting.jpg">
+                    </div>
+                </td>
+                <td>
+                    <div class="stack stack-up">
+                        <div class="title">空调保护</div>
+                        <img class="img-fluid"
+                             src="wapportal/content/images/rent-house-brushing/protection/_0005_air-cond.jpg">
+                    </div>
+                </td>
+            </tr>
+
+
+        </table>
+    </div>
+</div>
+
+<!--sec-case-->
+<div class="container-fluid text-center sec sec-case">
+    <div class="row">
+
+        <div class="block-title">
+            <h6>CASE</h6>
+            <h2>案例欣赏</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="img-case-wrapper">
+        <img class="img-fluid" src="wapportal/content/images/rent-house-brushing/case.jpg" alt=""/>
+        <ul class="list-inline">
+            <li class="list-inline-item">姓名：张女士</li>
+            <li class="list-inline-item">小区：齐力花园</li>
+            <li class="list-inline-item">项目：卫生间渗水快修</li>
+            <li class="list-inline-item">施工时间：两天</li>
+        </ul>
+    </div>
+    </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+<script>
+//    resizeFont.init_fn({init_w:720,_exc:{switch:true, max:720, min:320}});
+//    $(function(){
+//
+//        $("a").each(function(index,obj){
+//            if($(obj).attr("href") == "")
+//            {
+//                $(obj).attr("href","javascript:void(0);");
+//            }
+//            else if($(obj).attr("href") == "tel:4000987009")
+//            {
+//                $(obj).attr("href","javascript:void(0);");
+//                $(obj).attr("onclick","phoneSubmit()");
+//            }
+//
+//        });
+//
+//        $('.navigation_select').click(function(){
+//            $('.navigation_pop').toggle();
+//            $('.navigation_shadow').toggle();
+//            return false;
+//        })
+//    })
+
+
+//    function checkMobile(sMobile){
+//        if(!(/^1[3|4|5|7|8][0-9]\d{8,8}$/.test(sMobile))){
+//            return false;
+//        }
+//        return true;
+//    }
+    function phoneSubmit()
+    {
+        $.post("wapportal/phoneVisitSubmit.do",{},function(data){
+            if(data == "0")
+            {
+                location.href="tel:4000987009";
+            }
+        },"text");
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  background: #ffffff; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  color: #4ab19a; }
+
+.clear {
+  clear: both;
+  float: none;
+  width: 100%; }
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  .container .gallery a.link-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 24%;
+    margin: 0 0.5% 0.5% 0; }
+    .container .gallery a.link-wrapper div.mask {
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1; }
+  .container .gallery img {
+    float: left;
+    width: 100%;
+    height: auto;
+    position: relative; }
+  .container .gallery div.title {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 80%;
+    background: #333333;
+    z-index: 1999; }
+    .container .gallery div.title span {
+      border-top: 2px solid white;
+      display: inline-block;
+      width: 100%;
+      padding: 0.5rem;
+      color: white;
+      text-align: center; }
+    .container .gallery div.title:hover {
+      background: red url("../images/wall/case/_0000_case_a.png") no-repeat center 0; }
+    .container .gallery div.title.big img {
+      width: 40%; }
+
+#_000_gallery div.mask {
+  background: url("../images/wall/case/_0007_case_a.png") no-repeat center 0;
+  background-size: contain; }
+  #_000_gallery div.mask:hover {
+    background: none; }
+
+#_001_gallery div.mask {
+  background: url("../images/wall/case/_0006_case_a.png") no-repeat center 0;
+  background-size: contain; }
+  #_001_gallery div.mask:hover {
+    background: none; }
+
+#_002_gallery div.mask {
+  background: url("../images/wall/case/_0005_case_a.png") no-repeat center 0;
+  background-size: contain; }
+  #_002_gallery div.mask:hover {
+    background: none; }
+
+#_003_gallery div.mask {
+  background: url("../images/wall/case/_0004_case_a.png") no-repeat center 0;
+  background-size: contain; }
+  #_003_gallery div.mask:hover {
+    background: none; }
+
+#_004_gallery div.mask {
+  background: url("../images/wall/case/_0003_case_a.png") no-repeat center 0;
+  background-size: contain; }
+  #_004_gallery div.mask:hover {
+    background: none; }
+
+#_005_gallery div.mask {
+  background: url("../images/wall/case/_0002_case_a.png") no-repeat center 0;
+  background-size: contain; }
+  #_005_gallery div.mask:hover {
+    background: none; }
+
+#_006_gallery div.mask {
+  background: url("../images/wall/case/_0001_case_a.png") no-repeat center 0;
+  background-size: contain; }
+  #_006_gallery div.mask:hover {
+    background: none; }
+
+#_007_gallery div.mask {
+  background: url("../images/wall/case/_0000_case_a.png") no-repeat center 0;
+  background-size: contain; }
+  #_007_gallery div.mask:hover {
+    background: none; }
+
+.align-center {
+  text-align: center; }
+
+.sl-overlay {
+  background: black; }
+
+/*# sourceMappingURL=simple-light.css.map */

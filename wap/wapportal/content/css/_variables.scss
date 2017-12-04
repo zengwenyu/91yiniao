@@ -1,0 +1,21 @@
+$blue: #66e6ee;
+$red: #e8314a;
+$white: #f9f9f9;
+$white-tint: #eeeeee;
+$yellow: #f4de2a;
+$gray: #636363;
+$gray-tint: lighten($gray, 30%);
+$gray-tinter: lighten($gray, 50%);
+$black: #3b3b3b;
+$font-size-base:              0.8rem !default; // Assumes the browser default, typically `16px`
+
+html {
+  color: $black;
+  font-size: $font-size-base;
+}
+.no-padding {
+  padding: 0;
+}
+.no-margin {
+  margin: 0;
+}

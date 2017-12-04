@@ -1,0 +1,53 @@
+.img-full {
+    width: 100%;
+    /*    height: 100%;*/
+}
+.table, .table caption {
+    background: #f3f3f3;
+}
+.table tbody tr th  {
+
+}
+.table th, .table td, .table caption {
+
+}
+.table caption {
+    font-size: 2em;
+    padding: 1em;
+}
+.table th {
+    text-align: left;
+    padding: 0 1.5em 0 3em;
+    font-size: 1em; 
+    vertical-align: top;
+    font-weight: normal;
+    /*    background: url(../images/closetool/closetool_1.jpg) no-repeat;  */
+
+
+
+}
+.table .inner {
+
+
+}
+.table h2 {
+    font-size: 1.6em;
+    font-weight: normal;
+}
+.table .price-tag {
+}
+.table p {
+    font-size: 1.2em;
+    font-weight: normal;;
+    line-height: 2em;
+    margin-top: 1em;
+}
+.table td {
+    text-align: left;
+    padding-left: 0 3em 0 0;
+    /*border-left: 1px solid gray;*/
+/* background-image: url("../images/closetool/closetool_1.jpg") no-repeat top-left; */
+}
+.bigger {
+    font-size: 1.8em;
+}

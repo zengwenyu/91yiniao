@@ -1,0 +1,81 @@
+a {
+  text-decoration: none; }
+
+.index_head {
+  width: 100%;
+  background: #229434;
+  box-sizing: border-box;
+  padding: 5%;
+  color: #ffffff;
+  line-height: .82rem;
+  font-size: 1.1rem;
+  float: left; }
+  .index_head .logo {
+    float: left; }
+  .index_head a {
+    color: #ffffff;
+    text-align: right;
+    float: right;
+    display: inline-block;
+    text-decoration: none; }
+    .index_head a span {
+      display: block;
+      line-height: 1.1rem;
+      background: url("../images/index_phone.png") no-repeat left center;
+      -webkit-background-size: 20%;
+      background-size: 22%;
+      padding-left: 2rem; }
+
+.bot_float {
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 18;
+  background: #585858;
+  padding: 2% 5%;
+  box-sizing: border-box; }
+
+.bot_float div {
+  float: left;
+  width: 33.3%;
+  height: 100%; }
+  .bot_float div img {
+    width: 45%;
+    margin-bottom: .8rem; }
+
+.bot_float div a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  float: left;
+  height: 100%;
+  font-size: 0.85rem;
+  text-decoration: none; }
+
+.bot_float div a p {
+  height: .35rem;
+  line-height: .35rem;
+  margin-bottom: .05rem; }
+
+.bot_float div a.bot_rt {
+  float: right; }
+
+.bot_float div a.bot_cnt {
+  width: 100%;
+  text-align: left;
+  padding-left: 20%;
+  box-sizing: border-box; }
+  .bot_float div a.bot_cnt .img-gif-11 {
+    width: 66%; }
+  .bot_float div a.bot_cnt .img-bot-hand {
+    width: 22%; }
+
+.bot_rt .img-bot-talk {
+  width: 45%; }
+
+.footer-space {
+  padding-bottom: 4rem; }
+
+/*# sourceMappingURL=nav-mb.css.map */

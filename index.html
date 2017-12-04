@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+
+<title>demo</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<link rel="stylesheet" href="portal/content/css/style.css" />
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+<div class="header w">
+  <div class="logo left">
+    <img src="portal/content/images/logo.png" />
+  </div>
+  <div class="tel right">24小时咨询热线：4000-987-009</div>
+  <div class="nav right">
+    <ul>
+	  <li><a href="#">首页</a></li>
+	  <li><a href="#">服务项目</a></li>
+	  <li><a href="#">实际案例</a></li>
+	  <li><a href="#">线下门店</a></li>
+	  <li><a href="#">益鸟师傅</a></li>
+	  <li><a href="#">关于我们</a></li>
+	</ul>
+	<div class="clearfix"></div>
+  </div>
+</div>
+<div class="clearfix"></div>
+<div class="container w">
+  <div class="breadcrumb">
+    <a href="#">首页</a>><span href="#">修补型刷新</span>
+  </div>
+  <div class="product-box">
+    <div class="pic-box left">
+      <img id="apic" src="portal/content/images/product.png" />
+      <div id="thumblist" class="thumb-box">
+        <img onclick="setPicSrc(this.src,0)" src="portal/content/images/thumb.png" />
+        <img class="trans" onclick="setPicSrc(this.src,1)" src="portal/content/images/thumb.png" />
+        <img onclick="setPicSrc(this.src,2)" class="trans" src="portal/content/images/thumb.png" />
+      </div>
+    </div>
+    <div class="summary-box left">
+      <h1>修补型刷新</h1>
+      <p>用于基层完好，少量修补后可直接涂刷。</p>
+      <p class="price">
+        价格：<span>&yen;</span> <span class="big">24.00-29.00</span><span>元/m<sup>2</sup> 【包工包料】</span>请选择适合您的房屋刷新产品！
+      </p><!-- 添加多个span标签-->
+      <a class="order-btn" href="#">立即预约</a><!-- 添加class-->
+      <a class="ask-btn" href="#">咨询客服</a><!-- 添加class-->
+      <div class="clearfix"></div>
+      <p class="notice">【温馨提示】预约后益鸟维修将免费上门为您的房屋进行检测，热线电话：<span>4000-987-009</span>！</p><!-- 添加class-->
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  
+  <div class="tab-box" id="main">
+    <ul class="menu" id="menu">  
+      <li onclick="setTab(0)" class="hover">修补刷新</li>  
+      <li onclick="setTab(1)">基础刷新</li>  
+      <li onclick="setTab(2)">产出翻新</li>  
+      <li onclick="setTab(3)">局部点补</li>  
+    </ul>  
+    <div id="tab1" class="block"></div>
+    <div id="tab2" class="tab"></div>
+    <div id="tab3" class="tab"></div>
+    <div id="tab4" class="tab"></div>
+  </div>
+  <!-- 此处tab具体要包含到哪里需要确认，待确认后可直接添加  -->
+  
+  <span class="title">产品介绍</span>
+  <div class="table-box">
+    <table>
+      <tr>
+        <th width="15%">产品名称</th>
+        <th width="20%">施工项目</th>
+        <th width="30%">使用材料</th>
+        <th width="20%">服务工期</th>
+        <th width="15%">质保</th>
+      </tr>
+      <tr>
+        <td class="td1">
+        修补刷新<br />
+（常规漆刷新）<br />
+&yen;24.00元/m<sup>2</sup>
+        </td>
+        <td class="td2">
+        1.成品保护：全屋全部家具，灯具，地面，门窗，家电等保护<br />
+2.墙面局部修补打磨<br />
+3.墙漆刷新：面漆2遍<br />
+4.完工整体清洁
+        </td>
+        <td class="td2">
+        1.石膏、腻子、界面剂：嘉施益鸟专供辅材。<br />
+2.面漆：立邦竹炭净味120二合一。
+        </td>
+        <td class="td2">
+        50平米以内：1个工作日。<br />
+50～150平米：3个工作日。<br />
+150～300平米：3～4个工作日。<br />
+300平米以上：按实际情况进行评估。
+        </td>
+        <td class="td1">1年</td>
+      </tr>
+      <tr>
+        <td class="td1">
+        修补刷新<br />
+（常规漆刷新）<br />
+&yen;24.00元/m<sup>2</sup>
+        </td>
+        <td class="td2">
+        1.成品保护：全屋全部家具，灯具，地面，门窗，家电等保护<br />
+2.墙面局部修补打磨<br />
+3.墙漆刷新：面漆2遍<br />
+4.完工整体清洁
+        </td>
+        <td class="td2">
+        1.石膏、腻子、界面剂：嘉施益鸟专供辅材。<br />
+2.面漆：立邦竹炭净味120二合一。
+        </td>
+        <td class="td2">
+        50平米以内：1个工作日。<br />
+50～150平米：3个工作日。<br />
+150～300平米：3～4个工作日。<br />
+300平米以上：按实际情况进行评估。
+        </td>
+        <td class="td1">1年</td>
+      </tr>
+    </table>
+  </div>
+  
+  <span class="title">您的墙面是否出现以下情况？</span>
+  <div class="situation-box">
+    <div class="s1 left">
+      <img src="portal/content/images/situation.png" />
+      <span>墙面成蛛网式开裂</span>
+    </div>
+    <div class="s1 left s1-middle">
+      <img src="portal/content/images/situation.png" />
+      <span>墙面成蛛网式开裂</span>
+    </div>
+    <div class="s1 left">
+      <img src="portal/content/images/situation.png" />
+      <span>墙面成蛛网式开裂</span>
+    </div>
+  </div>
+  
+  <span class="title">益鸟专业公益</span>
+  <div class="tech7">
+    <ul>
+      <li>
+        <div class="image_title">
+          <a href="#">成品保护品保护</a>  
+        </div>  
+        <a href="#">  
+          <img src="portal/content/images/situation.png"/>  
+        </a> 
+      </li>
+      <li>
+        <div class="image_title">  
+          <a href="#">成品保护品保护</a>  
+        </div>  
+        <a href="#">  
+          <img src="portal/content/images/situation.png"/>
+        </a> 
+      </li>
+      <li>
+        <div class="image_title">  
+          <a href="#">成品保护品保护</a>  
+        </div>  
+        <a href="#">  
+          <img src="portal/content/images/situation.png"/>  
+        </a> 
+      </li>
+      <li>
+        <div class="image_title">  
+          <a href="#">成品保护品保护</a>  
+        </div>  
+        <a href="#">  
+          <img src="portal/content/images/situation.png"/>  
+        </a> 
+      </li>
+      <li>
+        <div class="image_title">  
+          <a href="#">成品保护品保护</a>  
+        </div>  
+        <a href="#">  
+          <img src="portal/content/images/situation.png"/>  
+        </a> 
+      </li>
+       <li>
+        <div class="image_title">  
+          <a href="#">成品保护品保护</a>  
+        </div>  
+        <a href="#">  
+          <img src="portal/content/images/situation.png"/>  
+        </a> 
+      </li>
+      <li>
+        <div class="image_title">  
+          <a href="#">成品保护品保护</a>  
+        </div>  
+        <a href="#">  
+          <img src="portal/content/images/situation.png"/>  
+        </a> 
+      </li>
+      <!--<li>
+        <div class="image_title">  
+          <a href="#">成品保护品保护</a>  
+        </div>  
+        <a href="#">  
+          <img src="portal/content/images/situation.png"/>  
+        </a> 
+      </li> -->
+    </ul>
+  </div>
+  <div class="clearfix"></div><!-- 增加鼠标滑动动态效果 -->
+  
+  <div class="flow-box">
+    <span class="title">施工流程</span>
+    <div class="step left">
+      <img src="portal/content/images/liucheng.png" />
+      <span>NO.1 上门检测</span>
+      <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
+      <div class="clearfix"></div>
+    </div>
+    <div class="step2 right">
+      <img src="portal/content/images/liucheng.png" />
+      <span>NO.1 上门检测</span>
+      <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
+      <div class="clearfix"></div>
+    </div>
+    <div class="step left">
+      <img src="portal/content/images/liucheng.png" />
+      <span>NO.1 上门检测</span>
+      <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
+      <div class="clearfix"></div>
+    </div>
+    <div class="step2 right">
+      <img src="portal/content/images/liucheng.png" />
+      <span>NO.1 上门检测</span>
+      <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
+      <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  
+  <span class="title">完善的售后服务</span>
+  <span class="sub-title">免除您的后顾之忧</span>
+  <div class="service-box">
+    <div class="s2 left">
+      <img src="portal/content/images/situation.png" />
+      <span>1、与客户签订质保证书，免除您的后顾之忧。（修补刷新质保为1年）</span>
+    </div>
+    <div class="s2 left s1-middle">
+      <img src="portal/content/images/situation.png" />
+      <span>1、与客户签订质保证书，免除您的后顾之忧。（修补刷新质保为1年）</span>
+    </div>
+    <div class="s2 left">
+      <img src="portal/content/images/situation.png" />
+      <span>墙面成蛛网式开裂</span>
+    </div>
+  </div>
+  
+  <div class="clearfix"></div>
+  <span class="title">真实的案例</span>
+  
+  <div class="anli-box">
+    <div class="al left">
+      <img class="anli-pic" src="portal/content/images/anli.png" />
+      <img class="anli-pic-thumb" src="portal/content/images/anli_thumb.png" />
+    </div>
+    <div class="ar left">
+      <img src="portal/content/images/touxiang.png" /><span class="name">张先生</span>
+      <div class="clearfix"></div>
+      <p><span>墙面问题：</span>墙面有小面积起皮脱落现象</p>
+      <p><span>涂刷面积：</span>45m<sup>2</sup></p>
+      <p><span>业主小区：</span>华侨城；</p>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  
+  <div class="anli-box">
+    <div class="ar2 left">
+      <img src="portal/content/images/touxiang.png" /><span class="name">张先生</span>
+      <div class="clearfix"></div>
+      <p><span>墙面问题：</span>墙面有小面积起皮脱落现象</p>
+      <p><span>涂刷面积：</span>45m<sup>2</sup></p>
+      <p><span>业主小l区：</span>华侨城；</p>
+    </div>
+    <div class="al2 left">
+      <img class="anli-pic2" src="portal/content/images/anli.png" />
+      <img class="anli-pic2-thumb" src="portal/content/images/anli_thumb.png" />
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div><!-- 真是案例修改-->
+
+<script src="portal/s/jquery/jquery.min.js"></script>
+<script>
+  //tab标签页
+  function setTab(n){  
+      var tli=document.getElementById("menu").getElementsByTagName("li");  
+      var mli=document.getElementById("main").getElementsByTagName("div");  
+      for(i=0;i<tli.length;i++){  
+          tli[i].className=i==n?"hover":"";  
+          mli[i].style.display=i==n?"block":"none";  
+      }  
+  } 
+  //切换图片
+  function setPicSrc(s,n){
+	  var pic = document.getElementById('apic');
+	  pic.src = s;//此处图片地址根据需要调整，目前使用当前缩略图地址
+	  var imgs = document.getElementById('thumblist').getElementsByTagName('img');
+	  for(var i=0;i<imgs.length;i++){
+		  imgs[i].className=i==n?"":"trans";
+	  }
+	  //alert(s);
+  }
+</script>
+</body>
+</html>

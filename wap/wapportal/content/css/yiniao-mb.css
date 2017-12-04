@@ -1,0 +1,470 @@
+html {
+  color: #3b3b3b;
+  font-size: 0.8rem; }
+
+.no-padding {
+  padding: 0; }
+
+.no-margin {
+  margin: 0; }
+
+.last {
+  margin-right: 0; }
+
+.full-width {
+  width: 100%; }
+
+.table-layout {
+  width: 100%; }
+  .table-layout td {
+    padding: 0.2rem; }
+  .table-layout td.no-padding {
+    padding: 0; }
+
+.rounded-md {
+  border-radius: .5rem !important; }
+
+.img-poster-wrapper {
+  position: relative;
+  width: 100%; }
+  .img-poster-wrapper .ico-appointment {
+    width: 25%;
+    display: inline-block;
+    position: absolute;
+    bottom: 16%;
+    left: 6%; }
+  .img-poster-wrapper .ico-400 {
+    width: 35%;
+    display: inline-block;
+    position: absolute;
+    left: 6%;
+    bottom: 6%; }
+    .img-poster-wrapper .ico-400:hover {
+      transform: scale(1.1);
+      transition: transform 0.2s; }
+  .img-poster-wrapper .img-poster {
+    width: 100%; }
+  .img-poster-wrapper .link-survey {
+    position: absolute;
+    left: 20%;
+    top: 33%;
+    width: 8rem;
+    height: 2rem; }
+
+.img-poster-wrapper-wc .ico-400 {
+  left: 37%;
+  bottom: 13%; }
+
+.test {
+  background: red url("../images/rent-house-brushing/poster.jpg") no-repeat center 0;
+  background-size: 100%, 100%; }
+
+.pg-wc-water-leak .logoimg {
+  position: absolute;
+  left: -7%;
+  right: 1%;
+  bottom: 20px; }
+  .pg-wc-water-leak .logoimg .ico-400 {
+    width: 100px;
+    display: inline-block; }
+    .pg-wc-water-leak .logoimg .ico-400:hover {
+      transform: scale(1.1);
+      transition: transform 0.2s; }
+  .pg-wc-water-leak .logoimg .ico-400-hand {
+    position: relative;
+    right: -3rem;
+    top: -1rem; }
+    .pg-wc-water-leak .logoimg .ico-400-hand:hover {
+      transform: scale(1.1);
+      transition: transform 0.2s; }
+
+.block-title {
+  width: 100%;
+  margin: 1rem 0; }
+  .block-title h6 {
+    color: #636363;
+    font-size: 0.8rem;
+    font-weight: 300; }
+  .block-title h2 {
+    font-weight: 600;
+    font-size: 1.5rem; }
+  .block-title:after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 0;
+    border-bottom: 3px solid #66e6ee;
+    margin: 0 auto; }
+
+.block-title-wall {
+  width: 100%;
+  margin: 1rem 0; }
+  .block-title-wall h2 {
+    font-weight: normal;
+    font-size: 1.2rem; }
+  .block-title-wall h5 {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #b0b0b0; }
+
+.block-title-y:after {
+  border-bottom: 3px solid #f4de2a; }
+
+.sec .last {
+  margin-bottom: 1rem; }
+
+.sec-banner {
+  background: url("../images/rent-house-brushing/banner-bg.jpg") no-repeat center 0; }
+
+.col {
+  display: inline-block;
+  width: 10%; }
+
+.ico-advantage {
+  width: 70%; }
+
+.stack {
+  position: relative; }
+  .stack .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.2rem 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f9f9f9; }
+  .stack img {
+    position: relative;
+    top: 0; }
+
+.stack-up {
+  position: static; }
+  .stack-up .title {
+    position: static;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 0;
+    background: #eeeeee;
+    color: #3b3b3b;
+    font-size: 0.9rem; }
+
+.sec-service .last {
+  margin-bottom: 2rem; }
+
+.banner-block-bg {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  box-shadow: 3px 3px 3px gray; }
+  .banner-block-bg .table-service td {
+    text-align: left;
+    color: #f9f9f9; }
+
+.sec-case ul {
+  width: 100%;
+  color: #b0b0b0; }
+  .sec-case ul li.list-inline-item:not(:last-child) {
+    margin-right: 3rem; }
+
+.sec-scence {
+  background: url("../images/wc-water-leak/banner-bg.jpg") no-repeat top left;
+  background-size: auto; }
+
+.sec-advantage {
+  min-height: 12rem; }
+  .sec-advantage .dec-note {
+    font-size: 0.9rem; }
+
+.sec-advantage-wc {
+  min-height: 26rem;
+  background: url("../images/wc-water-leak/advantage/advantage-wc-bg.jpg") no-repeat top left;
+  background-size: cover; }
+
+.block-title.inverse {
+  color: #f9f9f9; }
+  .block-title.inverse h6 {
+    color: #f9f9f9; }
+
+.col-wrapper, .col-wrapper-1 {
+  display: inline-block;
+  border: 1px solid #c9c9c9;
+  background: #eeeeee;
+  width: 100%;
+  float: left;
+  margin-bottom: 1rem; }
+  .col-wrapper .img-wrapper, .col-wrapper-1 .img-wrapper {
+    float: left;
+    width: 40%;
+    display: inline-block;
+    background: red; }
+    .col-wrapper .img-wrapper img, .col-wrapper-1 .img-wrapper img {
+      width: 100%; }
+  .col-wrapper .content-wrapper, .col-wrapper-1 .content-wrapper {
+    display: inline-block;
+    padding: 1rem;
+    float: left;
+    width: 60%;
+    height: 100%; }
+    .col-wrapper .content-wrapper h5, .col-wrapper-1 .content-wrapper h5 {
+      margin-bottom: 0.5rem;
+      font-weight: 400; }
+      .col-wrapper .content-wrapper h5:after, .col-wrapper-1 .content-wrapper h5:after {
+        content: "";
+        display: block;
+        width: 3rem;
+        height: 0;
+        border-bottom: 3px solid #f4de2a;
+        margin: 0.5rem 0 0 0; }
+
+.col-wrapper-1 {
+  background: white;
+  min-height: 10rem; }
+  .col-wrapper-1 .img-wrapper {
+    float: none;
+    width: 100%; }
+  .col-wrapper-1 .content-wrapper {
+    float: none;
+    width: 100%;
+    padding: 0.8rem; }
+  .col-wrapper-1 p {
+    margin-bottom: 0; }
+
+a.red {
+  color: #e8314a; }
+  a.red:hover {
+    color: #e8334c; }
+
+.stack-up-2 .title {
+  height: 5rem;
+  text-align: left; }
+  .stack-up-2 .title h6 {
+    display: inline-block;
+    background: #eeeeee url("../images/wc-water-leak/ico-num.png") no-repeat;
+    height: 45px;
+    line-height: 1.5rem;
+    margin-top: 6px;
+    padding-left: 5rem;
+    padding-right: 1rem;
+    background-position-x: 15px; }
+.stack-up-2 .title-1 h6 {
+  background-position-y: 0; }
+.stack-up-2 .title-2 h6 {
+  background-position-y: -45px;
+  font-size: 0.8rem; }
+.stack-up-2 .title-3 h6 {
+  background-position-y: -90px; }
+.stack-up-2 .title-4 h6 {
+  background-position-y: -135px; }
+.stack-up-2 .title-5 h6 {
+  background-position-y: -180px; }
+.stack-up-2 .title-6 h6 {
+  background-position-y: -225px; }
+
+.sec-coupon p {
+  margin-bottom: 0.5rem;
+  color: #636363; }
+  .sec-coupon p:last-of-type {
+    margin-bottom: 2rem; }
+
+.tab-content .tab-pane {
+  width: 100%; }
+  .tab-content .tab-pane .tab-pan-item-outter {
+    display: flex;
+    margin-top: 1rem; }
+    .tab-content .tab-pane .tab-pan-item-outter .tab-pane-item {
+      flex: 1 1 auto;
+      margin-right: 0.5rem;
+      text-align: center; }
+      .tab-content .tab-pane .tab-pan-item-outter .tab-pane-item p {
+        color: #636363;
+        font-size: 0.7rem;
+        margin-top: 0.3rem; }
+    .tab-content .tab-pane .tab-pan-item-outter .last {
+      margin: 0; }
+
+.nav-pills {
+  border: 1px solid #636363; }
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #e8314a; }
+
+.nav-pills .nav-link {
+  border-radius: 0;
+  color: #636363; }
+
+.text-wrapper {
+  color: #969696;
+  text-align: center;
+  font-size: 0.8rem; }
+  .text-wrapper p {
+    margin: 0 0 0.5rem 0; }
+
+.swiper-container {
+  width: 100%;
+  height: 100%; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  .swiper-slide .img-wrapper {
+    width: 50%;
+    text-align: center; }
+    .swiper-slide .img-wrapper .img-wrapper-dec {
+      color: #636363;
+      font-size: 0.8rem;
+      margin: 1rem 0; }
+
+.sec-con-process {
+  background: #e3e3e3; }
+
+.stack-case {
+  cursor: hand; }
+  .stack-case .title {
+    z-index: 100;
+    background: #3b3b3b; }
+    .stack-case .title a {
+      color: #f9f9f9; }
+  .stack-case .img-wrapper {
+    margin-bottom: 0.5rem;
+    position: relative; }
+  .stack-case .mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
+#case-7 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: url("../images/wall/case/_0007_case_a.jpg") no-repeat center 0;
+  background-size: cover; }
+  #case-7:hover {
+    background-image: none; }
+
+#case-6 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: url("../images/wall/case/_0006_case_a.jpg") no-repeat center 0;
+  background-size: cover; }
+  #case-6:hover {
+    background: none; }
+
+#case-5 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: url("../images/wall/case/_0005_case_a.jpg") no-repeat center 0;
+  background-size: cover; }
+  #case-5:hover {
+    background: none; }
+
+#case-4 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: url("../images/wall/case/_0004_case_a.jpg") no-repeat center 0;
+  background-size: cover; }
+  #case-4:hover {
+    background: none; }
+
+#case-3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: url("../images/wall/case/_0003_case_a.jpg") no-repeat center 0;
+  background-size: cover; }
+  #case-3:hover {
+    background: none; }
+
+#case-2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: url("../images/wall/case/_0002_case_a.jpg") no-repeat center 0;
+  background-size: cover; }
+  #case-2:hover {
+    background: none; }
+
+#case-1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: url("../images/wall/case/_0001_case_a.jpg") no-repeat center 0;
+  background-size: cover; }
+  #case-1:hover {
+    background: none; }
+
+#case-0 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: url("../images/wall/case/_0000_case_a.jpg") no-repeat center 0;
+  background-size: cover; }
+  #case-0:hover {
+    background: none; }
+
+.hide {
+  display: none; }
+
+#coupon-wrapper {
+  position: relative; }
+
+#ico-coupon {
+  display: inline-block;
+  width: 14rem;
+  height: 3rem;
+  position: absolute;
+  left: 27%;
+  bottom: 2%; }
+
+.pg-swiper {
+  background: #3b3b3b; }
+  .pg-swiper #swiper-container {
+    margin-top: 20%; }
+
+.pg-swiper .swiper-pagination {
+  color: #f9f9f9; }
+
+/*# sourceMappingURL=yiniao-mb.css.map */

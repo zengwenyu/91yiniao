@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+    <title>出租房快刷</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!--<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>-->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!--vendor CSS-->
+    <link href="https://cdn.bootcss.com/Swiper/4.0.6/css/swiper.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.css" rel="stylesheet">
+
+    <!--custom CSS-->
+    <link rel="stylesheet" href="portal/content/css/nav.css">
+    <link rel="stylesheet" href="portal/content/css/yiniao-bs.css">
+
+    <!--[if IE]>
+    <link href="portal/content/css/bootstrap-ie9.css" rel="stylesheet">
+    <![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <link href="portal/content/css/bootstrap-ie8.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="pg-wall">
+<div class="header">
+    <div class="head">
+	<span class="tel" style="position: relative;top: 0;right:-652px;z-index: 1;line-height: 23px;font-size: 12px;">24小时咨询热线：4000-987-009
+		<span class="navs taobao" style="margin-left: 20px;margin-right: 15px;cursor: pointer;"><a
+                href="https://shop128158636.taobao.com" target="_blank"><img src="portal/content/images/taobao.png"
+                                                                             alt=""></a>
+			<div class="taobaoTcc" style="display: none;">
+	            <a href="javascript:void(0);"><img src="portal/content/images/taobaoCode.png" alt=""></a>
+	        </div>
+		</span>
+
+		<span class="navs wx" style="cursor: pointer;"><img src="portal/content/images/wx.png" alt="">
+			<div class="wxTcc" style="display: none;">
+	            <a href="javascript:void(0);"><img src="portal/content/images/wxCode.png" alt=""></a>
+	        </div>
+		</span>
+	</span>
+        <img class="logo" src="portal/content/images/indexLogo.png" alt=""/>
+        <span class="text">您身边可靠的维修匠人</span>
+        <span class="nav us" href="">
+        <span>关于我们<img src="portal/content/images/jtDown.png" alt=""></span>
+        <div class="usTcc" style="display: none;">
+            <a href="javascript:void(0);"><img src="portal/content/images/us1.jpg" alt=""><span>品牌故事</span></a>
+            <a href="javascript:void(0);"><img src="portal/content/images/us2.jpg" alt=""><span>企业文化</span></a>
+            <a href="portal/serviceFlow.do#flow7"><img src="portal/content/images/us3.jpg" alt=""><span>常见问题</span></a>
+            <a href="javascript:void(0);"><img src="portal/content/images/us4.jpg" alt=""><span>联系我们</span></a>
+        </div>
+    </span>
+        <span class="nav" onclick="location.href='portal/maintainer/list.do'">益鸟师傅</span>
+        <span class="nav">线下门店</span>
+        <span class="nav" onclick="location.href='portal/case/caseList.do'">实际案例</span>
+        <span id="nav-xm" class="nav xm nav-margin">
+    	<span>服务项目<img src="portal/content/images/jtDown.png" alt=""></span>
+    	<div class="tcc">
+        <div class="cnt">
+	        	<div>
+	                <span>墙面刷新</span>
+	                	<a href="portal/newindex/produce.do">铲除刷新</a>
+	                	<a href="portal/newindex/basis.do">基础刷新</a>
+	                	<a href="portal/newindex/part.do">局部点补</a>
+	                	<a href="portal/topic/topicQzqm.do">墙纸翻新</a>
+	                	<a href="portal/newindex/mend.do">修补刷新</a>
+	            </div>
+	        	<div>
+	                <span>局部改造</span>
+	                	<a href="javascript:void(0);">客厅改造</a>
+	                	<a href="javascript:void(0);">厨房改造</a>
+	                	<a href="javascript:void(0);">阳台改造</a>
+	                	<a href="javascript:void(0);">屋顶改造</a>
+	                	<a href="javascript:void(0);">卫生间改造</a>
+	                	<a href="javascript:void(0);">儿童房改造</a>
+	            </div>
+	        	<div>
+	                <span>防水补漏</span>
+	                	<a href="portal/topic/topicWsjls.do">卫生间防水</a>
+	                	<a href="portal/topic/topicLdls.do">楼顶漏水</a>
+	                	<a href="portal/topic/topicQmls.do">墙面渗水</a>
+	                	<a href="portal/topic/topicSgls.do">水管漏水</a>
+	                	<a href="portal/topic/topicPcls.do">飘窗漏水</a>
+	            </div>
+
+	    </div>
+	    <div class="clear"></div>
+	    </div>
+    </span>
+        <span class="nav nav-margin">首页
+</span></div>
+</div>
+<!--<nav class="navbar navbar-expand-lg">-->
+<!--<div class="container container-nav">-->
+<!--<a class="navbar-brand" href="#">Container</a>-->
+<!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--<span class="navbar-toggler-icon"></span>-->
+<!--</button>-->
+
+<!--<div class="collapse navbar-collapse" id="navbarsExample07">-->
+<!--<ul class="navbar-nav mr-auto">-->
+<!--<li class="nav-item active">-->
+<!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+<!--</li>-->
+<!--<li class="nav-item">-->
+<!--<a class="nav-link" href="#">Link</a>-->
+<!--</li>-->
+<!--<li class="nav-item">-->
+<!--<a class="nav-link disabled" href="#">Disabled</a>-->
+<!--</li>-->
+<!--<li class="nav-item dropdown">-->
+<!--<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>-->
+<!--<div class="dropdown-menu" aria-labelledby="dropdown07">-->
+<!--<a class="dropdown-item" href="#">Action</a>-->
+<!--<a class="dropdown-item" href="#">Another action</a>-->
+<!--<a class="dropdown-item" href="#">Something else here</a>-->
+<!--</div>-->
+<!--</li>-->
+<!--</ul>-->
+<!--<form class="form-inline my-2 my-md-0">-->
+<!--<input class="form-control" placeholder="Search" aria-label="Search" type="text">-->
+<!--</form>-->
+<!--</div>-->
+<!--</div>-->
+<!--</nav>-->
+<div class="sec-add">
+    <div class="img-wrapper"><img class="img-fluid full-width" src="portal/content/images/wall/poster.jpg" alt=""></div>
+    <a class="link-survey" href="#" title="调研表" id="link-survey"><img
+            src="portal/content/images/blank.png" alt=""></a>
+    <a class="link-service" href="#" title="客服" id="link-service" style="background:url(blank.jpg)"></a>
+</div>
+
+
+<div class="container sec sec-contrast">
+    <div class="row">
+        <div class="block-title-wall text-center">
+            <h2><strong>比价</strong>的时候，这些你比了吗？</h2>
+            <h5>—— CONTRAST ——</h5>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table-layout-0 last">
+            <tr>
+                <td>
+                    <div class="stack">
+                        <img class="img-fluid full-width" src="portal/content/images/wall/compare/_0007_compare.jpg" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div class="stack">
+                        <img class="img-fluid full-width" src="portal/content/images/wall/compare/_0006_compare.jpg" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div class="stack">
+                        <img class="img-fluid full-width" src="portal/content/images/wall/compare/_0005_compare.jpg" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div class="stack">
+                        <img class="img-fluid full-width" src="portal/content/images/wall/compare/_0004_compare.jpg" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="stack">
+                        <img class="img-fluid full-width" src="portal/content/images/wall/compare/_0003_compare.jpg" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div class="stack">
+                        <img class="img-fluid full-width" src="portal/content/images/wall/compare/_0002_compare.jpg" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div class="stack">
+                        <img class="img-fluid full-width" src="portal/content/images/wall/compare/_0001_compare.jpg" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div class="stack">
+                        <img class="img-fluid full-width" src="portal/content/images/wall/compare/_0000_compare.jpg" alt="">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!--sec-coupon-->
+<div class="container-fluid text-center sec sec-coupon">
+    <div class="row">
+        <div class="col-md-12">
+            <p>我真的没跟你吹~给你<a href="#" class="red">一张表格</a></p>
+            <p>不信你自己看</p>
+            <p>.......</p>
+            <p>心动了没？</p>
+            <p>莫方~</p>
+            <p>我们还给您准备了<strong>优惠券！</strong></p>
+        </div>
+    </div>
+    <!--<div class="row">-->
+        <!--<div class="img-wrapper text-center full-width" id="coupon-wrapper">-->
+            <!--<img class="img-fluid full-width" src="portal/content/images/wall/coupon.jpg" alt="">-->
+            <!--<a href="#" id="ico-coupon"></a>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+
+<div class="sec-add sec-add-coupon">
+    <div class="img-wrapper"><img class="img-fluid full-width" src="portal/content/images/wall/coupon.jpg" alt=""></div>
+    <a href="#" class="link-service" title="客服"  id="ico-coupon" style="background:url(blank.jpg)"></a>
+</div>
+
+<!--sec-problem-->
+<div class="container-fluid sec sec-problem">
+    <div class="row">
+        <div class="block-title-wall text-center">
+            <h2><span>你知道你家墙面已经<strong>受伤</strong>了吗？</span></h2>
+            <h5>—— METOPE PROBLEM ——</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-pills nav-fill" id="ul-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#repair" id="tab-1">修补刷新</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#refresh" id="tab-2">基础刷新</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#riddance" id="tab-3">铲除翻新</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#enhance" id="tab-4">局部点补</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="repair">
+                            <table class="table-layout-1" id="table-layout-1">
+                                <tr>
+                                    <td>
+                                        <div class="img-wrapper">
+                                            <img class="img-fluid full-width"
+                                                 src="portal/content/images/wall/problem/_0003s_0002_problem.jpg"
+                                                 alt="">
+                                            <p>墙面呈蛛网状开裂</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="img-wrapper">
+                                            <img class="img-fluid full-width"
+                                                 src="portal/content/images/wall/problem/_0003s_0001_problem.jpg"
+                                                 alt="">
+                                            <p>墙体表面被浸水（非用水空间的背水面）</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="img-wrapper last">
+                                            <img class="img-fluid full-width"
+                                                 src="portal/content/images/wall/problem/_0003s_0000_problem.jpg"
+                                                 alt="">
+                                            <p>墙面被记号笔、圆珠笔、油渍等所污损</p></div>
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade in" id="refresh">
+                            <table class="table-layout-1" id="table-layout-1">
+                                <tr>
+                                    <td>
+                                        <div class="img-wrapper">
+                                            <img class="img-fluid full-width"
+                                                 src="portal/content/images/wall/problem/_0002s_0002_problem.jpg"
+                                                 alt="">
+                                            <p>墙面被铅笔涂鸦</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="img-wrapper">
+                                            <img class="img-fluid full-width"
+                                                 src="portal/content/images/wall/problem/_0002s_0001_problem.jpg"
+                                                 alt="">
+                                            <p>墙面污损，有脚印等</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="img-wrapper last">
+                                            <img class="img-fluid full-width"
+                                                 src="portal/content/images/wall/problem/_0002s_0000_problem.jpg"
+                                                 alt="">
+                                            <p>墙面泛黄</p></div>
+                                    </td>
+
+                                </tr>
+                            </table>
+
+
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade in" id="riddance">
+
+                            <table class="table-layout-1" id="table-layout-1">
+                                <tr>
+                                    <td>
+                                        <div class="img-wrapper">
+                                            <img class="img-fluid full-width"
+                                                 src="portal/content/images/wall/problem/_0001s_0002_problem.jpg"
+                                                 alt="">
+                                            <p>墙面裂口较大，裂口比连续且较长</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="img-wrapper">
+                                            <img class="img-fluid full-width"
+                                                 src="portal/content/images/wall/problem/_0001s_0001_problem.jpg"
+                                                 alt="">
+                                            <p>墙体剥落，基材年久老化</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="img-wrapper last">
+                                            <img class="img-fluid full-width"
+                                                 src="portal/content/images/wall/problem/_0001s_0000_problem.jpg"
+                                                 alt="">
+                                            <p>墙面粉化</p></div>
+                                    </td>
+
+                                </tr>
+                            </table>
+
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade in" id="enhance">
+
+                            <table class="table-layout-1" id="table-layout-1">
+                                <tr>
+                                    <td>
+                                        <div class="img-wrapper">
+                                            <img class="img-fluid full-width"
+                                                 src="portal/content/images/wall/problem/_0000s_0002_problem.jpg"
+                                                 alt="">
+                                            <p>墙面少数几处掉皮</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="img-wrapper">
+                                            <img class="img-fluid full-width"
+                                                 src="portal/content/images/wall/problem/_0000s_0001_problem.jpg"
+                                                 alt="">
+                                            <p>墙体表面有少数几处开裂</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="img-wrapper last">
+                                            <img class="img-fluid full-width"
+                                                 src="portal/content/images/wall/problem/_0000s_0000_problem.jpg"
+                                                 alt="">
+                                            <p>墙面有发霉情况</p></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-wrapper">
+                        <p>墙壁受伤了肿么办？</p>
+                        <p>别担心！</p>
+                        <p>我们为您准备了一套完整施工方案！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--sec-construction-process-->
+<div class="container-fluid text-center sec-con-process " id="sec-con-process">
+    <div class="row">
+        <div class="block-title-wall text-center">
+            <h2>益鸟施工工序</h2>
+            <h5>—— CONSTRUCTION PROCESS ——</h5>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Swiper-1-static -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!--swiper-1-static-->
+                    <div class="img-wrapper" id="swiper-1-static"><img class="img-fluid" src="portal/content/images/wall/_0000_process.jpg" alt=""></div>
+                    <!--swiper-2-static-->
+                    <div class="img-wrapper" id="swiper-2-static"><img class="img-fluid" src="portal/content/images/wall/_0001_process.jpg" alt=""></div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!--sec-order-process-->
+<div class="container text-center sec sec-protection">
+    <div class="row">
+        <div class="block-title-wall text-center">
+            <h2>下单流程</h2>
+            <h5>—— PLACE THE ORDER PROCESS ——</h5>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table-layout">
+            <tr>
+                <td>
+                    <div class="stack stack-up">
+                        <img class="img-fluid full-width"
+                             src="portal/content/images/wall/process-order/_0003_process-order.jpg">
+                        <div class="title">地面保护（保护到电梯口）</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="stack stack-up">
+                        <img class="img-fluid full-width"
+                             src="portal/content/images/wall/process-order/_0002_process-order.jpg">
+                        <div class="title">开关、插线孔保护</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="stack stack-up">
+                        <img class="img-fluid full-width"
+                             src="portal/content/images/wall/process-order/_0001_process-order.jpg">
+                        <div class="title">联系客服</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="stack stack-up">
+                        <img class="img-fluid full-width"
+                             src="portal/content/images/wall/process-order/_0000_process-order.jpg">
+                        <div class="title">免费预约店长上门</div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
+<!--sec-case-->
+<div class="container text-center sec sec-case last">
+    <div class="row">
+        <div class="block-title-wall text-center">
+            <h2>案例推荐</h2>
+            <h5>—— case ——</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="html-code grid-of-images">
+            <table class="table-layout-case">
+                <tr>
+                    <td>
+                        <div class="gallery-popup" id="open-popup-0">
+
+                            <div class="trigger-pop">
+                                <div class="mask">
+                                    <ul class="list-unstyled">
+                                        <li>项目名称：走廊屋顶铲除翻新</li>
+                                        <li>施工面积：约30m²</li>
+                                        <li>施工时长：5天</li>
+                                        <li>项目费用：1998元</li>
+                                    </ul>
+                                </div>
+                                <div class="img-wrapper"><img src="portal/content/images/wall/case/_0000_case.jpg" alt="" title="中铁城锦南汇" />
+                                </div>
+                            </div>
+                        </div>
+                        <div id="my-popup" class="mfp-hide white-popup">
+                            Inline popup
+                        </div>
+                        <div class="title"><span>中铁城锦南汇</span></div>
+                    </td>
+                    <td>
+                        <div class="gallery-popup" id="open-popup-1">
+                            <div class="trigger-pop">
+                                <div class="mask">
+                                    <ul class="list-unstyled">
+                                        <li>项目名称：天花板铲除刷新</li>
+                                        <li>施工面积：约30m²</li>
+                                        <li>施工时长：5天</li>
+                                        <li>项目费用：1998元</li>
+                                    </ul>
+                                </div>
+                                <div class="img-wrapper"><img src="portal/content/images/wall/case/_0001_case.jpg" alt="" title="云景豪庭" />
+                                </div>
+                            </div>
+                        </div>
+                        <div id="my-popup" class="mfp-hide white-popup-2">
+                            Inline popup
+                        </div>
+                        <div class="title"><span>云景豪庭</span></div>
+                    </td>
+                    <td>
+                        <div class="gallery-popup" id="open-popup-2">
+                            <div class="trigger-pop">
+                                <div class="mask">
+                                    <ul class="list-unstyled">
+                                        <li>项目名称：单屋修补刷新</li>
+                                        <li>施工面积：约50m²</li>
+                                        <li>施工时长：5天</li>
+                                        <li>项目费用：1500元</li>
+                                    </ul>
+                                </div>
+                                <div class="img-wrapper"><img src="portal/content/images/wall/case/_0002_case.jpg" alt="" title="交大智能二期" />
+                                </div>
+                            </div>
+                        </div>
+                        <div id="my-popup" class="mfp-hide white-popup-3">
+                            Inline popup
+                        </div>
+                        <div class="title"><span>交大智能二期</span></div>
+                    </td>
+                    <td>
+                        <div class="gallery-popup" id="open-popup-3">
+                            <div class="trigger-pop">
+                                <div class="mask">
+                                    <ul class="list-unstyled">
+                                        <li>项目名称：全屋基础刷新</li>
+                                        <li>施工面积：约160m²</li>
+                                        <li>施工时长：12天</li>
+                                        <li>项目费用：4500元</li>
+                                    </ul>
+                                </div>
+                                <div class="img-wrapper"><img src="portal/content/images/wall/case/_0003_case.jpg" alt="" title="华侨城天鹅堡" />
+                                </div>
+                            </div>
+                        </div>
+                        <div id="my-popup" class="mfp-hide white-popup-3">
+                            Inline popup
+                        </div>
+                        <div class="title"><span>华侨城天鹅堡</span></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="gallery-popup" id="open-popup-4">
+                            <div class="trigger-pop">
+                                <div class="mask">
+                                    <ul class="list-unstyled">
+                                        <li>项目名称：全屋铲除刷新</li>
+                                        <li>施工面积：约220m²</li>
+                                        <li>施工时长：18天</li>
+                                        <li>项目费用：14998元</li>
+                                    </ul>
+                                </div>
+                                <div class="img-wrapper"><img src="portal/content/images/wall/case/_0004_case.jpg" alt="" title="华侨城纯水岸" />
+                                </div>
+                            </div>
+                        </div>
+                        <div id="my-popup" class="mfp-hide white-popup">
+                            Inline popup
+                        </div>
+                        <div class="title"><span>华侨城纯水岸</span></div>
+                    </td>
+                    <td>
+                        <div class="gallery-popup" id="open-popup-5">
+                            <div class="trigger-pop">
+                                <div class="mask">
+                                    <ul class="list-unstyled">
+                                        <li>项目名称：卧室铲除刷新</li>
+                                        <li>施工面积：约110m²</li>
+                                        <li>施工时长：8天</li>
+                                        <li>项目费用：8000元</li>
+                                    </ul>
+                                </div>
+                                <div class="img-wrapper"><img src="portal/content/images/wall/case/_0005_case.jpg" alt="" title="华宇锦城名都" />
+                                </div>
+                            </div>
+                        </div>
+                        <div id="my-popup" class="mfp-hide white-popup-2">
+                            Inline popup
+                        </div>
+                        <div class="title"><span>华宇锦城名都</span></div>
+                    </td>
+                    <td>
+                        <div class="gallery-popup" id="open-popup-6">
+                            <div class="trigger-pop">
+                                <div class="mask">
+                                    <ul class="list-unstyled">
+                                        <li>项目名称：客厅铲除刷新</li>
+                                        <li>施工面积：约145m²</li>
+                                        <li>施工时长：12天</li>
+                                        <li>项目费用：10998元</li>
+                                    </ul>
+                                </div>
+                                <div class="img-wrapper"><img src="portal/content/images/wall/case/_0006_case.jpg" alt="" title="金桔一期" />
+                                </div>
+                            </div>
+                        </div>
+                        <div id="my-popup" class="mfp-hide white-popup-3">
+                            Inline popup
+                        </div>
+                        <div class="title"><span>金桔一期</span></div>
+                    </td>
+                    <td>
+                        <div class="gallery-popup" id="open-popup-7">
+                            <div class="trigger-pop">
+                                <div class="mask">
+                                    <ul class="list-unstyled">
+                                        <li>项目名称：全屋基础刷新</li>
+                                        <li>施工面积：约140m²</li>
+                                        <li>施工时长：10天</li>
+                                        <li>项目费用：4300元</li>
+                                    </ul>
+                                </div>
+                                <div class="img-wrapper"><img src="portal/content/images/wall/case/_0007_case.jpg" alt="" title="金沙鹭岛" />
+                                </div>
+                            </div>
+                        </div>
+                        <div id="my-popup" class="mfp-hide white-popup-3">
+                            Inline popup
+                        </div>
+                        <div class="title"><span>金沙鹭岛</span></div>
+                    </td>
+                </tr>
+
+
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!--<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"-->
+<!--integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"-->
+<!--crossorigin="anonymous"></script>-->
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+
+<!-- Optional JavaScript -->
+<script src="https://cdn.bootcss.com/Swiper/4.0.6/js/swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+<script src="portal/content/js/custom.js"></script>
+
+<script>
+
+    $(function () {
+        //begin 导航菜单
+        $('.nav.xm').mouseover(function () {
+            $('.tcc').show();
+            $(this).find('img').attr('src', 'portal/content/images/jtUp.png');
+        });
+        $('.nav.xm').mouseout(function () {
+            $('.tcc').hide();
+            $(this).find('img').attr('src', 'portal/content/images/jtDown.png');
+        });
+        $('.nav.us').mouseover(function () {
+            $('.usTcc').show();
+            $(this).find('span img').attr('src', 'portal/content/images/jtUp.png');
+        });
+        $('.nav.us').mouseout(function () {
+            $('.usTcc').hide();
+            $(this).find('span img').attr('src', 'portal/content/images/jtDown.png');
+        });
+
+        $('.navs.taobao').mouseover(function () {
+            $('.taobaoTcc').show();
+        });
+        $('.navs.taobao').mouseout(function () {
+            $('.taobaoTcc').hide();
+        });
+        $('.navs.wx').mouseover(function () {
+            $('.wxTcc').show();
+        });
+        $('.navs.wx').mouseout(function () {
+            $('.wxTcc').hide();
+        });
+        //end 导航菜单
+    });
+
+
+</script>
+
+<script>
+
+</script>
+
+
+</body>
+</html>
