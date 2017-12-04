@@ -1,0 +1,354 @@
+@charset "utf-8";
+/* CSS Document */
+/* for html reset and core html style */
+
+/* reset start */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td,img{margin:0;padding:0;}
+html{color:#000;overflow-y:scroll;overflow:-moz-scrollbars-vertical;font-size: 100px;}
+body,button,input,select,textarea{font-size:.12rem;font-family:arial, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', '宋体', \5b8b\4f53, Tahoma, Arial, Helvetica, STHeiti;}
+h1,h2,h3,h4,h5,h6{font-size:.14rem;}
+i,em{font-style:normal;}
+small{font-size:.1rem;}
+ul,ol{list-style:none;}
+a{text-decoration:none;cursor: pointer;}
+a:hover{text-decoration:none;}
+legend{color:#000;}
+fieldset,img{border:0;}
+table{border-collapse:collapse;border-spacing:0;}
+img{-ms-interpolation-mode:bicubic;display: inline-block;vertical-align: middle;}
+textarea{resize:vertical;}
+label,button{cursor:pointer;}
+
+/* core html style */
+.left{float:left;}
+.right{float:right;}
+.overflow{overflow:hidden;}
+.hide{display:none;}
+.vi_hide{ visibility: hidden;}
+.block{display:block;}
+.inline{display:inline;}
+.clearfix:after{content:'\20';display:block;height:0;clear:both;}
+.clearfix{zoom:1;}
+.clear{clear:both;height:0;line-height:0;font-size:0;visibility:hidden;overflow:hidden;}
+.wordwrap{word-break:break-all;word-wrap:break-word;}
+.f_weight{font-weight:bold;}
+.f_white{color:#fff;}
+.f_black3{color: #333;}
+.f_black6{color: #666;}
+.f_gray{color: #999;}
+.f_blue{color: #0066CC;}
+.f_green{color: #72A51C;}
+
+/*移动一*/
+.ydtitle {
+	width: 100%;
+	display: block;
+	font-size: .36rem;
+	text-align: center;
+	font-weight: bold;
+	height: 1rem;
+	line-height: 1rem;
+	position: fixed;
+	z-index: 2000;
+	top: 0;
+	background: #fff;
+}
+.ydheader {
+	width: 100%;
+	margin-top: 1rem;
+	position: relative;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.swiper-container img {
+	width: 100%;
+}
+.ydheaderc {
+	width:80%;
+	position: absolute;
+	text-align: center;
+	top: 15%;
+	z-index: 10;
+	font-size: .38rem;
+	color: #fff;
+	text-shadow: 0 .05rem .05rem #000;
+	margin: 0 10%;
+	font-weight: bold;
+}
+.yhp-button-prev {
+	background-image: url(../images/pre01.png);
+	background-size: 100%;
+}
+.yhp-button-next {
+	background-image: url(../images/next01.png);
+	background-size: 100%;
+}
+.ydheaderc span {
+	color: #ff0000;
+}
+.ydproduct {
+	width:100%;
+	margin-top: 20px;
+	text-align: center;
+}
+.ydptitle {
+	display:block;
+	font-size: .30rem;
+}
+.ydpsubtitle {
+	display: block;
+	font-size: .18rem;
+	color: #bbb;
+}
+.ydp01 {
+	margin-top: .12rem;
+	position: relative;
+	margin-bottom: .30rem;
+}
+.ydppic {
+	width: 90%;
+}
+.ydpnext {
+	position: absolute;
+	display: block;
+	margin-top: -10%;
+	width: 100%;
+}
+.ydpnext img {
+	width: 11%;
+}
+.ydp01 span {
+	display: block;
+	font-size: .24rem;
+	margin-top: .23rem;
+	margin-bottom: .08rem;
+}
+.ydp01 p {
+	font-size: .18rem;
+	color: #545454;
+}
+.ydvideo {
+	width: 100%;
+	text-align: center;
+	margin-top: .37rem;
+}
+.ydvtab {
+	width: 100%;
+}
+.menu{
+	display: block;
+	width: 80%; 
+	height: .33rem;
+	margin:0 auto; 
+	padding:0 10%;
+	border-bottom: 1px solid #f2f2f2;
+	padding-bottom: 0.07rem;
+}
+.menu li{  
+    display: block;  
+    float: left;  
+    width: 25%;
+	height: .33rem;
+	line-height: .33rem;
+	font-size: .18rem;
+    text-align: center;  
+    cursor: pointer;   
+}  
+.menu li.hover{  
+    background: #000;
+	color: #fff;
+}
+.tab{  
+     display:none;  
+}  
+.block{
+     display:block;  
+}
+.ydvbanner .swiper-wrapper .swiper-slide {
+	margin-top: .15rem;
+	text-align: left;
+}
+.ydvbanner .swiper-slide span {
+	display: block;
+	font-size: .18rem;
+	margin:.10rem 0;
+}
+.ydvbanner .swiper-slide p {
+	font-size: .16rem;
+	color: #bbb;
+}
+.ydtech {
+	width: 100%;
+	text-align: center;
+	margin-top: .37rem;
+}
+.ydtline {
+	border-top: 1px solid #f2f2f2;
+	margin-bottom: .11rem;
+}
+.ydtqj {
+	width: 100%;
+	background: #efefef;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: .25rem;
+}
+.ydttitle {
+	display: block;
+	font-size: .24rem;
+	line-height: .70rem;
+	width: 90%;
+	margin:0 auto;
+}
+.ydtqj p {
+	width: 45%;
+	float: left;
+	font-size: .16rem;
+	color: #626262;
+	line-height: .30rem;
+}
+.ydtqj p span {
+	color: #000;
+	font-size: .18rem;
+	line-height: .45rem;
+}
+.ydtbanner {
+	width: 90%;
+}
+.ydt-button-prev {
+	background-image: url(../images/pre03.png);
+	background-size: 100%;
+}
+.ydt-button-next {
+	background-image: url(../images/next03.png);
+	background-size: 100%;
+}
+.ydtp1 {
+	margin-left: 5%;
+}
+.ydprocess {
+	width: 100%;
+	text-align: center;
+	margin-top: .32rem;
+}
+.ydprleft {
+	width: 80%;
+	border-bottom: 1px solid #f2f2f2;
+	padding: 0 5%;
+	margin: 0 5%;
+	margin-top: .45rem;
+	padding-bottom: 0.15rem;
+}
+.ydprpic {
+	width: 30%;
+}
+.ydprpic img {
+	width: 100%;
+}
+.ydprc {
+	width: 60%;
+	text-align: left;
+	margin-left: 0.40rem;
+}
+.ydprc01 {
+	font-size: 0.24rem;
+	display: block;
+}
+.ydprc02 {
+	font-size: 0.18rem;
+	display: block;
+	color: #6d6d6d;
+}
+.ydprc p {
+	color: #202020;
+	font-size: 0.16rem;
+}
+.ydprright {
+	width: 80%;
+	border-bottom: 1px solid #f2f2f2;
+	padding: 0 5%;
+	margin: 0 5%;
+	margin-top: .45rem;
+	padding-bottom: 0.15rem;
+}
+.ydprcr {
+	width: 60%;
+	text-align: right;
+	margin-right: 0.40rem;
+}
+.ydprcr p {
+	color: #202020;
+	font-size: 0.16rem;
+}
+.ydafter {
+	width: 100%;
+	text-align: center;
+	margin-top: .32rem;
+}
+.ydashouhou {
+	width: 90%;
+	margin:0 auto;
+	margin-top: 0.25rem;
+}
+.ydashouhou img {
+	width: 100%;
+}
+.ydcase {
+	width: 100%;
+	text-align: center;
+	margin-top: .32rem;
+}
+.gallery-top {
+	width: 90%;
+}
+.gallery-top img {
+	width: 80%;
+}
+.gallery-thumbs {
+	margin-top: 0.55rem;
+	width: 90%;
+}
+.gallery-thumbs .swiper-slide {
+	margin-right: 0;
+}
+.ydupvideo {
+	position: fixed;
+    display: none;
+	z-index: 1000;
+	background-color: rgba(0,0,0,0.7);
+	top: 0%; 
+	left: 0%;  
+	width: 100%;
+	height: 100%;  
+	/*background-color: black;  
+	z-index:1001;  
+	-moz-opacity: 0.7;  
+	opacity:.70;  
+	filter: alpha(opacity=70);*/
+}
+.ydupvideo a {
+	position:fixed;
+	color: #fff;
+	font-size: .30rem;
+	right:10%;
+	top:10%;
+}
+.ydupvideowrap {
+	width: 50%;
+    height: 50%;
+    position: fixed;
+    top: 25%;
+	left: 25%;
+	z-index: 1003;
+    border: 4px solid #fff;
+}
+.ydupvideowrap p {
+	background:#fff;
+	height: 20%;
+}
+video {
+	
+}

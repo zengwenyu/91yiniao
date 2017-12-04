@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+
+<title>demo</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">  
+
+<link rel="stylesheet" href="wapportal/content/css/swiper.min.css" />
+<link rel="stylesheet" href="wapportal/content/css/style2.css" />
+<script>   
+(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=640){
+                    docEl.style.fontSize = '100px';
+                }else{
+                    docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                }
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script> 
+
+</head>
+<body>
+  <span class="ydtitle">YINIAO</span>
+  <div class="ydheader">
+    <div class="swiper-container ydbanner">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="#">
+              <img src="wapportal/content/images/ydbanner.png" alt=""/>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#">
+              <img src="wapportal/content/images/ydbanner.png" alt=""/>
+            </a>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      
+      <div class="swiper-button-prev yhp-button-prev"></div>
+      <div class="swiper-button-next yhp-button-next"></div>
+    </div>
+    <div class="ydheaderc">您家<span>墙面</span>一定有这样的问题<br /><br />污损</div>
+  </div>
+  
+  <div class="ydproduct">
+    <span class="ydptitle">产品</span>
+    <span class="ydpsubtitle">product</span>
+    <div class="ydp01">
+      <img class="ydppic" src="wapportal/content/images/ydp01.png" />
+      <a class="ydpnext"><img src="wapportal/content/images/ydpnext.png" /></a>
+      <span>修补刷新</span>
+      <p>墙面基层施工工艺不达标形成蜘蛛网状裂纹，墙体表面被浸水，墙面被记号笔、圆珠
+笔、油渍等所污损</p>
+    </div>
+
+    <div class="ydp01">
+      <img class="ydppic" src="wapportal/content/images/ydp01.png" />
+      <a class="ydpnext"><img src="wapportal/content/images/ydpnext.png" /></a>
+      <span>修补刷新</span>
+      <p>墙面基层施工工艺不达标形成蜘蛛网状裂纹，墙体表面被浸水，墙面被记号笔、圆珠
+笔、油渍等所污损</p>
+    </div>
+
+    <div class="ydp01">
+      <img class="ydppic" src="wapportal/content/images/ydp01.png" />
+      <a class="ydpnext"><img src="wapportal/content/images/ydpnext.png" /></a>
+      <span>修补刷新</span>
+      <p>墙面基层施工工艺不达标形成蜘蛛网状裂纹，墙体表面被浸水，墙面被记号笔、圆珠
+笔、油渍等所污损</p>
+    </div>
+
+    <div class="ydp01">
+      <img class="ydppic" src="wapportal/content/images/ydp01.png" />
+      <a class="ydpnext"><img src="wapportal/content/images/ydpnext.png" /></a>
+      <span>修补刷新</span>
+      <p>墙面基层施工工艺不达标形成蜘蛛网状裂纹，墙体表面被浸水，墙面被记号笔、圆珠
+笔、油渍等所污损</p>
+    </div>
+  </div>
+
+  <div class="ydvideo">
+    <span class="ydptitle">施工工序</span>
+    <span class="ydpsubtitle">Construction Process</span>
+    <div class="ydvtab" id="main">
+      <ul class="menu" id="menu">  
+        <li onclick="setTab(0)" class="hover">修补刷新</li>  
+        <li onclick="setTab(1)">基础修补</li>  
+        <li onclick="setTab(2)">产出翻新</li>  
+        <li onclick="setTab(3)">局部点补</li>   
+      </ul>
+      <ul id="tabcontent">
+        <li class="block">
+          <div class="swiper-container ydvbanner">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/ydvideo.png" /></a>
+                <span>成品保护</span>
+                <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/ydvideo.png" /></a>
+                <span>成品保护</span>
+                <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/ydvideo.png" /></a>
+                <span>成品保护</span>
+                <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/ydvideo.png" /></a>
+                <span>成品保护</span>
+                <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/ydvideo.png" /></a>
+                <span>成品保护</span>
+                <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/ydvideo.png" /></a>
+                <span>成品保护</span>
+                <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="tab">2</li>
+        <li class="tab">3</li>
+        <li class="tab">4</li>
+      </ul>
+  </div>
+  </div>
+  
+  <div class="ydtech">
+    <span class="ydptitle">12道专业工艺</span>
+    <span class="ydpsubtitle">Professional Technology</span>
+    <div class="ydtline"></div>
+    <div class="ydtqj">
+      <span class="ydttitle">完工清洁</span>
+      <p class="ydtp1"><span>我们家的</span><br />当房子装修完，还得你自己和家人来打扫</p>
+      <p><span>我们家的</span><br />将所有的垃圾清除，打扫房间的卫生，地面，墙角，窗户，恢复原样</p>
+      <div class="clearfix"></div>
+      <div class="swiper-container ydtbanner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="wapportal/content/images/ydtqj.png" alt=""/>
+          </div>
+        </div>
+        <div class="swiper-button-prev ydt-button-prev"></div>
+        <div class="swiper-button-next ydt-button-next"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="ydprocess">
+    <span class="ydptitle">施工工序</span>
+    <span class="ydpsubtitle">Construction Process</span>
+    <div class="ydprleft">
+      <div class="ydprpic left">
+        <img src="wapportal/content/images/ydpro01.png" />
+      </div>
+      <div class="ydprc left">
+        <span class="ydprc01">第一步</span>
+        <span class="ydprc02">上门检测</span>
+        <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="ydprright">
+      <div class="ydprpic right">
+        <img src="wapportal/content/images/ydpro01.png" />
+      </div>
+      <div class="ydprcr right">
+        <span class="ydprc01">第一步</span>
+        <span class="ydprc02">上门检测</span>
+        <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="ydprleft">
+      <div class="ydprpic left">
+        <img src="wapportal/content/images/ydpro01.png" />
+      </div>
+      <div class="ydprc left">
+        <span class="ydprc01">第一步</span>
+        <span class="ydprc02">上门检测</span>
+        <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="ydprright">
+      <div class="ydprpic right">
+        <img src="wapportal/content/images/ydpro01.png" />
+      </div>
+      <div class="ydprcr right">
+        <span class="ydprc01">第一步</span>
+        <span class="ydprc02">上门检测</span>
+        <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="ydprleft">
+      <div class="ydprpic left">
+        <img src="wapportal/content/images/ydpro01.png" />
+      </div>
+      <div class="ydprc left">
+        <span class="ydprc01">第一步</span>
+        <span class="ydprc02">上门检测</span>
+        <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  
+  <div class="ydafter">
+    <span class="ydptitle">完善的售后</span>
+    <span class="ydpsubtitle">Perfect after-sale</span>
+    <div class="ydashouhou">
+      <img src="wapportal/content/images/shouhou.png" />
+    </div>
+  </div>
+  
+  <div class="ydcase">
+    <span class="ydptitle">案例效果</span>
+    <span class="ydpsubtitle">Effect of case</span>
+    
+    <!-- Swiper -->
+  <div class="swiper-container gallery-top">
+    <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="wapportal/content/images/ydcbanner.png" /></div>
+            <div class="swiper-slide"><img src="wapportal/content/images/ydcbanner.png" /></div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next ydt-button-next"></div>
+    <div class="swiper-button-prev ydt-button-prev"></div>
+  </div>
+  <div class="swiper-container gallery-thumbs">
+    <div class="swiper-wrapper">
+       <div class="swiper-slide"><img src="wapportal/content/images/ydcbannert.png" /></div>
+       <div class="swiper-slide"><img src="wapportal/content/images/ydcbannert.png" /></div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="ydupvideo">
+    <a href="javascript:;" onclick="popdownvideo()">X</a>
+    <div class="ydupvideowrap">
+      <video width="100%" height="80%" controls="controls">
+        <source src="wapportal/content/video/ccqm.mp4" type="video/mp4">
+      </video> 
+      <p>adfasfasdfs</p>
+    </div>
+  </div>
+  
+
+<script src="wapportal/content/js/swiper.min.js"></script>
+<script>
+   var swiper = new Swiper('.ydbanner', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+   var swiper = new Swiper('.ydtbanner', {
+	      slidesPerView: 1,
+	      spaceBetween: 30,
+	      loop: true,
+	      navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	      },
+   });
+   
+   var galleryTop = new Swiper('.gallery-top', {
+	      spaceBetween: 10,
+	      loop:true,
+	      loopedSlides: 5, //looped slides should be the same
+	      navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	      },
+	    });
+	    var galleryThumbs = new Swiper('.gallery-thumbs', {
+	      //spaceBetween: 10,
+	      slidesPerView: 4,
+	      touchRatio: 0.2,
+	      loop: true,
+	      loopedSlides: 5, //looped slides should be the same
+	      slideToClickedSlide: true,
+	    });
+	    galleryTop.controller.control = galleryThumbs;
+	    galleryThumbs.controller.control = galleryTop;
+	    
+	    
+	    var swiper = new Swiper('.ydvbanner', {
+	        slidesPerView: 2.3,
+	        spaceBetween: 10,
+	        slidesPerColumn: 2,
+	      });
+	    function setTab(n){  
+	        var tli=document.getElementById("menu").getElementsByTagName("li");  
+	        var mli=document.getElementById("tabcontent").getElementsByTagName("li");  
+	        for(i=0;i<tli.length;i++){  
+	            tli[i].className=i==n?"hover":"";  
+	            mli[i].style.display=i==n?"block":"none";  
+	        }  
+	   } 
+</script>
+<script src="wapportal/content/js/jquery.js"></script>
+<script>
+function popupvideo(){
+	$('.ydupvideo').show();
+}
+function popdownvideo(){
+	$('.ydupvideo').hide();
+}
+</script>
+</body>
+</html>
