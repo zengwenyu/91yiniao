@@ -220,11 +220,11 @@ label,button{cursor:pointer;}
 }
 .ydt-button-prev {
 	background-image: url(../images/pre03.png);
-	background-size: 100%;
+	background-size: 60%;
 }
 .ydt-button-next {
 	background-image: url(../images/next03.png);
-	background-size: 100%;
+	background-size: 60%;
 }
 .ydtp1 {
 	margin-left: 5%;
