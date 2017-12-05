@@ -568,7 +568,7 @@ a.red {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(59, 59, 59, 0.6);
+  opacity: 0;
   font-size: 0.8rem;
   text-align: left; }
   .grid-of-images .mask ul {
@@ -580,7 +580,8 @@ a.red {
     .grid-of-images .mask ul li {
       color: white; }
   .grid-of-images .mask:hover {
-    opacity: 0; }
+    opacity: 1;
+    background: rgba(59, 59, 59, 0.6); }
 
 #open-popup {
   padding: 20px; }
