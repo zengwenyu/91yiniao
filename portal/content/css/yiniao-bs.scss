@@ -765,7 +765,7 @@ a.red {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba($black, 0.6);
+    opacity: 0;
     font-size: 0.8rem;
     text-align: left;
 
@@ -781,7 +781,8 @@ a.red {
 
     }
     &:hover {
-      opacity: 0;
+      opacity: 1;
+      background: rgba($black, 0.6);
     }
   }
 
