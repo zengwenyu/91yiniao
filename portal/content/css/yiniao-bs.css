@@ -668,4 +668,29 @@ a.red {
   margin: 0 auto;
   border-radius: 5px; }
 
+.sec-contrast .stack {
+  position: relative; }
+.sec-contrast .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(249, 249, 249, 0.7);
+  z-index: 1; }
+  .sec-contrast .mask dl {
+    width: 80%;
+    margin: 11% auto 0;
+    font-size: 0.6rem;
+    color: #3b3b3b; }
+    .sec-contrast .mask dl dt {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 0.4rem; }
+    .sec-contrast .mask dl dd {
+      text-align: left;
+      margin-bottom: 0.3rem; }
+      .sec-contrast .mask dl dd:last-of-type {
+        margin-bottom: 0; }
+
 /*# sourceMappingURL=yiniao-bs.css.map */

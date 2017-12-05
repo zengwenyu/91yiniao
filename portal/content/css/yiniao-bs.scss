@@ -874,3 +874,35 @@ a.red {
   margin: 0 auto;
   border-radius: 5px;
 }
+.sec-contrast {
+  .stack {
+    position: relative;
+  }
+  .mask {
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background: rgba($white, 0.7);
+    z-index: 1;
+    dl {
+      width: 80%;
+      margin: 11% auto 0;
+      font-size: 0.6rem;
+      color: $black;
+      dt {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 0.4rem;
+      }
+      dd {
+        text-align: left;
+        margin-bottom: 0.3rem;
+        &:last-of-type {
+        margin-bottom: 0;
+      }
+  }
+}
+}
+}
