@@ -552,6 +552,7 @@ a.red {
   .process-const-item {
     width: 100%;
     background: red;
+    float: left;
   }
   .img-wrapper {
     width: 40%;
@@ -563,7 +564,7 @@ a.red {
   dl {
     display: block;
     float: left;
-    //background: red;
+    background: red;
     margin: 2rem 0 0 1rem;
     width: 50%;
     height: auto;
