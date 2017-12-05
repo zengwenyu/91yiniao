@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+
+<title>demo</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<link rel="stylesheet" href="portal/content/css/style2.css" />
+<link rel="stylesheet" href="portal/content/css/swiper.min.css" />
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <div class="swiper-container pagewrapper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide page1">
+        <span class="pclogo">YINIAO.</span>
+        <div id="page1-bigpic" class="page1-bigpic">
+          <p>您家<span>墙面</span>一定有这样的问题</p>
+          <img src="portal/content/images/page1bigpic.png" />
+        </div>
+        <div class="page1-smallpic">
+          <ul>
+            <li onclick="setbigpic(this)"><img src="portal/content/images/page1smallpic01.png" /></li>
+            <li onclick="setbigpic(this)"><img src="portal/content/images/page1smallpic01.png" /></li>
+            <li onclick="setbigpic(this)"><img src="portal/content/images/page1smallpic01.png" /></li>
+            <li onclick="setbigpic(this)"><img src="portal/content/images/page1smallpic01.png" /></li>
+          </ul>
+        </div>
+      </div>
+      <div class="swiper-slide page2">
+        <span class="pclogo">YINIAO.</span>
+        <div id="vertical" class="brand vertical">
+          <div class="wrapperforr">
+            <div class="img img01">
+              <img src="portal/content/images/page2icon01.png" />
+            </div>
+            <div class="info infobg01">
+              <span>修补刷新</span>
+              <p>墙面基层施工工艺不达标形成蜘蛛网 状裂纹，墙体表面被浸水，墙面被记号笔、圆 珠笔、油渍等所污损</p>
+              <a href="#"><img src="portal/content/images/page2arrow.png" /></a>
+            </div>
+          </div>
+          <div class="wrapperforr">
+            <div class="img img02">
+              <img src="portal/content/images/page2icon02.png" />
+            </div>
+            <div class="info infobg02">
+              <span>修补刷新</span>
+              <p>墙面基层施工工艺不达标形成蜘蛛网 状裂纹，墙体表面被浸水，墙面被记号笔、圆 珠笔、油渍等所污损</p>
+              <a href="#"><img src="portal/content/images/page2arrow.png" /></a>
+            </div>
+          </div>
+          <div class="wrapperforr">
+            <div class="img img03">
+              <img src="portal/content/images/page2icon03.png" />
+            </div>
+            <div class="info infobg03">
+              <span>修补刷新</span>
+              <p>墙面基层施工工艺不达标形成蜘蛛网 状裂纹，墙体表面被浸水，墙面被记号笔、圆 珠笔、油渍等所污损</p>
+              <a href=""><img src="portal/content/images/page2arrow.png" /></a>
+            </div>
+          </div>
+          <div class="wrapperforr">
+            <div class="img img04">
+              <img src="portal/content/images/page2icon04.png" />
+            </div>
+            <div class="info infobg04">
+              <span>修补刷新</span>
+              <p>墙面基层施工工艺不达标形成蜘蛛网 状裂纹，墙体表面被浸水，墙面被记号笔、圆 珠笔、油渍等所污损</p>
+              <a href=""><img src="portal/content/images/page2arrow.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+<script src="portal/content/js/swiper.min.js"></script>
+<script>
+  var swiper = new Swiper('.pagewrapper', {
+    direction: 'vertical',
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+});
+  function setbigpic(x){
+	  //alert(bigpic.src);
+	  var bigpic = document.getElementById("page1-bigpic").querySelector("img");
+	  bigpic.src = x.querySelector("img").src;
+  }
+</script>
+<script type="text/javascript" src="portal/s/jquery/jquery.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+$('.img').css('height',$(window).height()); //浏览器当前窗口可视区域高度
+$('.info').css('height',$(window).height());
+
+});
+//翻转
+var turn = function(target,time,opts){
+  target.find('.wrapperforr').hover(function(){
+    $(this).find('.img').stop().animate(opts[0],time,function(){
+      $(this).hide().next().show();
+      $(this).next().css('height',$(window).height());
+      $(this).next().animate(opts[1],time);
+    });
+  },function(){
+    $(this).find('.info').animate(opts[0],time,function(){
+      $(this).hide().prev().show();
+      $(this).prev().css('height',$(window).height());
+      $(this).prev().animate(opts[1],time);
+    });
+  });
+}
+var verticalOpts = [{'width':0},{'width':'100%'}];
+turn($('#vertical'),200,verticalOpts);
+
+</script>
+</body>
+</html>
