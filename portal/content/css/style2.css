@@ -182,6 +182,7 @@ html, body {
 	height: 100%;
 	margin: 0 auto;
 }
+
 .page3title {
 	position: absolute;
 	top: 55px;
@@ -235,15 +236,19 @@ html, body {
 	width:0px;
 	border-bottom:1px solid #000;
 }
+#tabcontent li{
+	
+}
 .page3tabc{
 	margin-right:20px;
 	width:22%;
 	text-align:center;
 	float:left;
+	margin-top:90px;
 }
 .page3tabc span{
 	display:block;
-	margin-top:70%;
+	/*margin-top:70%;*/
 	font-size:18px;
 }
 .page3tabc p{
@@ -261,4 +266,92 @@ html, body {
 	height:40px;
 	margin-left:9%;
 	display:none;
+}
+.page4title{
+	position: absolute;
+	top: 70px;
+	left: 65px;
+	font-size:12px;
+}
+#vertical02{
+	position:absolute;
+	top:100px;
+	width:100%;
+	left:65px;
+}
+.brand02 div.wapperforr02{
+	display: block;
+	float: left;
+	width: 20%;
+	height: 150px;
+	text-align: center;
+	position: relative;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+.brand02 .front{
+	width: 100%;
+	height: 120px;
+	padding-top:30px;
+}
+.brand02 .front .frontwrap,.brand02 .back .backwrap{
+	background:rgba(255,255,255,0.5);
+	width:80%;
+	margin:0 auto;
+}
+.brand02 .front span.fronttitle,.brand02 .back span.backtitle{
+	display:block;
+	font-size:16px;
+}
+.brand02 .front span.frontsub,.brand02 .back span.backsub{
+	display:block;
+	font-size:12px;
+}
+.brand02 .back{
+	display: none;
+	background-color: #f0f0f0;
+	color: #369242;
+}
+
+.vertical02 .back{
+	width: 0;
+	height: 120px;
+	margin: 0 auto;
+	padding-top:30px;
+}
+.f01{
+	background: url(../images/page4pic01.png);
+	background-size:100% 100%;
+}
+.b01{
+	background: url(../images/page4pic02.png);
+	background-size:100% 100%;
+}
+
+.page6{
+	background:url(../images/page6bg.png) no-repeat;
+	background-size: 100%;
+}
+
+
+
+
+.page7{
+	padding-top:0px;
+}
+.gallery-top {
+	width: 90%;
+	height:80%;
+	text-align:center;
+}
+.gallery-top img {
+	width: 80%;
+}
+.gallery-thumbs {
+	width: 90%;
+	height:15%;
+}
+
+.gallery-thumbs .swiper-slide img{
+	width:100%;
 }
