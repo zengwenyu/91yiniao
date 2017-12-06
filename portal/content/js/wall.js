@@ -1,4 +1,35 @@
 $(document).ready(function () {
+    var gitGrp0 = $("#process-const-items-0");
+    var gitGrp1 = $("#process-const-items-1");
+
+    gitGrp1.addClass("hide");
+    // var gifSwitcher = function () {
+    //     $(this).hover(function () {
+    //         //on mouse enter
+    //         var customdata = $(this).parent().attr('href');
+    //         $(this).attr('src',customdata);
+    //     }, function(){
+    //         // on mouse leave
+    //         $(this).attr('src',$(this).attr('data-orig'));
+    //     });
+    // }
+   //  function gifSwitcher (el) {
+   //      $(el.target).hover(function () {
+   //          //on mouse enter
+   //          var customdata = $(this).parent().attr('href');
+   //          $(this).attr('src',customdata);
+   //      }, function(){
+   //          // on mouse leave
+   //          $(this).attr('src',$(this).attr('data-orig'));
+   //      });
+   //      alert("ss");
+   //  }
+   // var $gifItem = $(".process-const-item a img");
+   //
+   //  $gifItem.gifSwitcher();
+
+
+
     //remove last item margin right
     $(".tab-pane-item").last().addClass("last");
     //switch swiper according to tab
@@ -6,11 +37,11 @@ $(document).ready(function () {
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
         var target = $(e.target).attr("href") // activated tab
         if (target == "#enhance" || target == "#riddance") {
-                $("#swiper-1-static").addClass("hide");
-                $("#swiper-2-static").removeClass("hide");
-        } else {
-                $("#swiper-2-static").addClass("hide");
-                $("#swiper-1-static").removeClass("hide");
+            gitGrp0.addClass("hide");
+            gitGrp1.removeClass("hide");
+        } else if (target == "#repair" || target == "#refresh") {
+            gitGrp1.addClass("hide");
+            gitGrp0.removeClass("hide");
         }
     });
     
@@ -226,7 +257,7 @@ $(document).ready(function () {
 
 //gif switcher
 $(function(){
-    $('.process-const-item a img').hover(function(){
+   var gifSwitcher =  $('.process-const-item a img').hover(function(){
         // on mouse enter
         var customdata = $(this).parent().attr('href');
         $(this).attr('src',customdata);
