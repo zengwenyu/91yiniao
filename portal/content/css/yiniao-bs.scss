@@ -12,9 +12,13 @@
 //  margin: 0 auto;
 //}
 
+
 body {
   //font-family: arial, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', '宋体', Tahoma, Arial, Helvetica, STHeiti;
-  font-family: '微软雅黑', '宋体', Tahoma, Arial, Helvetica, STHeiti;
+  font-family: Tahoma, Arial, Helvetica, STHeiti;
+}
+.header {
+  font-family: Tahoma, Arial, Helvetica;
 }
 
 .table-layout-0 {
@@ -571,8 +575,8 @@ a.red {
     height: auto;
     dt {
       text-align: left;
-      font-weight: normal;
-      font-size: 1rem;
+      font-weight: 300;
+      font-size: 0.9rem;
       margin-bottom: 0.5rem;
       //height: 46px;
       //line-height: 46px;
@@ -587,7 +591,7 @@ a.red {
       width: 10px;
       height: 1px;
       background-color: #3c3c3c;
-      margin-top: 24px;
+      margin-top: 21px;
       -webkit-transition: all .6s cubic-bezier(.215, .61, .355, 1) 0s;
       transition: all .6s cubic-bezier(.215, .61, .355, 1) 0s;
     }
