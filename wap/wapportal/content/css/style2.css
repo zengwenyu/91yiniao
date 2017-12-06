@@ -102,6 +102,7 @@ label,button{cursor:pointer;}
 	display: block;
 	font-size: .18rem;
 	color: #bbb;
+    margin-bottom: 0.2rem;
 }
 .ydp01 {
 	margin-top: .12rem;
@@ -180,11 +181,11 @@ label,button{cursor:pointer;}
 	font-size: .16rem;
 	color: #bbb;
 }
-.ydvbanner02 .swiper-wrapper .swiper-slide {
+.ydvbanner .swiper-wrapper .swiper-slide {
 	margin-top: .15rem;
 	text-align: left;
 }
-.ydvbanner02 .swiper-slide span {
+.ydvbanner .swiper-slide span {
 	display: block;
 	font-size: .18rem;
 	margin:.10rem 0;
