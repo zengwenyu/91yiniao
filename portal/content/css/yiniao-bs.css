@@ -410,7 +410,7 @@ a.red {
   .process-const-items dl dt {
     text-align: left;
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-bottom: 0.5rem;
     -webkit-transition: all ease-out .2s;
     transition: all ease-out .2s;
