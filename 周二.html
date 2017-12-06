@@ -83,7 +83,55 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide page3">
+        <span class="pclogo">YINIAO.</span>
+        <span class="page3title">专业的工艺</span>
+        <span class="page3subtitle">PERFESSIONAL TECHNOLOGY</span>
+        <div class="page3tab" id="main">
+          <ul class="menu" id="menu">  
+            <li onclick="setTab(0)" class="hover">修补刷新<div class="page2menuline"></div></li>  
+            <li onclick="setTab(1)">基础修补<div class="page2menuline"></div></li>  
+            <li onclick="setTab(2)">产出翻新<div class="page2menuline"></div></li>  
+            <li onclick="setTab(3)">局部点补<div class="page2menuline"></div></li>   
+          </ul>
+          <ul id="tabcontent">
+            <li class="block">
+              <div class="page3tabc">
+                <span>成品保护</span>
+                <p>别人做不到的细节，我们都能做到 360度无死角覆盖，给您房屋姨妈巾的保护（细节视频展示）</p>
+                <img src="portal/content/images/page3arrow.png" />
+                <img class="page3pic" src="portal/content/images/page3pic.png" />
+                <img class="page3btn" src="portal/content/images/page3btn.png" />
+              </div>
+              <div class="page3tabc">
+                <span>成品保护</span>
+                <p>别人做不到的细节，我们都能做到 360度无死角覆盖，给您房屋姨妈巾的保护（细节视频展示）</p>
+                <img src="portal/content/images/page3arrow.png" />
+                <img class="page3pic" src="portal/content/images/page3pic.png" />
+                <img class="page3btn" src="portal/content/images/page3btn.png" />
+              </div>
+              <div class="page3tabc">
+                <span>成品保护</span>
+                <p>别人做不到的细节，我们都能做到 360度无死角覆盖，给您房屋姨妈巾的保护（细节视频展示）</p>
+                <img src="portal/content/images/page3arrow.png" />
+                <img class="page3pic" src="portal/content/images/page3pic.png" />
+                <img class="page3btn" src="portal/content/images/page3btn.png" />
+              </div>
+              <div class="page3tabc">
+                <span>成品保护</span>
+                <p>别人做不到的细节，我们都能做到 360度无死角覆盖，给您房屋姨妈巾的保护（细节视频展示）</p>
+                <img src="portal/content/images/page3arrow.png" />
+                <img class="page3pic" src="portal/content/images/page3pic.png" />
+                <img class="page3btn" src="portal/content/images/page3btn.png" />
+              </div>
+              <div class="clearfix"></div>
+            </li>
+            <li class="tab">2</li>
+            <li class="tab">3</li>
+            <li class="tab">4</li>
+          </ul>
+        </div>
+      </div>
       <div class="swiper-slide">Slide 4</div>
       <div class="swiper-slide">Slide 5</div>
       <div class="swiper-slide">Slide 6</div>
@@ -94,6 +142,7 @@
   </div>
 <script src="portal/content/js/swiper.min.js"></script>
 <script>
+//整屏上下滑动框架
   var swiper = new Swiper('.pagewrapper', {
     direction: 'vertical',
     slidesPerView: 1,
@@ -104,6 +153,7 @@
       clickable: true,
     },
 });
+  //切换大图
   function setbigpic(x){
 	  //alert(bigpic.src);
 	  var bigpic = document.getElementById("page1-bigpic").querySelector("img");
@@ -113,11 +163,28 @@
 <script type="text/javascript" src="portal/s/jquery/jquery.min.js"></script>
 
 <script type="text/javascript">
-  $(document).ready(function(){
-$('.img').css('height',$(window).height()); //浏览器当前窗口可视区域高度
-$('.info').css('height',$(window).height());
 
-});
+  $(document).ready(function(){
+	//第二屏高度自适应 
+    $('.img').css('height',$(window).height());
+    $('.info').css('height',$(window).height());
+    //第三屏tab下划线滑动
+    $('#menu').find('li').hover(function(){
+    	$(this).find('div').animate({width:"80px"});
+    },function(){
+    	$(this).find('div').animate({width:"0px"});
+    });
+    //第三屏视频按钮移入移除
+    $('#tabcontent').find('li').find('.page3tabc').hover(function(){
+    	$(this).find('.page3btn').css('display','block');
+    	$(this).find('.page3btn').animate({bottom:"22%"});
+    },function(){
+    	$(this).find('.page3btn').animate({bottom:"44%"},function(){
+    		$(this).css('display','none');
+    		$(this).css('bottom','0');
+    	});  	
+    });
+  });
 //翻转
 var turn = function(target,time,opts){
   target.find('.wrapperforr').hover(function(){
@@ -136,7 +203,15 @@ var turn = function(target,time,opts){
 }
 var verticalOpts = [{'width':0},{'width':'100%'}];
 turn($('#vertical'),200,verticalOpts);
-
+//第三屏切换
+function setTab(n){  
+    var tli=document.getElementById("menu").getElementsByTagName("li");  
+    var mli=document.getElementById("tabcontent").getElementsByTagName("li");  
+    for(i=0;i<tli.length;i++){  
+        tli[i].className=i==n?"hover":"";  
+        mli[i].style.display=i==n?"block":"none";  
+    }  
+} 
 </script>
 </body>
 </html>
