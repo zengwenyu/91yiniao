@@ -210,6 +210,9 @@ label,button{cursor:pointer;}
 	color: #626262;
 	line-height: .30rem;
 }
+.ydtqj p.ydtp2 {
+	margin-left: 5%;
+}
 .ydtqj p span {
 	color: #000;
 	font-size: .18rem;
@@ -351,4 +354,9 @@ label,button{cursor:pointer;}
 }
 video {
 	
+}
+
+/* lower swiper nav position*/
+.ydtbanner .swiper-button-next, .ydtbanner .swiper-button-prev {
+    top: 70%;
 }
