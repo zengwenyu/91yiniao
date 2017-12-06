@@ -161,7 +161,7 @@ label,button{cursor:pointer;}
     background: #000;
 	color: #fff;
 }
-.tab{  
+.tab .tttttt{  
      display:none;  
 }  
 .block{
@@ -177,6 +177,19 @@ label,button{cursor:pointer;}
 	margin:.10rem 0;
 }
 .ydvbanner .swiper-slide p {
+	font-size: .16rem;
+	color: #bbb;
+}
+.ydvbanner02 .swiper-wrapper .swiper-slide {
+	margin-top: .15rem;
+	text-align: left;
+}
+.ydvbanner02 .swiper-slide span {
+	display: block;
+	font-size: .18rem;
+	margin:.10rem 0;
+}
+.ydvbanner02 .swiper-slide p {
 	font-size: .16rem;
 	color: #bbb;
 }
