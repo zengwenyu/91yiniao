@@ -370,29 +370,48 @@ html, body {
 }
 .page6imgwrapper{
 	width:100%;
-	position:absolute;
-	top:300px;
+	margin-top:300px;
+    text-align:center;
 }
 .page6imgwrapper img{
 	width:20%;
-	/*float:left;*/
-	margin:0 auto;
-	text-align:center;
+	float:left;
+	position:relative;
+	margin-left:10%;
 }
-.page6img01{
-    position:absolute;
-	
-	left:10%;
+.page6imgwrapper img:hover{
+	animation:mymove 0.2s forwards;
+    -moz-animation:mymove 0.2s forwards; /* Firefox */
+    -webkit-animation:mymove 0.2s forwards; /* Safari and Chrome */
+    -o-animation:mymove 0.2s forwards; /* Opera */
+	/*animation-fill-mode:forwards;*/
 }
-.page6img02{
-	position:absolute;
+@keyframes mymove
+{
+0% {top:0px;}
+50% {top:-5px;}
+100%{top:5px;}
+}
 
-	left:40%;
+@-moz-keyframes mymove /* Firefox */
+{
+0% {top:0px;}
+50% {top:-5px;}
+100%{top:5px;}
 }
-.page6img03{
-	position:absolute;
 
-	left:70%;
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+0% {top:0px;}
+50% {top:-5px;}
+100%{top:5px;}
+}
+
+@-o-keyframes mymove /* Opera */
+{
+0% {top:0px;}
+50% {top:-5px;}
+100%{top:5px;}
 }
 
 .page7{
