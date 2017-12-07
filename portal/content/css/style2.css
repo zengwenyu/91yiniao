@@ -61,7 +61,7 @@ html, body {
 	background-size: 100%;
 }
 .pclogo {
-	position: absolute;
+	position: fixed;
 	top: 55px;
 	left: 65px;
 	font-weight: bold;
