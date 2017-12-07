@@ -206,17 +206,17 @@ jpg.img03{jpg
 	width: 100%;
 	top: 120px;
 }
-
 .menu{
 	display: block;
 	width: 100%;
 	height: 25px;
 	margin:0 auto;
+    text-align: right;
 	border-bottom: 1px solid #f2f2f2;
 	/*padding-bottom: 7px;*/
 }
 .menu li{
-    display: block;
+    display: inline-block;
     float: right;
     width: 100px;
 	height: 25px;
@@ -245,6 +245,16 @@ jpg.img03{jpg
 	text-align:center;
 	float:left;
 	margin-top:90px;
+}
+.page3tabc-txt {
+	height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+.page3arrow {
+    position: absolute;
+    bottom: 6px;
+    left: 48%;
 }
 .page3tabc span{
 	display:block;
