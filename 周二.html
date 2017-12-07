@@ -355,12 +355,41 @@
 
         </div>
       </div>
-      <div class="swiper-slide">
+      <div class="swiper-slide page5">
         <span class="pclogo">YINIAO.</span>
         <span class="page3title">施工工序</span>
         <span class="page3subtitle">CONSTRUCTION PROGRESS</span>
-        <div class="page3wrapper">
-          <div class=""></div>
+        <div class="page5wrapper">
+          <div class="page5item01">
+            <div class="page5title">第一步<div class="page5menuline"></div></div>
+            <span class="page5subtitle">上门检测</span>
+            <p>上门检测上门检测上门检测上门检测上门检测上门检测上门检测上门检测上门检测上门检测</p>
+            <img src="portal/content/images/page5pic.png" />
+          </div>
+          <div class="page5item01">
+            <div class="page5title">第一步<div class="page5menuline"></div></div>
+            <span class="page5subtitle">上门检测</span>
+            <p>上门检测上门检测上门检测上门检测上门检测上门检测上门检测上门检测上门检测上门检测</p>
+            <img src="portal/content/images/page5pic.png" />
+          </div>
+          <div class="page5item01">
+            <div class="page5title">第一步<div class="page5menuline"></div></div>
+            <span class="page5subtitle">上门检测</span>
+            <p>上门检测上门检测上门检测上门检测上门检测上门检测上门检测上门检测上门检测上门检测</p>
+            <img src="portal/content/images/page5pic.png" />
+          </div>
+          <div class="page5item01">
+            <div class="page5title">第一步<div class="page5menuline"></div></div>
+            <span class="page5subtitle">上门检测</span>
+            <p>上门检测上门检测上门检测上门检测上门检测上门检测上门检测上门检测上门检测上门检测</p>
+            <img src="portal/content/images/page5pic.png" />
+          </div>
+          <div class="page5item01">
+            <div class="page5title">第一步<div class="page5menuline"></div></div>
+            <span class="page5subtitle">上门检测</span>
+            <p>上门检测上门检测上门检测上门检测上门检测上门检测上门检测上门检测上门检测上门检测</p>
+            <img src="portal/content/images/page5pic.png" />
+          </div>
         </div>
       </div>
       <div class="swiper-slide page6">
@@ -472,6 +501,12 @@
          $(this).css('height','35px')
     },function(){
 
+    });
+  //第三屏tab下划线滑动
+    $('.page5item01').find('.page5title').hover(function(){
+    	$(this).find('div').animate({width:"100%"});
+    },function(){
+    	$(this).find('div').animate({width:"0"});
     });
     //晃动
     //$('.page6imgwrapper').find('img').hover(function(){

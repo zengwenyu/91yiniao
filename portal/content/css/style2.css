@@ -327,7 +327,43 @@ html, body {
 	background: url(../images/page4pic02.png);
 	background-size:100% 100%;
 }
-
+.page5wrapper{
+	margin-top:400px;
+}
+.page5item01{
+    width:19%;
+	text-align:left;
+	float:left;
+}
+.page5title{
+	font-size:16px;
+	line-height:25px;
+	border-bottom:1px solid #ccc;
+	width:100%;
+}
+.page5item01 span,.page5item01 p,.page5item01 img{
+	display:block;
+	width:80%;
+}
+.page5item01 span{
+	font-size:14px;
+	margin:5px 0px 20px 0px;
+	font-weight:bold;
+}
+.page5item01 p{
+	font-size:12px;
+}
+.page5item01 img{
+	cursor: pointer;  
+    transition: all 0.6s; 
+}
+.page5item01 img:hover{
+	transform: scale(1.2);
+}
+.page5menuline{
+	width:0px;
+	border-bottom:1px solid #000;
+}
 .page6{
 	background:url(../images/page6bg.png) no-repeat;
 	background-size: 100%;
@@ -377,4 +413,9 @@ html, body {
 
 .gallery-thumbs .swiper-slide img{
 	width:100%;
+	cursor: pointer;  
+    transition: all 0.6s; 
+}
+.gallery-thumbs .swiper-slide img:hover{
+	transform: scale(1.2);
 }
