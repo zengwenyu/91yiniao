@@ -13,12 +13,16 @@
     /*float: left;*/
 }
 
-.navigation_back {
+a.navigation_back {
     position: absolute;
     left: 0;
     top: 0;
     display: block;
     height: 100%;
+    color: #ffffff;
+}
+
+a.navigation_back:hover {
     color: #ffffff;
 }
 

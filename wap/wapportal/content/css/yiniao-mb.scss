@@ -1,4 +1,5 @@
 @import "variables";
+@import "format-bs";
 
 //.jumbotron {
 //  background: blue url("../images/rent-house-brushing/poster.jpg") no-repeat top left;
@@ -505,10 +506,10 @@ a.red {
     left: 0;
     right: 0;
     z-index: 1;
-  background: url("../images/wall/case/_0007_case_a.jpg") no-repeat center 0;
-  background-size: cover;
-  &:hover {
     background-image: none;
+  &:hover {
+    background: url("../images/wall/case/_0007_case_a.jpg") no-repeat center 0;
+    background-size: cover;
   }
 }
 #case-6 {
@@ -518,10 +519,10 @@ a.red {
   left: 0;
   right:0;
   z-index: 1;
-  background: url("../images/wall/case/_0006_case_a.jpg") no-repeat center 0;
-  background-size: cover;
+  background: none;
   &:hover {
-    background: none;
+    background: url("../images/wall/case/_0006_case_a.jpg") no-repeat center 0;
+    background-size: cover;
   }
 }
 #case-5 {
@@ -531,10 +532,10 @@ a.red {
   left: 0;
   right:0;
   z-index: 1;
-  background: url("../images/wall/case/_0005_case_a.jpg") no-repeat center 0;
-  background-size: cover;
-  &:hover {
     background: none;
+  &:hover {
+    background: url("../images/wall/case/_0005_case_a.jpg") no-repeat center 0;
+    background-size: cover;
   }
 }
 #case-4 {
@@ -544,10 +545,10 @@ a.red {
   left: 0;
   right:0;
   z-index: 1;
-  background: url("../images/wall/case/_0004_case_a.jpg") no-repeat center 0;
-  background-size: cover;
+  background: none;
   &:hover {
-    background: none;
+    background: url("../images/wall/case/_0004_case_a.jpg") no-repeat center 0;
+    background-size: cover;
   }
 }
 #case-3 {
@@ -557,10 +558,10 @@ a.red {
   left: 0;
   right:0;
   z-index: 1;
-  background: url("../images/wall/case/_0003_case_a.jpg") no-repeat center 0;
-  background-size: cover;
+  background: none;
   &:hover {
-    background: none;
+    background: url("../images/wall/case/_0003_case_a.jpg") no-repeat center 0;
+    background-size: cover;
   }
 }
 #case-2 {
@@ -570,10 +571,10 @@ a.red {
   left: 0;
   right:0;
   z-index: 1;
-  background: url("../images/wall/case/_0002_case_a.jpg") no-repeat center 0;
-  background-size: cover;
+  background: none;
   &:hover {
-    background: none;
+    background: url("../images/wall/case/_0002_case_a.jpg") no-repeat center 0;
+    background-size: cover;
   }
 }
 #case-1 {
@@ -583,10 +584,10 @@ a.red {
   left: 0;
   right:0;
   z-index: 1;
-  background: url("../images/wall/case/_0001_case_a.jpg") no-repeat center 0;
-  background-size: cover;
+  background: none;
   &:hover {
-    background: none;
+    background: url("../images/wall/case/_0001_case_a.jpg") no-repeat center 0;
+    background-size: cover;
   }
 }
 #case-0 {
@@ -596,10 +597,10 @@ a.red {
   left: 0;
   right:0;
   z-index: 1;
-  background: url("../images/wall/case/_0000_case_a.jpg") no-repeat center 0;
-  background-size: cover;
+  background: none;
   &:hover {
-    background: none;
+    background: url("../images/wall/case/_0000_case_a.jpg") no-repeat center 0;
+    background-size: cover;
   }
 }
 .hide {
@@ -631,3 +632,72 @@ a.red {
   }
 }
 
+//pg-shop------------------
+.panel-heading {
+  padding: 0;
+  border:0;
+}
+.panel-title>a, .panel-title>a:active{
+  display:block;
+  padding:15px;
+  color:#555;
+  font-size:16px;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  word-spacing:3px;
+  text-decoration:none;
+}
+.panel-heading  a:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e114";
+  float: right;
+  transition: all 0.5s;
+}
+.panel-heading.active a:before {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.avator-wrapper {
+  width: 60px;
+  float: left;
+  img {
+    width: 100%;
+  }
+}
+.sec-description {
+  .btn-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+  .well {
+    border-radius: 3px;
+  }
+  .well-staff {
+    background: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    .avator-wrapper-outter {
+      border-bottom: 1px dotted $gray-tint;
+    }
+  }
+}
+.block-title-shop {
+  h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+.stack-down-inverse {
+}
+.sec-shop-shot {
+  .row.spacer {
+    margin-bottom: 10px;
+  }
+}
+.sec-shop-contact {
+  background: url("../images/shop/") no-repeat top left;
+}

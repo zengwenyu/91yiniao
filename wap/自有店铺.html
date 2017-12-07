@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <title>卫生间渗水快修</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--Preview CSS-->
+    <link rel="stylesheet" href="wapportal/content/css/core-bs.css">
+    <link rel="stylesheet" href="wapportal/content/css/common-bs.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Custom BS CSS-->
+    <link rel="stylesheet" href="wapportal/content/css/nav-mb.css">
+    <link rel="stylesheet" href="wapportal/content/css/yiniao-mb.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body class="pg-shop footer-space">
+
+<!--bottom float bar-->
+<div class="bot_float">
+    <div>
+        <a href="javascript:void(0);" onclick="phoneSubmit()">
+            <img src="wapportal/content/images/botPhone.png" alt="">
+            <p>联系电话</p>
+        </a>
+    </div>
+    <div>
+        <!--<a class="bot_cnt" href="javascript:pop(53);">-->
+
+        <!--             <p><span>200</span>元维修基金</p> -->
+        <a class="bot_cnt" href="http://shop.m.taobao.com/shop/shop_index.htm?shop_id=128158636">
+            <img class="img-gif-11" src="wapportal/content/images/botHand-2.gif" alt="">
+            <img class="img-bot-hand" src="wapportal/content/images/botHand.png" alt="">
+            <p>进入活动现场</p>
+        </a>
+    </div>
+    <div>
+        <a class="bot_rt" href="http://p.qiao.baidu.com/cps/chat?siteId=11215089&amp;userId=24505650">
+            <img class="img-bot-talk" src="wapportal/content/images/botTalk.png" alt="">
+            <p>在线咨询</p>
+        </a>
+    </div>
+</div>
+
+<!--navigaation for mb-->
+<div class="navigation">
+    <span>墙面刷新</span>
+    <a href="wapportal/index.do" class="navigation_back">
+        <img src="wapportal/content/images/backImg.png" alt=""/>
+        <span>首页</span>
+    </a>
+    <a class="navigation_select" href=""><img src="wapportal/content/images/nav.png" alt=""/></a>
+
+    <div class="navigation_pop">
+        <a href="wapportal/topic/wsjls.do"   style="border-top:none; ">
+            <img src="wapportal/content/images/nav1.png" alt=""/>
+            <span>厨卫漏水</span>
+        </a>
+        <a href="wapportal/topic/qmls.do" >
+            <img src="wapportal/content/images/nav2.png" alt=""/>
+            <span>墙面渗水</span>
+        </a>
+        <a href="wapportal/topic/pcls.do" >
+            <img src="wapportal/content/images/nav3.png" alt=""/>
+            <span>飘窗漏水</span>
+        </a>
+        <a href="wapportal/topic/wdls.do" >
+            <img src="wapportal/content/images/nav4.png" alt=""/>
+            <span>屋顶漏水</span>
+        </a>
+        <a href="wapportal/topic/sgls.do" >
+            <img src="wapportal/content/images/nav5.png" alt=""/>
+            <span>管道漏水</span>
+        </a>
+        <a href="wapportal/topic/qiangmian.do" class="active">
+            <img src="wapportal/content/images/acnav6.png" alt=""/>
+            <span>墙面翻新</span>
+        </a>
+        <a href="wapportal/topic/qzqb.do" >
+            <img src="wapportal/content/images/nav8.png" alt=""/>
+            <span>墙纸墙布</span>
+        </a>
+        <a href="wapportal/topic/chufang.do" >
+            <img src="wapportal/content/images/nav7.png" alt=""/>
+            <span>局部改造</span>
+        </a>
+    </div>
+</div>
+
+<div class="pop_shadow"></div>
+
+
+<!--index page head-->
+<!--<div class="index_head">-->
+<!--<div class="logo">益鸟维修</div>-->
+<!--<a href="javascript:void(0);" onclick="phoneSubmit()">-->
+<!--<span>4000-987-009</span>-->
+<!--</a>-->
+<!--</div>-->
+<div class="clearfix"></div>
+
+<!-- Header Poster -->
+<div class="sec-bmap container-fluid">
+    <div class="row">
+
+        <div class="img-poster-wrapper img-poster-wrapper-wc">
+            <img class="img-responsive img-poster" src="wapportal/content/images/shop/bmap.jpg" />
+
+        </div>
+    </div>
+</div>
+
+<!--shop switcher-->
+<div class="panel-group" role="tablist">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
+            <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup1" aria-expanded="false" aria-controls="collapseListGroup1">
+                    交大店
+                </a>
+            </h4>
+        </div>
+        <div id="collapseListGroup1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading1">
+            <ul class="list-group">
+                <li class="list-group-item panel-footer"><a href="#">交大店</a></li>
+                <li class="list-group-item"><a href="#">金沙店</a></li>
+                <li class="list-group-item"><a href="#">紫荆店</a></li>
+                <li class="list-group-item"><a href="#">建设店</a></li>
+                <li class="list-group-item"><a href="#">华阳店</a></li>
+                <li class="list-group-item"><a href="#">龙舟店</a></li>
+                <li class="list-group-item"><a href="#">温江店</a></li>
+                <li class="list-group-item"><a href="#">郫县店</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--sec-description-->
+<div class="container sec-description">
+    <div class="row">
+        <div class="col-sm-12">
+        <!--well-shop-->
+        <div class="well well-lg well-shop">
+            <div class="avator-wrapper-outter clearfix">
+            <div class="avator-wrapper"><img src="wapportal/content/images/shop/avator-jiaodadian.png" alt=""></div>
+            <ul class="">
+                <li class="title">店铺:  交大店</li>
+                <li>用户满意度: <span class="red">90.6%</span></li>
+                <li>已服务用户数: <span class="red">2600+</span></li>
+                <li>电话：<span class="red">4000-987-009</span><img src="wapportal/content/images/shop/call.png" alt=""></li>
+                <li></li>
+            </ul>
+            <dl>
+                <dt>店铺介绍</dt>
+                <dd>店铺地址：本店位于交大路凯德广场对面182 号附 6 号。</dd>
+                <dd>公交路线：147、215、244、25等。</dd>
+                <dd>我们于2016年6月份开业至今已服务2000多家用户，您有任何房屋问题可到店铺咨询，或拨打4000-987-009致电咨询，我们将全力为您解决房屋问题。</dd>
+            </dl>
+            </div>
+            <div class="btn-wrapper">
+                <button class="btn btn-primary" type="submit">工地案例</button>
+                <button class="btn btn-disable" type="submit">我要去店铺</button>
+            </div>
+        </div>
+</div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-12">
+            <!--well-manager-->
+            <div class="well well-lg well-manager">
+                <div class="avator-wrapper-outter clearfix">
+                <div class="avator-wrapper"><img src="wapportal/content/images/shop/avator-jiaodadian.png" alt=""></div>
+                <ul class="">
+                    <li class="title">店长:  张林丰</li>
+                    <li>专业等级:
+                        <span class="star-wrapper">
+                            <span class="star"><img src="wapportal/content/images/shop/star-5.png" alt=""></span>
+                            <span class="">5.0分</span>
+                        </span>
+                    </li>
+                    <li>业主评分:
+                        <span class="star-wrapper">
+                            <span class="star"><img src="wapportal/content/images/shop/star-5.png" alt=""></span>
+                            <span class="">5.0分</span>
+                        </span>
+                    </li>
+                    <li>工种：<span>全能型师傅</span></li>
+                    <li></li>
+                </ul>
+                </div>
+                <dl>
+                    <dt>店长介绍</dt>
+                    <dd>店长张林丰，拥有10年装修行业经验，擅长刮腻子、刷漆、贴砖、水电维修、高空作业等等号称十项全能，堪称维修界的独孤求败。每次上门能迅速找到房屋存在病因，并且及时给出一套准确的施工方案，因技能专业、扎实、获得很多业主好评。
+                    </dd>
+                </dl>
+                <div class="btn-wrapper">
+                    <button class="btn btn-primary" type="submit">预约店长</button>
+                    <button class="btn btn-disable" type="submit">我要提问</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <!--well-stuff-->
+            <div class="well well-lg well-staff">
+                <div class="avator-wrapper-outter clearfix">
+                <div class="avator-wrapper"><img src="wapportal/content/images/shop/avator-jiaodadian.png" alt=""></div>
+                <ul class="">
+                    <li class="title">蒋均</li>
+                    <li>专业等级:
+                        <span class="star-wrapper">
+                            <span class="star"><img src="wapportal/content/images/shop/star-4.7.png" alt=""></span>
+                            <span class="">4.7分</span>
+                        </span>
+                        <span class="data-right">施工数量：<span class="red">88个</span></span>
+                    </li>
+                    <li>业主评分:
+                        <span class="star-wrapper">
+                            <span class="star"><img src="wapportal/content/images/shop/star-4.8.png" alt=""></span>
+                            <span class="">4.8分</span>
+                        </span>
+                        <span class="data-right">施工数量：<span class="red">88个</span></span>
+                    </li>
+                    <li>工种：<span>全能型师傅</span></li>
+                    <li></li>
+                </ul>
+                </div>
+                <p>益鸟维修标杆师傅蒋军，加入益鸟维修的第一波师傅，专业乳胶漆师傅，从事乳胶漆施工8年。之前都是在装修公司接活或者自己接工，加入益鸟之后，虽然在一些施工细节上要求比较高，但是蒋师傅觉得严格要求自己之后，不仅提高了施工效率，并且也获得客户一致好评。
+                </p>
+                <div class="btn-wrapper">
+                    <button class="btn btn-primary" type="submit">预约师傅</button>
+                    <button class="btn btn-disable" type="submit">查看更多师傅</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+<!--sec-shop-shot-->
+<div class="container sec-shop-shot">
+    <div class="row">
+        <div class="block-title-shop text-center">
+            <h2>店铺内景展示</h2>
+        </div>
+    </div>
+    <div class="row spacer">
+        <div class="col-xs-6 padding-r-5">
+            <div class="stack stack-down-inverse">
+                <img class="img-responsive full-width"
+                     src="wapportal/content/images/shop/shop-shot/_0007_shop-shot.jpg">
+                <div class="title text-center"><span>店面展示</span></div>
+            </div>
+        </div>
+        <div class="col-xs-6 padding-l-5">
+            <div class="stack stack-down-inverse">
+                <img class="img-responsive full-width"
+                     src="wapportal/content/images/shop/shop-shot/_0006_shop-shot.jpg">
+                <div class="title text-center"><span>会议室</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="row spacer">
+        <div class="col-xs-6 padding-r-5">
+            <div class="stack stack-down-inverse">
+                <img class="img-responsive full-width"
+                     src="wapportal/content/images/shop/shop-shot/_0005_shop-shot.jpg">
+                <div class="title text-center"><span>墙面KT板</span></div>
+            </div>
+        </div>
+        <div class="col-xs-6 padding-l-5">
+            <div class="stack stack-down-inverse">
+                <img class="img-responsive full-width"
+                     src="wapportal/content/images/shop/shop-shot/_0004_shop-shot.jpg">
+                <div class="title text-center"><span>维修工具</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="row spacer">
+        <div class="col-xs-6 padding-r-5">
+            <div class="stack stack-down-inverse">
+                <img class="img-responsive full-width"
+                     src="wapportal/content/images/shop/shop-shot/_0003_shop-shot.jpg">
+                <div class="title text-center"><span>墙面涂刷材料</span></div>
+            </div>
+        </div>
+        <div class="col-xs-6 padding-l-5">
+            <div class="stack stack-down-inverse">
+                <img class="img-responsive full-width"
+                     src="wapportal/content/images/shop/shop-shot/_0002_shop-shot.jpg">
+                <div class="title text-center"><span>每月标杆师傅榜</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="row spacer">
+        <div class="col-xs-6 padding-r-5">
+            <div class="stack stack-down-inverse">
+                <img class="img-responsive full-width"
+                     src="wapportal/content/images/shop/shop-shot/_0001_shop-shot.jpg">
+                <div class="title text-center"><span>每月计划</span></div>
+            </div>
+        </div>
+        <div class="col-xs-6 padding-l-5">
+            <div class="stack stack-down-inverse">
+                <img class="img-responsive full-width"
+                     src="wapportal/content/images/shop/shop-shot/_0000_shop-shot.jpg">
+                <div class="title text-center"><span>居家烦恼、交给益鸟</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- sec-shop-contact -->
+<div class="sec sec-shop-contact">
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2 no-padding">
+                <img class="img-responsive full-width" src="wapportal/content/images/shop/worker.png">
+            </div>
+            <div class="col-xs-6 no-padding-r">
+                <h6>益鸟维修 您身边可靠的维修匠人</h6>
+                <p>益鸟维修自有工人、自有店铺</p>
+            </div>
+            <div class="col-xs-4 no-padding">
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <input type="text" class="form-control" placeholder="Text input">
+                <button class="btn btn-primary" type="submit">我要去店铺</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- sec-scence -->
+<div class="container-fluid sec sec-banner sec-scence">
+    <div class="row">
+        <div class="block-title block-title-y text-center">
+            <h6>WHY IS IT WATERING</h6>
+            <h2>卫生间快修适用于哪些情况</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-wrapper">
+                        <div class="img-wrapper"><img
+                                src="wapportal/content/images/wc-water-leak/suitable-cond/_0001_gutter.jpg"></div>
+                        <div class="content-wrapper">
+                            <h5>NO.1 防水层破裂</h5>
+                            <p>由于建筑物自然沉降，会造成墙体与地面开裂、楼板向下塌陷，从而造成防水层破坏。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col-wrapper">
+                        <div class="img-wrapper"><img
+                                src="wapportal/content/images/wc-water-leak/suitable-cond/_0000_gap.jpg"></div>
+                        <div class="content-wrapper">
+                            <h5>NO.2 瓷砖有拼缝</h5>
+                            <p>随时间增加，瓷砖老化拼缝间的防水材料也逐渐失效，水易渗漏到瓷砖下。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--sec-protection-->
+<div class="container text-center sec sec-protection">
+    <div class="row">
+        <div class="block-title block-title-y">
+            <h6>LEAKAGE MAINTENANCE PROCESS</h6>
+            <h2>卫生间快修流程</h2>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table-layout">
+            <tr>
+                <td>
+                    <div class="stack stack-up stack-up-2">
+                        <div class="title title-1"><h6>成品保护</h6></div>
+                        <img class="img-fluid"
+                             src="wapportal/content/images/wc-water-leak/process/_0005_protection.jpg">
+                    </div>
+                </td>
+                <td>
+                    <div class="stack stack-up stack-up-2">
+                        <div class="title title-2"><h6>将卫生间地面的瓷砖缝隙完全清除干净</h6></div>
+                        <img class="img-fluid"
+                             src="wapportal/content/images/wc-water-leak/process/_0004_clean.jpg">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="stack stack-up stack-up-2">
+                        <div class="title title-3"><h6>砖缝间做渗透型防水处理</h6></div>
+                        <img class="img-fluid"
+                             src="wapportal/content/images/wc-water-leak/process/_0003_gap.jpg">
+                    </div>
+                </td>
+                <td>
+                    <div class="stack stack-up stack-up-2">
+                        <div class="title title-4"><h6>砖缝间做防水胶</h6></div>
+                        <img class="img-fluid"
+                             src="wapportal/content/images/wc-water-leak/process/_0002_gap-glue.jpg">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="stack stack-up stack-up-2">
+                        <div class="title title-5"><h6>完工清洁</h6></div>
+                        <img class="img-fluid"
+                             src="wapportal/content/images/wc-water-leak/process/_0001_finish.jpg">
+                    </div>
+                </td>
+                <td>
+                    <div class="stack stack-up stack-up-2">
+                        <div class="title title-6"><h6>质保两年</h6></div>
+                        <img class="img-fluid"
+                             src="wapportal/content/images/wc-water-leak/process/_0000_qa.jpg">
+                    </div>
+                </td>
+            </tr>
+
+
+        </table>
+    </div>
+</div>
+
+<!-- sec-scence -->
+<div class="container-fluid sec sec-banner sec-advantage-wc">
+    <div class="row">
+        <div class="block-title block-title-y text-center inverse">
+            <h6>OUR ADVANTAGE</h6>
+            <h2>益鸟维修优势</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-wrapper-1">
+                        <div class="img-wrapper"><img
+                                src="wapportal/content/images/wc-water-leak/advantage/_0001_adv_1.jpg"></div>
+                        <div class="content-wrapper">
+                            <h6>优势一：两道保护</h6>
+                            <p>两道防护，渗透型防水一遍，防水胶一遍。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col-wrapper-1">
+                        <div class="img-wrapper"><img
+                                src="wapportal/content/images/wc-water-leak/advantage/_0000_adv_2.jpg"></div>
+                        <div class="content-wrapper">
+                            <h6>优势二：益鸟特有材料</h6>
+                            <p>渗水快修的主要材料防水胶为益鸟自行开发的特有材料，防水性能好，耐热耐变形，抗老化好。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--sec-attention-->
+<div class="container text-center sec sec-attention">
+    <div class="row">
+        <div class="block-title block-title-y">
+            <h6>LEAKAGE MAINTENANCE PROCESS</h6>
+            <h2>注意事项</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+
+            <ul class="list-unstyled text-left">
+                <li>1）施工后24小时内不能在施工区域用水，48小时内避免用水。</li>
+                <li>2）有回填层的卫生间，在施工完半年至1年左右，因为原有回填层积水的原因，依旧会产生因原有渗水积水导致的墙体发霉、返碱等现象，但是会逐步减弱，1年后即可即便消失。</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<!--sec-case-->
+<div class="container text-center sec sec-case">
+    <div class="row">
+        <div class="block-title block-title-y">
+            <h6>CASE</h6>
+            <h2>案例欣赏</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="img-case-wrapper">
+        <img class="img-fluid" src="wapportal/content/images/wc-water-leak/case.jpg" alt=""/></div>
+        <ul class="list-inline">
+            <li class="list-inline-item">姓名：张女士</li>
+            <li class="list-inline-item">小区：齐力花园</li>
+            <li class="list-inline-item">项目：卫生间渗水快修</li>
+            <li class="list-inline-item">施工时间：两天</li>
+        </ul>
+    </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+<script src="/portal/content/js/shop.js"></script>
+</body>
+</html>

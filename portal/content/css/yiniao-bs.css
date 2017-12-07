@@ -732,6 +732,8 @@ a.red {
       font-size: 1.2rem;
       margin-bottom: 0.4rem; }
     .sec-contrast .mask dl dd {
+      -webkit-text-size-adjust: none;
+      font-size: 0.7rem;
       text-align: left;
       margin-bottom: 0.3rem; }
       .sec-contrast .mask dl dd:last-of-type {
