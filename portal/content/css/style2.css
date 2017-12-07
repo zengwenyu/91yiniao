@@ -332,9 +332,32 @@ html, body {
 	background:url(../images/page6bg.png) no-repeat;
 	background-size: 100%;
 }
+.page6imgwrapper{
+	width:100%;
+	position:absolute;
+	top:300px;
+}
+.page6imgwrapper img{
+	width:20%;
+	/*float:left;*/
+	margin:0 auto;
+	text-align:center;
+}
+.page6img01{
+    position:absolute;
+	
+	left:10%;
+}
+.page6img02{
+	position:absolute;
 
+	left:40%;
+}
+.page6img03{
+	position:absolute;
 
-
+	left:70%;
+}
 
 .page7{
 	padding-top:0px;
