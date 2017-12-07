@@ -59,9 +59,9 @@ label,button{cursor:pointer;}
 	position: relative;
 }
 .swiper-container {
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
 }
 .swiper-container img {
 	width: 100%;
@@ -70,7 +70,7 @@ label,button{cursor:pointer;}
 	width:80%;
 	position: absolute;
 	text-align: center;
-	top: 15%;
+	top: 20%;
 	z-index: 10;
 	font-size: .38rem;
 	color: #fff;
@@ -102,7 +102,7 @@ label,button{cursor:pointer;}
 	display: block;
 	font-size: .18rem;
 	color: #bbb;
-    margin-bottom: 0.2rem;
+	margin-bottom: 0.2rem;
 }
 .ydp01 {
 	margin-top: .12rem;
@@ -141,32 +141,32 @@ label,button{cursor:pointer;}
 }
 .menu{
 	display: block;
-	width: 80%; 
+	width: 80%;
 	height: .33rem;
-	margin:0 auto; 
+	margin:0 auto;
 	padding:0 10%;
 	border-bottom: 1px solid #f2f2f2;
 	padding-bottom: 0.07rem;
 }
-.menu li{  
-    display: block;  
-    float: left;  
-    width: 25%;
+.menu li{
+	display: block;
+	float: left;
+	width: 25%;
 	height: .33rem;
 	line-height: .33rem;
 	font-size: .18rem;
-    text-align: center;  
-    cursor: pointer;   
-}  
-.menu li.hover{  
-    background: #000;
+	text-align: center;
+	cursor: pointer;
+}
+.menu li.hover{
+	background: #000;
 	color: #fff;
 }
-.tab .tttttt{  
-     display:none;  
-}  
+.tab .tttttt{
+	display:none;
+}
 .block{
-     display:block;  
+	display:block;
 }
 .ydvbanner .swiper-wrapper .swiper-slide {
 	margin-top: .15rem;
@@ -333,13 +333,13 @@ label,button{cursor:pointer;}
 }
 .ydupvideo {
 	position: fixed;
-    display: none;
+	display: none;
 	z-index: 1000;
 	background-color: rgba(0,0,0,0.7);
-	top: 0%; 
-	left: 0%;  
+	top: 0%;
+	left: 0%;
 	width: 100%;
-	height: 100%;  
+	height: 100%;
 	/*background-color: black;  
 	z-index:1001;  
 	-moz-opacity: 0.7;  
@@ -355,24 +355,24 @@ label,button{cursor:pointer;}
 }
 .ydupvideowrap {
 	width: 50%;
-    height: 50%;
-    position: fixed;
-    top: 25%;
+	height: 50%;
+	position: fixed;
+	top: 25%;
 	left: 25%;
 	z-index: 1003;
-    border: 4px solid #fff;
+	border: 4px solid #fff;
 }
 .ydupvideowrap p {
 	background:#fff;
 	height: 20%;
 }
 video {
-	
+
 }
 
 /* lower swiper nav position*/
 .ydtbanner .swiper-button-next, .ydtbanner .swiper-button-prev {
-    top: 70%;
+	top: 70%;
 }
 
 .tttttt {
