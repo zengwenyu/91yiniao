@@ -31,12 +31,12 @@
           <img src="portal/content/images/topic/page1bigpic.jpg" />
         </div>
         <div class="page1-smallpic">
-          <ul>
-            <li onclick="setbigpic(this)"><img src="portal/content/images/topic/problem/_0004_problem.jpg" /></li>
-            <li onclick="setbigpic(this)"><img src="portal/content/images/topic/problem/_0003_problem.jpg" /></li>
-            <li onclick="setbigpic(this)"><img src="portal/content/images/topic/problem/_0002_problem.jpg" /></li>
-            <li onclick="setbigpic(this)"><img src="portal/content/images/topic/problem/_0001_problem.jpg" /></li>
-            <li onclick="setbigpic(this)"><img src="portal/content/images/topic/problem/_0000_problem.jpg" /></li>
+          <ul id="page1smallpic">
+            <li><img src="portal/content/images/topic/problem/_0004_problem.jpg" /></li>
+            <li><img src="portal/content/images/topic/problem/_0003_problem.jpg" /></li>
+            <li><img src="portal/content/images/topic/problem/_0002_problem.jpg" /></li>
+            <li><img src="portal/content/images/topic/problem/_0001_problem.jpg" /></li>
+            <li><img src="portal/content/images/topic/problem/_0000_problem.jpg" /></li>
           </ul>
         </div>
       </div>
@@ -685,6 +685,32 @@ function setTab(n){
         mli[i].style.display=i==n?"block":"none";  
     }  
 } 
+
+$(document).ready(function(){
+  $("#page1smallpic li").click(function(){
+    //alert($(this).index());
+    var bigpic = $("#page1-bigpic").find("img");
+    var smallpic = $(this).find("img");
+    //alert($(this).find("img")[0].src);
+    var temp = bigpic[0].src;
+    bigpic.attr('src',smallpic[0].src);
+    var n = $("#page1smallpic li").length;
+    var j = $(this).index();
+    //alert(n);
+    //alert(temp);
+
+    for(var i=j;i<n;i++){
+      //alert($("#page1smallpic li").eq(4).find("img")[0].src);
+      //alert($("#page1smallpic li").eq(i).find("img")[0].src);
+      //$("#page1smallpic li:eq(i)").find("img").attr('src',temp);
+      if(i == (n-1)){
+          $("#page1smallpic li:eq("+i+")").find("img").attr('src',temp);
+      }else{
+        $("#page1smallpic li:eq("+i+")").find("img").attr('src',$("#page1smallpic li:eq("+(i+1)+")").find("img")[0].src);
+      }
+    }
+  });
+});
 </script>
 </body>
 </html>
