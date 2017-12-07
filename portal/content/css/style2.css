@@ -57,7 +57,7 @@ html, body {
   /*text-align: center;*/
 }
 .page1 {
-	background:url(../images/page1bg.jpg) no-repeat;
+	background:url(../images/topic/page1bg.jpg) no-repeat;
 	background-size: 100%;
 }
 .pclogo {
@@ -122,19 +122,19 @@ html, body {
 	color: #fff;
 }
 .img01{
-	background: url(../images/page2pic01.jpg);
+	background: url(../images/topic/page2pic01.jpg);
 	background-size:100% 100%;
 }
 .img02{
-	background: url(../images/page2pic02.jpg);
+	background: url(../images/topic/page2pic02.jpg);
 	background-size:100% 100%;
 }
 jpg.img03{jpg
-	background: url(../images/page2pic03.jpg);
+	background: url(../images/topic/page2pic03.jpg);
 	background-size:100% 100%;
 }
 .img04{
-	background: url(../images/page2pic04.jpg);
+	background: url(../images/topic/page2pic04.jpg);
 	background-size:100% 100%;
 }
 .img img{
@@ -143,19 +143,19 @@ jpg.img03{jpg
 	margin-top:70%;
 }
 .infobg01 {
-	background: url(../images/page2pic05.jpg);jpg
+	background: url(../images/topic/page2pic05.jpg);jpg
 	background-size:100% 100%;
 }
 .infobg02 {
-	background: url(../images/page2pic06.jpg);
+	background: url(../images/topic/page2pic06.jpg);
 	background-size:100% 100%;
 }
 .infobg03 {
-	background: url(../images/page2pic07.jpg);
+	background: url(../images/topic/page2pic07.jpg);
 	background-size:100% 100%;
 }
 .infobg04 {
-	background: url(../images/page2pic08.jpg);
+	background: url(../images/topic/page2pic08.jpg);
 	background-size:100% 100%;
 }
 .infobg01,.infobg02,.infobg03,.infobg04 {
@@ -209,27 +209,27 @@ jpg.img03{jpg
 
 .menu{
 	display: block;
-	width: 100%; 
+	width: 100%;
 	height: 25px;
-	margin:0 auto; 
+	margin:0 auto;
 	border-bottom: 1px solid #f2f2f2;
 	/*padding-bottom: 7px;*/
 }
-.menu li{  
-    display: block;  
-    float: right;  
+.menu li{
+    display: block;
+    float: right;
     width: 100px;
 	height: 25px;
 	line-height: 25px;
 	font-size: 12px;
-    text-align: center;  
-    cursor: pointer;   
-}  
-.tab{  
-     display:none;  
-}  
+    text-align: center;
+    cursor: pointer;
+}
+.tab{
+     display:none;
+}
 .block{
-     display:block;  
+     display:block;
 }
 .page2menuline {
 	margin-left:10px;
@@ -237,7 +237,7 @@ jpg.img03{jpg
 	border-bottom:1px solid #000;
 }
 #tabcontent li{
-	
+
 }
 .page3tabc{
 	margin-right:20px;
@@ -320,11 +320,11 @@ jpg.img03{jpg
 	padding-top:30px;
 }
 .f01{
-	background: url(../images/page4pic01.jpg);
+	background: url(../images/topic/page4pic01.jpg);
 	background-size:100% 100%;
 }
 .b01{
-	background: url(../images/page4pic02.jpg);
+	background: url(../images/topic/page4pic02.jpg);
 	background-size:100% 100%;
 }
 .page5wrapper{
@@ -354,8 +354,8 @@ jpg.img03{jpg
 	font-size:12px;
 }
 .page5item01 img{
-	cursor: pointer;  
-    transition: all 0.6s; 
+	cursor: pointer;
+    transition: all 0.6s;
 }
 .page5item01 img:hover{
 	transform: scale(1.2);
@@ -365,7 +365,7 @@ jpg.img03{jpg
 	border-bottom:1px solid #000;
 }
 .page6{
-	background:url(../images/page6bg.jpg) no-repeat;
+	background:url(../images/topic/page6bg.jpg) no-repeat;
 	background-size: 100%;
 }
 .page6imgwrapper{

@@ -551,6 +551,16 @@ a.red {
   margin-bottom: 10px; }
 
 .sec-shop-contact {
-  background: url("../images/shop/") no-repeat top left; }
+  background: url("../images/shop/bg-gray-tri.gif") no-repeat top left;
+  -webkit-background-size: contain;
+  background-size: contain; }
+
+.sec-community .block-title h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0; }
+
+.sec-offline-act .row.spacer {
+  margin-bottom: 10px; }
 
 /*# sourceMappingURL=yiniao-mb.css.map */
