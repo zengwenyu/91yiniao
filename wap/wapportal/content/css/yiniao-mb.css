@@ -179,6 +179,8 @@ html {
     background: #eeeeee;
     color: #3b3b3b;
     font-size: 0.9rem; }
+    .stack-up .title:focus {
+      background: blue; }
 
 .sec-service .last {
   margin-bottom: 2rem; }
@@ -191,6 +193,12 @@ html {
     text-align: left;
     color: #f9f9f9; }
 
+.sec-case .stack-case a:hover {
+  text-decoration: none; }
+.sec-case .stack-case .title {
+  color: #f9f9f9; }
+  .sec-case .stack-case .title:focus {
+    background: #636363; }
 .sec-case ul {
   width: 100%;
   color: #b0b0b0; }
@@ -367,6 +375,8 @@ a.red {
   .stack-case .title {
     z-index: 100;
     background: #3b3b3b; }
+    .stack-case .title:focus {
+      color: red; }
     .stack-case .title a {
       color: #f9f9f9; }
   .stack-case .img-wrapper {
@@ -377,103 +387,22 @@ a.red {
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0; }
-
-#case-7 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  background-image: none; }
-  #case-7:hover {
-    background: url("../images/wall/case/_0007_case_a.jpg") no-repeat center 0;
-    background-size: cover; }
-
-#case-6 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  background: none; }
-  #case-6:hover {
-    background: url("../images/wall/case/_0006_case_a.jpg") no-repeat center 0;
-    background-size: cover; }
-
-#case-5 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  background: none; }
-  #case-5:hover {
-    background: url("../images/wall/case/_0005_case_a.jpg") no-repeat center 0;
-    background-size: cover; }
-
-#case-4 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  background: none; }
-  #case-4:hover {
-    background: url("../images/wall/case/_0004_case_a.jpg") no-repeat center 0;
-    background-size: cover; }
-
-#case-3 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  background: none; }
-  #case-3:hover {
-    background: url("../images/wall/case/_0003_case_a.jpg") no-repeat center 0;
-    background-size: cover; }
-
-#case-2 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  background: none; }
-  #case-2:hover {
-    background: url("../images/wall/case/_0002_case_a.jpg") no-repeat center 0;
-    background-size: cover; }
-
-#case-1 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  background: none; }
-  #case-1:hover {
-    background: url("../images/wall/case/_0001_case_a.jpg") no-repeat center 0;
-    background-size: cover; }
-
-#case-0 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  background: none; }
-  #case-0:hover {
-    background: url("../images/wall/case/_0000_case_a.jpg") no-repeat center 0;
-    background-size: cover; }
+    right: 0;
+    background: rgba(59, 59, 59, 0.7);
+    z-index: 1;
+    opacity: 0; }
+    .stack-case .mask:hover {
+      opacity: 1; }
+    .stack-case .mask:focus {
+      opacity: 1; }
+    .stack-case .mask ul {
+      color: #f9f9f9;
+      width: 90%;
+      text-align: left;
+      font-size: 0.8rem;
+      margin: 0 auto;
+      padding-left: 10%;
+      margin-top: 28%; }
 
 .hide {
   display: none; }
