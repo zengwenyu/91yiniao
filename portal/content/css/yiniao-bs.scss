@@ -558,12 +558,28 @@ a.red {
     width: 100%;
     //background: red;
     float: left;
+    .mask {
+      z-index: 1;
+      position: absolute;
+      left: 0;
+      top:0;
+      right:0;
+      bottom:0;
+      background:url("../images/ico-player-start.png") no-repeat 50% 50%;
+      -webkit-background-size: 60px;
+      background-size: 60px;
+      &:hover {
+        background: none;
+      }
   }
   .img-wrapper {
     width: 40%;
     float: left;
+    position: relative;
     img {
       width: 100%;
+    }
+
     }
   }
   dl {
@@ -946,7 +962,7 @@ a.red {
     background: rgba($white, 0.7);
     z-index: 1;
     dl {
-      width: 80%;
+      width: 90%;
       margin: 11% auto 0;
       font-size: 0.6rem;
       color: $black;

@@ -396,11 +396,24 @@ a.red {
 .process-const-items .process-const-item {
   width: 100%;
   float: left; }
-.process-const-items .img-wrapper {
-  width: 40%;
-  float: left; }
-  .process-const-items .img-wrapper img {
-    width: 100%; }
+  .process-const-items .process-const-item .mask {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../images/ico-player-start.png") no-repeat 50% 50%;
+    -webkit-background-size: 60px;
+    background-size: 60px; }
+    .process-const-items .process-const-item .mask:hover {
+      background: none; }
+  .process-const-items .process-const-item .img-wrapper {
+    width: 40%;
+    float: left;
+    position: relative; }
+    .process-const-items .process-const-item .img-wrapper img {
+      width: 100%; }
 .process-const-items dl {
   display: block;
   float: left;
@@ -723,7 +736,7 @@ a.red {
   background: rgba(249, 249, 249, 0.7);
   z-index: 1; }
   .sec-contrast .mask dl {
-    width: 80%;
+    width: 90%;
     margin: 11% auto 0;
     font-size: 0.6rem;
     color: #3b3b3b; }
