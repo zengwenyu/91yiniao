@@ -403,7 +403,6 @@ a.red {
     top: 0;
     right: 0;
     bottom: 0;
-    background: url("../images/ico-player-start.png") no-repeat 50% 50%;
     -webkit-background-size: 60px;
     background-size: 60px; }
     .process-const-items .process-const-item .mask:hover {
