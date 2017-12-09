@@ -462,8 +462,11 @@ a.red {
 .sec-offline-act .row.spacer {
   margin-bottom: 10px; }
 
+.sec-panel .table-responsive {
+  border: 0; }
 .sec-panel .panel-group .panel {
-  border-radius: 0; }
+  border-radius: 0;
+  border: 0; }
 .sec-panel .panel-group .panel-default > .panel-heading {
   color: #f9f9f9;
   background-color: #e8314a;
