@@ -1,10 +1,7 @@
-$(document).ready(function () {
-    $('.panel-collapse').on('show.bs.collapse', function () {
-        $(this).siblings('.panel-heading').addClass('active');
+$(function(){
+    $(".panel-heading").click(function(e){
+        /*切换折叠指示图标*/
+        $(this).find("span").toggleClass("glyphicon-chevron-up");
+        $(this).find("span").toggleClass("glyphicon-chevron-down");
     });
-
-    $('.panel-collapse').on('hide.bs.collapse', function () {
-        $(this).siblings('.panel-heading').removeClass('active');
-    });
-
 });

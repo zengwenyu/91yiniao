@@ -346,7 +346,6 @@ a.red {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -393,16 +392,13 @@ a.red {
     opacity: 0; }
     .stack-case .mask:hover {
       opacity: 1; }
-    .stack-case .mask:focus {
-      opacity: 1; }
     .stack-case .mask ul {
       color: #f9f9f9;
       width: 90%;
       text-align: left;
       font-size: 0.8rem;
-      margin: 0 auto;
-      padding-left: 10%;
-      margin-top: 28%; }
+      margin: 28% auto 0;
+      padding-left: 10%; }
 
 .hide {
   display: none; }
@@ -425,32 +421,6 @@ a.red {
 
 .pg-swiper .swiper-pagination {
   color: #f9f9f9; }
-
-.panel-heading {
-  padding: 0;
-  border: 0; }
-
-.panel-title > a, .panel-title > a:active {
-  display: block;
-  padding: 15px;
-  color: #555;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  word-spacing: 3px;
-  text-decoration: none; }
-
-.panel-heading a:before {
-  font-family: 'Glyphicons Halflings';
-  content: "\e114";
-  float: right;
-  transition: all 0.5s; }
-
-.panel-heading.active a:before {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  transform: rotate(180deg); }
 
 .avator-wrapper {
   width: 60px;
@@ -491,5 +461,41 @@ a.red {
 
 .sec-offline-act .row.spacer {
   margin-bottom: 10px; }
+
+.sec-panel .panel-group .panel {
+  border-radius: 0; }
+.sec-panel .panel-group .panel-default > .panel-heading {
+  color: #f9f9f9;
+  background-color: #e8314a;
+  border-color: #e8314a; }
+.sec-panel .panel-group .panel-primary > .panel-heading {
+  background-color: red;
+  padding-left: 20px;
+  border-radius: 0;
+  font-size: 14px;
+  color: white;
+  position: relative;
+  cursor: pointer; }
+.sec-panel .panel-group .panel-title > a, .sec-panel .panel-group .panel-title > a:active {
+  color: #f9f9f9; }
+
+.panel-group {
+  max-height: 770px;
+  overflow: auto; }
+
+.panel-heading span {
+  position: absolute;
+  right: 10px;
+  top: 12px; }
+
+.menu-item-left {
+  padding: 2px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px; }
+
+.menu-item-left:hover {
+  background: #C4E3F3;
+  border: 1px solid #1E90FF; }
 
 /*# sourceMappingURL=yiniao-mb.css.map */

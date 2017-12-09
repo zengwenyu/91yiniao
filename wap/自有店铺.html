@@ -123,17 +123,23 @@
     </div>
 </div>
 
+
+
+
 <!--shop switcher-->
-<div class="panel-group" role="tablist">
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
+
+
+<div class="sec-panel">
+<div class="panel-group table-responsive" role="tablist">
+    <div class="panel panel-primary">
+        <!-- 利用data-target指定要折叠的分组列表 -->
+        <div class="panel-heading" id="collapseListGroupHeading2" data-toggle="collapse" data-target="#collapseListGroup2" role="tab" >
             <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup1" aria-expanded="false" aria-controls="collapseListGroup1">
-                    交大店
-                </a>
+                分组2
+                <span class="glyphicon glyphicon-chevron-down right"></span>
             </h4>
         </div>
-        <div id="collapseListGroup1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading1">
+        <div id="collapseListGroup2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading2">
             <ul class="list-group">
                 <li class="list-group-item panel-footer"><a href="#">交大店</a></li>
                 <li class="list-group-item"><a href="#">金沙店</a></li>
@@ -145,7 +151,8 @@
                 <li class="list-group-item"><a href="#">郫县店</a></li>
             </ul>
         </div>
-    </div>
+    </div><!--panel end-->
+</div><!--panel-group end-->
 </div>
 
 <!--sec-description-->
@@ -530,6 +537,6 @@
         integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
         crossorigin="anonymous"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
-<script src="/portal/content/js/shop.js"></script>
+<script src="wapportal/content/js/shop.js"></script>
 </body>
 </html>
