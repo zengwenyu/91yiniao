@@ -204,7 +204,7 @@ html, body {
 .page3tab {
 	position:absolute;
 	width: 100%;
-	top: 120px;
+	top: 15%;
 }
 .menu{
 	display: block;
@@ -244,16 +244,56 @@ html, body {
 #tabcontent li{
 
 }
+.ydupvideo {
+	position: absolute;
+	display: none;
+	z-index: 1000;
+	background-color: rgba(0,0,0,0.7);
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	/*background-color: black;  
+	z-index:1001;  
+	-moz-opacity: 0.7;  
+	opacity:.70;  
+	filter: alpha(opacity=70);*/
+}
+.ydupvideo a {
+	position:absolute;
+	color: #fff;
+	font-size: 30px;
+	right:10%;
+	top:10%;
+}
+.ydupvideowrap {
+	width: 50%;
+	height: 50%;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	z-index: 1003;
+	border: 4px solid #fff;
+}
+.ydupvideowrap p {
+	background:#fff;
+	height: 20%;
+}
 .page3tabc{
 	margin-right:20px;
 	width:22%;
 	text-align:center;
 	float:left;
-	margin-top:90px;
+	margin-top:8%;
+}
+.page3tabc02wrapper{
+	margin-top:1%;
+	position:relative;
+	left:65px;
 }
 .page3tabc02{
-	margin-right:20px;
-	width:29%;
+	margin-right:5%;
+	width:23%;
 	text-align:center;
 	float:left;
 	height:250px;
@@ -283,16 +323,15 @@ html, body {
 	font-size:10px;
 	padding:0 10px;
 }
+
 .page3tabc .page3pic{
 	width:100%;
-}
-.page3tabc02 .page3tabc-txt{
-	height:70px;
+
 }
 .page3tabc02 .page3pic{
-    width:100%;
+    width:90%;
     /*height:150px;*/
-    height:168px;
+    /*height:168px;*/
 }
 .page3tabc .page3btn {
 	position:absolute;
@@ -320,22 +359,22 @@ html, body {
 	position:absolute;
 	top:100px;
 	width:100%;
+	height:100%;
 	left:65px;
 }
 .brand02 div.wapperforr02{
 	display: block;
 	float: left;
-	width: 20%;
-	height: 150px;
+	width: 22%;
+	height: 25%;
 	text-align: center;
-	position: relative;
-	margin-right:10px;
-	margin-bottom:10px;
+	margin-right:2px;
+	margin-bottom:2px;
 }
 .brand02 .front{
 	width: 100%;
-	height: 120px;
-	padding-top:30px;
+	height:60%;
+	padding:10% 0;
 }
 .brand02 .front .frontwrap,.brand02 .back .backwrap{
 	background:rgba(255,255,255,0.5);
@@ -345,6 +384,7 @@ html, body {
 .brand02 .front span.fronttitle,.brand02 .back span.backtitle{
 	display:block;
 	font-size:16px;
+
 }
 .brand02 .front span.frontsub,.brand02 .back span.backsub{
 	display:block;
@@ -358,9 +398,9 @@ html, body {
 
 .vertical02 .back{
 	width: 0;
-	height: 120px;
+	height: 60%;
 	margin: 0 auto;
-	padding-top:30px;
+	padding:10% 0;
 }
 .f01{
 	background: url(../images/topic/contrast/_0001s_0011_pro-tech.jpg);
@@ -459,8 +499,9 @@ html, body {
     background-size:100% 100%;
 }
 .page5wrapper{
+	
 	margin:0 auto;
-	margin-top:400px;
+	margin-top:30%;
 	width:100%;
 	padding:0 2.5%;
 }
@@ -553,35 +594,58 @@ html, body {
 }
 
 .page7{
-	padding-top:0px;
+	width:100%;
 }
 .gallery-top {
-	width: 60%;
-	height:80%;
 	text-align:center;
-	position:relative;
-	top:50px;
-}
-.gallery-top img {
-	width: 80%;
-}
-.gallery-thumbs {
-	position:relative;
-	width: 90%;
-	height:80px;
-	box-shadow:0px 20px 0px #889996;
 }
 
-.gallery-thumbs .swiper-slide{
-	width:100%;
+ .gallery-top .swiper-slide img{
+	width: 40%;
+	margin-top:8%;
+}
+.gtop-next{
+	top:36%;
+	right:20%;
+	background:url(../images/page7next.jpg);
+	background-size:100% 100%;
+}
+.gtop-prev{
+    top:36%;
+	left:20%;
+	background:url(../images/page7prev.jpg);
+	background-size:100% 100%;
+}
+.mypage{
+	margin:0 15%;
+	text-align:center;
+	width:70%;
+	height:50px;
+	bottom:50px;
+	box-shadow: 0px 30px 10px #d8d8d8;
+}
+.mypage img{
+	width:16.66%;
+	height:50px;
 	cursor: pointer;  
     transition: all 0.6s;
+    
 }
-.gallery-thumbs .swiper-slide:hover{
-	transform: scale(1.2);
+.mypage img:hover{
+	width:16.66%;
+	height:50px;
+	transform:scale(1,1.2);
+    ms-transform:scale(1,1.2);
+    -webkit-transform:scale(1,1.2);
+    -o-transform:scale(1,1.2);
+    -moz-transform:scale(1,1.2);
 }
-.gallery-thumbs .swiper-slide img{
-	width:100%;
-	z-index:2000;
-
+.mypage img.active{
+	width:16.66%;
+	height:50px;
+	transform:scale(1,1.2);
+    ms-transform:scale(1,1.2);
+    -webkit-transform:scale(1,1.2);
+    -o-transform:scale(1,1.2);
+    -moz-transform:scale(1,1.2);
 }
