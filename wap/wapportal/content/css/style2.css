@@ -236,16 +236,19 @@ label,button{cursor:pointer;}
 	width: 90%;
 }
 .ydt-button-prev {
-	background-image: url(../images/pre02.png);
+	/*background-image: url(../images/pre02.png);*/
 	background-size: 60%;
 	left:2%;
-	top:65%;
+	top:66%;
 }
 .ydt-button-next {
-	background-image: url(../images/next02.png);
+	/*background-image: url(../images/next02.png);*/
 	background-size: 60%;
 	right:2%;
-	top:65%;
+	top:66%;
+}
+.ydt-button-next.swiper-button-disabled, .ydt-button-prev.swiper-button-disabled {
+	opacity: 0;
 }
 .ydtp1 {
 	margin-left: 5%;
@@ -337,12 +340,10 @@ label,button{cursor:pointer;}
 	margin-right: 0;
 }
 .ydt-button-prev02 {
-	background-image: url(../images/pre03.png);
 	background-size: 30%;
 	left:2%;
 }
 .ydt-button-next02 {
-	background-image: url(../images/next03.png);
 	background-size: 30%;
 	right:2%;
 }
