@@ -19,4 +19,9 @@ $(function(){
 
         e.preventDefault();
     });
+
+    //custom select list style
+    $('#select-trigger').click(function () {
+        $(this).parents().next(".option").toggle();
+    })
 });

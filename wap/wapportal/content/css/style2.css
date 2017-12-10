@@ -338,12 +338,12 @@ label,button{cursor:pointer;}
 }
 .ydt-button-prev02 {
 	background-image: url(../images/pre03.png);
-	background-size: 60%;
+	background-size: 30%;
 	left:2%;
 }
 .ydt-button-next02 {
 	background-image: url(../images/next03.png);
-	background-size: 60%;
+	background-size: 30%;
 	right:2%;
 }
 .ydupvideo {
