@@ -236,12 +236,16 @@ label,button{cursor:pointer;}
 	width: 90%;
 }
 .ydt-button-prev {
-	background-image: url(../images/pre03.png);
+	background-image: url(../images/pre02.png);
 	background-size: 60%;
+	left:2%;
+	top:65%;
 }
 .ydt-button-next {
-	background-image: url(../images/next03.png);
+	background-image: url(../images/next02.png);
 	background-size: 60%;
+	right:2%;
+	top:65%;
 }
 .ydtp1 {
 	margin-left: 5%;
@@ -319,9 +323,10 @@ label,button{cursor:pointer;}
 	margin-top: .32rem;
 }
 .gallery-top {
-	width: 90%;
-}
+	width: 90;
+    text-align:center;}
 .gallery-top img {
+	text-align:center;
 	width: 80%;
 }
 .gallery-thumbs {
@@ -330,6 +335,16 @@ label,button{cursor:pointer;}
 }
 .gallery-thumbs .swiper-slide {
 	margin-right: 0;
+}
+.ydt-button-prev02 {
+	background-image: url(../images/pre03.png);
+	background-size: 60%;
+	left:2%;
+}
+.ydt-button-next02 {
+	background-image: url(../images/next03.png);
+	background-size: 60%;
+	right:2%;
 }
 .ydupvideo {
 	position: fixed;
@@ -372,7 +387,7 @@ video {
 
 /* lower swiper nav position*/
 .ydtbanner .swiper-button-next, .ydtbanner .swiper-button-prev {
-	top: 70%;
+	/*top: 70%;*/
 }
 
 .tttttt {
