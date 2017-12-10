@@ -19,9 +19,24 @@ $(function(){
 
         e.preventDefault();
     });
-
-    //custom select list style
-    $('#select-trigger').click(function () {
-        $(this).parents().next(".option").toggle();
+    var $curTxt = $(".select > .text");
+    var $selTrigger = $('#select-trigger');
+    //toggle select list content
+    $selTrigger.on("click", function (e) {
+        $(this).parents().next(".option").slideToggle("fast");
+        $(document).one("click", function(){
+            $(".option").slideUp("fast");
+        });
+        e.stopPropagation();
+    });
+    //set title to chicked list item
+    $(".option > div").click(function (e) {
+        if (e.target == this ) {
+            var $newTitle = $(this).text();
+            $curTxt.text($newTitle);
+            $(".option").slideUp("fast");
+        } else {
+            $(".option").slideUp("fast");
+        };
     })
 });

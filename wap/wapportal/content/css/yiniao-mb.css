@@ -468,13 +468,13 @@ ul.avator-meta {
     padding-bottom: 0.5rem;
     margin-bottom: 0.5rem; }
 .sec-description .btn-wrapper .btn-red {
-  margin-right: 3rem; }
+  margin-right: 2rem; }
 
 .btn-submit {
   padding: 0.2rem 1.5rem; }
 
 .btn-wide {
-  padding: 8px 26px; }
+  padding: 0.4rem 1.4rem; }
 
 .star {
   display: inline-block;
@@ -563,13 +563,22 @@ ul.avator-meta {
   border-radius: 4px;
   border: 1px solid #e6e6e6;
   height: 2rem;
-  width: 100%; }
-  .select .option {
-    z-index: 1;
-    position: absolute;
-    margin: 0 auto 0;
-    background: red;
-    border: 1px solid #e6e6e6; }
+  width: 100%;
+  background: white; }
+
+.option {
+  z-index: 1;
+  position: absolute;
+  margin: 0 auto 0;
+  background: white;
+  border: 1px solid #e6e6e6;
+  width: 100%;
+  font-size: 1rem;
+  color: #636363;
+  padding: 2px 0; }
+  .option > div {
+    padding: 2px;
+    cursor: pointer; }
 
 .select .sm {
   width: 6%;
@@ -582,13 +591,15 @@ ul.avator-meta {
     width: 100%; }
 
 .select .text {
+  text-align: left;
   width: 88%;
   height: 1rem;
   font-size: 1rem;
   line-height: 2rem;
   float: left;
   background: #fafafa;
-  color: #a2a1a1; }
+  color: #a2a1a1;
+  text-indent: 0.5rem; }
 
 .phoneNub {
   width: 88%;
@@ -621,6 +632,6 @@ ul.avator-meta {
     outline: none;
     border: none; }
     .phoneNub input::placeholder {
-      color: #a2a1a1; }
+      color: #636363; }
 
 /*# sourceMappingURL=yiniao-mb.css.map */

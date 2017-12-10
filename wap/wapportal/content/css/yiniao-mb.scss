@@ -613,7 +613,7 @@ ul.avator-meta {
   }
   .btn-wrapper {
     .btn-red {
-    margin-right: 3rem;
+    margin-right: 2rem;
     }
 
   }
@@ -622,7 +622,7 @@ ul.avator-meta {
   padding: 0.2rem 1.5rem;
 }
 .btn-wide {
-  padding: 8px 26px;
+  padding: 0.4rem 1.4rem;
 }
 .star {
   display: inline-block;
@@ -758,12 +758,21 @@ ul.avator-meta {
   border: 1px solid #e6e6e6;
   height: 2rem;
   width: 100%;
-  .option {
-    z-index: 1;
-    position: absolute;
-    margin: 0 auto 0;
-    background: red;
-    border: 1px solid #e6e6e6;
+  background: white;
+}
+.option {
+  z-index: 1;
+  position: absolute;
+  margin: 0 auto 0;
+  background: white;
+  border: 1px solid #e6e6e6;
+  width: 100%;
+  font-size: 1rem;
+  color: $gray;
+  padding: 2px 0;
+  > div {
+    padding: 2px;
+    cursor: pointer;
   }
 }
 .select .sm {
@@ -779,6 +788,7 @@ ul.avator-meta {
   }
 }
 .select .text {
+  text-align: left;
   width: 88%;
   height: 1rem;
   font-size: 1rem;
@@ -786,7 +796,7 @@ ul.avator-meta {
   float: left;
   background: #fafafa;
   color: #a2a1a1;
-  //text-indent: 1rem;
+  text-indent: 0.5rem;
 }
 .phoneNub {
   width: 88%;
@@ -823,7 +833,7 @@ ul.avator-meta {
     //text-indent: .2rem;
     //font-size: .3rem;
     &::placeholder {
-      color: #a2a1a1;
+      color: $gray;
     }
   }
 }
