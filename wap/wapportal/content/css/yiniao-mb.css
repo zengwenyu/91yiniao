@@ -423,28 +423,68 @@ a.red {
   color: #f9f9f9; }
 
 .avator-wrapper {
-  width: 60px;
+  width: 86px;
   float: left; }
   .avator-wrapper img {
     width: 100%; }
 
+ul.avator-meta {
+  margin-left: 10px;
+  float: left;
+  display: block; }
+  ul.avator-meta li.title {
+    font-size: 1.3rem; }
+  ul.avator-meta .data-left {
+    margin-right: 1rem; }
+  ul.avator-meta .ico-call-400 {
+    width: 42px;
+    display: inline-block;
+    margin-left: 4px; }
+    ul.avator-meta .ico-call-400 img {
+      width: 100%; }
+
 .sec-description .btn-wrapper {
   width: 100%;
   text-align: center; }
+.sec-description .btn-disable {
+  background: #b0b0b0;
+  color: #f9f9f9; }
+  .sec-description .btn-disable:hover {
+    background: #969696; }
 .sec-description .well {
-  border-radius: 3px; }
+  border-radius: 3px;
+  box-shadow: none; }
+.sec-description .well-shop, .sec-description .well-manager {
+  border: none; }
 .sec-description .well-staff {
-  background: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  border-radius: 0; }
+  border-radius: 0;
+  background: white url("../images/shop/ico-biaogan.png") no-repeat top right;
+  -webkit-background-size: 3.5rem;
+  background-size: 3.5rem; }
   .sec-description .well-staff .avator-wrapper-outter {
-    border-bottom: 1px dotted #b0b0b0; }
+    border-bottom: 1px dotted #b0b0b0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem; }
+.sec-description .btn-wrapper .btn-red {
+  margin-right: 3rem; }
+
+.btn-wide {
+  padding: 8px 26px; }
+
+.star {
+  display: inline-block;
+  width: 6rem; }
+  .star img {
+    width: 100%;
+    position: relative;
+    top: -2px; }
 
 .block-title-shop h2 {
   font-size: 2rem;
   font-weight: normal;
-  margin: 0; }
+  margin: 0.5rem 0 2rem 0; }
 
 .sec-shop-shot .row.spacer {
   margin-bottom: 10px; }
@@ -481,6 +521,16 @@ a.red {
   cursor: pointer; }
 .sec-panel .panel-group .panel-title > a, .sec-panel .panel-group .panel-title > a:active {
   color: #f9f9f9; }
+.sec-panel .panel-group .panel-shop-switcher > .panel-collapse .list-group-item a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #636363; }
+  .sec-panel .panel-group .panel-shop-switcher > .panel-collapse .list-group-item a:hover, .sec-panel .panel-group .panel-shop-switcher > .panel-collapse .list-group-item a:focus {
+    text-decoration: none;
+    color: #e8314a; }
+.sec-panel .panel-group .panel-shop-switcher > .panel-collapse .list-group-item:last-child {
+  border-bottom: 1px solid #ddd; }
 
 .panel-group {
   max-height: 770px;

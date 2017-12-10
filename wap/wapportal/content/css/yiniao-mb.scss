@@ -551,12 +551,31 @@ a.red {
     color: $white;
   }
 }
-
 .avator-wrapper {
-  width: 60px;
+  width: 86px;
   float: left;
   img {
     width: 100%;
+  }
+}
+ul.avator-meta {
+  //width: 100%;
+  margin-left: 10px;
+  float: left;
+  display: block;
+  li.title {
+    font-size: 1.3rem;
+  }
+  .data-left {
+    margin-right: 1rem;
+  }
+  .ico-call-400 {
+    width: 42px;
+    display: inline-block;
+    margin-left: 4px;
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -565,17 +584,49 @@ a.red {
     width: 100%;
     text-align: center;
   }
+  .btn-disable {
+    background: $gray-tint;
+    color: $white;
+    &:hover {
+      background: darken($gray-tint, 10%);
+    }
+  }
   .well {
     border-radius: 3px;
+    box-shadow: none;
+  }
+  .well-shop, .well-manager {
+    border: none;
   }
   .well-staff {
-    background: none;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
     .avator-wrapper-outter {
       border-bottom: 1px dotted $gray-tint;
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
     }
+    background: white url("../images/shop/ico-biaogan.png") no-repeat top right;
+    -webkit-background-size: 3.5rem;
+    background-size: 3.5rem;
+  }
+  .btn-wrapper {
+    .btn-red {
+    margin-right: 3rem;
+    }
+  }
+}
+.btn-wide {
+  padding: 8px 26px;
+}
+.star {
+  display: inline-block;
+  width: 6rem;
+  img {
+    width: 100%;
+    position: relative;
+    top: -2px;
   }
 }
 
@@ -583,7 +634,7 @@ a.red {
   h2 {
     font-size: 2rem;
     font-weight: normal;
-    margin: 0;
+    margin: 0.5rem 0 2rem 0;
   }
 }
 
@@ -646,6 +697,25 @@ a.red {
     .panel-title > a, .panel-title > a:active {
       color: $white;
     }
+    .panel-shop-switcher > .panel-collapse {
+       .list-group-item {
+        a {
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          color: $gray;
+          &:hover, &:focus {
+            text-decoration: none;
+            color: $red;
+          }
+        }
+        &:last-child {
+          border-bottom: 1px solid #ddd;
+        }
+      }
+
+    }
+
   }
 }
 
