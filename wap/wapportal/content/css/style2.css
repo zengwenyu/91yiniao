@@ -386,7 +386,8 @@ label,button{cursor:pointer;}
 	height: 20%;
 }
 video {
-
+	width: 100%    !important;
+	height: auto   !important;
 }
 
 /* lower swiper nav position*/
