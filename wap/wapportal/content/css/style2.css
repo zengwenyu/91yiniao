@@ -349,6 +349,7 @@ label,button{cursor:pointer;}
 }
 .ydupvideo {
 	position: fixed;
+	background: red;
 	display: none;
 	z-index: 1000;
 	background-color: rgba(0,0,0,0.7);
@@ -371,12 +372,14 @@ label,button{cursor:pointer;}
 }
 .ydupvideowrap {
 	width: 50%;
-	height: 50%;
+	/*height: 50%;*/
 	position: fixed;
-	top: 25%;
+	/*top: 25%;*/
+	top: 40%;
 	left: 25%;
 	z-index: 1003;
 	border: 4px solid #fff;
+	background: black;
 }
 .ydupvideowrap p {
 	background:#fff;
