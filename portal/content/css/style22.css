@@ -316,7 +316,7 @@ html, body {
     overflow: hidden;
     position: relative;
 }
-.page3tabc-txt p {
+.page3tabc-txt p, .page3tabc-txt2 p {
     text-align:center;
     font-size:10px;
     padding:0 10px;
@@ -701,7 +701,7 @@ html, body {
 	padding-right: 15px;
 }
 .pagination a:hover .hover-text {
-	opacity: 1;
+	opacity: 0;
 }
 .pagination a:after {
 	-webkit-transition:box-shadow 0.5s ease;
