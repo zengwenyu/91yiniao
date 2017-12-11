@@ -828,3 +828,4 @@ html[xmlns] .slides {display: block;}
     -o-transform:scale(1,1.2);
     -moz-transform:scale(1,1.2);
 }
+.test .flex-control-nav a{display:none;}

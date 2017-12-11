@@ -11,7 +11,35 @@
 <link rel="stylesheet" href="portal/content/css/swiper.min.css" />
 
 <link rel="stylesheet" href="portal/content/css/style22.css" />
-
+<script type="text/javascript" src="portal/s/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="portal/content/js/jquery.scrollify.min.js"></script>
+<script>
+        $(function() {
+          $.scrollify({
+            section : ".example-classname",
+              scrollbars: true,
+              before:function(i,panels) {
+              var ref = panels[i].attr("data-section-name");
+              $(".pagination .active").removeClass("active");
+              $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
+            },
+            afterRender:function() {
+              var pagination = "<ul class=\"pagination\">";
+              var activeClass = "";
+              $(".example-classname").each(function(i) {
+              activeClass = "";
+              if(i===0) {
+              activeClass = "active";
+            }
+            pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"hover-text\">" + $(this).attr("data-section-name").charAt(0).toUpperCase() + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
+            });
+            pagination += "</ul>";
+            $(".home").append(pagination);
+            $(".pagination a").on("click",$.scrollify.move);
+            }
+          });
+        });
+      </script>
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -675,7 +703,7 @@
 
   
 </script>
-<script type="text/javascript" src="portal/s/jquery/jquery.min.js"></script>
+
 <script type="text/javascript" src="portal/content/js/jquery.flexslider-min.js"></script>
 <script type="text/javascript">
 $(function() {
@@ -687,8 +715,7 @@ $(function() {
         itemWidth: 130,
         itemMargin: 0,
         asNavFor: '#slider',
-        prevText: false,           //String: Set the text for the "previous" directionNav item
-        nextText: false,
+        directionNav: false,
       });
 
       $('#slider').flexslider({
@@ -700,34 +727,7 @@ $(function() {
       });
 }); 
 </script>
-<script type="text/javascript" src="portal/content/js/jquery.scrollify.min.js"></script>
-<script>
-        $(function() {
-          $.scrollify({
-            section : ".example-classname",
-              scrollbars: true,
-              before:function(i,panels) {
-              var ref = panels[i].attr("data-section-name");
-              $(".pagination .active").removeClass("active");
-              $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
-            },
-            afterRender:function() {
-              var pagination = "<ul class=\"pagination\">";
-              var activeClass = "";
-              $(".example-classname").each(function(i) {
-              activeClass = "";
-              if(i===0) {
-              activeClass = "active";
-            }
-            pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"hover-text\">" + $(this).attr("data-section-name").charAt(0).toUpperCase() + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
-            });
-            pagination += "</ul>";
-            $(".home").append(pagination);
-            $(".pagination a").on("click",$.scrollify.move);
-            }
-          });
-        });
-      </script>
+
 <script type="text/javascript">
 
   $(document).ready(function(){
