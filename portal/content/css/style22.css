@@ -418,6 +418,9 @@ html, body {
 	height:60%;
 	padding:10% 0;
 }
+.frontwrap p, .backwrap p {
+    font-size: 12px;
+}
 .brand02 .front .frontwrap,.brand02 .back .backwrap{
 	background:rgba(255,255,255,0.5);
 	width:80%;
@@ -426,7 +429,7 @@ html, body {
 .brand02 .front span.fronttitle,.brand02 .back span.backtitle{
 	display:block;
 	font-size:16px;
-    margin:4% 0;
+    margin:4% 0 0;
 }
 .brand02 .front span.frontsub,.brand02 .back span.backsub{
 	display:block;
@@ -435,7 +438,7 @@ html, body {
 .brand02 .back{
 	display: none;
 	background-color: #f0f0f0;
-	color: #369242;
+	/*color: #369242;*/
 }
 
 .vertical02 .back{
@@ -569,6 +572,7 @@ html, body {
 }
 .page5item01 p{
 	font-size:12px;
+    min-height: 5rem;
 }
 .page5item01 img{
 	cursor: pointer;
@@ -728,7 +732,7 @@ html, body {
 	padding-right: 15px;
 }
 .pagination a:hover .hover-text {
-	opacity: 1;
+	opacity: 0;
 }
 .pagination a:after {
 	-webkit-transition:box-shadow 0.5s ease;
