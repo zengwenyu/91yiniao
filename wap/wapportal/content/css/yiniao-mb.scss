@@ -98,24 +98,33 @@
 }
 
 .block-title {
-  width: 100%;
-  margin: 1rem 0;
-  h6 {
-    color: #636363;
-    font-size: 0.8rem;
-    font-weight: 300;
-  }
+   width: 100%;
+   margin: 1rem 0;
+   h6 {
+     color: #636363;
+     font-size: 0.8rem;
+     font-weight: 300;
+   }
+   h2 {
+     font-weight: 600;
+     font-size: 1.5rem;
+   }
+   &:after {
+     content: "";
+     display: block;
+     width: 3rem;
+     height: 0;
+     border-bottom: 3px solid $blue;
+     margin: 0 auto;
+   }
+ }
+
+.block-title-no-line {
   h2 {
-    font-weight: 600;
-    font-size: 1.5rem;
+    margin: 0;
   }
   &:after {
-    content: "";
-    display: block;
-    width: 3rem;
-    height: 0;
-    border-bottom: 3px solid $blue;
-    margin: 0 auto;
+    display: none;
   }
 }
 
@@ -147,6 +156,9 @@
 
 .sec-banner {
   background: url("../images/rent-house-brushing/banner-bg.jpg") no-repeat center 0;
+}
+.sec-banner-corp {
+  margin: 1rem 0 0;
 }
 
 .col {
@@ -580,6 +592,7 @@ ul.avator-meta {
 }
 
 .sec-description {
+
   .btn-wrapper {
     width: 100%;
     text-align: center;
@@ -636,9 +649,9 @@ ul.avator-meta {
 
 .block-title-shop {
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: normal;
-    margin: 0.5rem 0 2rem 0;
+    margin: 0;
   }
 }
 
@@ -646,23 +659,58 @@ ul.avator-meta {
 }
 
 .sec-shop-shot {
+  .block-title-shop {
+    h2 {
+      margin: 0.5rem 0 2rem 0;
+    }
+  }
   .row.spacer {
     margin-bottom: 10px;
   }
 }
 
 .sec-shop-contact {
-  background: url("../images/shop/bg-gray-tri.gif") no-repeat top left;
-  -webkit-background-size: contain;
-  background-size: contain;
+  background: red url("../images/shop/bg-gray-tri.gif") no-repeat top left;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin: 1rem 0 0 0;
+  h6 {
+    font-size: 12px;
+    margin: 2rem 0 1rem 0;
+  }
+  p {
+    font-size: 8px;
+  }
+
 }
 
 .sec-community {
-  .block-title {
-    h2 {
-      font-size: 2rem;
-      font-weight: normal;
-      margin: 0;
+  .table-layout {
+    font-size: 9px;
+    text-align: center;
+    td {
+      vertical-align: top;
+    }
+  }
+  .well {
+    box-shadow: none;
+    border: 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-bottom: 0;
+  }
+  p {
+    position: relative;
+    top: 10px;
+    margin: 0;
+    &:before {
+      content: "";
+      display: block;
+      width: 3rem;
+      height: 0;
+      border-bottom: 1px solid $gray;
+      margin: 0 auto 6px;
     }
   }
 }
@@ -834,6 +882,22 @@ ul.avator-meta {
     //font-size: .3rem;
     &::placeholder {
       color: $gray;
+    }
+  }
+}
+.sec-logo-grp {
+  .table-layout {
+  margin: 2rem 0;
+    img {
+    position: relative;
+      width: 10%;
+      margin:0 0.5rem;
+      &:hover, &:focus {
+        transform: scale(1.3);
+      }
+    }
+    .logo-fl {
+      width: 10%;
     }
   }
 }

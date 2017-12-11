@@ -752,6 +752,7 @@ a.red {
         margin-bottom: 0; }
 
 .sec-shop-contact {
-  background: red; }
+  background: red;
+  border: 1px solid red; }
 
 /*# sourceMappingURL=yiniao-bs.css.map */
