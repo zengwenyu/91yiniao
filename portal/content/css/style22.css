@@ -314,10 +314,12 @@ html, body {
 
 }
 .page3tabc02{
+	position:relative;
 	margin-right:5%;
 	width:23%;
 	text-align:center;
 	float:left;
+	height:260px;
 	overflow:hidden;
 }
 .page3tabc-txt {
