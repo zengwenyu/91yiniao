@@ -573,7 +573,7 @@
       <div class="example-classname page6" data-section-name="page6">
         
         <span class="page3title">完善的售后</span>
-        <span class="page3subtitle">PERFECT AFTERSALE</span>
+        <span class="page6subtitle">PERFECT AFTERSALE</span>
         <div class="page6imgwrapper">
           <img class="page6img01" src="portal/content/images/topic/page6pic01.png" />
           <img class="page6img02" src="portal/content/images/topic/page6pic02.png" />
@@ -582,8 +582,31 @@
         </div>
       </div>
       <div class="example-classname page7" data-section-name="page7">
+        <div class="demo">
+      <div id="slider" class="flexslider">
+          <ul class="slides">
+            <li><img src="wap/wapportal/content/images/wall/case-personal/_0000_case-personal.jpg" /></li>
+            <li><img src="wap/wapportal/content/images/wall/case-personal/_0001_case-personal.jpg" /></li>
+            <li><img src="wap/wapportal/content/images/wall/case-personal/_0002_case-personal.jpg" /></li>
+            <li><img src="wap/wapportal/content/images/wall/case-personal/_0003_case-personal.jpg" /></li>
+            <li><img src="wap/wapportal/content/images/wall/case-personal/_0004_case-personal.jpg" /></li>
+            <li><img src="wap/wapportal/content/images/wall/case-personal/_0005_case-personal.jpg" /></li>
+          </ul>
+      </div>
         
-        <div class="swiper-container gallery-top">
+        <div id="carousel" class="flexslider test">
+          <ul class="slides">
+            <li><img src="wap/wapportal/content/images/wall/color-bar/_0000_color-bar.jpg" /></li>
+            <li><img src="wap/wapportal/content/images/wall/color-bar/_0001_color-bar.jpg" /></li>
+            <li><img src="wap/wapportal/content/images/wall/color-bar/_0002_color-bar.jpg" /></li>
+            <li><img src="wap/wapportal/content/images/wall/color-bar/_0003_color-bar.jpg" /></li>
+            <li><img src="wap/wapportal/content/images/wall/color-bar/_0004_color-bar.jpg" /></li>
+            <li><img src="wap/wapportal/content/images/wall/color-bar/_0005_color-bar.jpg" /></li>
+          </ul>
+      </div>
+        
+   </div>
+       <!-- <div class="swiper-container gallery-top">
           <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0000_case-personal.jpg" /></div>
             <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0001_case-personal.jpg" /></div>
@@ -591,13 +614,13 @@
             <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0003_case-personal.jpg" /></div>
             <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0004_case-personal.jpg" /></div>
             <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0005_case-personal.jpg" /></div>
-          </div>
+          </div>-->
           <!-- Add Arrows -->
-          <div class="swiper-button-next gtop-next swiper-button-black"></div>
-          <div class="swiper-button-prev gtop-prev swiper-button-black"></div>
+          <!--<div class="swiper-button-next gtop-next swiper-button-black"></div>
+          <div class="swiper-button-prev gtop-prev swiper-button-black"></div>-->
           <!-- Add Pagination -->
-          <div class="swiper-pagination mypage"></div>
-        </div>
+         <!-- <div class="swiper-pagination mypage"></div>
+        </div> -->
  
       </div>
     
@@ -646,6 +669,28 @@
   
 </script>
 <script type="text/javascript" src="portal/s/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="portal/content/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('#carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: true,
+        slideshow: false,
+        itemWidth: 130,
+        itemMargin: 0,
+        asNavFor: '#slider'
+      });
+
+      $('#slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: true,
+        slideshow: false,
+        sync: "#carousel"
+      });
+}); 
+</script>
 <script type="text/javascript" src="portal/content/js/jquery.scrollify.min.js"></script>
 <script>
         $(function() {
@@ -703,9 +748,9 @@
     //第三屏视频按钮移入移除
     $('#tabcontent').find('li').find('.page3tabc02').hover(function(){
       $(this).find('.page3btn').css('display','block');
-      $(this).find('.page3btn').animate({bottom:"40%"});
+      $(this).find('.page3btn').animate({bottom:"30%"});
     },function(){
-      $(this).find('.page3btn').animate({bottom:"65%"},function(){
+      $(this).find('.page3btn').animate({bottom:"60%"},function(){
         $(this).css('display','none');
         $(this).css('bottom','0');
       });   
