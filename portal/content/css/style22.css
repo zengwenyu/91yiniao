@@ -615,16 +615,18 @@ html, body {
 	margin-top:8%;
 }
 .gtop-next{
-	top:36%;
+	top:33%;
 	right:20%;
-	background:url(../images/page7next.jpg);
-	background-size:100% 100%;
+	/*background:url(../images/page7next.jpg);*/
+	background-size:70%;
+	opacity: 0.3;
 }
 .gtop-prev{
-    top:36%;
+    top:33%;
 	left:20%;
-	background:url(../images/page7prev.jpg);
-	background-size:100% 100%;
+	/*background:url(../images/page7prev.jpg);*/
+	background-size:70%;
+	opacity: 0.3;
 }
 .mypage{
 	margin:0 15%;
