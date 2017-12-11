@@ -753,7 +753,7 @@ html, body {
 
 /* FlexSlider Necessary Styles
 *********************************/
-.flexslider {margin: 0; padding: 0;width:40%;left:30%;}
+.flexslider {margin: 0; padding: 0;width:60%;left:20%;}
 .flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img {width: 80%; display: block;text-align:center;margin:0 9% 0 9%;}
 .flex-pauseplay span {text-transform: capitalize;}
