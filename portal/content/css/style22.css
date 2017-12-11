@@ -197,6 +197,14 @@ html, body {
 	text-align:center;
 	color: #acacac;
 }
+.page6subtitle {
+	position: absolute;
+	top: 11%;
+	left: 44.5%;
+	font-size: 12px;
+	text-align:center;
+	color: #acacac;
+}
 .page3tab {
 	position:relative;
 	width: 100%;
@@ -555,8 +563,9 @@ html, body {
 	background-size: 100%;
 }
 .page6imgwrapper{
+	position:absolute;
 	width:100%;
-	margin-top:300px;
+	top:50%;
     text-align:center;
 }
 .page6imgwrapper img{
