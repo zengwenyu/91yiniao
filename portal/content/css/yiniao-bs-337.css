@@ -1,5 +1,21 @@
+.siteBox .site {
+  width: 366px;
+  margin: 0 auto;
+  border-bottom: 1px solid #eeeeee;
+  min-height: 113px;
+  cursor: pointer; }
+
+.siteBox .site .siteMsg {
+  padding: 20px 0px 12px 0px;
+  font-size: 14px;
+  float: none;
+  width: 330px; }
+
 .container {
   width: 1224px !important; }
+
+html {
+  font-size: 16px; }
 
 body {
   color: #3b3b3b; }
@@ -10,8 +26,20 @@ body {
 .no-margin {
   margin: 0; }
 
-html {
-  font-size: 16px; }
+.no-padding {
+  padding: 0; }
+
+.no-padding-l {
+  padding-left: 0; }
+
+.no-padding-r {
+  padding-right: 0; }
+
+.padding-l-5 {
+  padding-left: 5px; }
+
+.padding-r-5 {
+  padding-right: 5px; }
 
 body {
   font-family: Tahoma, Arial, Helvetica, STHeiti; }
@@ -757,5 +785,14 @@ a.red {
 .sec-shop-contact {
   background: red;
   border: 1px solid red; }
+
+.sec-map {
+  padding: 3rem 0;
+  background: red url("../images/shop/bg-city.gif") repeat-x bottom left; }
+  .sec-map .bmap {
+    width: 762px;
+    height: 500px;
+    margin-left: 18px;
+    float: left; }
 
 /*# sourceMappingURL=yiniao-bs-337.css.map */

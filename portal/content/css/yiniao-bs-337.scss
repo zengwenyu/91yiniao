@@ -1,3 +1,4 @@
+@import "nav-337";
 @import "variables-337";
 
 body {
@@ -970,4 +971,18 @@ a.red {
 .sec-shop-contact {
   background: red;
   border: 1px solid red;
+}
+
+
+//style for bootstrap 3.3.7
+.sec-map {
+  padding: 3rem 0;
+  background: red url("../images/shop/bg-city.gif") repeat-x bottom left;
+
+  .bmap {
+    width: 762px;
+    height: 500px;
+    margin-left: 18px;
+    float: left;
+  }
 }
