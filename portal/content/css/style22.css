@@ -506,7 +506,7 @@ html, body {
     background-size:100% 100%;
 }
 .page5wrapper{
-	
+	position:absolute;
 	margin:0 auto;
 	margin-top:25%;
 	width:100%;
