@@ -379,7 +379,7 @@ label,button{cursor:pointer;}
 	left: 25%;
 	z-index: 1003;
 	border: 4px solid #fff;
-	background: black;
+	/*background: black;*/
 }
 .ydupvideowrap p {
 	background:#fff;
