@@ -229,7 +229,21 @@ html, body {
 	font-size: 12px;
     text-align: center;
     cursor: pointer;
+    position: relative;
 }
+.menu-switcher li.active:after {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 1px;
+    left: 10px;
+    top: 29px;
+    background-color: #3c3c3c;
+    /*margin-top: 21px;*/
+    /*-webkit-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;*/
+    /*transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;*/
+}
+
 .tab{
      display:none;
 }
@@ -237,12 +251,12 @@ html, body {
      display:block;
 }
 .page2menuline {
-	margin-left:10px;
+	margin: 4px 0 0 10px;
 	width:0px;
 	border-bottom:1px solid #000;
 }
 .page2menulineactive {
-	margin-left:10px;
+	margin: 4px 0 0 10px;
 	width:80px;
 	border-bottom:1px solid #000;
 }
@@ -273,16 +287,18 @@ html, body {
 }
 .ydupvideowrap {
 	width: 50%;
-	height: 50%;
+	/*height: 50%;*/
+	height: auto;
 	position: absolute;
 	top: 25%;
 	left: 25%;
 	z-index: 1003;
 	border: 4px solid #fff;
+	background: black;
 }
 .ydupvideowrap p {
 	background:#fff;
-	height: 20%;
+	/*height: 20%;*/
 }
 .page3tabc{
 	margin:0 1.5%;
@@ -565,7 +581,7 @@ html, body {
 .page6imgwrapper{
 	position:absolute;
 	width:100%;
-	top:50%;
+	top:40%;
     text-align:center;
 }
 .page6imgwrapper img{
@@ -718,3 +734,4 @@ html, body {
 	right:4px;
 	bottom:0;
 }
+
