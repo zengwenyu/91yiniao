@@ -71,10 +71,11 @@ html, body {
 
 .pclogo {
 	position: fixed;
-	top: 55px;
-	left: 65px;
+	top: 5%;
+	left: 5%;
 	font-weight: bold;
-	z-index: 1000;
+	z-index: 1001;
+    font-size: 1.5rem;
 }
 .page1-bigpic {
 	background: #fff;
@@ -256,7 +257,7 @@ html, body {
     width: 100px;
 	height: 5%;
 	line-height: 25px;
-	font-size: 12px;
+	font-size: 14px;
     text-align: center;
     cursor: pointer;
     position: relative;
@@ -264,9 +265,9 @@ html, body {
 .menu-switcher li.active:after {
     position: absolute;
     content: "";
-    width: 40px;
+    width: 50px;
     height: 1px;
-    left: 10px;
+    left: 25px;
     top: 29px;
     background-color: #3c3c3c;
     /*margin-top: 21px;*/
@@ -281,13 +282,13 @@ html, body {
      display:block;
 }
 .page2menuline {
-	margin: 4px 0 0 10px;
+	margin: 4px 0 0 24px;
 	width:0px;
 	border-bottom:1px solid #000;
 }
 .page2menulineactive {
-	margin: 4px 0 0 10px;
-	width:40px;
+	margin: 4px 0 0 26px;
+	width:48px;
 	border-bottom:1px solid #000;
 }
 #tabcontent li{
@@ -379,10 +380,10 @@ video {
     bottom: 4px;
     left: 48%;
 }
-.page3tabc-txt span{
+.page3tabc-txt span, .page3tabc-txt2 span {
 	display:block;
 	/*margin-top:70%;*/
-	font-size:14px;
+	font-size:16px;
 }
 .page3tabc p{
 	text-align:center;
