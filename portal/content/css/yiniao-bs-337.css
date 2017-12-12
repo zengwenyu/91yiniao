@@ -41,9 +41,12 @@ body {
   float: none;
   width: 330px; }
 
+.nav-pills > li > a {
+  border-radius: 0; }
+
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
   color: #fff;
-  background-color: #b0b0b0; }
+  background-color: #e8314a; }
 
 .container {
   width: 1224px !important; }
@@ -833,5 +836,9 @@ a.red {
 .nav-shop-card {
   padding: 0;
   width: 100%; }
+
+.tab-pane-shop .table-layout tr > td {
+  vertical-align: top;
+  width: 50%; }
 
 /*# sourceMappingURL=yiniao-bs-337.css.map */

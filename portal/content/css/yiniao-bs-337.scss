@@ -995,3 +995,12 @@ a.red {
   padding: 0;
   width: 100%;
 }
+
+.tab-pane-shop {
+  .table-layout {
+    tr > td {
+      vertical-align: top;
+      width: 50%;
+    }
+  }
+}

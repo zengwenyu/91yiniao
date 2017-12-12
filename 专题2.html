@@ -853,6 +853,14 @@ $(document).ready(function(){
     }
   });
 });
+//先把这个域名替换成空，最后再加
+  // function getbig(small){
+  //     var arr = small.replace('http://www.91yiniao.com','');
+  //     arr = arr.split('.');
+  //     var big = arr.join('.');
+  //     big = 'http://www.91yiniao.com'+big;
+  //     return big;
+  // }
 function getbig(small){
   var arr = small.split('.');
   arr[0] = arr[0]+'_big';
