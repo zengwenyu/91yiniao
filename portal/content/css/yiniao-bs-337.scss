@@ -1,4 +1,5 @@
 @import "nav-337";
+@import "format-bs-337";
 @import "variables-337";
 
 body {
@@ -994,6 +995,7 @@ a.red {
 .nav-shop-card {
   padding: 0;
   width: 100%;
+  border: 1px solid $gray-tint;
 }
 
 .tab-pane-shop {
@@ -1001,6 +1003,7 @@ a.red {
     tr > td {
       vertical-align: top;
       width: 50%;
+      padding: 1rem;
     }
   }
 }
@@ -1036,8 +1039,203 @@ ul.avator-meta {
 .sec-description .btn-wrapper .btn-red {
   margin-right: 2rem;
 }
-.btn-primary:hover {
+.btn-primary:active:hover, .btn-primary:active, .btn-primary:active:focus {
   color: #fff;
   background-color: #cf1730;
   border-color: #cf1730;
+}
+
+.sec-description .btn-wrapper {
+  width: 100%;
+  text-align: center;
+}
+.well-shop {
+  border: none;
+  box-shadow: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 0;
+  .btn-wrapper {
+    .btn-red {
+      margin-right: 2rem;
+    }
+  }
+}
+.well-shop, .well-manager {
+  height: 21rem;
+  dl {
+    height: 8rem;
+    dd {
+      line-height: 1.5rem;
+    }
+  }
+}
+.well-staff {
+
+
+}
+.well-staff {
+  height: auto;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  .avator-wrapper-outter {
+    border-bottom: 1px dotted $gray-tint;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  background: white url("../images/shop/ico-biaogan.png") no-repeat top right;
+  -webkit-background-size: 3.5rem;
+  background-size: 3.5rem;
+  p {
+      line-height: 1.5rem;
+    }
+  .btn-wrapper {
+    margin: 2rem auto 1rem;
+    .btn-red {
+      margin-right: 26rem;
+    }
+  }
+}
+.nav-shop-card {
+  margin: 20px auto;
+}
+.block-title-shop {
+  margin: 0 0 2rem 0;
+}
+.stack {
+  display: table;
+  .mask {
+    position: absolute;
+    display: table-cell;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.2rem 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f9f9f9;
+    .title {
+      background: none;
+      position: absolute;
+      font-size: 1.5rem;
+      font-weight: normal;
+      top: 40%;
+      background: url("../images/shop/ico-magnifier.png") no-repeat top center;
+      padding: 2.5rem;
+    }
+  }
+}
+.spacer {
+  .stack {
+    margin-bottom: 40px;
+  }
+}
+.sec-shop-contact {
+  background: red url("../images/shop/bg-gray-tri.gif") repeat-x  top left;
+  -webkit-background-size: contain;
+  background-size: contain;
+  margin: 1rem 0 0 0;
+  h6 {
+    font-size: 1.5rem;
+    margin: 5rem 0 1rem 0;
+    text-indent: 3rem;
+  }
+  p {
+    font-size: 1rem;
+    color: $gray;
+    text-indent: 9rem;
+  }
+
+}
+.selectPicker {
+  position: relative;
+  width: 90%;
+  margin: 1rem auto 0rem;
+}
+.select {
+  border-radius: 4px;
+  //overflow: hidden;
+  border: 1px solid #e6e6e6;
+  height: 2rem;
+  width: 100%;
+  background: white;
+}
+.option {
+  z-index: 1;
+  position: absolute;
+  margin: 0 auto 0;
+  background: white;
+  border: 1px solid #e6e6e6;
+  width: 100%;
+  font-size: 1rem;
+  color: $gray;
+  padding: 2px 0;
+  > div {
+    padding: 2px;
+    cursor: pointer;
+  }
+}
+.select .sm {
+  width: 6%;
+  height: 100%;
+  float: left;
+  //background: #229434;
+  cursor: pointer;
+  text-align: center;
+  line-height: 2rem;
+  img {
+    width: 100%;
+  }
+}
+.select .text {
+  text-align: left;
+  width: 88%;
+  height: 1rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  float: left;
+  background: #fafafa;
+  color: #a2a1a1;
+  text-indent: 0.5rem;
+}
+.phoneNub {
+  width: 88%;
+  margin: 1rem auto;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  height: 2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 1rem;
+  line-height: 2rem;
+  background: #fafafa;
+  color: #a2a1a1;
+  position: relative;
+  .sm {
+    width: 8%;
+    height: 100%;
+    right: 0;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-right: 5%;
+    position: absolute;
+    img {
+      width: 100%;
+    }
+  }
+  input {
+    width: 88%;
+    height: 100%;
+    background: #fafafa;
+    outline: none;
+    border: none;
+    //text-indent: .2rem;
+    //font-size: .3rem;
+    &::placeholder {
+      color: $gray;
+    }
+  }
 }
