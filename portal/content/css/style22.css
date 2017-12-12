@@ -266,7 +266,7 @@ html, body {
 }
 .page2menulineactive {
 	margin: 4px 0 0 10px;
-	width:80px;
+	width:4rem;
 	border-bottom:1px solid #000;
 }
 #tabcontent li{
