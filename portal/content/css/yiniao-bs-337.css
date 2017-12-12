@@ -1,3 +1,33 @@
+.container {
+  width: 1224px !important; }
+
+html {
+  font-size: 16px; }
+
+body {
+  color: #3b3b3b; }
+
+.no-padding {
+  padding: 0; }
+
+.no-margin {
+  margin: 0; }
+
+.no-padding {
+  padding: 0; }
+
+.no-padding-l {
+  padding-left: 0; }
+
+.no-padding-r {
+  padding-right: 0; }
+
+.padding-l-5 {
+  padding-left: 5px; }
+
+.padding-r-5 {
+  padding-right: 5px; }
+
 .siteBox .site {
   width: 366px;
   margin: 0 auto;
@@ -10,6 +40,10 @@
   font-size: 14px;
   float: none;
   width: 330px; }
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+  color: #fff;
+  background-color: #b0b0b0; }
 
 .container {
   width: 1224px !important; }
@@ -782,17 +816,22 @@ a.red {
       .sec-contrast .mask dl dd:last-of-type {
         margin-bottom: 0; }
 
-.sec-shop-contact {
-  background: red;
-  border: 1px solid red; }
-
 .sec-map {
   padding: 3rem 0;
-  background: red url("../images/shop/bg-city.gif") repeat-x bottom left; }
+  background: white url("../images/shop/bg-city.gif") repeat-x bottom left; }
   .sec-map .bmap {
     width: 762px;
     height: 500px;
     margin-left: 18px;
-    float: left; }
+    float: left;
+    box-shadow: 0 0 6px gray; }
+  .sec-map .shop {
+    box-shadow: 0 0 6px gray; }
+  .sec-map .siteBox {
+    background: white; }
+
+.nav-shop-card {
+  padding: 0;
+  width: 100%; }
 
 /*# sourceMappingURL=yiniao-bs-337.css.map */

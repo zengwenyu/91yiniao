@@ -969,20 +969,29 @@ a.red {
 }
 }
 .sec-shop-contact {
-  background: red;
-  border: 1px solid red;
 }
 
 
 //style for bootstrap 3.3.7
 .sec-map {
   padding: 3rem 0;
-  background: red url("../images/shop/bg-city.gif") repeat-x bottom left;
+  background: white url("../images/shop/bg-city.gif") repeat-x bottom left;
 
   .bmap {
     width: 762px;
     height: 500px;
     margin-left: 18px;
     float: left;
+    box-shadow: 0 0 6px gray;
   }
+  .shop {
+    box-shadow: 0 0 6px gray;
+  }
+  .siteBox {
+    background: white;
+  }
+}
+.nav-shop-card {
+  padding: 0;
+  width: 100%;
 }

@@ -1,3 +1,5 @@
+@import "variables-337";
+
 .siteBox .site {
     width: 366px;
     margin: 0 auto;
@@ -10,4 +12,9 @@
   font-size: 14px;
   float: none;
   width: 330px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  color: #fff;
+  background-color: $gray-tint;
 }
