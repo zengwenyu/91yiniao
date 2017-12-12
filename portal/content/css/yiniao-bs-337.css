@@ -841,4 +841,33 @@ a.red {
   vertical-align: top;
   width: 50%; }
 
+.avator-wrapper {
+  width: 86px;
+  float: left; }
+  .avator-wrapper img {
+    width: 100%; }
+
+ul.avator-meta {
+  margin-left: 10px;
+  float: left;
+  display: block; }
+  ul.avator-meta li.title {
+    font-size: 1.3rem; }
+  ul.avator-meta .data-left {
+    margin-right: 1rem; }
+  ul.avator-meta .ico-call-400 {
+    width: 42px;
+    display: inline-block;
+    margin-left: 4px; }
+    ul.avator-meta .ico-call-400 img {
+      width: 100%; }
+
+.sec-description .btn-wrapper .btn-red {
+  margin-right: 2rem; }
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #cf1730;
+  border-color: #cf1730; }
+
 /*# sourceMappingURL=yiniao-bs-337.css.map */

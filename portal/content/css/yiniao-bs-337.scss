@@ -1004,3 +1004,40 @@ a.red {
     }
   }
 }
+
+.avator-wrapper {
+  width: 86px;
+  float: left;
+  img {
+    width: 100%;
+  }
+}
+ul.avator-meta {
+  //width: 100%;
+  margin-left: 10px;
+  float: left;
+  display: block;
+  li.title {
+    font-size: 1.3rem;
+  }
+  .data-left {
+    margin-right: 1rem;
+  }
+  .ico-call-400 {
+    width: 42px;
+    display: inline-block;
+    margin-left: 4px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.sec-description .btn-wrapper .btn-red {
+  margin-right: 2rem;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #cf1730;
+  border-color: #cf1730;
+}
