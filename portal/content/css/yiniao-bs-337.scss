@@ -1039,12 +1039,6 @@ ul.avator-meta {
 .sec-description .btn-wrapper .btn-red {
   margin-right: 2rem;
 }
-.btn-primary:active:hover, .btn-primary:active, .btn-primary:active:focus {
-  color: #fff;
-  background-color: #cf1730;
-  border-color: #cf1730;
-}
-
 .sec-description .btn-wrapper {
   width: 100%;
   text-align: center;
@@ -1080,6 +1074,7 @@ ul.avator-meta {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  box-shadow: none;
   .avator-wrapper-outter {
     border-bottom: 1px dotted $gray-tint;
     padding-bottom: 0.5rem;

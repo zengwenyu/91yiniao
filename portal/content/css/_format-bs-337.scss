@@ -18,12 +18,17 @@
   color: #f9f9f9;
   background: #969696;
 }
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:focus {
   color: #fff;
   background-color: #cf1730;
   border-color: #cf1730;
 }
 .btn-primary:hover {
+  background-color: #cf1730;
+  border-color: #cf1730;
+}
+.btn-primary:active:hover, .btn-primary:active, .btn-primary:active:focus {
+  color: #fff;
   background-color: #cf1730;
   border-color: #cf1730;
 }
