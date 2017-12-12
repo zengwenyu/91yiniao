@@ -55,7 +55,9 @@
         <img class="bg" src="portal/content/images/topic/page1bg.jpg" />
         <div id="page1-bigpic" class="page1-bigpic">
           <p>您家<span>墙面</span>一定有这样的问题</p>
+            <div class="bigpic-wrapper">
           <img src="portal/content/images/topic/problem/_0005_problem_big.jpg" />
+            </div>
         </div>
         <div class="page1-smallpic">
           <ul id="page1smallpic">
@@ -829,7 +831,7 @@ function setTab(n){
 
 $(document).ready(function(){
   
-  $("#page1smallpic li").click(function(){
+  $("#page1smallpic li").mouseenter(function(){
     //alert($(this).index());
     var bigpic = $("#page1-bigpic").find("img");
     var smallpic = $(this).find("img");
@@ -853,7 +855,7 @@ $(document).ready(function(){
     }
   });
 });
-//先把这个域名替换成空，最后再加
+//解决抓取url匹配元素问题 先把这个域名替换成空，最后再加
   // function getbig(small){
   //     var arr = small.replace('http://www.91yiniao.com','');
   //     arr = arr.split('.');
