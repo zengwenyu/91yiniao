@@ -618,50 +618,89 @@
         <div class="clearfix"></div>
         </div>
       </div>
-      <div class="example-classname page7" data-section-name="page7">
-        <div class="demo">
-      <div id="slider" class="flexslider">
-          <ul class="slides">
-            <li><img src="wap/wapportal/content/images/wall/case-personal/_0000_case-personal.jpg" /></li>
-            <li><img src="wap/wapportal/content/images/wall/case-personal/_0001_case-personal.jpg" /></li>
-            <li><img src="wap/wapportal/content/images/wall/case-personal/_0002_case-personal.jpg" /></li>
-            <li><img src="wap/wapportal/content/images/wall/case-personal/_0003_case-personal.jpg" /></li>
-            <li><img src="wap/wapportal/content/images/wall/case-personal/_0004_case-personal.jpg" /></li>
-            <li><img src="wap/wapportal/content/images/wall/case-personal/_0005_case-personal.jpg" /></li>
-          </ul>
+  <div class="example-classname page7" data-section-name="page7">
+      <div class="device">
+          <a class="arrow-left" href="#"></a>
+          <a class="arrow-right" href="#"></a>
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0000_case-personal.jpg" /></div>
+                  <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0001_case-personal.jpg" /></div>
+                  <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0002_case-personal.jpg" /></div>
+                  <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0003_case-personal.jpg" /></div>
+                  <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0004_case-personal.jpg" /></div>
+                  <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0005_case-personal.jpg" /></div>
+              </div>
+          </div>
       </div>
-        
-        <div id="carousel" class="flexslider test">
-          <ul class="slides">
-            <li><img src="wap/wapportal/content/images/wall/color-bar/_0000_color-bar.jpg" /></li>
-            <li><img src="wap/wapportal/content/images/wall/color-bar/_0001_color-bar.jpg" /></li>
-            <li><img src="wap/wapportal/content/images/wall/color-bar/_0002_color-bar.jpg" /></li>
-            <li><img src="wap/wapportal/content/images/wall/color-bar/_0003_color-bar.jpg" /></li>
-            <li><img src="wap/wapportal/content/images/wall/color-bar/_0004_color-bar.jpg" /></li>
-            <li><img src="wap/wapportal/content/images/wall/color-bar/_0005_color-bar.jpg" /></li>
-          </ul>
+      <div class="contrast">
+          <a href="javascript:;" id="btn1"><img src="wap/wapportal/content/images/wall/color-bar/_0000_color-bar.jpg" /></a>
+          <a href="javascript:;" id="btn2"><img src="wap/wapportal/content/images/wall/color-bar/_0001_color-bar.jpg" /></a>
+          <a href="javascript:;" id="btn3"><img src="wap/wapportal/content/images/wall/color-bar/_0002_color-bar.jpg" /></a>
+          <a href="javascript:;" id="btn4"><img src="wap/wapportal/content/images/wall/color-bar/_0003_color-bar.jpg" /></a>
+          <a href="javascript:;" id="btn5"><img src="wap/wapportal/content/images/wall/color-bar/_0004_color-bar.jpg" /></a>
+          <a href="javascript:;" id="btn6"><img src="wap/wapportal/content/images/wall/color-bar/_0005_color-bar.jpg" /></a>
       </div>
-        
-   </div>
-       <!-- <div class="swiper-container gallery-top">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0000_case-personal.jpg" /></div>
-            <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0001_case-personal.jpg" /></div>
-            <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0002_case-personal.jpg" /></div>
-            <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0003_case-personal.jpg" /></div>
-            <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0004_case-personal.jpg" /></div>
-            <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0005_case-personal.jpg" /></div>
-          </div>-->
-          <!-- Add Arrows -->
-          <!--<div class="swiper-button-next gtop-next swiper-button-black"></div>
-          <div class="swiper-button-prev gtop-prev swiper-button-black"></div>-->
-          <!-- Add Pagination -->
-         <!-- <div class="swiper-pagination mypage"></div>
-        </div> -->
- 
-      </div>
-    
-<script src="portal/content/js/swiper.min.js"></script>
+  </div>
+
+  <script src="portal/content/js/idangerous.swiper.min.js"></script>
+  <script>
+      var mySwiper = new Swiper('.swiper-container',{
+          //loop:true,
+          grabCursor: true,
+          onSlideChangeEnd: function(swiper){
+              $('#btn'+swiper.activeIndex+1).addClass('active');
+              $('#btn'+swiper.activeIndex+1).nextAll().removeClass('active');
+              $('#btn'+swiper.activeIndex+1).prevAll().removeClass('active');
+          }
+      })
+      $('.arrow-left').on('click', function(e){
+          e.preventDefault()
+          mySwiper.swipePrev()
+      })
+      $('.arrow-right').on('click', function(e){
+          e.preventDefault()
+          mySwiper.swipeNext()
+      })
+
+      $('#btn1').click(function(){
+          mySwiper.swipeTo(0, 1000, false);
+          $(this).addClass('active');
+          $(this).nextAll().removeClass('active');
+          $(this).prevAll().removeClass('active');
+      })
+      $('#btn2').click(function(){
+          mySwiper.swipeTo(1, 1000, false);
+          $(this).addClass('active');
+          $(this).nextAll().removeClass('active');
+          $(this).prevAll().removeClass('active');
+      })
+      $('#btn3').click(function(){
+          mySwiper.swipeTo(2, 1000, false);
+          $(this).addClass('active');
+          $(this).nextAll().removeClass('active');
+          $(this).prevAll().removeClass('active');
+      })
+      $('#btn4').click(function(){
+          mySwiper.swipeTo(3, 1000, false);
+          $(this).addClass('active');
+          $(this).nextAll().removeClass('active');
+          $(this).prevAll().removeClass('active');
+      })
+      $('#btn5').click(function(){
+          mySwiper.swipeTo(4, 1000, false);
+          $(this).addClass('active');
+          $(this).nextAll().removeClass('active');
+          $(this).prevAll().removeClass('active');
+      })
+      $('#btn6').click(function(){
+          $(this).addClass('active');
+          mySwiper.swipeTo(5, 1000, false);
+          $(this).nextAll().removeClass('active');
+          $(this).prevAll().removeClass('active');
+
+      })
+  </script>
 <script>
 //整屏上下滑动框架
   var swiper = new Swiper('.pagewrapper', {

@@ -439,6 +439,7 @@ video {
 	text-align: center;
 	margin-right:2px;
 	margin-bottom:2px;
+    position: relative;
 }
 .brand02 .front{
 	width: 100%;
@@ -446,18 +447,24 @@ video {
 	padding:10% 0;
 }
 .frontwrap p, .backwrap p {
-    font-size: 12px;
+    font-size: 10px;
 }
 .brand02 .front .frontwrap,.brand02 .back .backwrap{
 	background:rgba(255,255,255,0.5);
-	width:80%;
-    min-height: 6rem;
-	margin:0 auto;
+	/*width:80%;*/
+    /*min-height: 6rem;*/
+	/*margin:0 auto;*/
+    position: absolute;
+    top:20%;
+    left:20%;
+    right: 20%;
+    bottom: 20%;
+    padding: 5px;
 }
 .brand02 .front span.fronttitle,.brand02 .back span.backtitle{
 	display:block;
 	font-size:16px;
-    margin:4% 0 0;
+    margin:2% 0 0;
     padding: 4% 0 0 0;
 }
 .brand02 .front span.frontsub,.brand02 .back span.backsub{
@@ -897,3 +904,78 @@ html[xmlns] .slides {display: block;}
     -moz-transform:scale(1,1.2);
 }
 .test .flex-control-nav a{display:none;}
+
+
+.page7{
+
+}
+.device {
+  width: 60%;
+  height: 300px;
+  padding: 5% 5%;
+  /*border-radius: 20px;
+  background: #111;
+  border: 3px solid white;*/
+  margin: 5px auto;
+  position: relative;
+  /*box-shadow: 0px 0px 5px #000;*/
+}
+.device .arrow-left {
+  background: url(../images/page7prev.jpg) no-repeat left top;
+  position: absolute;
+  left: 5%;
+  top: 45%;
+  /*margin-top: -15px;*/
+  width: 23px;
+  height: 35px;
+}
+.device .arrow-right {
+  background: url(../images/page7next.jpg) no-repeat left bottom;
+  position: absolute;
+  right: 5%;
+  top: 45%;
+  /*margin-top: -15px;*/
+  width: 23px;
+  height: 35px;
+}
+.swiper-container {
+
+  width: 80%;
+  height:100%;
+}
+.swiper-container img{
+	width:100%;
+	height:100%;
+}
+.contrast{
+	width:80%;
+	margin:0 auto;
+	height:60px;
+}
+.contrast a{
+	display:block;
+	float:left;
+	width:16.66%;
+	height:60px;
+	transition: all 0.6s;
+}
+.contrast a:hover{
+	transform:scale(1,1.2);
+    ms-transform:scale(1,1.2);
+    -webkit-transform:scale(1,1.2);
+    -o-transform:scale(1,1.2);
+    -moz-transform:scale(1,1.2);
+
+}
+.contrast a.active{
+	transform:scale(1,1.2);
+    ms-transform:scale(1,1.2);
+    -webkit-transform:scale(1,1.2);
+    -o-transform:scale(1,1.2);
+    -moz-transform:scale(1,1.2);
+
+}
+.contrast a img{
+	width:100%;
+	height:100%;
+}
