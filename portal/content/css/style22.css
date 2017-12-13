@@ -347,7 +347,7 @@ video {
 .page3tabc02wrapper{
 	position:relative;
 	left:10%;
-
+    display: table;
 }
 .page3tabc02{
 	position:relative;
@@ -357,16 +357,17 @@ video {
 	float:left;
 	height:260px;
 	overflow:hidden;
+    display: table-cell;
 }
 .page3tabc-txt {
-	margin-top:26.5%;
-	height: 90px;
+    margin-top:26.5%;
+    height: 90px;
     overflow: hidden;
     position: relative;
 }
 .page3tabc-txt2 {
-	margin-top:3%;
-	height: 90px;
+    margin-top:3%;
+    height: 90px;
     overflow: hidden;
     position: relative;
 }
@@ -431,19 +432,24 @@ video {
 	height:100%;
 	margin-left:65px;
 }
+.brand02 {
+    /*background-color: red;*/
+
+}
 .brand02 div.wapperforr02{
-	display: block;
-	float: left;
-	width: 22%;
-	height: 25%;
-	text-align: center;
-	margin-right:2px;
-	margin-bottom:2px;
+    display: block;
+    float: left;
+    width: 22%;
+    height: 25%;
+    text-align: center;
+    margin-right:2px;
+    margin-bottom:2px;
     position: relative;
+    overflow: hidden;
 }
 .brand02 .front{
 	width: 100%;
-	height:60%;
+	height:69%;
 	padding:10% 0;
 }
 .frontwrap p, .backwrap p {
@@ -479,7 +485,7 @@ video {
 
 .vertical02 .back{
 	width: 0;
-	height: 60%;
+	height: 69%;
 	margin: 0 auto;
 	padding:10% 0;
 }
@@ -592,12 +598,13 @@ video {
 	float:left;
 }
 .page5title{
-	font-size:16px;
+	font-size:18px;
 	line-height:25px;
 	border-bottom:1px solid #ccc;
 	width:100%;
+    color: gray;
 }
-.page5item01 span,.page5item01 p,.page5item01 img{
+.page5item01 span,.page5item01 p {
 	display:block;
 	width:80%;
 }
@@ -610,9 +617,15 @@ video {
 	font-size:12px;
     min-height: 5rem;
 }
+.page5item01 .img-wrapper {
+    width: 80%;
+
+    overflow: hidden;
+}
 .page5item01 img{
 	cursor: pointer;
     transition: all 0.6s;
+    width: 100%;
 }
 .page5item01 img:hover{
 	transform: scale(1.2);
@@ -926,8 +939,9 @@ html[xmlns] .slides {display: block;}
   left: 5%;
   top: 45%;
   /*margin-top: -15px;*/
-  width: 23px;
+  width: 22px;
   height: 35px;
+    background-size: 80%;
 }
 .device .arrow-right {
   background: url(../images/page7next.jpg) no-repeat left bottom;
@@ -937,6 +951,7 @@ html[xmlns] .slides {display: block;}
   /*margin-top: -15px;*/
   width: 23px;
   height: 35px;
+    background-size: 80%;
 }
 .swiper-container {
 
@@ -951,6 +966,7 @@ html[xmlns] .slides {display: block;}
 	width:80%;
 	margin:0 auto;
 	height:60px;
+    box-shadow: 0px 30px 60px #d6d6d6;
 }
 .contrast a{
 	display:block;
