@@ -668,7 +668,7 @@
           </div>
       </div>
       <div class="contrast">
-          <a href="javascript:;" id="btn1"><img src="wap/wapportal/content/images/wall/color-bar/_0000_color-bar.jpg" /></a>
+          <a href="javascript:;" id="btn1" class="active"><img src="wap/wapportal/content/images/wall/color-bar/_0000_color-bar.jpg" /></a>
           <a href="javascript:;" id="btn2"><img src="wap/wapportal/content/images/wall/color-bar/_0001_color-bar.jpg" /></a>
           <a href="javascript:;" id="btn3"><img src="wap/wapportal/content/images/wall/color-bar/_0002_color-bar.jpg" /></a>
           <a href="javascript:;" id="btn4"><img src="wap/wapportal/content/images/wall/color-bar/_0003_color-bar.jpg" /></a>
@@ -683,9 +683,10 @@
           //loop:true,
           grabCursor: true,
           onSlideChangeEnd: function(swiper){
-              $('#btn'+swiper.activeIndex+1).addClass('active');
-              $('#btn'+swiper.activeIndex+1).nextAll().removeClass('active');
-              $('#btn'+swiper.activeIndex+1).prevAll().removeClass('active');
+        	  //alert('#btn'+(swiper.activeIndex+1));
+              $('#btn'+(swiper.activeIndex+1)).addClass('active');
+              $('#btn'+(swiper.activeIndex+1)).nextAll().removeClass('active');
+              $('#btn'+(swiper.activeIndex+1)).prevAll().removeClass('active');
           }
       })
       $('.arrow-left').on('click', function(e){
