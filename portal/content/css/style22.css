@@ -86,12 +86,12 @@ html, body {
 	top: 20%;
 	left: 18%;
 	padding-bottom: 1%;
+    transition: left 0.6s ease 0.5s;
 }
 .page1-bigpic .bigpic-wrapper {
 	width: 95%;
 	/*height: 90%;*/
     transition: all 0.3s;
-    background: red;
     text-align: center;
     margin: 0 auto;
     overflow: hidden;
@@ -967,7 +967,7 @@ html[xmlns] .slides {display: block;}
 }
 .contrast{
 	width:80%;
-	margin:0 auto;
+	margin:4rem auto 0;
 	height:60px;
     box-shadow: 0px 30px 60px #d6d6d6;
 }
@@ -997,4 +997,119 @@ html[xmlns] .slides {display: block;}
 .contrast a img{
 	width:100%;
 	height:100%;
+}
+
+
+/*animation------*/
+/*page0*/
+
+/*page1*/
+#vertical {
+    position: relative;
+    top: 90%;
+    -webkit-transition: all 1.1s ease 0.3s;
+    transition: all 1.1s ease 0.3s;
+}
+#vertical.moved {
+    top: 0;
+}
+#tabcontent  {
+    position: absolute;
+    -webkit-transition: all 1.1s ease 0.3s;
+    transition: all 1.1s ease 0.3s;
+    bottom: -100%;
+}
+#tabcontent.moved {
+    bottom: 0;
+}
+.page4 {
+    /*text-align: center;*/
+}
+#vertical02  {
+    position: absolute;
+    -webkit-transition: all 1.1s ease 0.3s;
+    transition: all 1.1s ease 0.3s;
+    /*bottom: -100%;*/
+    top: 50%;
+}
+#vertical02.moved {
+    top: 0;
+}
+#page5-items  {
+    position: absolute;
+    -webkit-transition: all 1.1s ease 0.3s;
+    transition: all 1.1s ease 0.3s;
+    /*bottom: -100%;*/
+    top: 18rem;
+    height: auto;
+}
+#page5-items.moved {
+    top: 0;
+}
+#page6img01 {
+	/*position: absolute;*/
+	-webkit-transition: all 1.1s ease 0.3s;
+	transition: all 1.1s ease 0.3s;
+	/*bottom: -100%;*/
+	margin-top:20rem;
+	height: auto;
+}
+#page6img01.moved {
+	margin-top: 0;
+}
+#page6img02 {
+	/*position: absolute;*/
+	-webkit-transition: all 1.1s ease 0.5s;
+	transition: all 1.1s ease 0.5s;
+	/*bottom: -100%;*/
+	margin-top:20rem;
+	height: auto;
+}
+#page6img02.moved {
+	margin-top: 0;
+}
+#page6img03 {
+	/*position: absolute;*/
+	-webkit-transition: all 1.1s ease 0.6s;
+	transition: all 1.1s ease 0.6s;
+	/*bottom: -100%;*/
+	margin-top:20rem;
+	height: auto;
+}
+#page6img03.moved {
+	margin-top: 0;
+}
+/*#page7-items {*/
+	/*position: absolute;*/
+	/*-webkit-transition: all 1.1s ease 0.6s;*/
+	/*transition: all 1.1s ease 0.6s;*/
+	/*!*bottom: -100%;*!*/
+	/*top:4rem;*/
+	/*height: auto;*/
+	/*background: blue;*/
+/*}*/
+/*#page7-items.moved {*/
+	/*!*top: 1rem;*!*/
+/*}*/
+.page7-items {
+    -webkit-transition: all 1.1s ease 0.6s;
+    transition: all 1.1s ease 0.6s;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+    position: absolute;
+    top: 50%;
+}
+.page7-items.moved {
+    top: 0;
+}
+.device {
+    /*position: absolute;*/
+	top: 3rem;
+    -webkit-transition: all 1.1s ease 0.3s;
+    transition: all 1.1s ease 0.3s;
+}
+.device.moved {
+	top:1rem;
 }
