@@ -1050,10 +1050,13 @@
             tli[i].className=i==n?"hover":"";
             //mli[i].style.display=i==n?"block":"none";
             if(i==n){
-              fadein(mli[i],400);
+              fadein(mli[i],600);
+              //mli[i].style.display="block";
             }
             else{
                 mli[i].style.display="none";
+                mli[i].style.opacity = 0;
+
             }
             tli[i].querySelector('div').className=i==(3-n)?"page2menulineactive":"page2menuline";
         }

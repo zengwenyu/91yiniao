@@ -995,6 +995,8 @@ ul.avator-meta {
     margin: 0 auto;
     position: relative;
     top: -1rem; }
+  .sec-shop-contact .btn-submit {
+    margin-top: 4r; }
 
 input[type="submit"] {
   background: orange;
