@@ -995,8 +995,10 @@
         //第三屏tab下划线滑动
         $('.page5item01').hover(function(){
             $(this).find('.page5menuline').animate({width:"80%"});
+            $(this).find('img').addClass("hover");
         },function(){
             $(this).find('.page5menuline').animate({width:"0"});
+            $(this).find('img').removeClass("hover");
         });
         //晃动
         //$('.page6imgwrapper').find('img').hover(function(){

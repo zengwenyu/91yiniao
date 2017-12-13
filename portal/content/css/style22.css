@@ -639,6 +639,9 @@ video {
 .page5item01 img:hover{
 	transform: scale(1.2);
 }
+.page5item01 img.hover{
+    transform: scale(1.2);
+}
 .page5menuline{
 	width:0px;
 	border-bottom:1px solid #000;
