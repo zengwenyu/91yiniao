@@ -385,6 +385,7 @@
                         <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-ccfx/_0003_video-shot-ccfx.jpg" />
                         <img class="page3btn" src="portal/content/images/topic/page3btn.png" /></a>
                     </div>
+                    <div class="clear"></div>
                     <div class="page3tabc02">
                         <div class="page3tabc-txt2">
                             <span>界面石膏腻子涂刷</span>
@@ -452,6 +453,7 @@
                         <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-jbdb/_0003_video-shot-jbdb.jpg" />
                         <img class="page3btn" src="portal/content/images/topic/page3btn.png" /></a>
                     </div>
+                    <div class="clear"></div>
                     <div class="page3tabc02">
                         <div class="page3tabc-txt2">
                             <span>界面石膏腻子涂刷</span>
@@ -969,9 +971,9 @@
         //第三屏视频按钮移入移除
         $('#tabcontent').find('li').find('.page3tabc').hover(function(){
             $(this).find('.page3btn').css('display','block');
-            $(this).find('.page3btn').animate({bottom:"40%"});
+            $(this).find('.page3btn').animate({top:"40%"});
         },function(){
-            $(this).find('.page3btn').animate({bottom:"0"},function(){
+            $(this).find('.page3btn').animate({top:"0"},function(){
                 $(this).css('display','none');
                 $(this).css('bottom','0');
             });
@@ -979,9 +981,9 @@
         //第三屏视频按钮移入移除
         $('#tabcontent').find('li').find('.page3tabc02').hover(function(){
             $(this).find('.page3btn').css('display','block');
-            $(this).find('.page3btn').animate({bottom:"35%"});
+            $(this).find('.page3btn').animate({top:"33%"});
         },function(){
-            $(this).find('.page3btn').animate({bottom:"60%"},function(){
+            $(this).find('.page3btn').animate({top:"0"},function(){
                 $(this).css('display','none');
                 $(this).css('bottom','0');
             });

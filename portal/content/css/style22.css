@@ -349,18 +349,23 @@ video {
 }
 .page3tabc02wrapper{
 	position:relative;
-	left:10%;
-    display: table;
+
+	width:100%;
+	padding:0 18% 0 10%;
+    /*display: table;*/
 }
 .page3tabc02{
 	position:relative;
-	margin-right:5%;
-	width:23%;
+	/*margin-right:5%;*/
+	/*margin:0 2.5%;*/
+	/*width:23%;*/
+    /*margin:0 1%;*/
+	width:26%;
 	text-align:center;
 	float:left;
-	height:260px;
-	overflow:hidden;
-    display: table-cell;
+	height:45%;
+	/*overflow:hidden;
+    display: table-cell;*/
 }
 .page3tabc-txt {
     margin-top:26.5%;
@@ -369,7 +374,9 @@ video {
     position: relative;
 }
 .page3tabc-txt2 {
+	margin:0 auto;
     margin-top:3%;
+    width:90%;
     height: 90px;
     overflow: hidden;
     position: relative;
@@ -404,14 +411,19 @@ video {
 	width:100%;
 	height:100%;
 }
+.page3tabc02 a{
+	display:block;
+	/*height:40%;*/
+	width:100%;
+	position:relative;
+}
 .page3tabc02 .page3pic{
-    width:80%;
-    /*height:150px;*/
-    /*height:168px;*/
+    width:90%;
+
 }
 .page3tabc .page3btn {
 	position:absolute;
-	bottom:0;
+	top:0;
 	width:60px;
 	height:60px;
 	margin-left:40%;
@@ -419,10 +431,10 @@ video {
 }
 .page3tabc02 .page3btn {
     position:absolute;
-	bottom:40px;
+	top:0;
 	width:60px;
 	height:60px;
-	margin-left:46%;
+	margin-left:43%;
 	display:none;
 }
 .page4title{
