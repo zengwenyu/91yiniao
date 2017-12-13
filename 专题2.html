@@ -1,1085 +1,965 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta charset="UTF-8">
-    <meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
 
-    <title>demo</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <link rel="stylesheet" href="portal/content/css/swiper.min.css" />
+<title>demo</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="portal/content/css/swiper.min.css" />
 
-    <link rel="stylesheet" href="portal/content/css/style22.css" />
-    <script type="text/javascript" src="portal/s/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="portal/content/js/jquery.scrollify.min.js"></script>
-    <script>
+<link rel="stylesheet" href="portal/content/css/style22.css" />
+<script type="text/javascript" src="portal/s/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="portal/content/js/jquery.scrollify.min.js"></script>
+<script>
         $(function() {
-            $.scrollify({
-                section : ".example-classname",
-                scrollbars: true,
-                before:function(i,panels) {
-                    var ref = panels[i].attr("data-section-name");
-                    $(".pagination .active").removeClass("active");
-                    $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
-                    // console.log(i);
-                    if (i === 0) {
-                        $("#tabcontent").addClass("moved");
-                        $(".pclogo").addClass("hide");
-                    } else if  (i === 1) {
-                        $("#vertical").addClass("moved");
-                        $(".pclogo").removeClass("hide");
-                    } else if  (i === 2) {
-                        $("#vertical").addClass("moved");
-                        $("#tabcontent").addClass("moved");
-                    }
-                    else if(i === 3) {
-                        $("#tabcontent").addClass("moved");
-                        $("#vertical02").addClass("moved");
-                    } else if(i === 4) {
-                        $("#vertical02").addClass("moved");
-                        $("#page5-items").addClass("moved");
-                    } else if(i ===5 ) {
-                        $("#page6img01").addClass("moved");
-                        $("#page6img02").addClass("moved");
-                        $("#page6img03").addClass("moved");
-                    } else if (i === 6) {
-                        $("#page7-items").addClass("moved");
-                        $("#page6img01").addClass("moved");
-                        $("#page6img02").addClass("moved");
-                        $("#page6img03").addClass("moved");
-                    }
-                },
-                //   before: function (section) {
-                //       console.log(section);
-                //       if (section === 0){
-                //         alert("s");
-                //       }
-                //   },
-                afterRender:function() {
-                    var pagination = "<ul class=\"pagination\">";
-                    var activeClass = "";
-                    $(".example-classname").each(function(i) {
-                        activeClass = "";
-                        if(i===0) {
-                            activeClass = "active";
-                        }
-                        pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"hover-text\">" + $(this).attr("data-section-name").charAt(0).toUpperCase() + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
-                    });
-                    pagination += "</ul>";
-                    $(".home").append(pagination);
-                    $(".pagination a").on("click",$.scrollify.move);
-                }
+          $.scrollify({
+            section : ".example-classname",
+              scrollbars: true,
+              before:function(i,panels) {
+              var ref = panels[i].attr("data-section-name");
+              $(".pagination .active").removeClass("active");
+              $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
+            },
+            afterRender:function() {
+              var pagination = "<ul class=\"pagination\">";
+              var activeClass = "";
+              $(".example-classname").each(function(i) {
+              activeClass = "";
+              if(i===0) {
+              activeClass = "active";
+            }
+            pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"hover-text\">" + $(this).attr("data-section-name").charAt(0).toUpperCase() + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
             });
+            pagination += "</ul>";
+            $(".home").append(pagination);
+            $(".pagination a").on("click",$.scrollify.move);
+            }
+          });
         });
-    </script>
-
-
-    <!--<script>-->
-    <!--$(function() {-->
-    <!--$.scrollify({-->
-    <!--section:".panel",-->
-    <!--scrollbars:false,-->
-    <!--before: function(i,panels) {-->
-    <!--var ref = panels[i].attr("data-section-name");-->
-
-    <!--$(".pagination a.active").removeClass("active");-->
-
-    <!--$(".pagination a[href=#" + ref + "]").addClass("active");-->
-
-    <!--/*-->
-    <!--if(ref==="features") {-->
-    <!--$(".features .gallery0,.features .gallery1,.features .gallery2").addClass("moved");-->
-
-    <!--}*/-->
-
-    <!--panels[i].find(".gallery0,.gallery1,.gallery2").addClass("moved");-->
-
-
-    <!--if(ref==="design") {-->
-    <!--$(".features").find(".gallery0,.gallery1,.gallery2").removeClass("moved");-->
-    <!--$(".ios7 .gallery0").css("top",0);-->
-    <!--}-->
-    <!--if(ref==="features") {-->
-    <!--$(".ios7 .content").removeClass("moved");-->
-    <!--initialPosition();-->
-    <!--}-->
-    <!--if(ref==="ios7") {-->
-    <!--$(".ios7 .content").addClass("moved");-->
-
-    <!--$(".ios7 .gallery0").css("top",0);-->
-    <!--}-->
-    <!--},-->
-    <!--after:function(i,panels) {-->
-    <!--var ref = panels[i].attr("data-section-name");-->
-
-    <!--if(ref==="home") {-->
-    <!--$(".design").find(".gallery0,.gallery1,.gallery2").removeClass("moved");-->
-    <!--}-->
-    <!--for(var j = 0;j < panels.length;j++) {-->
-    <!--if(j>i) {-->
-
-    <!--//panels[j].find(".moved").removeClass("moved");-->
-    <!--}-->
-    <!--}-->
-    <!--},-->
-    <!--afterResize:initialPosition,-->
-    <!--afterRender:initialPosition-->
-    <!--});-->
-
-    <!--$(".pagination a").on("click",function() {-->
-    <!--$.scrollify.move($(this).attr("href"));-->
-    <!--});-->
-
-    <!--function initialPosition() {-->
-
-    <!--var current = $.scrollify.current();-->
-
-    <!--if(current.hasClass("ios7")===false) {-->
-    <!--var height = parseInt($(".ios7").height());-->
-    <!--var f = parseInt($(".features .gallery1").height()) - 50;-->
-
-    <!--var top = 0 - (height*0.4) - (height-f);-->
-    <!--$(".ios7 .gallery0").css("top",top);-->
-    <!--} else {-->
-    <!--$(".features").find(".gallery0,.gallery1,.gallery2").addClass("moved");-->
-    <!--}-->
-
-    <!--}-->
-    <!--});-->
-
-
-    <!--</script>-->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      </script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
 </head>
 <body>
-<span class="pclogo hide">YINIAO.</span>
-
-<div class="header" style="height: 120px;">
-    <div class="inner">
-        <p>Header</p>
-    </div>
-</div>
-<div class="example-classname page1 home"  data-section-name="page1">
-    <img class="bg" src="portal/content/images/topic/page1bg.jpg" />
-    <div id="page1-bigpic" class="page1-bigpic">
-        <p>您家<span>墙面</span>一定有这样的问题</p>
-        <div class="bigpic-wrapper">
-            <img src="portal/content/images/topic/problem/_0005_problem_big.jpg" />
+  <span class="pclogo">YINIAO.</span>
+  
+      <div class="example-classname page1 home"  data-section-name="page1">
+        <img class="bg" src="portal/content/images/topic/page1bg.jpg" />
+        <div id="page1-bigpic" class="page1-bigpic">
+          <p>您家<span>墙面</span>一定有这样的问题</p>
+            <div class="bigpic-wrapper">
+          <img src="portal/content/images/topic/problem/_0005_problem_big.jpg" />
+            </div>
         </div>
-    </div>
-    <div class="page1-smallpic">
-        <ul id="page1smallpic">
+        <div class="page1-smallpic">
+          <ul id="page1smallpic">
             <li><img src="portal/content/images/topic/problem/_0004_problem.jpg" /></li>
             <li><img src="portal/content/images/topic/problem/_0003_problem.jpg" /></li>
             <li><img src="portal/content/images/topic/problem/_0002_problem.jpg" /></li>
             <li><img src="portal/content/images/topic/problem/_0001_problem.jpg" /></li>
             <li><img src="portal/content/images/topic/problem/_0000_problem.jpg" /></li>
-        </ul>
-    </div>
-</div>
-<div class="example-classname page2" data-section-name="page2">
-
-    <div id="vertical" class="brand vertical">
-        <div class="wrapperforr">
+          </ul>
+        </div>
+      </div>
+      <div class="example-classname page2" data-section-name="page2">
+        
+        <div id="vertical" class="brand vertical">
+          <div class="wrapperforr">
             <div class="img img01">
-                <img src="portal/content/images/topic/page2icon01.png" />
+              <img src="portal/content/images/topic/page2icon01.png" />
             </div>
             <div class="info infobg01">
-                <span>修补刷新</span>
-                <p>墙面基层施工工艺不达标形成蜘蛛网 状裂纹，墙体表面被浸水，墙面被记号笔、圆 珠笔、油渍等所污损</p>
-                <a href="#"><img src="portal/content/images/topic/page2arrow.png" /></a>
+              <span>修补刷新</span>
+              <p>墙面基层施工工艺不达标形成蜘蛛网 状裂纹，墙体表面被浸水，墙面被记号笔、圆 珠笔、油渍等所污损</p>
+              <a href="#"><img src="portal/content/images/topic/page2arrow.png" /></a>
             </div>
-        </div>
-        <div class="wrapperforr">
+          </div>
+          <div class="wrapperforr">
             <div class="img img02">
-                <img src="portal/content/images/topic/page2icon02.png" />
+              <img src="portal/content/images/topic/page2icon02.png" />
             </div>
             <div class="info infobg02">
-                <span>基础修补</span>
-                <p>墙面被铅笔涂鸦、墙面污损，有脚印等、墙面泛黄</p>
-                <a href="#"><img src="portal/content/images/topic/page2arrow.png" /></a>
+              <span>基础修补</span>
+              <p>墙面被铅笔涂鸦、墙面污损，有脚印等、墙面泛黄</p>
+              <a href="#"><img src="portal/content/images/topic/page2arrow.png" /></a>
             </div>
-        </div>
-        <div class="wrapperforr">
+          </div>
+          <div class="wrapperforr">
             <div class="img img03">
-                <img src="portal/content/images/topic/page2icon03.png" />
+              <img src="portal/content/images/topic/page2icon03.png" />
             </div>
             <div class="info infobg03">
-                <span>铲除翻新</span>
-                <p>墙面裂口较大，裂口比连续且较长，墙体剥落，基材年久老化，墙面粉化</p>
-                <a href=""><img src="portal/content/images/topic/page2arrow.png" /></a>
+              <span>铲除翻新</span>
+              <p>墙面裂口较大，裂口比连续且较长，墙体剥落，基材年久老化，墙面粉化</p>
+              <a href=""><img src="portal/content/images/topic/page2arrow.png" /></a>
             </div>
-        </div>
-        <div class="wrapperforr">
+          </div>
+          <div class="wrapperforr">
             <div class="img img04">
-                <img src="portal/content/images/topic/page2icon04.png" />
+              <img src="portal/content/images/topic/page2icon04.png" />
             </div>
             <div class="info infobg04">
-                <span>局部点补</span>
-                <p>墙面少数几处掉皮，墙体表面有少数几处开裂，墙面有发霉情况</p>
-                <a href=""><img src="portal/content/images/topic/page2arrow.png" /></a>
+              <span>局部点补</span>
+              <p>墙面少数几处掉皮，墙体表面有少数几处开裂，墙面有发霉情况</p>
+              <a href=""><img src="portal/content/images/topic/page2arrow.png" /></a>
             </div>
+          </div>
         </div>
-    </div>
 
-</div>
-<div class="example-classname page3" data-section-name="page3">
-    <div class="ydupvideo">
-        <a href="javascript:;" onclick="popdownvideo()">X</a>
-        <div class="ydupvideowrap">
-            <video width="100%" height="auto" controls="controls">
-                <source src="wap/wapportal/content/video/ccqm.mp4" type="video/mp4">
-            </video>
-            <div class="video-title">
-                <p>adfasfasdfs</p>
-                <p>adfasfasdfs</p>
-            </div>
+      </div>
+      <div class="example-classname page3" data-section-name="page3">
+        <div class="ydupvideo">
+          <a href="javascript:;" onclick="popdownvideo()">X</a>
+          <div class="ydupvideowrap">
+          <video width="100%" height="auto" controls="controls">
+            <source src="wap/wapportal/content/video/ccqm.mp4" type="video/mp4">
+          </video>
+          <div class="video-title">
+            <p>adfasfasdfs</p>
+            <p>adfasfasdfs</p>
+          </div>
+         </div>
         </div>
-    </div>
-    <span class="page3title">专业的工艺</span>
-    <span class="page3subtitle">PERFESSIONAL TECHNOLOGY</span>
-    <div class="page3tab" id="main">
-        <ul class="menu menu-switcher" id="menu">
+        <span class="page3title">专业的工艺</span>
+        <span class="page3subtitle">PERFESSIONAL TECHNOLOGY</span>
+        <div class="page3tab" id="main">
+          <ul class="menu menu-switcher" id="menu">
             <li onclick="setTab(3)">局部点补<div class="page2menuline"></div></li>
             <li onclick="setTab(2)">铲除翻新<div class="page2menuline"></div></li>
             <li onclick="setTab(1)">基础修补<div class="page2menuline"></div></li>
             <li onclick="setTab(0)" class="hover">修补刷新<div class="page2menulineactive"></div></li>
-        </ul>
-        <ul id="tabcontent">
+          </ul>
+          <ul id="tabcontent">
             <li class="block">
-                <div class="page3tabc">
-                    <div class="page3tabc-txt">
-                        <span>成品保护</span>
-                        <p>别人做不到的细节，我们都能做到 360度无死角覆盖，给您房屋姨妈巾的保护<br />（细节视频展示）</p>
-                        <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                    </div>
+              <div class="page3tabc">
+                <div class="page3tabc-txt">
+                <span>成品保护</span>
+                <p>别人做不到的细节，我们都能做到 360度无死角覆盖，给您房屋姨妈巾的保护<br />（细节视频展示）</p>
+                <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
+                </div>
 
 
-                    <a href="javascript:;" onclick="popupvideo('成品保护','别人做不到的细节，我们能做到360度无死角覆盖，给您房屋姨妈巾的保护','/portal/content/video/mend/mend1.mp4')"><img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-xbsx/_0003_video-shot-xbsx.jpg" />
-                        <img class="page3btn" src="portal/content/images/topic/page3btn.png" /></a>
+                <a href="javascript:;" onclick="popupvideo('成品保护','别人做不到的细节，我们能做到360度无死角覆盖，给您房屋姨妈巾的保护','/portal/content/video/mend/mend1.mp4')"><img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-xbsx/_0003_video-shot-xbsx.jpg" />
+                <img class="page3btn" src="portal/content/images/topic/page3btn.png" /></a>
+              </div>
+              <div class="page3tabc">
+                <div class="page3tabc-txt">
+                <span>墙面修补</span>
+                <p>在小的地方，我们都能做，并且能做好<br />（细节视频展示）</p>
+                <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
                 </div>
-                <div class="page3tabc">
-                    <div class="page3tabc-txt">
-                        <span>墙面修补</span>
-                        <p>在小的地方，我们都能做，并且能做好<br />（细节视频展示）</p>
-                        <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                    </div>
-                    <a href="javascript:;" onclick="popupvideo()">
-                        <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-xbsx/_0002_video-shot-xbsx.jpg" />
-                        <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
-                    </a>
+                <a href="javascript:;" onclick="popupvideo()">
+                <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-xbsx/_0002_video-shot-xbsx.jpg" />
+                <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+                </a>
+              </div>
+              <div class="page3tabc">
+                <div class="page3tabc-txt">
+                <span>喷涂面漆（两遍）</span>
+                <p>我们面漆采用喷涂机，保证墙壁表面平整光滑，手感极好，丰满度好，堪称极优<br />（细节视频展示）</p>
+                <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
                 </div>
-                <div class="page3tabc">
-                    <div class="page3tabc-txt">
-                        <span>喷涂面漆（两遍）</span>
-                        <p>我们面漆采用喷涂机，保证墙壁表面平整光滑，手感极好，丰满度好，堪称极优<br />（细节视频展示）</p>
-                        <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                    </div>
-                    <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-xbsx/_0001_video-shot-xbsx.jpg" />
-                    <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+                <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-xbsx/_0001_video-shot-xbsx.jpg" />
+                <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+              </div>
+              <div class="page3tabc">
+                <div class="page3tabc-txt">
+                <span>完工清洁</span>
+                <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差<br />（细节视频展示）</p>
+                <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
                 </div>
-                <div class="page3tabc">
-                    <div class="page3tabc-txt">
-                        <span>完工清洁</span>
-                        <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差<br />（细节视频展示）</p>
-                        <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                    </div>
-                    <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-xbsx/_0000_video-shot-xbsx.jpg" />
-                    <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
-                </div>
-                <div class="clearfix"></div>
+                <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-xbsx/_0000_video-shot-xbsx.jpg" />
+                <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+              </div>
+              <div class="clearfix"></div>
             </li>
 
             <!--tab2-->
             <li class="tab">
-                <div class="page3tabc">
-                    <div class="page3tabc-txt">
-                        <span>成品保护</span>
-                        <p>别人做不到的细节，我们都能做到 360度无死角覆盖，给您房屋姨妈巾的保护<br />（细节视频展示）</p>
-                        <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                    </div>
-                    <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-xbsx/_0003_video-shot-xbsx.jpg" />
-                    <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+              <div class="page3tabc">
+                <div class="page3tabc-txt">
+                  <span>成品保护</span>
+                  <p>别人做不到的细节，我们都能做到 360度无死角覆盖，给您房屋姨妈巾的保护<br />（细节视频展示）</p>
+                  <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
                 </div>
-                <div class="page3tabc">
-                    <div class="page3tabc-txt">
-                        <span>墙面修补</span>
-                        <p>在小的地方，我们都能做，并且能做好<br />（细节视频展示）</p>
-                        <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                    </div>
-                    <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-xbsx/_0002_video-shot-xbsx.jpg" />
-                    <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+                <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-xbsx/_0003_video-shot-xbsx.jpg" />
+                <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+              </div>
+              <div class="page3tabc">
+                <div class="page3tabc-txt">
+                  <span>墙面修补</span>
+                  <p>在小的地方，我们都能做，并且能做好<br />（细节视频展示）</p>
+                  <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
                 </div>
-                <div class="page3tabc">
-                    <div class="page3tabc-txt">
-                        <span>喷涂面漆（两遍）</span>
-                        <p>我们面漆采用喷涂机，保证墙壁表面平整光滑，手感极好，丰满度好，堪称极优<br />（细节视频展示）</p>
-                        <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                    </div>
-                    <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-xbsx/_0001_video-shot-xbsx.jpg" />
-                    <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+                <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-xbsx/_0002_video-shot-xbsx.jpg" />
+                <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+              </div>
+              <div class="page3tabc">
+                <div class="page3tabc-txt">
+                  <span>喷涂面漆（两遍）</span>
+                  <p>我们面漆采用喷涂机，保证墙壁表面平整光滑，手感极好，丰满度好，堪称极优<br />（细节视频展示）</p>
+                  <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
                 </div>
-                <div class="page3tabc">
-                    <div class="page3tabc-txt">
-                        <span>完工清洁</span>
-                        <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差<br />（细节视频展示）</p>
-                        <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                    </div>
-                    <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-xbsx/_0000_video-shot-xbsx.jpg" />
-                    <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+                <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-xbsx/_0001_video-shot-xbsx.jpg" />
+                <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+              </div>
+              <div class="page3tabc">
+                <div class="page3tabc-txt">
+                  <span>完工清洁</span>
+                  <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差<br />（细节视频展示）</p>
+                  <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
                 </div>
-                <div class="clearfix"></div>
+                <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-xbsx/_0000_video-shot-xbsx.jpg" />
+                <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+              </div>
+              <div class="clearfix"></div>
             </li>
 
             <!--tab-3-->
             <li class="tab">
-                <div class="page3tabc02wrapper">
-                    <div class="page3tabc02">
-                        <div class="page3tabc-txt2">
-                            <span>成品保护</span>
-                            <p>别人做不到的细节，我们都能做到 360度无死角覆盖，给您房屋姨妈巾的保护<br />（细节视频展示）</p>
-                            <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                        </div>
-                        <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-ccfx/_0005_video-shot-ccfx.jpg" />
-                        <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
-                    </div>
-                    <div class="page3tabc02">
-                        <div class="page3tabc-txt2">
-                            <span>铲除墙面</span>
-                            <p>将原有墙面的基础铲除至原始墙体，角落，门缝，铲除至原始墙面<br />（细节视频展示）</p>
-                            <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                        </div>
-                        <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-ccfx/_0004_video-shot-ccfx.jpg" />
-                        <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
-                    </div>
-                    <div class="page3tabc02">
-                        <div class="page3tabc-txt2">
-                            <span>界面剂涂刷</span>
-                            <p>对整个墙面，角落都不放过，整齐，有规律的涂刷<br />（细节视频展示）</p>
-                            <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                        </div>
-                        <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-ccfx/_0003_video-shot-ccfx.jpg" />
-                        <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
-                    </div>
-                    <div class="page3tabc02">
-                        <div class="page3tabc-txt2">
-                            <span>界面石膏腻子涂刷</span>
-                            <p>采用益鸟独特配方石膏找平<br/>（细节视频展示）</p>
-                            <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                        </div>
-                        <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-ccfx/_0002_video-shot-ccfx.jpg" />
-                        <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
-                    </div>
-                    <div class="page3tabc02">
-                        <div class="page3tabc-txt2">
-                            <span>喷涂面漆（两遍）</span>
-                            <p>采用喷涂机，保证墙壁表面平整光滑，手感极好，丰满度好，堪称极优<br />（细节视频展示）</p>
-                            <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                        </div>
-                        <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-ccfx/_0001_video-shot-ccfx.jpg" />
-                        <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
-                    </div>
-                    <div class="page3tabc02">
-                        <div class="page3tabc-txt2">
-                            <span>完工清洁</span>
-                            <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差<br />（细节视频展示）</p>
-                            <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                        </div>
-                        <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-ccfx/_0000_video-shot-ccfx.jpg" />
-                        <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
-                    </div>
-                    <div class="clearfix"></div>
+              <div class="page3tabc02wrapper">
+              <div class="page3tabc02">
+                <div class="page3tabc-txt2">
+                  <span>成品保护</span>
+                  <p>别人做不到的细节，我们都能做到 360度无死角覆盖，给您房屋姨妈巾的保护<br />（细节视频展示）</p>
+                  <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
                 </div>
+                <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-ccfx/_0005_video-shot-ccfx.jpg" />
+                <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+              </div>
+              <div class="page3tabc02">
+                <div class="page3tabc-txt2">
+                  <span>铲除墙面</span>
+                  <p>将原有墙面的基础铲除至原始墙体，角落，门缝，铲除至原始墙面<br />（细节视频展示）</p>
+                  <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
+                </div>
+                <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-ccfx/_0004_video-shot-ccfx.jpg" />
+                <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+              </div>
+              <div class="page3tabc02">
+                <div class="page3tabc-txt2">
+                  <span>界面剂涂刷</span>
+                  <p>对整个墙面，角落都不放过，整齐，有规律的涂刷<br />（细节视频展示）</p>
+                  <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
+                </div>
+                <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-ccfx/_0003_video-shot-ccfx.jpg" />
+                <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+              </div>
+              <div class="page3tabc02">
+                <div class="page3tabc-txt2">
+                  <span>界面石膏腻子涂刷</span>
+                  <p>采用益鸟独特配方石膏找平<br/>（细节视频展示）</p>
+                  <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
+                </div>
+                <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-ccfx/_0002_video-shot-ccfx.jpg" />
+                <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+              </div>
+              <div class="page3tabc02">
+                <div class="page3tabc-txt2">
+                  <span>喷涂面漆（两遍）</span>
+                  <p>采用喷涂机，保证墙壁表面平整光滑，手感极好，丰满度好，堪称极优<br />（细节视频展示）</p>
+                  <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
+                </div>
+                <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-ccfx/_0001_video-shot-ccfx.jpg" />
+                <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+              </div>
+              <div class="page3tabc02">
+                <div class="page3tabc-txt2">
+                  <span>完工清洁</span>
+                  <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差<br />（细节视频展示）</p>
+                  <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
+                </div>
+                <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-ccfx/_0000_video-shot-ccfx.jpg" />
+                <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+              </div>
+              <div class="clearfix"></div>
+            </div>
             </li>
 
             <!--tab-4-->
-            <li class="tab">
-                <div class="page3tabc02wrapper">
-                    <div class="page3tabc02">
-                        <div class="page3tabc-txt2">
-                            <span>成品保护</span>
-                            <p>别人做不到的细节，我们都能做到 360度无死角覆盖，给您房屋姨妈巾的保护<br />（细节视频展示）</p>
-                            <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                        </div>
-                        <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-jbdb/_0005_video-shot-jbdb.jpg" />
-                        <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
-                    </div>
-                    <div class="page3tabc02">
-                        <div class="page3tabc-txt2">
-                            <span>破损墙面铲除</span>
-                            <p>将原有墙面的基础铲除至原始墙体，角落，门缝，铲除至原始墙面<br />（细节视频展示）</p>
-                            <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                        </div>
-                        <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-jbdb/_0004_video-shot-jbdb.jpg" />
-                        <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
-                    </div>
-                    <div class="page3tabc02">
-                        <div class="page3tabc-txt2">
-                            <span>涂刷防水</span>
-                            <p>对墙面背水面进行防水保护，使用我们<br />（细节视频展示）</p>
-                            <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                        </div>
-                        <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-jbdb/_0003_video-shot-jbdb.jpg" />
-                        <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
-                    </div>
-                    <div class="page3tabc02">
-                        <div class="page3tabc-txt2">
-                            <span>界面石膏腻子涂刷</span>
-                            <p>首先使用界面剂均匀涂刷在采用益鸟独特配方石膏找平<br/>（细节视频展示）</p>
-                            <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                        </div>
-                        <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-jbdb/_0002_video-shot-jbdb.jpg" />
-                        <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
-                    </div>
-                    <div class="page3tabc02">
-                        <div class="page3tabc-txt2">
-                            <span>喷涂面漆（两遍）</span>
-                            <p>采用喷涂机，保证墙壁表面平整光滑，手感极好，丰满度好，堪称极优<br />（细节视频展示）</p>
-                            <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                        </div>
-                        <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-jbdb/_0001_video-shot-jbdb.jpg" />
-                        <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
-                    </div>
-                    <div class="page3tabc02">
-                        <div class="page3tabc-txt2">
-                            <span>完工清洁</span>
-                            <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差<br />（细节视频展示）</p>
-                            <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
-                        </div>
-                        <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-jbdb/_0000_video-shot-jbdb.jpg" />
-                        <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </li>
-        </ul>
-    </div>
-</div>
-<div class="example-classname page4" data-section-name="page4">
-
-    <span class="page4title">12道专业工艺</span>
-    <div id="vertical02" class="brand02 vertical02">
-        <div class="wapperforr02">
+              <li class="tab">
+                  <div class="page3tabc02wrapper">
+                      <div class="page3tabc02">
+                          <div class="page3tabc-txt2">
+                              <span>成品保护</span>
+                              <p>别人做不到的细节，我们都能做到 360度无死角覆盖，给您房屋姨妈巾的保护<br />（细节视频展示）</p>
+                              <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
+                          </div>
+                          <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-jbdb/_0005_video-shot-jbdb.jpg" />
+                          <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+                      </div>
+                      <div class="page3tabc02">
+                          <div class="page3tabc-txt2">
+                              <span>破损墙面铲除</span>
+                              <p>将原有墙面的基础铲除至原始墙体，角落，门缝，铲除至原始墙面<br />（细节视频展示）</p>
+                              <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
+                          </div>
+                          <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-jbdb/_0004_video-shot-jbdb.jpg" />
+                          <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+                      </div>
+                      <div class="page3tabc02">
+                          <div class="page3tabc-txt2">
+                              <span>涂刷防水</span>
+                              <p>对墙面背水面进行防水保护，使用我们<br />（细节视频展示）</p>
+                              <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
+                          </div>
+                          <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-jbdb/_0003_video-shot-jbdb.jpg" />
+                          <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+                      </div>
+                      <div class="page3tabc02">
+                          <div class="page3tabc-txt2">
+                              <span>界面石膏腻子涂刷</span>
+                              <p>首先使用界面剂均匀涂刷在采用益鸟独特配方石膏找平<br/>（细节视频展示）</p>
+                              <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
+                          </div>
+                          <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-jbdb/_0002_video-shot-jbdb.jpg" />
+                          <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+                      </div>
+                      <div class="page3tabc02">
+                          <div class="page3tabc-txt2">
+                              <span>喷涂面漆（两遍）</span>
+                              <p>采用喷涂机，保证墙壁表面平整光滑，手感极好，丰满度好，堪称极优<br />（细节视频展示）</p>
+                              <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
+                          </div>
+                          <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-jbdb/_0001_video-shot-jbdb.jpg" />
+                          <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+                      </div>
+                      <div class="page3tabc02">
+                          <div class="page3tabc-txt2">
+                              <span>完工清洁</span>
+                              <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差<br />（细节视频展示）</p>
+                              <img class="page3arrow" src="portal/content/images/topic/page3arrow.png" />
+                          </div>
+                          <img class="page3pic" src="portal/content/images/topic/video-shot/video-shot-jbdb/_0000_video-shot-jbdb.jpg" />
+                          <img class="page3btn" src="portal/content/images/topic/page3btn.png" />
+                      </div>
+                      <div class="clearfix"></div>
+                  </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <div class="example-classname page4" data-section-name="page4">
+        
+        <span class="page4title">12道专业工艺</span>
+        <div id="vertical02" class="brand02 vertical02">
+          <div class="wapperforr02">
             <div class="front f01">
-                <div class="frontwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0001s_0000_0.png" />
-                    <!--<span class="fronttitle">成品保护</span>-->
-                    <!--<span class="frontsub">（我们家的）</span>-->
-                    <!--<p>将原有多的物件拆卸，以及对家  具，灯具，门窗等等进行保护</p>-->
-                </div>
+              <div class="frontwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0001s_0000_0.png" />
+                <!--<span class="fronttitle">成品保护</span>-->
+                <!--<span class="frontsub">（我们家的）</span>-->
+                <!--<p>将原有多的物件拆卸，以及对家  具，灯具，门窗等等进行保护</p>-->
+              </div>
             </div>
-
+            
             <div class="back b01">
-                <div class="backwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0000s_0000_0.png" />
-                    <!--<span class="backtitle">成品保护</span>-->
-                    <!--<span class="backsub">（别人家的）</span>-->
-                    <!--<p>有的公司施工前就随便用东西遮挡一下，甚至都不会给你家具进行保护</p>-->
-                </div>
+              <div class="backwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0000s_0000_0.png" />
+                <!--<span class="backtitle">成品保护</span>-->
+                <!--<span class="backsub">（别人家的）</span>-->
+                <!--<p>有的公司施工前就随便用东西遮挡一下，甚至都不会给你家具进行保护</p>-->
+              </div>
             </div>
-        </div>
+          </div>
 
-        <div class="wapperforr02">
+          <div class="wapperforr02">
             <div class="front f02">
-                <div class="frontwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0001s_0000_1.png" />
-                    <!--<span class="fronttitle">基层铲除</span>-->
-                    <!--<span class="frontsub">（我们家的）</span>-->
-                    <!--<p>原有墙面基层铲除只原始的墙面每个小细节、每个角落铲除干净</p>-->
-                </div>
+              <div class="frontwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0001s_0000_1.png" />
+                <!--<span class="fronttitle">基层铲除</span>-->
+                <!--<span class="frontsub">（我们家的）</span>-->
+                <!--<p>原有墙面基层铲除只原始的墙面每个小细节、每个角落铲除干净</p>-->
+              </div>
             </div>
-
+            
             <div class="back b02">
-                <div class="backwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0000s_0000_1.png" />
-                    <!--<span class="backtitle">基层铲除</span>-->
-                    <!--<span class="backsub">（别人家的）</span>-->
-                    <!--<p>有的公司为了省时省力，基层铲除的时候留下横多地方没有铲除到，导致后期会出现墙面不平整</p>-->
-                </div>
+              <div class="backwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0000s_0000_1.png" />
+                <!--<span class="backtitle">基层铲除</span>-->
+                <!--<span class="backsub">（别人家的）</span>-->
+                <!--<p>有的公司为了省时省力，基层铲除的时候留下横多地方没有铲除到，导致后期会出现墙面不平整</p>-->
+              </div>
             </div>
-        </div>
+          </div>
 
-        <div class="wapperforr02">
+          <div class="wapperforr02">
             <div class="front f03">
-                <div class="frontwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0001s_0000_2.png" />
-                    <!--<span class="fronttitle">防水涂刷</span>-->
-                    <!--<span class="frontsub">（我们家的）</span>-->
-                    <!--<p>对阳台，厨卫，背水面进行防水使用我们独特防水工艺</p>-->
-                </div>
+              <div class="frontwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0001s_0000_2.png" />
+                <!--<span class="fronttitle">防水涂刷</span>-->
+                <!--<span class="frontsub">（我们家的）</span>-->
+                <!--<p>对阳台，厨卫，背水面进行防水使用我们独特防水工艺</p>-->
+              </div>
             </div>
-
+            
             <div class="back b03">
-                <div class="backwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0000s_0000_2.png" />
-                    <!--<span class="backtitle">防水涂刷</span>-->
-                    <!--<span class="backsub">（别人家的）</span>-->
-                    <!--<p>有的公司在墙面防水会偷工减料使用劣质的防水材料，会导致之后会再次返潮</p>-->
-                </div>
+              <div class="backwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0000s_0000_2.png" />
+                <!--<span class="backtitle">防水涂刷</span>-->
+                <!--<span class="backsub">（别人家的）</span>-->
+                <!--<p>有的公司在墙面防水会偷工减料使用劣质的防水材料，会导致之后会再次返潮</p>-->
+              </div>
             </div>
-        </div>
+          </div>
 
-        <div class="wapperforr02">
+          <div class="wapperforr02">
             <div class="front f04">
-                <div class="frontwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0001s_0000_3.png" />
-                    <!--<span class="fronttitle">界面涂刷</span>-->
-                    <!--<span class="frontsub">（我们家的）</span>-->
-                    <!--<p>对整个墙面，角落都不放过，整齐，有规律的涂刷</p>-->
-                </div>
+              <div class="frontwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0001s_0000_3.png" />
+                <!--<span class="fronttitle">界面涂刷</span>-->
+                <!--<span class="frontsub">（我们家的）</span>-->
+                <!--<p>对整个墙面，角落都不放过，整齐，有规律的涂刷</p>-->
+              </div>
             </div>
-
+            
             <div class="back b04">
-                <div class="backwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0000s_0000_3.png" />
-                    <!--<span class="backtitle">界面涂刷</span>-->
-                    <!--<span class="backsub">（别人家的）</span>-->
-                    <!--<p>有的公司采用的是普通石膏，导致干的比较慢，耽误施工工期</p>-->
-                </div>
+              <div class="backwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0000s_0000_3.png" />
+                <!--<span class="backtitle">界面涂刷</span>-->
+                <!--<span class="backsub">（别人家的）</span>-->
+                <!--<p>有的公司采用的是普通石膏，导致干的比较慢，耽误施工工期</p>-->
+              </div>
             </div>
-        </div>
+          </div>
 
-        <div class="wapperforr02">
+          <div class="wapperforr02">
             <div class="front f05">
-                <div class="frontwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0001s_0000_4.png" />
-                    <!--<span class="fronttitle">石膏修补</span>-->
-                    <!--<span class="frontsub">（我们家的）</span>-->
-                    <!--<p>采用益鸟独特配方石膏找平</p>-->
-                </div>
+              <div class="frontwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0001s_0000_4.png" />
+                <!--<span class="fronttitle">石膏修补</span>-->
+                <!--<span class="frontsub">（我们家的）</span>-->
+                <!--<p>采用益鸟独特配方石膏找平</p>-->
+              </div>
             </div>
-
+            
             <div class="back b05">
-                <div class="backwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0000s_0000_4.png" />
-                    <!--<span class="backtitle">石膏修补</span>-->
-                    <!--<span class="backsub">（别人家的）</span>-->
-                    <!--<p>将原有多的物件拆卸，以及对家  具，灯具，门窗等等进行保护</p>-->
-                </div>
+              <div class="backwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0000s_0000_4.png" />
+                <!--<span class="backtitle">石膏修补</span>-->
+                <!--<span class="backsub">（别人家的）</span>-->
+                <!--<p>将原有多的物件拆卸，以及对家  具，灯具，门窗等等进行保护</p>-->
+              </div>
             </div>
-        </div>
+          </div>
 
-        <div class="wapperforr02">
+          <div class="wapperforr02">
             <div class="front f06">
-                <div class="frontwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0001s_0000_5.png" />
-                    <!--<span class="fronttitle">挂网加固</span>-->
-                    <!--<span class="frontsub">（我们家的）</span>-->
-                    <!--<p>在有裂缝处，在裂缝做挂网处理</p>-->
-                </div>
+              <div class="frontwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0001s_0000_5.png" />
+                <!--<span class="fronttitle">挂网加固</span>-->
+                <!--<span class="frontsub">（我们家的）</span>-->
+                <!--<p>在有裂缝处，在裂缝做挂网处理</p>-->
+              </div>
             </div>
-
+            
             <div class="back b06">
-                <div class="backwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0000s_0000_5.png" />
-                    <!--<span class="backtitle">挂网加固</span>-->
-                    <!--<span class="backsub">（别人家的）</span>-->
-                    <!--<p>有的公司在挂网上为了省下材料会使用劣质的材料，导致钢丝弯曲，掉落</p>-->
-                </div>
+              <div class="backwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0000s_0000_5.png" />
+                <!--<span class="backtitle">挂网加固</span>-->
+                <!--<span class="backsub">（别人家的）</span>-->
+                <!--<p>有的公司在挂网上为了省下材料会使用劣质的材料，导致钢丝弯曲，掉落</p>-->
+              </div>
             </div>
-        </div>
+          </div>
 
-        <div class="wapperforr02">
+          <div class="wapperforr02">
             <div class="front f07">
-                <div class="frontwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0001s_0000_6.png" />
-                    <!--<span class="fronttitle">边角加固</span>-->
-                    <!--<span class="frontsub">（我们家的）</span>-->
-                    <!--<p>安装阴阳角护角，保持水平和垂直</p>-->
-                </div>
+              <div class="frontwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0001s_0000_6.png" />
+                <!--<span class="fronttitle">边角加固</span>-->
+                <!--<span class="frontsub">（我们家的）</span>-->
+                <!--<p>安装阴阳角护角，保持水平和垂直</p>-->
+              </div>
             </div>
-
+            
             <div class="back b07">
-                <div class="backwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0000s_0000_6.png" />
-                    <!--<span class="backtitle">边角加固</span>-->
-                    <!--<span class="backsub">（别人家的）</span>-->
-                    <!--<p>有的公司在涂刷墙面阴阳角的时候不会加固，就会导致阳角不顺直</p>-->
-                </div>
+              <div class="backwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0000s_0000_6.png" />
+                  <!--<span class="backtitle">边角加固</span>-->
+                <!--<span class="backsub">（别人家的）</span>-->
+                <!--<p>有的公司在涂刷墙面阴阳角的时候不会加固，就会导致阳角不顺直</p>-->
+              </div>
             </div>
-        </div>
+          </div>
 
-        <div class="wapperforr02">
+          <div class="wapperforr02">
             <div class="front f08">
-                <div class="frontwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0001s_0000_7.png" />
-                    <!--<span class="fronttitle">腻子修补</span>-->
-                    <!--<span class="frontsub">（我们家的）</span>-->
-                    <!--<p>采用益鸟独特配方腻子材料</p>-->
-                </div>
+              <div class="frontwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0001s_0000_7.png" />
+                  <!--<span class="fronttitle">腻子修补</span>-->
+                <!--<span class="frontsub">（我们家的）</span>-->
+                <!--<p>采用益鸟独特配方腻子材料</p>-->
+              </div>
             </div>
-
+            
             <div class="back b08">
-                <div class="backwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0000s_0000_7.png" />
-                    <!--<span class="backtitle">腻子修补</span>-->
-                    <!--<span class="backsub">（别人家的）</span>-->
-                    <!--<p>有的公司师傅施工时对小的细节观察不到位，小的地方腻子修补不到位</p>-->
-                </div>
+              <div class="backwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0000s_0000_7.png" />
+                  <!--<span class="backtitle">腻子修补</span>-->
+                <!--<span class="backsub">（别人家的）</span>-->
+                <!--<p>有的公司师傅施工时对小的细节观察不到位，小的地方腻子修补不到位</p>-->
+              </div>
             </div>
-        </div>
+          </div>
 
-        <div class="wapperforr02">
+          <div class="wapperforr02">
             <div class="front f09">
-                <div class="frontwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0001s_0000_8.png" />
-                    <!--<span class="fronttitle">无尘打磨</span>-->
-                    <!--<span class="frontsub">（我们家的）</span>-->
-                    <!--<p>专业无尘机打磨，墙面均匀光滑没有灰尘</p>-->
-                </div>
+              <div class="frontwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0001s_0000_8.png" />
+                  <!--<span class="fronttitle">无尘打磨</span>-->
+                <!--<span class="frontsub">（我们家的）</span>-->
+                <!--<p>专业无尘机打磨，墙面均匀光滑没有灰尘</p>-->
+              </div>
             </div>
-
+            
             <div class="back b09">
-                <div class="backwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0000s_0000_8.png" />
-                    <!--<span class="backtitle">无尘打磨</span>-->
-                    <!--<span class="backsub">（别人家的）</span>-->
-                    <!--<p>其他公司还在大面积墙面使用砂纸打磨，会导致粉尘多，不平滑</p>-->
-                </div>
+              <div class="backwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0000s_0000_8.png" />
+                  <!--<span class="backtitle">无尘打磨</span>-->
+                <!--<span class="backsub">（别人家的）</span>-->
+                <!--<p>其他公司还在大面积墙面使用砂纸打磨，会导致粉尘多，不平滑</p>-->
+              </div>
             </div>
-        </div>
+          </div>
 
-        <div class="wapperforr02">
+          <div class="wapperforr02">
             <div class="front f10">
-                <div class="frontwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0001s_0000_9.png" />
-                    <!--<span class="fronttitle">涂刷底漆</span>-->
-                    <!--<span class="frontsub">（我们家的）</span>-->
-                    <!--<p>整体涂刷底漆一遍，按需遮蔽之后清除垃圾</p>-->
-                </div>
+              <div class="frontwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0001s_0000_9.png" />
+                  <!--<span class="fronttitle">涂刷底漆</span>-->
+                <!--<span class="frontsub">（我们家的）</span>-->
+                <!--<p>整体涂刷底漆一遍，按需遮蔽之后清除垃圾</p>-->
+              </div>
             </div>
-
+            
             <div class="back b10">
-                <div class="backwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0000s_0000_9.png" />
-                    <!--<span class="backtitle">涂刷底漆</span>-->
-                    <!--<span class="backsub">（别人家的）</span>-->
-                    <!--<p>有的公司为了节约成本，兑水过多，会导致不均匀，甚至有的还不涂底漆</p>-->
-                </div>
+              <div class="backwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0000s_0000_9.png" />
+                  <!--<span class="backtitle">涂刷底漆</span>-->
+                <!--<span class="backsub">（别人家的）</span>-->
+                <!--<p>有的公司为了节约成本，兑水过多，会导致不均匀，甚至有的还不涂底漆</p>-->
+              </div>
             </div>
-        </div>
+          </div>
 
-        <div class="wapperforr02">
+          <div class="wapperforr02">
             <div class="front f11">
-                <div class="frontwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0001s_0000_10.png" />
-                    <!--<span class="fronttitle">喷涂面漆</span>-->
-                    <!--<span class="frontsub">（我们家的）</span>-->
-                    <!--<p>用独有喷涂机喷刷，墙面均匀不起点</p>-->
-                </div>
+              <div class="frontwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0001s_0000_10.png" />
+                  <!--<span class="fronttitle">喷涂面漆</span>-->
+                <!--<span class="frontsub">（我们家的）</span>-->
+                <!--<p>用独有喷涂机喷刷，墙面均匀不起点</p>-->
+              </div>
             </div>
-
+            
             <div class="back b11">
-                <div class="backwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0000s_0000_10.png" />
-                    <!--<span class="backtitle">喷涂面漆</span>-->
-                    <!--<span class="backsub">（别人家的）</span>-->
-                    <!--<p>有的公司在涂刷面漆的时候兑水过多，会导致，墙面形成不起漆膜，墙面会粉化</p>-->
-                </div>
+              <div class="backwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0000s_0000_10.png" />
+                  <!--<span class="backtitle">喷涂面漆</span>-->
+                <!--<span class="backsub">（别人家的）</span>-->
+                <!--<p>有的公司在涂刷面漆的时候兑水过多，会导致，墙面形成不起漆膜，墙面会粉化</p>-->
+              </div>
             </div>
-        </div>
+          </div>
 
-        <div class="wapperforr02">
+          <div class="wapperforr02">
             <div class="front f12">
-                <div class="frontwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0001s_0000_11.png" />
-                    <!--<span class="fronttitle">完工清洁</span>-->
-                    <!--<span class="frontsub">（我们家的）</span>-->
-                    <!--<p>将所有的垃圾清除，打扫房间的卫生，地面，墙角，窗户，恢复原样</p>-->
-                </div>
+              <div class="frontwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0001s_0000_11.png" />
+                  <!--<span class="fronttitle">完工清洁</span>-->
+                <!--<span class="frontsub">（我们家的）</span>-->
+                <!--<p>将所有的垃圾清除，打扫房间的卫生，地面，墙角，窗户，恢复原样</p>-->
+              </div>
             </div>
-
+            
             <div class="back b12">
-                <div class="backwrap">
-                    <img src="portal/content/images/topic/contrast/txt/_0000s_0000_11.png" />
-                    <!--<span class="backtitle">完工清洁</span>-->
-                    <!--<span class="backsub">（别人家的）</span>-->
-                    <!--<p>当房子装修完，还得你自己和家人来打扫</p>-->
-                </div>
+              <div class="backwrap">
+                  <img src="portal/content/images/topic/contrast/txt/_0000s_0000_11.png" />
+                  <!--<span class="backtitle">完工清洁</span>-->
+                <!--<span class="backsub">（别人家的）</span>-->
+                <!--<p>当房子装修完，还得你自己和家人来打扫</p>-->
+              </div>
             </div>
+          </div>
+
+
         </div>
-
-
-    </div>
-</div>
-<div class="example-classname page5" data-section-name="page5">
-
-    <span class="page3title">施工工序</span>
-    <span class="page3subtitle">CONSTRUCTION PROGRESS</span>
-    <div class="page5wrapper">
-
-        <div class="page5-items" id="page5-items">
-            <div class="page5item01">
-                <div class="page5title">第一步<div class="page5menuline"></div></div>
-                <span class="page5subtitle">上门检测</span>
-                <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
-                <div class="img-wrapper">
-                    <img src="portal/content/images/topic/construction-process/_0004_process.jpg" />
-                </div>
-            </div>
-            <div class="page5item01">
-                <div class="page5title">第二步<div class="page5menuline"></div></div>
-                <span class="page5subtitle">制定墙面刷新方案</span>
-                <p>确定设计方案，确定施工方案，与客户签订合同，同时需客户缴纳定金。</p>
-                <div class="img-wrapper">
-                    <img src="portal/content/images/topic/construction-process/_0003_process.jpg" />
-                </div>
-            </div>
-            <div class="page5item01">
-                <div class="page5title">第三步<div class="page5menuline"></div></div>
-                <span class="page5subtitle">成品保护 家具搬移</span>
-                <p>施工前我们会为您家里的家具全方面的保护，不需要担心灰尘、垃圾遗落问题。</p>
-                <div class="img-wrapper">
-                    <img src="portal/content/images/topic/construction-process/_0002_process.jpg" />
-                </div>
-            </div>
-            <div class="page5item01">
-                <div class="page5title">第四步<div class="page5menuline"></div></div>
-                <span class="page5subtitle">师傅进场施工</span>
-                <p>1、墙面局部打磨（不含修补）；2、墙漆刷新：面漆2遍； 3、完工整体清洁。</p>
-                <div class="img-wrapper">
-                    <img src="portal/content/images/topic/construction-process/_0001_process.jpg" />
-                </div>
-            </div>
-            <div class="page5item01">
-                <div class="page5title">第五步<div class="page5menuline"></div></div>
-                <span class="page5subtitle">完工确认签写质保书</span>
-                <p>施工完成后，按照验收质保单进行验收后，客户支付尾款，同时客户获取益鸟的质保书。</p>
-                <div class="img-wrapper">
-                    <img src="portal/content/images/topic/construction-process/_0000_process.jpg" />
-                </div>
-            </div>
+      </div>
+      <div class="example-classname page5" data-section-name="page5">
+        
+        <span class="page3title">施工工序</span>
+        <span class="page3subtitle">CONSTRUCTION PROGRESS</span>
+        <div class="page5wrapper">
+          <div class="page5item01">
+            <div class="page5title">第一步<div class="page5menuline"></div></div>
+            <span class="page5subtitle">上门检测</span>
+            <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
+            <div class="img-wrapper">
+                <img src="portal/content/images/topic/construction-process/_0004_process.jpg" />
+             </div>
+          </div>
+          <div class="page5item01">
+            <div class="page5title">第二步<div class="page5menuline"></div></div>
+            <span class="page5subtitle">制定墙面刷新方案</span>
+            <p>确定设计方案，确定施工方案，与客户签订合同，同时需客户缴纳定金。</p>
+              <div class="img-wrapper">
+            <img src="portal/content/images/topic/construction-process/_0003_process.jpg" />
+          </div>
+          </div>
+          <div class="page5item01">
+            <div class="page5title">第三步<div class="page5menuline"></div></div>
+            <span class="page5subtitle">成品保护 家具搬移</span>
+            <p>施工前我们会为您家里的家具全方面的保护，不需要担心灰尘、垃圾遗落问题。</p>
+              <div class="img-wrapper">
+            <img src="portal/content/images/topic/construction-process/_0002_process.jpg" />
+          </div>
+          </div>
+          <div class="page5item01">
+            <div class="page5title">第四步<div class="page5menuline"></div></div>
+            <span class="page5subtitle">师傅进场施工</span>
+            <p>1、墙面局部打磨（不含修补）；2、墙漆刷新：面漆2遍； 3、完工整体清洁。</p>
+              <div class="img-wrapper">
+            <img src="portal/content/images/topic/construction-process/_0001_process.jpg" />
+          </div>
+          </div>
+          <div class="page5item01">
+            <div class="page5title">第五步<div class="page5menuline"></div></div>
+            <span class="page5subtitle">完工确认签写质保书</span>
+            <p>施工完成后，按照验收质保单进行验收后，客户支付尾款，同时客户获取益鸟的质保书。</p>
+              <div class="img-wrapper">
+            <img src="portal/content/images/topic/construction-process/_0000_process.jpg" />
+          </div>
+          </div>
         </div>
-    </div>
-</div>
-<div class="example-classname page6" data-section-name="page6">
-
-    <span class="page3title">完善的售后</span>
-    <span class="page6subtitle">PERFECT AFTERSALE</span>
-    <div class="page6imgwrapper">
-        <img class="page6img01" id="page6img01" src="portal/content/images/topic/page6pic01.png" />
-        <img class="page6img02" id="page6img02" src="portal/content/images/topic/page6pic02.png" />
-        <img class="page6img03" id="page6img03" src="portal/content/images/topic/page6pic03.png" />
+      </div>
+      <div class="example-classname page6" data-section-name="page6">
+        
+        <span class="page3title">完善的售后</span>
+        <span class="page6subtitle">PERFECT AFTERSALE</span>
+        <div class="page6imgwrapper">
+          <img class="page6img01" src="portal/content/images/topic/page6pic01.png" />
+          <img class="page6img02" src="portal/content/images/topic/page6pic02.png" />
+          <img class="page6img03" src="portal/content/images/topic/page6pic03.png" />
         <div class="clearfix"></div>
-    </div>
-</div>
-<div class="example-classname page7" data-section-name="page7">
-    <div class="page7-items" id="page7-items">
-        <div class="device">
-            <a class="arrow-left" href="#"></a>
-            <a class="arrow-right" href="#"></a>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0000_case-personal.jpg" /></div>
-                    <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0001_case-personal.jpg" /></div>
-                    <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0002_case-personal.jpg" /></div>
-                    <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0003_case-personal.jpg" /></div>
-                    <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0004_case-personal.jpg" /></div>
-                    <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0005_case-personal.jpg" /></div>
-                </div>
-            </div>
         </div>
-        <div class="contrast">
-            <a href="javascript:;" id="btn1"><img src="wap/wapportal/content/images/wall/color-bar/_0000_color-bar.jpg" /></a>
-            <a href="javascript:;" id="btn2"><img src="wap/wapportal/content/images/wall/color-bar/_0001_color-bar.jpg" /></a>
-            <a href="javascript:;" id="btn3"><img src="wap/wapportal/content/images/wall/color-bar/_0002_color-bar.jpg" /></a>
-            <a href="javascript:;" id="btn4"><img src="wap/wapportal/content/images/wall/color-bar/_0003_color-bar.jpg" /></a>
-            <a href="javascript:;" id="btn5"><img src="wap/wapportal/content/images/wall/color-bar/_0004_color-bar.jpg" /></a>
-            <a href="javascript:;" id="btn6"><img src="wap/wapportal/content/images/wall/color-bar/_0005_color-bar.jpg" /></a>
-        </div>
-    </div>
-</div>
+      </div>
+  <div class="example-classname page7" data-section-name="page7">
+      <div class="device">
+          <a class="arrow-left" href="#"></a>
+          <a class="arrow-right" href="#"></a>
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0000_case-personal.jpg" /></div>
+                  <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0001_case-personal.jpg" /></div>
+                  <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0002_case-personal.jpg" /></div>
+                  <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0003_case-personal.jpg" /></div>
+                  <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0004_case-personal.jpg" /></div>
+                  <div class="swiper-slide"><img src="wap/wapportal/content/images/wall/case-personal/_0005_case-personal.jpg" /></div>
+              </div>
+          </div>
+      </div>
+      <div class="contrast">
+          <a href="javascript:;" id="btn1" class="active"><img src="wap/wapportal/content/images/wall/color-bar/_0000_color-bar.jpg" /></a>
+          <a href="javascript:;" id="btn2"><img src="wap/wapportal/content/images/wall/color-bar/_0001_color-bar.jpg" /></a>
+          <a href="javascript:;" id="btn3"><img src="wap/wapportal/content/images/wall/color-bar/_0002_color-bar.jpg" /></a>
+          <a href="javascript:;" id="btn4"><img src="wap/wapportal/content/images/wall/color-bar/_0003_color-bar.jpg" /></a>
+          <a href="javascript:;" id="btn5"><img src="wap/wapportal/content/images/wall/color-bar/_0004_color-bar.jpg" /></a>
+          <a href="javascript:;" id="btn6"><img src="wap/wapportal/content/images/wall/color-bar/_0005_color-bar.jpg" /></a>
+      </div>
+  </div>
 
-<script src="portal/content/js/idangerous.swiper.min.js"></script>
+  <script src="portal/content/js/idangerous.swiper.min.js"></script>
+  <script>
+      var mySwiper = new Swiper('.swiper-container',{
+          //loop:true,
+          grabCursor: true,
+          onSlideChangeEnd: function(swiper){
+        	  //alert('#btn'+(swiper.activeIndex+1));
+              $('#btn'+(swiper.activeIndex+1)).addClass('active');
+              $('#btn'+(swiper.activeIndex+1)).nextAll().removeClass('active');
+              $('#btn'+(swiper.activeIndex+1)).prevAll().removeClass('active');
+          }
+      })
+      $('.arrow-left').on('click', function(e){
+          e.preventDefault()
+          mySwiper.swipePrev()
+      })
+      $('.arrow-right').on('click', function(e){
+          e.preventDefault()
+          mySwiper.swipeNext()
+      })
+
+      $('#btn1').click(function(){
+          mySwiper.swipeTo(0, 1000, false);
+          $(this).addClass('active');
+          $(this).nextAll().removeClass('active');
+          $(this).prevAll().removeClass('active');
+      })
+      $('#btn2').click(function(){
+          mySwiper.swipeTo(1, 1000, false);
+          $(this).addClass('active');
+          $(this).nextAll().removeClass('active');
+          $(this).prevAll().removeClass('active');
+      })
+      $('#btn3').click(function(){
+          mySwiper.swipeTo(2, 1000, false);
+          $(this).addClass('active');
+          $(this).nextAll().removeClass('active');
+          $(this).prevAll().removeClass('active');
+      })
+      $('#btn4').click(function(){
+          mySwiper.swipeTo(3, 1000, false);
+          $(this).addClass('active');
+          $(this).nextAll().removeClass('active');
+          $(this).prevAll().removeClass('active');
+      })
+      $('#btn5').click(function(){
+          mySwiper.swipeTo(4, 1000, false);
+          $(this).addClass('active');
+          $(this).nextAll().removeClass('active');
+          $(this).prevAll().removeClass('active');
+      })
+      $('#btn6').click(function(){
+          $(this).addClass('active');
+          mySwiper.swipeTo(5, 1000, false);
+          $(this).nextAll().removeClass('active');
+          $(this).prevAll().removeClass('active');
+
+      })
+  </script>
 <script>
-    var mySwiper = new Swiper('.swiper-container',{
-        //loop:true,
-        grabCursor: true,
-        onSlideChangeEnd: function(swiper){
-            $('#btn'+swiper.activeIndex+1).addClass('active');
-            $('#btn'+swiper.activeIndex+1).nextAll().removeClass('active');
-            $('#btn'+swiper.activeIndex+1).prevAll().removeClass('active');
-        }
-    })
-    $('.arrow-left').on('click', function(e){
-        e.preventDefault()
-        mySwiper.swipePrev()
-    })
-    $('.arrow-right').on('click', function(e){
-        e.preventDefault()
-        mySwiper.swipeNext()
-    })
-
-    $('#btn1').click(function(){
-        mySwiper.swipeTo(0, 1000, false);
-        $(this).addClass('active');
-        $(this).nextAll().removeClass('active');
-        $(this).prevAll().removeClass('active');
-    })
-    $('#btn2').click(function(){
-        mySwiper.swipeTo(1, 1000, false);
-        $(this).addClass('active');
-        $(this).nextAll().removeClass('active');
-        $(this).prevAll().removeClass('active');
-    })
-    $('#btn3').click(function(){
-        mySwiper.swipeTo(2, 1000, false);
-        $(this).addClass('active');
-        $(this).nextAll().removeClass('active');
-        $(this).prevAll().removeClass('active');
-    })
-    $('#btn4').click(function(){
-        mySwiper.swipeTo(3, 1000, false);
-        $(this).addClass('active');
-        $(this).nextAll().removeClass('active');
-        $(this).prevAll().removeClass('active');
-    })
-    $('#btn5').click(function(){
-        mySwiper.swipeTo(4, 1000, false);
-        $(this).addClass('active');
-        $(this).nextAll().removeClass('active');
-        $(this).prevAll().removeClass('active');
-    })
-    $('#btn6').click(function(){
-        $(this).addClass('active');
-        mySwiper.swipeTo(5, 1000, false);
-        $(this).nextAll().removeClass('active');
-        $(this).prevAll().removeClass('active');
-
-    })
-</script>
-<script>
-    //整屏上下滑动框架
-    var swiper = new Swiper('.pagewrapper', {
-        direction: 'vertical',
-        slidesPerView: 1,
-        spaceBetween: 30,
-        mousewheel: true,
-        pagination: {
-            el: '.homepage',
-            clickable: true,
-        },
-    });
-
-    var galleryTop = new Swiper('.gallery-top', {
+//整屏上下滑动框架
+  var swiper = new Swiper('.pagewrapper', {
+    direction: 'vertical',
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: true,
+    pagination: {
+      el: '.homepage',
+      clickable: true,
+    },
+});
+  
+  var galleryTop = new Swiper('.gallery-top', {
         //spaceBetween: 10,
         //loop:true,
         //loopedSlides: 6, //looped slides should be the same
         navigation: {
-            nextEl: '.gtop-next',
-            prevEl: '.gtop-prev',
+          nextEl: '.gtop-next',
+          prevEl: '.gtop-prev',
         },
         pagination: {
             el: '.mypage',
             clickable: true,
             type: 'custom',
             renderCustom: function (swiper, current, total) {
-                //return current + ' of ' + total;
-                var _html = '';
-                for (var i = 1; i <= total; i++) {
-                    if (current == i) {
-                        _html += '<img id="'+(i-1)+'" src="wap/wapportal/content/images/wall/color-bar/_000'+(i-1)+'_color-bar.jpg" class="swiper-pagination-custom active" />';
-                    }else{
-                        _html += '<img id="'+(i-1)+'" src="wap/wapportal/content/images/wall/color-bar/_000'+(i-1)+'_color-bar.jpg" class="swiper-pagination-custom" />';
-                    }
+              //return current + ' of ' + total;
+              var _html = '';
+              for (var i = 1; i <= total; i++) {
+                if (current == i) {
+                  _html += '<img id="'+(i-1)+'" src="wap/wapportal/content/images/wall/color-bar/_000'+(i-1)+'_color-bar.jpg" class="swiper-pagination-custom active" />';
+                }else{
+                  _html += '<img id="'+(i-1)+'" src="wap/wapportal/content/images/wall/color-bar/_000'+(i-1)+'_color-bar.jpg" class="swiper-pagination-custom" />';
                 }
-                return _html;//返回所有的页码html
-            }
+              }
+              return _html;//返回所有的页码html
+          }
         }
-    });
-    //给每个页码绑定跳转的事件
+      });
+//给每个页码绑定跳转的事件 
 
-
+  
 </script>
 
 <script type="text/javascript" src="portal/content/js/jquery.flexslider-min.js"></script>
 <script type="text/javascript">
-    $(function() {
-        $('#carousel').flexslider({
-            animation: "slide",
-            controlNav: false,
-            animationLoop: true,
-            slideshow: false,
-            itemWidth: 130,
-            itemMargin: 0,
-            asNavFor: '#slider',
-            directionNav: false,
-        });
+$(function() {
+    $('#carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: true,
+        slideshow: false,
+        itemWidth: 130,
+        itemMargin: 0,
+        asNavFor: '#slider',
+        directionNav: false,
+      });
 
-        $('#slider').flexslider({
-            animation: "slide",
-            controlNav: false,
-            animationLoop: true,
-            slideshow: false,
-            sync: "#carousel"
-        });
-    });
+      $('#slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: true,
+        slideshow: false,
+        sync: "#carousel"
+      });
+}); 
 </script>
 
 <script type="text/javascript">
 
-    $(document).ready(function(){
-        $('.mypage').on('click','img',function(){
-            var index = $(this).attr('id');
-            galleryTop.slideTo(index, 500, false);//切换到第一个slide，速度为1秒
-        });
-        //第二屏高度自适应
-        $('.img').css('height',$(window).height());
-        $('.info').css('height',$(window).height());
-        //第三屏tab下划线滑动
-        $('#menu').find('li').hover(function(){
-            $(this).find('div').animate({width:"50px"});
-        },function(){
-            $(this).find('div').animate({width:"0px"});
-        });
-        //第三屏视频按钮移入移除
-        $('#tabcontent').find('li').find('.page3tabc').hover(function(){
-            $(this).find('.page3btn').css('display','block');
-            $(this).find('.page3btn').animate({bottom:"35%"});
-        },function(){
-            $(this).find('.page3btn').animate({bottom:"60%"},function(){
-                $(this).css('display','none');
-                $(this).css('bottom','0');
-            });
-        });
-        //第三屏视频按钮移入移除
-        $('#tabcontent').find('li').find('.page3tabc02').hover(function(){
-            $(this).find('.page3btn').css('display','block');
-            $(this).find('.page3btn').animate({bottom:"35%"});
-        },function(){
-            $(this).find('.page3btn').animate({bottom:"60%"},function(){
-                $(this).css('display','none');
-                $(this).css('bottom','0');
-            });
-        });
-        //放大
-        $('.gallery-thumbs').find('.swiper-wrapper').find('.swiper-slide').hover(function(){
-            $(this).css('height','35px')
-        },function(){
-
-        });
-        //第三屏tab下划线滑动
-        $('.page5item01').hover(function(){
-            $(this).find('.page5menuline').animate({width:"80%"});
-        },function(){
-            $(this).find('.page5menuline').animate({width:"0"});
-        });
-        //晃动
-        //$('.page6imgwrapper').find('img').hover(function(){
-        //  $(this).animate({'top','290px'});
-        //});
+  $(document).ready(function(){
+   $('.mypage').on('click','img',function(){
+    var index = $(this).attr('id');
+    galleryTop.slideTo(index, 500, false);//切换到第一个slide，速度为1秒
+  });
+	//第二屏高度自适应 
+    $('.img').css('height',$(window).height());
+    $('.info').css('height',$(window).height());
+    //第三屏tab下划线滑动
+    $('#menu').find('li').hover(function(){
+    	$(this).find('div').animate({width:"50px"});
+    },function(){
+    	$(this).find('div').animate({width:"0px"});
+    });
+    //第三屏视频按钮移入移除
+    $('#tabcontent').find('li').find('.page3tabc').hover(function(){
+    	$(this).find('.page3btn').css('display','block');
+    	$(this).find('.page3btn').animate({bottom:"35%"});
+    },function(){
+    	$(this).find('.page3btn').animate({bottom:"60%"},function(){
+    		$(this).css('display','none');
+    		$(this).css('bottom','0');
+    	});  	
+    });
+    //第三屏视频按钮移入移除
+    $('#tabcontent').find('li').find('.page3tabc02').hover(function(){
+      $(this).find('.page3btn').css('display','block');
+      $(this).find('.page3btn').animate({bottom:"35%"});
+    },function(){
+      $(this).find('.page3btn').animate({bottom:"60%"},function(){
+        $(this).css('display','none');
+        $(this).css('bottom','0');
+      });   
+    });
+    //放大
+    $('.gallery-thumbs').find('.swiper-wrapper').find('.swiper-slide').hover(function(){
+         $(this).css('height','35px')
+    },function(){
 
     });
-    //翻转
-    var turn = function(target,time,opts){
-        target.find('.wrapperforr').hover(function(){
-            $(this).find('.img').stop().animate(opts[0],time,function(){
-                $(this).hide().next().show();
-                $(this).next().css('height',$(window).height());
-                $(this).next().animate(opts[1],time);
-            });
-        },function(){
-            $(this).find('.info').animate(opts[0],time,function(){
-                $(this).hide().prev().show();
-                $(this).prev().css('height',$(window).height());
-                $(this).prev().animate(opts[1],time);
-            });
-        });
-    }
-    var verticalOpts = [{'width':0},{'width':'100%'}];
-    turn($('#vertical'),200,verticalOpts);
-    //翻转2
-    var turn02 = function(target,time,opts){
-        target.find('.wapperforr02').hover(function(){
-            $(this).find('.front').stop().animate(opts[0],time,function(){
-                $(this).hide().next().show();
-                $(this).next().animate(opts[1],time);
-            });
-        },function(){
-            $(this).find('.back').animate(opts[0],time,function(){
-                $(this).hide().prev().show();
-                $(this).prev().animate(opts[1],time);
-            });
-        });
-    }
-    var verticalOpts02 = [{'width':0},{'width':'100%'}];
-    turn02($('#vertical02'),200,verticalOpts02);
-    //第三屏切换
-    function setTab(n){
-        var tli=document.getElementById("menu").getElementsByTagName("li");
-        var mli=document.getElementById("tabcontent").getElementsByTagName("li");
-        for(i=0;i<tli.length;i++){
-            tli[i].className=i==n?"hover":"";
-            mli[i].style.display=i==n?"block":"none";
-            tli[i].querySelector('div').className=i==(3-n)?"page2menulineactive":"page2menuline";
-        }
-    }
-
-    $(document).ready(function(){
-
-        $("#page1smallpic li").mouseenter(function(){
-            //alert($(this).index());
-            var bigpic = $("#page1-bigpic").find("img");
-            var smallpic = $(this).find("img");
-            //alert($(this).find("img")[0].src);
-            var temp = bigpic[0].src;
-            bigpic.attr('src',getbig(smallpic[0].src));
-            var n = $("#page1smallpic li").length;
-            var j = $(this).index();
-            //alert(n);
-            //alert(temp);
-
-            for(var i=j;i<n;i++){
-                //alert($("#page1smallpic li").eq(4).find("img")[0].src);
-                //alert($("#page1smallpic li").eq(i).find("img")[0].src);
-                //$("#page1smallpic li:eq(i)").find("img").attr('src',temp);
-                if(i == (n-1)){
-                    $("#page1smallpic li:eq("+i+")").find("img").attr('src',getsmall(temp));
-                }else{
-                    $("#page1smallpic li:eq("+i+")").find("img").attr('src',$("#page1smallpic li:eq("+(i+1)+")").find("img")[0].src);
-                }
-            }
-        });
+  //第三屏tab下划线滑动
+    $('.page5item01').hover(function(){
+    	$(this).find('.page5menuline').animate({width:"80%"});
+    },function(){
+    	$(this).find('.page5menuline').animate({width:"0"});
     });
-    //解决抓取url匹配元素问题 先把这个域名替换成空，最后再加
-    // function getbig(small){
-    //     var arr = small.replace('http://www.91yiniao.com','');
-    //     arr = arr.split('.');
-    //     var big = arr.join('.');
-    //     big = 'http://www.91yiniao.com'+big;
-    //     return big;
-    // }
-    function getbig(small){
-        var arr = small.split('.');
-        arr[0] = arr[0]+'_big';
-        var big = arr.join('.');
-        return big;
-    }
-    function getsmall(big){
-        return big.replace('_big','');
-    }
-    function popupvideo(){
+    //晃动
+    //$('.page6imgwrapper').find('img').hover(function(){
+    //  $(this).animate({'top','290px'});
+    //});
+    
+  });
+//翻转
+var turn = function(target,time,opts){
+  target.find('.wrapperforr').hover(function(){
+    $(this).find('.img').stop().animate(opts[0],time,function(){
+      $(this).hide().next().show();
+      $(this).next().css('height',$(window).height());
+      $(this).next().animate(opts[1],time);
+    });
+  },function(){
+    $(this).find('.info').animate(opts[0],time,function(){
+      $(this).hide().prev().show();
+      $(this).prev().css('height',$(window).height());
+      $(this).prev().animate(opts[1],time);
+    });
+  });
+}
+var verticalOpts = [{'width':0},{'width':'100%'}];
+turn($('#vertical'),200,verticalOpts);
+//翻转2
+var turn02 = function(target,time,opts){
+  target.find('.wapperforr02').hover(function(){
+    $(this).find('.front').stop().animate(opts[0],time,function(){
+      $(this).hide().next().show();
+      $(this).next().animate(opts[1],time);
+    });
+  },function(){
+    $(this).find('.back').animate(opts[0],time,function(){
+      $(this).hide().prev().show();
+      $(this).prev().animate(opts[1],time);
+    });
+  });
+}
+var verticalOpts02 = [{'width':0},{'width':'100%'}];
+turn02($('#vertical02'),200,verticalOpts02);
+//第三屏切换
+function setTab(n){  
+    var tli=document.getElementById("menu").getElementsByTagName("li");  
+    var mli=document.getElementById("tabcontent").getElementsByTagName("li");  
+    for(i=0;i<tli.length;i++){  
+        tli[i].className=i==n?"hover":"";  
+        mli[i].style.display=i==n?"block":"none"; 
+        tli[i].querySelector('div').className=i==(3-n)?"page2menulineactive":"page2menuline";
+    }  
+} 
 
-        $('.ydupvideo').show();
+$(document).ready(function(){
+  
+  $("#page1smallpic li").mouseenter(function(){
+    //alert($(this).index());
+    var bigpic = $("#page1-bigpic").find("img");
+    var smallpic = $(this).find("img");
+    //alert($(this).find("img")[0].src);
+    var temp = bigpic[0].src;
+    bigpic.attr('src',getbig(smallpic[0].src));
+    var n = $("#page1smallpic li").length;
+    var j = $(this).index();
+    //alert(n);
+    //alert(temp);
+
+    for(var i=j;i<n;i++){
+      //alert($("#page1smallpic li").eq(4).find("img")[0].src);
+      //alert($("#page1smallpic li").eq(i).find("img")[0].src);
+      //$("#page1smallpic li:eq(i)").find("img").attr('src',temp);
+      if(i == (n-1)){
+          $("#page1smallpic li:eq("+i+")").find("img").attr('src',getsmall(temp));
+      }else{
+        $("#page1smallpic li:eq("+i+")").find("img").attr('src',$("#page1smallpic li:eq("+(i+1)+")").find("img")[0].src);
+      }
     }
-    function popdownvideo(){
-        $('.ydupvideo').hide();
-    }
-    $(document).ready(function () {
-        $(".menu > li").click(function (el) {
-            if (this == el.target) {
-                $(this).addClass("active");
-            };
-        });
-    })
+  });
+});
+//解决抓取url匹配元素问题 先把这个域名替换成空，最后再加
+  // function getbig(small){
+  //     var arr = small.replace('http://www.91yiniao.com','');
+  //     arr = arr.split('.');
+  //     var big = arr.join('.');
+  //     big = 'http://www.91yiniao.com'+big;
+  //     return big;
+  // }
+function getbig(small){
+  var arr = small.split('.');
+  arr[0] = arr[0]+'_big';
+  var big = arr.join('.');
+  return big;
+}
+function getsmall(big){
+  return big.replace('_big','');
+}
+function popupvideo(){
+
+  $('.ydupvideo').show();
+}
+function popdownvideo(){
+  $('.ydupvideo').hide();
+}
+$(document).ready(function () {
+    $(".menu > li").click(function (el) {
+       if (this == el.target) {
+            $(this).addClass("active");
+       };
+    });
+})
 </script>
 </body>
 </html>
