@@ -996,6 +996,10 @@ ul.avator-meta {
     position: relative;
     top: -1rem; }
 
+input[type="submit"] {
+  background: orange;
+  color: #fff; }
+
 .selectPicker {
   position: relative;
   width: 88%;

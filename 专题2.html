@@ -1048,11 +1048,52 @@
         var mli=document.getElementById("tabcontent").getElementsByTagName("li");
         for(i=0;i<tli.length;i++){
             tli[i].className=i==n?"hover":"";
-            mli[i].style.display=i==n?"block":"none";
+            //mli[i].style.display=i==n?"block":"none";
+            if(i==n){
+              fadein(mli[i],400);
+            }
+            else{
+                mli[i].style.display="none";
+            }
             tli[i].querySelector('div').className=i==(3-n)?"page2menulineactive":"page2menuline";
         }
     }
+function fadein(el,time){
+    if(el.style.opacity === ""){
+        el.style.opacity = 0;
+    }
+    if(el.style.display === "" || el.style.display === 'none'){
+        el.style.display = 'block';
+    }
 
+    var t = setInterval(function(){
+        if(el.style.opacity < 1){
+            el.style.opacity = parseFloat(el.style.opacity)+0.01;
+        }
+        else{
+            clearInterval(t);
+        }
+    },time/100);
+}
+
+function fadeout(el,time){
+    if(el.style.opacity === ""){
+        el.style.opacity = 1;
+    }
+    if(el.style.display === "" || el.style.display === 'none'){
+        el.style.display = 'block';
+    }
+
+    var t = setInterval(function(){
+        if(el.style.opacity > 0){
+            el.style.opacity = parseFloat(el.style.opacity)-0.01;
+        }
+        else{
+            clearInterval(t);
+            el.style.display = 'none'
+        }
+    },time/100);
+}
     $(document).ready(function(){
 
         $("#page1smallpic li").mouseenter(function(){
@@ -1101,6 +1142,7 @@
         $('.ydupvideo').show();
     }
     function popdownvideo(){
+        $('video').trigger('pause');
         $('.ydupvideo').hide();
     }
     $(document).ready(function () {
