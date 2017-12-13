@@ -279,6 +279,9 @@ html, body {
 	background:#fff;
 	height: 20%;
 }
+.video-title div {
+	font-size: 1.5rem;
+}
 .page3tabc{
 	margin-right:20px;
 	width:22%;
