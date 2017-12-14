@@ -1149,7 +1149,7 @@ input[type="submit"] {
     margin: 0 0.5rem; }
     .sec-logo-grp .table-layout img:hover, .sec-logo-grp .table-layout img:focus {
       transform: scale(1.1);
-      transition: all 0.6s ease-in-out; }
+      transition: transform .3s ease-in; }
   .sec-logo-grp .table-layout .logo-fl {
     width: 6%; }
   .sec-logo-grp .table-layout .logo-zx {
@@ -1159,35 +1159,60 @@ input[type="submit"] {
     top: 1rem;
     left: -4rem; }
   .sec-logo-grp .table-layout .logo-360 {
-    left: -3rem;
+    left: -1rem;
     width: 10%; }
   .sec-logo-grp .table-layout .logo-tb {
-    left: -8rem; }
+    left: -6rem; }
   .sec-logo-grp .table-layout .logo-qd {
     width: 24%;
     left: -6rem; }
   .sec-logo-grp .table-layout .logo-lm {
     width: 6%;
-    left: -4rem; }
+    left: -6rem; }
   .sec-logo-grp .table-layout .logo-yysh {
     width: 4%;
     left: -1rem;
     top: -2rem; }
   .sec-logo-grp .table-layout .logo-cc {
     width: 7%;
-    left: -7rem;
+    left: -4rem;
     top: -4rem; }
   .sec-logo-grp .table-layout .logo-yb {
     width: 7%;
-    left: -8rem;
+    left: -3rem;
     top: 1rem; }
   .sec-logo-grp .table-layout .logo-bd {
-    width: 14%;
-    left: -5rem;
+    width: 12%;
+    left: -2rem;
     top: -1rem; }
   .sec-logo-grp .table-layout .logo-jb {
-    width: 5%;
-    left: -5rem;
+    width: 4%;
     top: -1rem; }
+  .sec-logo-grp .table-layout .logo-ykyj {
+    width: 12%;
+    left: 1rem;
+    top: 0rem; }
+  .sec-logo-grp .table-layout .logo-dzdp {
+    width: 6%;
+    left: 1rem;
+    top: 0rem; }
+  .sec-logo-grp .table-layout .logo-cdjf {
+    width: 14%;
+    top: -3rem; }
+  .sec-logo-grp .table-layout .logo-xmej {
+    width: 6%;
+    left: -1rem; }
+  .sec-logo-grp .table-layout .logo-58dj {
+    width: 6%;
+    top: -2rem; }
+  .sec-logo-grp .table-layout .logo-jbwy {
+    width: 8%;
+    left: 1rem;
+    top: -2rem; }
+  .sec-logo-grp .table-layout .logo-58 {
+    width: 10%;
+    left: 1rem; }
+  .sec-logo-grp .table-layout .logo-qhf {
+    left: -2rem; }
 
 /*# sourceMappingURL=yiniao-bs-337.css.map */

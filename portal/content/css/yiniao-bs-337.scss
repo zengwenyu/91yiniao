@@ -1339,7 +1339,8 @@ input[type="submit"] {
       margin:0 0.5rem;
       &:hover, &:focus {
         transform: scale(1.1);
-        transition: all 0.6s ease-in-out;
+        transition: transform .3s ease-in;
+
       }
     }
     .logo-fl {
@@ -1354,11 +1355,11 @@ input[type="submit"] {
       left: -4rem;
     }
     .logo-360 {
-      left: -3rem;
+      left: -1rem;
       width: 10%;
     }
     .logo-tb {
-      left: -8rem;
+      left: -6rem;
     }
     .logo-qd {
       width: 24%;
@@ -1366,7 +1367,7 @@ input[type="submit"] {
     }
     .logo-lm {
       width: 6%;
-      left: -4rem;
+      left: -6rem;
     }
     .logo-yysh {
       width: 4%;
@@ -1375,23 +1376,63 @@ input[type="submit"] {
     }
     .logo-cc {
       width: 7%;
-      left: -7rem;
+      left: -4rem;
       top: -4rem;
     }
     .logo-yb {
       width: 7%;
-      left: -8rem;
+      left: -3rem;
       top: 1rem;
     }
     .logo-bd {
-       width: 14%;
-       left: -5rem;
+       width: 12%;
+       left: -2rem;
        top: -1rem;
      }
     .logo-jb {
-      width: 5%;
-      left: -5rem;
+      width: 4%;
+      //left: -3rem;
       top: -1rem;
+    }
+    .logo-ykyj {
+      width: 12%;
+      left: 1rem;
+      top: 0rem;
+    }
+    .logo-dzdp {
+      width: 6%;
+      left: 1rem;
+      top: 0rem;
+    }
+    .logo-cdjf {
+      width: 14%;
+      //left: -2rem;
+      top: -3rem;
+    }
+    .logo-xmej {
+      width: 6%;
+      left: -1rem;
+      //top: -3rem;
+    }
+    .logo-58dj {
+      width: 6%;
+      //left: -1rem;
+      top: -2rem;
+    }
+    .logo-jbwy {
+      width: 8%;
+      left: 1rem;
+      top: -2rem;
+    }
+    .logo-58 {
+      width: 10%;
+      left: 1rem;
+      //top: -2rem;
+    }
+    .logo-qhf {
+      //width: 10%;
+      left: -2rem;
+      //top: -2rem;
     }
   }
 }
