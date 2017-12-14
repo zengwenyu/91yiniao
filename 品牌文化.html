@@ -82,14 +82,14 @@
                     <h3>公司简介  </h3>
                     <small>ABOUT US</small>
                 </div>
-                <p>益鸟维修是成都益鸟科技有限公司旗下社区O2O品牌，专注家装后市场。为彻底解决客户感知的质量没保障、价格不透明、工期常拖延和服务体验差等核心痛点，益鸟采用行业独一无二模式：自营店铺+自有师傅。益鸟力求在墙面翻新、防水堵漏和局部改造等三大板块给客户以完美体验。我们秉承“客户价值第一，师傅价值第二”的理念，以打造行业标准、成为行业标杆为己任，以“客户满意度”为核心目标，不忘初心，践行在与您相遇的路上！</p>
-                <p>公司位于成都金牛区金府路88号，万通金融广场西塔31楼3137-3140室，办公面积800平，拥有8家线下自营连锁门店专注于为用户提供高品质有保障的房屋维修服务，已经推出墙面翻新，局部改造，防水补漏三大服务。</p>
+                <p>益鸟维修是成都益鸟科技有限公司旗下社区O2O品牌，专注家装后市场。为彻底解决客户感知的质量没保障、价格不透明、工期常拖延和服务体验差等核心痛点，益鸟采用行业独一无二模式：<font   color="red">自营店铺+自有师傅</font>。益鸟力求在墙面翻新、防水堵漏和局部改造等三大板块给客户以完美体验。我们秉承“<font   color="red">客户价值第一，师傅价值第二</font>”的理念，以打造行业标准、成为行业标杆为己任，以“客户满意度”为核心目标，不忘初心，践行在与您相遇的路上！</p>
+                <p>公司位于成都金牛区金府路88号，万通金融广场西塔31楼3137-3140室，办公面积800平，拥有<font  color="red">8家线下自营连锁门店</font>专注于为用户提供高品质有保障的房屋维修服务，已经推出墙面翻新，局部改造，防水补漏三大服务。</p>
             </div>
         </div>
     </div>
     <div class="container">
         <h3 class="Cultrue_SERVICE">成长历程</h3>
-        <p class="desc Cultrue_SERVICE">—— process ——</p>
+        <p class="desc Cultrue_SERVICE">—— PROCESS ——</p>
     </div>
     <div class="container">
         <div class=" cd-top">
@@ -228,31 +228,31 @@
             })
         });
 
-        $(function (){ 
+        $(function () {
             $.getJSON("Time.json?v=0.5", function (data) {
                 var str = "";
-                for (var i = 0; i < data.length; i++) { 
+                for (var i = 0; i < data.length; i++) {
                     var content1 = "";
                     for (var k = 0; k < data[i].Content.length; k++) {
                         content1 += '<p>' + data[i].Content[k].li + '</p>'
 
-                    } 
-                    str+=' <div class="cd-timeline-block">' +
+                    }
+                    str += ' <div class="cd-timeline-block">' +
                 '<div class="cd-timeline-img cd-picture">' +
                 '</div>' +
-                '<div class="cd-timeline-content">'+
-                    '<h2>' + data[i].Title + '</h2>' 
-                    + content1 +""+
+                '<div class="cd-timeline-content">' +
+                    '<h2>' + data[i].Title + '</h2>'
+                    + content1 + "" +
                     '</div>' +
                 '</div>'
 
-                } 
+                }
                 $("#cd-timeline").html(str);
-                
-      
-    }) 
-  
-})
+
+
+            })
+
+        })
     </script>
     
 </body>
