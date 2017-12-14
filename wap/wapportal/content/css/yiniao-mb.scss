@@ -749,8 +749,25 @@ ul.avator-meta {
     .panel-title > a, .panel-title > a:active {
       color: $white;
     }
+    //.panel-shop-switcher > .panel-collapse {
+    //   .list-group-item {
+    //    a {
+    //      display: inline-block;
+    //      width: 100%;
+    //      text-align: center;
+    //      color: $gray;
+    //      &:hover, &:focus {
+    //        text-decoration: none;
+    //        color: $red;
+    //      }
+    //    }
+    //    &:last-child {
+    //      border-bottom: 1px solid #ddd;
+    //    }
+    //  }
+    //}
     .panel-shop-switcher > .panel-collapse {
-       .list-group-item {
+      .list-group-item {
         a {
           display: inline-block;
           width: 100%;
@@ -765,7 +782,6 @@ ul.avator-meta {
           border-bottom: 1px solid #ddd;
         }
       }
-
     }
   }
 }
