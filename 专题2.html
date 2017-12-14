@@ -183,6 +183,7 @@
     </div>
     <div class="page1-smallpic">
         <ul id="page1smallpic">
+            <li><img src="portal/content/images/topic/problem/_0005_problem.jpg" /></li>
             <li><img src="portal/content/images/topic/problem/_0004_problem.jpg" /></li>
             <li><img src="portal/content/images/topic/problem/_0003_problem.jpg" /></li>
             <li><img src="portal/content/images/topic/problem/_0002_problem.jpg" /></li>
@@ -829,6 +830,7 @@
             <a href="javascript:;" id="btn4"><img src="portal/content/images/topic/color-bar/_0003_color-bar.jpg" /></a>
             <a href="javascript:;" id="btn5"><img src="portal/content/images/topic/color-bar/_0004_color-bar.jpg" /></a>
             <a href="javascript:;" id="btn6"><img src="portal/content/images/topic/color-bar/_0005_color-bar.jpg" /></a>
+            <div class="clear"></div>
         </div>
     </div>
 </div>
@@ -1112,24 +1114,35 @@ function fadeout(el,time){
             var bigpic = $("#page1-bigpic").find("img");
             var smallpic = $(this).find("img");
             //alert($(this).find("img")[0].src);
-            var temp = bigpic[0].src;
-            bigpic.attr('src',getbig(smallpic[0].src));
-            var n = $("#page1smallpic li").length;
-            var j = $(this).index();
+            //var temp = bigpic[0].src;
+            //alert(getbig(smallpic[0].src));
+           // bigpic.attr('src',getbig(smallpic[0].src));
+
+            //bigpic.style.display="none";
+           // bigpic.style.opacity=0;
+
+           // fadein(bigpic,600);
+            bigpic.animate({opacity:'0'},"slow",null,function(){
+              bigpic.attr('src',getbig(smallpic[0].src));
+              bigpic.animate({opacity:'1'},"slow");
+            });
+           // var n = $("#page1smallpic li").length;
+           // var j = $(this).index();
             //alert(n);
             //alert(temp);
-
-            for(var i=j;i<n;i++){
+           //$("#page1smallpic li:eq("+i+")").find("img").attr('src',getsmall(temp));
+            //for(var i=j;i<n;i++){
                 //alert($("#page1smallpic li").eq(4).find("img")[0].src);
                 //alert($("#page1smallpic li").eq(i).find("img")[0].src);
                 //$("#page1smallpic li:eq(i)").find("img").attr('src',temp);
-                if(i == (n-1)){
-                    $("#page1smallpic li:eq("+i+")").find("img").attr('src',getsmall(temp));
-                }else{
-                    $("#page1smallpic li:eq("+i+")").find("img").attr('src',$("#page1smallpic li:eq("+(i+1)+")").find("img")[0].src);
-                }
-            }
-        });
+               // if(i == (n-1)){
+              //      $("#page1smallpic li:eq("+i+")").find("img").attr('src',getsmall(temp));
+              //  }else{
+             //       $("#page1smallpic li:eq("+i+")").find("img").attr('src',$("#page1smallpic li:eq("+(i+1)+")").find("img")[0].src);
+             //   }
+            //},
+
+            });
     });
     //解决抓取url匹配元素问题 先把这个域名替换成空，最后再加
     // function getbig(small){

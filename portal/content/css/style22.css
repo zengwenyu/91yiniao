@@ -115,7 +115,7 @@ html, body {
 }
 .page1-smallpic {
 	position:absolute;
-	top: 18%;
+	top: 10%;
 	right: 15%;
 	width: 15%;
 }
@@ -1000,8 +1000,12 @@ html[xmlns] .slides {display: block;}
 	margin-top:15%;
 	height:auto;
     box-shadow: 0px 30px 60px #d6d6d6;
+}
+.contrast:after {
 
 }
+
+
 .contrast a{
 	display:block;
 	float:left;
