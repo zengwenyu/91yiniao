@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="portal/content/css/swiper.min.css" />
 
     <link rel="stylesheet" href="portal/content/css/style22.css" />
+    <link rel="stylesheet" href="portal/content/css/font.css" />
     <script type="text/javascript" src="portal/s/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="portal/content/js/jquery.scrollify.min.js"></script>
     <script>
@@ -249,9 +250,13 @@
             </div>
         </div>
     </div>
-    <div class="page3title-wrapper">
-    <span class="page3title">专业的工艺</span>
-    <span class="page3subtitle">&nbsp;&nbsp;PERFESSIONAL TECHNOLOGY</span>
+    <!--<div class="page3title-wrapper">-->
+    <!--<span class="page3title">专业的工艺</span>-->
+    <!--<span class="page3subtitle">&nbsp;&nbsp;PERFESSIONAL TECHNOLOGY</span>-->
+    <!--</div>-->
+    <div class="pagetitle-wrapper">
+        <span class="page-title">专业的工艺</span>
+        <span class="page-subtitle">PERFESSIONAL TECHNOLOGYS</span>
     </div>
     <div class="page3tab" id="main">
         <ul class="menu menu-switcher" id="menu">
@@ -737,8 +742,11 @@
 </div>
 <div class="example-classname page5" data-section-name="page5">
 
-    <span class="page3title">施工工序</span>
-    <span class="page3subtitle">CONSTRUCTION PROGRESS</span>
+    <div class="pagetitle-wrapper">
+        <span class="page-title">施工工序</span>
+        <span class="page-subtitle">CONSTRUCTION PROGRESS</span>
+    </div>
+
     <div class="page5wrapper">
 
         <div class="page5-items" id="page5-items">
@@ -787,8 +795,10 @@
 </div>
 <div class="example-classname page6" data-section-name="page6">
 
-    <span class="page3title">完善的售后</span>
-    <span class="page6subtitle">PERFECT AFTERSALE</span>
+    <div class="pagetitle-wrapper">
+        <span class="page-title">完善的售后</span>
+        <span class="page-subtitle">PERFECT AFTERSALE</span>
+    </div>
     <div class="page6imgwrapper">
         <img class="page6img01" id="page6img01" src="portal/content/images/topic/page6pic01.png" />
         <img class="page6img02" id="page6img02" src="portal/content/images/topic/page6pic02.png" />
@@ -979,7 +989,7 @@
         //第三屏视频按钮移入移除
         $('#tabcontent').find('li').find('.page3tabc02').hover(function(){
             $(this).find('.page3btn').css('display','block');
-            $(this).find('.page3btn').animate({top:"33%"});
+            $(this).find('.page3btn').animate({top:"31%"});
         },function(){
             $(this).find('.page3btn').animate({top:"0"},function(){
                 $(this).css('display','none');
