@@ -5,20 +5,20 @@ $(function(){
         $(this).find("span").toggleClass("glyphicon-chevron-up");
         $(this).find("span").toggleClass("glyphicon-chevron-down");
     });
-    // $(".list-group-item > a").click(function (e) {
-    //     var $curTitle = $("#panel-shop-heading > h4 > #panel-title-txt");
-    //     $('.panel-collapse').collapse('toggle');
-    //     // change title according to list item clicked
-    //     if (e.target == this ) {
-    //         $(".panel-footer").removeClass("panel-footer");
-    //         $(this).parents(".list-group-item").addClass("panel-footer");
-    //         var $newTitle = $(this).text();
-    //         // alert();
-    //         $curTitle.text($newTitle);
-    //     }
-    //
-    //     e.preventDefault();
-    // });
+    $(".list-group-item > a").click(function (e) {
+        var $curTitle = $("#panel-shop-heading > h4 > #panel-title-txt");
+        $('.panel-collapse').collapse('toggle');
+        // change title according to list item clicked
+        if (e.target == this ) {
+            // $(".panel-footer").removeClass("panel-footer");
+            // $(this).parents(".list-group-item").addClass("panel-footer");
+            var $newTitle = $(this).text();
+            // alert();
+            $curTitle.text($newTitle);
+        }
+
+        e.preventDefault();
+    });
     var $curTxt = $(".select > .text");
     var $selTrigger = $('#select-trigger');
     //toggle select list content
