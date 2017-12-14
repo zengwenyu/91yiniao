@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <!-- Bootstrap 核心 CSS 文件 -->
     
-    <link rel="stylesheet" href="portal/content/css/ksy.min.css?v=0.1">
+    <link rel="stylesheet" href="portal/content/css/ksy.min.css?v=0.3">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -97,7 +97,9 @@
         </div>
         <section id="cd-timeline" class="cd-container">
             <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-picture">
+                <div class="cd-timeline-img cd-right"></div>
+                <div class="cd-timeline-img cd-left"></div>
+                <div class="cd-timeline-img cd-picture"> <div></div>
                 </div>
                 <div class="cd-timeline-content">
                     <h2>2015.12</h2>
@@ -105,7 +107,9 @@
                 </div>
             </div>
             <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-picture">
+                 <div class="cd-timeline-img cd-right"></div>
+                <div class="cd-timeline-img cd-left"></div>
+                <div class="cd-timeline-img cd-picture"> <div></div>
                 </div>
                 <div class="cd-timeline-content">
                     <h2>2016.3-2016.11</h2>
@@ -115,7 +119,9 @@
                 </div>
             </div>
             <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-picture">
+                <div class="cd-timeline-img cd-right"></div>
+                <div class="cd-timeline-img cd-left"></div>
+                <div class="cd-timeline-img cd-picture"> <div></div>
                 </div>
                 <div class="cd-timeline-content">
                     <h2>2016.11-2016.12</h2>
@@ -125,7 +131,10 @@
                 </div>
             </div>
             <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-right"></div>
+                <div class="cd-timeline-img cd-left"></div>
                 <div class="cd-timeline-img cd-picture">
+                    <div></div>
                 </div>
                 <div class="cd-timeline-content">
                     <h2>2017.1-2017.6</h2>
@@ -238,8 +247,10 @@
 
                     }
                     str += ' <div class="cd-timeline-block">' +
+                        ' <div class="cd-timeline-img cd-right"></div>' +
+                         ' <div class="cd-timeline-img cd-left"></div>' +
                 '<div class="cd-timeline-img cd-picture">' +
-                '</div>' +
+                ' <div></div></div>' +
                 '<div class="cd-timeline-content">' +
                     '<h2>' + data[i].Title + '</h2>'
                     + content1 + "" +
