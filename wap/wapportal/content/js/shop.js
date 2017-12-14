@@ -27,6 +27,9 @@ $(function(){
         $(document).one("click", function(){
             $(".option").slideUp("fast");
         });
+        $('.option div').click(function () {
+           houseSymptomType = $(this).attr("typeval");
+        });
         e.stopPropagation();
     });
     //set title to chicked list item
