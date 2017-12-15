@@ -1125,10 +1125,22 @@ function fadeout(el,time){
            // bigpic.style.opacity=0;
 
            // fadein(bigpic,600);
-            bigpic.animate({opacity:'0'},"fast",null,function(){
-              bigpic.attr('src',getbig(smallpic[0].src));
-              bigpic.animate({opacity:'1'},"fast");
+           //  bigpic.animate({opacity:'0'},"fast",null,function(){
+           //    bigpic.attr('src',getbig(smallpic[0].src));
+           //    bigpic.animate({opacity:'1'},"fast");
+           //  });
+
+
+            var zoom = 1.1
+            move = -15;
+
+            bigpic.animate({opacity:'1'},"fast",null,function(){
+                bigpic.attr('src',getbig(smallpic[0].src));
+                bigpic.animate({opacity:'1'},"fast");
             });
+
+
+
            // var n = $("#page1smallpic li").length;
            // var j = $(this).index();
             //alert(n);
