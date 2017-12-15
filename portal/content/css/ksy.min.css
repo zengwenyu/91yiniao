@@ -66,6 +66,7 @@
 .cssanimations .cd-timeline-img.is-hidden{visibility:hidden}
 .cssanimations .cd-timeline-img.bounce-in{visibility:visible;-webkit-animation:cd-bounce-1 .6s;-moz-animation:cd-bounce-1 .6s;animation:cd-bounce-1 .6s}
 }
+#cd-timeline::before{position:absolute;top:0;left:18px;height:100%;width:2px;background:#444}
 .cd-timeline-content{position:relative;margin-left:60px;border-radius:.25em;padding:1em}
 .cd-timeline-content:after{display:table}
 .cd-timeline-content h2{color:#303e49}
