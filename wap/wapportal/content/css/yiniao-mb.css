@@ -515,13 +515,13 @@ ul.avator-meta {
   background-size: cover;
   margin: 1rem 0 0 0; }
   .sec-shop-contact h6 {
-    font-size: 12px;
+    font-size: 0.8rem;
     margin: 2rem 0 1rem 0; }
   .sec-shop-contact p {
     font-size: 8px; }
 
 .sec-community .table-layout {
-  font-size: 9px;
+  font-size: 0.6rem;
   text-align: center; }
   .sec-community .table-layout td {
     vertical-align: top; }
