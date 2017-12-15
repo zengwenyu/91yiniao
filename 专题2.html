@@ -1109,7 +1109,7 @@ function fadeout(el,time){
 }
     $(document).ready(function(){
 
-        $("#page1smallpic li").mouseenter(function(){
+        $("#page1smallpic li").hover(function(){
             //alert($(this).index());
             var bigpic = $("#page1-bigpic").find("img");
             var smallpic = $(this).find("img");
@@ -1122,9 +1122,9 @@ function fadeout(el,time){
            // bigpic.style.opacity=0;
 
            // fadein(bigpic,600);
-            bigpic.animate({opacity:'0'},"slow",null,function(){
+            bigpic.animate({opacity:'0.5'},"fast",null,function(){
               bigpic.attr('src',getbig(smallpic[0].src));
-              bigpic.animate({opacity:'1'},"slow");
+              bigpic.animate({opacity:'1'},"fast");
             });
            // var n = $("#page1smallpic li").length;
            // var j = $(this).index();

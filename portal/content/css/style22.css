@@ -95,16 +95,20 @@ html, body {
 	text-align: center;
 	margin: 0 auto;
 	overflow: hidden;
-
+    position: relative;
 }
 .page1-bigpic .bigpic-wrapper img {
 	width: 100%;
 	/*height: 90%;*/
 	transition: all 0.3s;
+    position: relative;
 }
 
 .page1-bigpic img:hover {
 	transform: scale(1.1);
+}
+.page1-bigpic img.hover {
+    transform: scale(1.1);
 }
 .page1-bigpic p {
 	font-size: 30px;
