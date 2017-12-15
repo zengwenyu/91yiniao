@@ -1122,7 +1122,7 @@ function fadeout(el,time){
            // bigpic.style.opacity=0;
 
            // fadein(bigpic,600);
-            bigpic.animate({opacity:'0.5'},"fast",null,function(){
+            bigpic.animate({opacity:'0'},"fast",null,function(){
               bigpic.attr('src',getbig(smallpic[0].src));
               bigpic.animate({opacity:'1'},"fast");
             });

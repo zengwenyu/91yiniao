@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <!-- Bootstrap 核心 CSS 文件 -->
 
-<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="portal/content/css/ksy.min.css?v=0.7">
-    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="portal/content/css/brand.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <link href="portal/content/css/bootstrap-ie8.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body data-spy="scroll" data-target=".navbar-example">
@@ -21,7 +27,7 @@
         <p class="desc Cultrue_SERVICE">—— SERVICE ——</p>
     </div>
     <div class="container">
-
+        <div class="container-inner">
         <div class="row Cultrue_type">
             <div class="booklist">
                 <div class="col-xs-4">
@@ -67,6 +73,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
     <div class="row introduce" data-spy="scroll" data-target="#myScrollspy">
@@ -161,62 +168,65 @@
         </div>
     </div>
     <div class="row">
-        <div class="container log">
-            <table class="table-layout text-center">
-                <tbody>
-                    <tr>
-                        <td>
-                            <img class="logo-fl" src="portal/content/images/shop/logo/logo-fl.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img class="logo-zx" src="portal/content/images/shop/logo/logo-zx.jpg">
-                            <img class="logo-jyj" src="portal/content/images/shop/logo/logo-jyj.jpg">
-                            <img class="logo-360" src="portal/content/images/shop/logo/logo-360.jpg">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img class="logo-tb" src="portal/content/images/shop/logo/logo-tb.jpg">
-                            <img class="logo-qd" src="portal/content/images/shop/logo/logo-qd.jpg">
-                            <img class="logo-lm" src="portal/content/images/shop/logo/logo-lm.jpg">
-                            <img class="logo-yysh" src="portal/content/images/shop/logo/logo-yysh.jpg">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img class="logo-cc" src="portal/content/images/shop/logo/logo-cc.jpg">
-                            <img class="logo-yb" src="portal/content/images/shop/logo/logo-yb.jpg">
-                            <img class="logo-bd" src="portal/content/images/shop/logo/logo-bd.jpg">
-                            <img class="logo-jb" src="portal/content/images/shop/logo/logo-jb.jpg">
-                            <img class="logo-ykyj" src="portal/content/images/shop/logo/logo-ykyj.jpg">
-                            <img class="logo-dzdp" src="portal/content/images/shop/logo/logo-dzdp.jpg">
-                            <img class="logo-cdjf" src="portal/content/images/shop/logo/logo-cdjf.jpg">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img class="logo-xmej" src="portal/content/images/shop/logo/logo-xmej.jpg">
-                            <img class="logo-58dj" src="portal/content/images/shop/logo/logo-58dj.jpg">
-                            <img class="logo-jbwy" src="portal/content/images/shop/logo/logo-jbwy.jpg">
-                            <img class="logo-58" src="portal/content/images/shop/logo/logo-58.jpg">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img class="logo-qhf" src="portal/content/images/shop/logo/logo-qhf.jpg">
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="sec sec-logo-grp">
+            <div class="container">
+                <div class="row">
+                    <table class="table-layout text-center">
+                        <tr>
+                            <td><img class="logo-fl" src="portal/content/images/shop/logo/logo-fl.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="logo-zx" src="portal/content/images/shop/logo/logo-zx.jpg">
+                                <img class="logo-jyj" src="portal/content/images/shop/logo/logo-jyj.jpg">
+                                <img class="logo-360" src="portal/content/images/shop/logo/logo-360.jpg">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="logo-tb" src="portal/content/images/shop/logo/logo-tb.jpg">
+                                <img class="logo-qd" src="portal/content/images/shop/logo/logo-qd.jpg">
+                                <img class="logo-lm" src="portal/content/images/shop/logo/logo-lm.jpg">
+                                <img class="logo-yysh" src="portal/content/images/shop/logo/logo-yysh.jpg">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="logo-cc" src="portal/content/images/shop/logo/logo-cc.jpg">
+                                <img class="logo-yb" src="portal/content/images/shop/logo/logo-yb.jpg">
+                                <img class="logo-bd" src="portal/content/images/shop/logo/logo-bd.jpg">
+                                <img class="logo-jb" src="portal/content/images/shop/logo/logo-jb.jpg">
+                                <img class="logo-ykyj" src="portal/content/images/shop/logo/logo-ykyj.jpg">
+                                <img class="logo-dzdp" src="portal/content/images/shop/logo/logo-dzdp.jpg">
+                                <img class="logo-cdjf" src="portal/content/images/shop/logo/logo-cdjf.jpg">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="logo-xmej" src="portal/content/images/shop/logo/logo-xmej.jpg">
+                                <img class="logo-58dj" src="portal/content/images/shop/logo/logo-58dj.jpg">
+                                <img class="logo-jbwy" src="portal/content/images/shop/logo/logo-jbwy.jpg">
+                                <img class="logo-58" src="portal/content/images/shop/logo/logo-58.jpg">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="logo-qhf" src="portal/content/images/shop/logo/logo-qhf.jpg">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container">
+
         <h3 class="Cultrue_SERVICE">联系我们</h3>
         <p class="desc Cultrue_SERVICE">—— MAKE AN APPOINTMENT ——</p>
     </div>
     <div class="container Cultrue_Make">
-
+        <div class="container-inner">
+            <div class="row">
         <div class="col-xs-4">
             <input type="text" placeholder="墙面问题">
         </div>
@@ -226,16 +236,20 @@
         <div class="col-xs-4">
             <input type="text" placeholder="您的电话">
         </div>
-
+            </div>
+    </div>
     </div>
     <div class="container Cultrue_MakeCentent">
-
+        <div class="container-inner">
         <textarea class="txttarea" placeholder="备注信息（例如：您可输入预约具体上门时间等信息）">备注信息（例如：您可输入预约具体上门时间等信息） </textarea>
 
     </div>
+    </div>
     <div class="container ">
+        <div class="container-inner">
         <div class="Cultrue_Yu">免费预约上门</div>
 
+    </div>
     </div>
     <div class="row foot ">
         <img src="portal/content/images/foot.png?v=0.1" style="display: inline;">
@@ -284,6 +298,9 @@
             </div>
         </div>
     </div>
+
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
         $(function () {
             removeSection = function (e) {
