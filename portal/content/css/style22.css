@@ -1345,5 +1345,11 @@ html[xmlns] .slides {display: block;}
         color: gray;
         display: block;
     }
+    .page1-smallpic {
+        position: absolute;
+        top: 8%;
+        right: 15%;
+        width: 14%;
+    }
 }
 
