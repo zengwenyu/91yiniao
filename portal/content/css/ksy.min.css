@@ -104,3 +104,8 @@ a.cd-read-more:hover{text-decoration:none;background-color:#424242}
 .cultrue_h3{font-size:14px}
 .indent{text-indent:70px}
 .col-xs-right{width:16%}
+#cd-timeline{position:relative;padding:2em 0;margin-top:2em;margin-bottom:2em}
+#cd-timeline::before{content:'';position:absolute;top:0;left:18px;height:100%;width:2px;background:#222}
+@media only screen and (min-width:1170px){#cd-timeline{margin-top:3em;margin-bottom:3em}
+#cd-timeline::before{left:49.2%;margin-left:-2px}
+}
