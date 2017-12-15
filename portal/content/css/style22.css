@@ -121,7 +121,7 @@ html, body {
 	position:absolute;
 	top: 10%;
 	right: 15%;
-	width: 15%;
+	width: 14%;
 }
 .page1-smallpic li {
 	width: 100%;
@@ -148,6 +148,7 @@ html, body {
 	height:100%;
 	text-align: center;
 	position: relative;
+    overflow: hidden;
 }
 .brand img{
 	width: 100%;
@@ -1175,6 +1176,27 @@ html[xmlns] .slides {display: block;}
     color: gray;
     display: block;
 }
+
+.page7 .pagetitle-wrapper {
+    position: absolute;
+    width: 20rem;
+    left: 5%;
+    top: 10rem;
+    text-align: left;
+}
+.page7 .pagetitle-wrapper .page-title {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 0;
+    display: block;
+}
+.page7 .pagetitle-wrapper .page-subtitle {
+    font-size: 0.6rem;
+    color: gray;
+    display: block;
+}
+
+
 @media screen and (min-width:1680px) and (max-width:2980px){
 	/*page3*/
 	.page3tabc-txt {
@@ -1302,6 +1324,24 @@ html[xmlns] .slides {display: block;}
     }
     .pagetitle-wrapper .page-subtitle {
         font-size: 0.8rem;
+        color: gray;
+        display: block;
+    }
+    .page7 .pagetitle-wrapper {
+        position: absolute;
+        width: 20rem;
+        left: 5%;
+        top: 10rem;
+        text-align: left;
+    }
+    .page7 .pagetitle-wrapper .page-title {
+        font-size: 1rem;
+        color: black;
+        margin-bottom: 0;
+        display: block;
+    }
+    .page7 .pagetitle-wrapper .page-subtitle {
+        font-size: 0.6rem;
         color: gray;
         display: block;
     }
