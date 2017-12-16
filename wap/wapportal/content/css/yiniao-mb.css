@@ -550,6 +550,8 @@ ul.avator-meta {
   -moz-border-radius: 2px;
   border-radius: 2px;
   margin-bottom: 0; }
+  .sec-community .well ul {
+    font-size: 0.6rem; }
 .sec-community p {
   position: relative;
   top: 10px;
@@ -840,8 +842,6 @@ ul.avator-meta {
     .well-staff-worker ul.avator-meta .title {
       font-size: 1.5rem;
       margin: 1rem 0 0.5rem; }
-    .well-staff-worker ul.avator-meta li {
-      margin-bottom: 0.2rem; }
   .well-staff-worker ul.avator-meta-extra {
     font-size: 0.7rem;
     float: left;

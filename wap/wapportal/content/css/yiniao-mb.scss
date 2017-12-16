@@ -709,6 +709,9 @@ ul.avator-meta {
     -moz-border-radius: 2px;
     border-radius: 2px;
     margin-bottom: 0;
+    ul {
+      font-size: 0.6rem;
+    }
   }
   p {
     position: relative;
@@ -1112,7 +1115,6 @@ ul.avator-meta {
       margin: 1rem 0 0.5rem;
     }
     li {
-      magi
     }
   }
   ul.avator-meta-extra {
