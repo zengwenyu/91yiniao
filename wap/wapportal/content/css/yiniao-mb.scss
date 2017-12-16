@@ -67,12 +67,6 @@
   }
 }
 
-.test {
-  background: red url("../images/rent-house-brushing/poster.jpg") no-repeat center 0;
-  background-size: 100%, 100%;
-  //background-size: contain;
-}
-
 .pg-wc-water-leak .logoimg {
   position: absolute;
   left: -7%;
@@ -98,26 +92,26 @@
 }
 
 .block-title {
-   width: 100%;
-   margin: 1rem 0;
-   h6 {
-     color: #636363;
-     font-size: 0.8rem;
-     font-weight: 300;
-   }
-   h2 {
-     font-weight: 600;
-     font-size: 1.5rem;
-   }
-   &:after {
-     content: "";
-     display: block;
-     width: 3rem;
-     height: 0;
-     border-bottom: 3px solid $blue;
-     margin: 0 auto;
-   }
- }
+  width: 100%;
+  margin: 1rem 0;
+  h6 {
+    color: #636363;
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  &:after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 0;
+    border-bottom: 3px solid $blue;
+    margin: 0 auto;
+  }
+}
 
 .block-title-no-line {
   h2 {
@@ -157,6 +151,7 @@
 .sec-banner {
   background: url("../images/rent-house-brushing/banner-bg.jpg") no-repeat center 0;
 }
+
 .sec-banner-corp {
   margin: 1rem 0 0;
 }
@@ -290,7 +285,6 @@
     float: left;
     width: 40%;
     display: inline-block;
-    background: red;
     img {
       width: 100%;
     }
@@ -500,7 +494,7 @@ a.red {
     z-index: 100;
     background: $black;
     &:focus {
-      color: red;
+      color: $red;
     }
     a {
       color: $white;
@@ -563,6 +557,7 @@ a.red {
     color: $white;
   }
 }
+
 .avator-wrapper {
   width: 86px;
   float: left;
@@ -570,11 +565,13 @@ a.red {
     width: 100%;
   }
 }
+
 ul.avator-meta {
   //width: 100%;
-  margin-left: 10px;
+  margin: 0 0 0 0.8rem;
   float: left;
   display: block;
+  font-size: 1rem;
   li.title {
     font-size: 1.3rem;
   }
@@ -626,17 +623,20 @@ ul.avator-meta {
   }
   .btn-wrapper {
     .btn-red {
-    margin-right: 2rem;
+      margin-right: 2rem;
     }
 
   }
 }
+
 .btn-submit {
   padding: 0.2rem 1.5rem;
 }
+
 .btn-wide {
   padding: 0.4rem 1.4rem;
 }
+
 .star {
   display: inline-block;
   width: 6rem;
@@ -655,6 +655,16 @@ ul.avator-meta {
   }
 }
 
+.block-title-worker {
+  h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+  }
+  h6 {
+    font-size: 0.7rem;
+  }
+}
 .stack-down-inverse {
 }
 
@@ -670,7 +680,7 @@ ul.avator-meta {
 }
 
 .sec-shop-contact {
-  background: red url("../images/shop/bg-gray-tri.gif") no-repeat top left;
+  background: url("../images/shop/bg-gray-tri.gif") no-repeat top left;
   -webkit-background-size: cover;
   background-size: cover;
   margin: 1rem 0 0 0;
@@ -704,6 +714,7 @@ ul.avator-meta {
     position: relative;
     top: 10px;
     margin: 0;
+    font-size: 1rem;
     &:before {
       content: "";
       display: block;
@@ -737,7 +748,7 @@ ul.avator-meta {
       border-color: $red;
     }
     .panel-primary > .panel-heading {
-      background-color: red;
+      background-color: $red;
       padding-left: 20px;
       //border-bottom: 1px solid transparent;
       border-radius: 0;
@@ -791,8 +802,6 @@ ul.avator-meta {
   overflow: auto;
 }
 
-
-
 .panel-heading span {
   position: absolute;
   right: 10px;
@@ -810,11 +819,13 @@ ul.avator-meta {
   background: #C4E3F3;
   border: 1px solid #1E90FF;
 }
+
 .selectPicker {
   position: relative;
   width: 88%;
   margin: 1rem auto 0rem;
 }
+
 .select {
   border-radius: 4px;
   //overflow: hidden;
@@ -823,6 +834,7 @@ ul.avator-meta {
   width: 100%;
   background: white;
 }
+
 .option {
   z-index: 1;
   position: absolute;
@@ -838,6 +850,7 @@ ul.avator-meta {
     cursor: pointer;
   }
 }
+
 .select .sm {
   width: 6%;
   height: 100%;
@@ -850,6 +863,7 @@ ul.avator-meta {
     width: 100%;
   }
 }
+
 .select .text {
   text-align: left;
   width: 88%;
@@ -861,6 +875,7 @@ ul.avator-meta {
   color: #a2a1a1;
   text-indent: 0.5rem;
 }
+
 .phoneNub {
   width: 88%;
   margin: 1rem auto;
@@ -900,13 +915,14 @@ ul.avator-meta {
     }
   }
 }
+
 .sec-logo-grp {
   .table-layout {
-  margin: 2rem 0;
+    margin: 2rem 0;
     img {
-    position: relative;
+      position: relative;
       width: 10%;
-      margin:0 0.5rem;
+      margin: 0 0.5rem;
       &:hover, &:focus {
         transform: scale(1.3);
       }
@@ -914,5 +930,258 @@ ul.avator-meta {
     .logo-fl {
       width: 10%;
     }
+  }
+}
+
+//pg-worker ----------------------------------
+.sec-banner-worker {
+  position: relative;
+  .img-poster-wrapper {
+    .outer {
+      width: 100%;
+      position: absolute;
+      text-align: left;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      .form-wrapper {
+        position: absolute;
+        text-align: center;
+        left: 3%;
+        right: 3%;
+        bottom: 10%;
+        top: 70%;
+        .inner {
+          //padding: 1rem;
+          background: rgba($black, 0.8);
+          .selectPicker {
+            position: relative;
+            width: 43%;
+            margin: 1rem 0.5rem 1rem 1rem;
+            float: left;
+          }
+          .phoneNub {
+            width: 23%;
+            float: left;
+            margin: 1rem 0 1rem 0;
+            border-radius: 4px;
+            border: 1px solid #e6e6e6;
+            height: 2rem;
+            box-sizing: border-box;
+            overflow: hidden;
+            font-size: 1rem;
+            line-height: 2rem;
+            background: #fafafa;
+            color: #a2a1a1;
+            position: relative;
+            .sm {
+              width: 8%;
+              height: 100%;
+              right: 0;
+              cursor: pointer;
+              text-align: center;
+              line-height: 1.5rem;
+              margin-right: 5%;
+              position: absolute;
+              img {
+                width: 100%;
+              }
+            }
+            input {
+              width: 88%;
+              height: 100%;
+              background: #fafafa;
+              outline: none;
+              border: none;
+              //text-indent: .2rem;
+              //font-size: .3rem;
+              &::placeholder {
+                color: $gray;
+              }
+            }
+          }
+          .btn-submit {
+            float: right;
+            margin: 1rem 1rem 1rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+//swiper center pagnation button outside div
+.swiper-container-worker {
+  //margin: 1rem 0 0 0;
+  .swiper-pagination {
+    position: static;
+    margin: 0.8rem 0 1rem 0;
+    .swiper-pagination-bullet {
+      background: gray;
+      //width: 3%;
+      //height: 13%;
+      //opacity: 0;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $red;
+      //opacity: 1;
+    }
+  }
+  .swiper-container-horizontal+.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 4px;
+  }
+}
+
+
+//well-staff-jinpai
+.well-staff-jinpai {
+  position: relative;
+  margin-bottom: 0;
+  text-align: left;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: url("../images/shop/ico-jinpai.png") no-repeat top right;
+  -webkit-background-size: 3.5rem;
+  background-size: 3.5rem;
+  padding: 0 0 2.4rem 0;
+  .avator-wrapper-outter {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  ul.avator-meta {
+    font-size: 1.2rem;
+    .title {
+      font-size: 1.7rem;
+      margin: 0.4rem 0;
+    }
+  }
+  ul.avator-meta-extra {
+    //width: 100%;
+    //margin-left: 10px;
+    float: left;
+    display: block;
+    font-size: 1.2rem;
+    li {
+      width: 48%;
+      display: inline-block;
+      margin-bottom: 0.3rem;
+    }
+  }
+  .btn-wrapper {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    .btn-worker-require {
+      color: $red;
+      background: #f9f9f9;
+      border-radius: 0;
+      width: 100%;
+      padding: 0.8rem 0;
+      border-top: 1px solid #e3e3e3;
+      &:hover {
+        background: lighten(#f9f9f9, 40%);
+      }
+      &:active, &:hover:active {
+        background: darken(#f9f9f9, 30%);
+      }
+    }
+  }
+}
+.well-staff-worker {
+  position: relative;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-size: 3.5rem;
+  background-color: white;
+  background-size: 3.5rem;
+  padding: 0 0 2.4rem 0;
+  .avator-wrapper-outter {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  ul.avator-meta {
+    font-size: 0.8rem;
+    .title {
+      font-size: 1.5rem;
+      margin: 1rem 0 0.5rem;
+    }
+    li {
+      magi
+    }
+  }
+  ul.avator-meta-extra {
+    font-size: 0.7rem;
+    //width: 100%;
+    //margin-left: 10px;
+    float: left;
+    display: block;
+    li {
+      width: 23%;
+      display: inline-block;
+      padding: 0;
+      &:last-child {
+        width: 25%;
+        float: right;
+      }
+    }
+  }
+  .btn-wrapper {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    .btn-worker-require {
+      color: $red;
+      background: #f9f9f9;
+      border-radius: 0;
+      width: 100%;
+      border-top: 1px solid #e3e3e3;
+      &:hover {
+        background: lighten(#f9f9f9, 40%);
+      }
+      &:active, &:hover:active {
+        background: darken(#f9f9f9, 30%);
+      }
+    }
+  }
+}
+.well-staff-worker-leader {
+  background: url("../images/worker/ico-leader.png") no-repeat top right;
+  background-size: 2rem;
+}
+.well {
+  box-shadow: none;
+  width: 100%;
+  float: left;
+  .avator-wrapper-outter {
+    margin-bottom: 0.8rem;
+  }
+  dl, p, ul  {
+    font-size: 1rem;
+    color: lighten($gray, 10%);
+  }
+  ul.avator-meta {
+    .title {
+      color: $black;
+    }
+  }
+  ul.avator-meta-extra {
+    margin-bottom: 1.2rem;
+  }
+  .inner {
+    padding: 0.8rem 0.8rem 0 0.8rem;
+    float: left;
+    width: 100%;
+  }
+  .outter {
+    border-bottom: 1px dotted $gray-tint;
+    float: left;
+    width: 100%;
   }
 }

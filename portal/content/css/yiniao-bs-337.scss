@@ -103,6 +103,12 @@ a.red {
   }
   h2 {
     font-weight: 600;
+    span {
+      margin-left: 1rem;
+      color: #636363;
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
   }
   &:after {
     content: "";
@@ -456,6 +462,9 @@ a.red {
 .tab-content {
   .tab-pane {
     width: 100%;
+    .row.spacer {
+      margin-bottom: 20px;
+    }
     .tab-pan-item-outter {
       display: table;
       margin-top: 1rem;
@@ -1013,9 +1022,18 @@ a.red {
     }
   }
 }
+.tab-pane-worker {
+  .table-layout {
+    tr > td {
+      vertical-align: top;
+      width: 25%;
+      padding: 0;
+    }
+  }
+}
 
 .avator-wrapper {
-  width: 86px;
+  width: 100px;
   float: left;
   img {
     width: 100%;
@@ -1026,8 +1044,11 @@ ul.avator-meta {
   margin-left: 10px;
   float: left;
   display: block;
+  color: $gray;
   li.title {
     font-size: 1.3rem;
+    color: $black;
+    margin:0.2rem 0;
   }
   .data-left {
     margin-right: 1rem;
@@ -1063,40 +1084,118 @@ ul.avator-meta {
   }
 }
 .well-shop, .well-manager {
-  height: 21rem;
-  dl {
+  dl, p {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
     height: 8rem;
+    margin-top:1rem;
+    color: $gray;
     dd {
       line-height: 1.5rem;
     }
   }
 }
-.well-staff {
 
+.well-shop-staff {
+  box-shadow: none;
+  width: 100%;
+  float: left;
+  padding: 0 0 2.4rem 0;
+  .outter {
+    border-bottom: 1px dotted $gray-tint;
+  }
+  .avator-wrapper-outter {
+    margin-bottom: 0.8rem;
+  }
+
+  ul.avator-meta {
+    .title {
+      color: $black;
+    }
+    li {
+      margin-bottom: 0.3rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  ul.avator-meta-extra {
+    margin-bottom: 1.2rem;
+  }
+  p {
+    color: $gray;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+  }
+  .inner {
+    padding: 1rem 1rem 0 1rem;
+    float: left;
+    width: 100%;
+  }
+  .btn-wrapper {
+    .btn-red {
+      margin-right: 40%;
+    }
+  .outter {
+    border-bottom: 1px dotted $gray-tint;
+    float: left;
+    width: 100%;
+  }
 
 }
+.star {
+  display: inline-block;
+  width: 6rem;
+  img {
+    width: 100%;
+    position: relative;
+    top: -4px;
+  }
+
+}
+
+//well-staff
 .well-staff {
-  height: auto;
+  position: relative;
+  margin-bottom: 0;
+  text-align: left;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  box-shadow: none;
-  .avator-wrapper-outter {
-    border-bottom: 1px dotted $gray-tint;
-    padding-bottom: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-  background: white url("../images/shop/ico-biaogan.png") no-repeat top right;
+  background-color: white;
   -webkit-background-size: 3.5rem;
   background-size: 3.5rem;
-  p {
-      line-height: 1.5rem;
+  padding: 0 0 2.4rem 0;
+  .avator-wrapper-outter {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+  ul.avator-meta {
+    font-size: 1rem;
+    .title {
+      font-size: 1.5rem;
+      margin: 0.4rem 0;
     }
-  .btn-wrapper {
-    margin: 2rem auto 1rem;
-    .btn-red {
-      margin-right: 26rem;
+  }
+  ul.avator-meta-extra {
+    //width: 100%;
+    //margin-left: 10px;
+    float: left;
+    display: block;
+    font-size: 1rem;
+    li {
+      width: 48%;
+      display: inline-block;
+      margin-bottom: 0.3rem;
+        position: relative;
     }
+    li.shorter {
+      width: 40%;
+    }
+    li.longer {
+      width: 56%;
+    }
+  }
   }
 }
 .nav-shop-card {
@@ -1141,6 +1240,14 @@ ul.avator-meta {
     margin: 0 0 2rem 0;
     h2 {
       margin: 0;
+    }
+  }
+  .stack-down-inverse {
+    .mask {
+      opacity: 0;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }
@@ -1194,6 +1301,7 @@ input[type="submit"] {
   margin: 0 auto 0;
   background: white;
   border: 1px solid #e6e6e6;
+  border-radius: 4px;
   width: 100%;
   font-size: 1rem;
   color: $gray;
@@ -1212,7 +1320,7 @@ input[type="submit"] {
   text-align: center;
   line-height: 2.5rem;
   img {
-    width: 40%;
+    width: 60%;
   }
 }
 .select .text {
@@ -1385,10 +1493,10 @@ input[type="submit"] {
       top: 1rem;
     }
     .logo-bd {
-       width: 12%;
-       left: -2rem;
-       top: -1rem;
-     }
+      width: 12%;
+      left: -2rem;
+      top: -1rem;
+    }
     .logo-jb {
       width: 4%;
       //left: -3rem;
@@ -1434,5 +1542,300 @@ input[type="submit"] {
       left: -2rem;
       //top: -2rem;
     }
+  }
+}
+
+//pg-worker ----------------------------------
+.sec-banner-worker {
+  position: relative;
+  .img-poster-wrapper {
+    .outer {
+      width: 100%;
+      position: absolute;
+      text-align: left;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      .form-wrapper {
+        position: absolute;
+        text-align: center;
+        left: 30%;
+        right: 30%;
+        bottom: 18%;
+        top: 70%;
+        .inner {
+          //padding: 1rem;
+          background: rgba($black, 0.8);
+          .selectPicker {
+            position: relative;
+            width: 35%;
+            margin: 1rem 0.5rem 1rem 1rem;
+            float: left;
+          }
+          .phoneNub {
+            width: 35%;
+            float: left;
+            margin: 1rem 0 1rem 0;
+            border-radius: 4px;
+            border: 1px solid #e6e6e6;
+            height: 2.5rem;
+            box-sizing: border-box;
+            overflow: hidden;
+            font-size: 1rem;
+            line-height: 2rem;
+            background: #fafafa;
+            color: #a2a1a1;
+            position: relative;
+            .sm {
+              width: 8%;
+              height: 100%;
+              right: 0;
+              cursor: pointer;
+              text-align: center;
+              line-height: 1.5rem;
+              margin-right: 5%;
+              position: absolute;
+              img {
+                width: 100%;
+              }
+            }
+            input {
+              width: 88%;
+              height: 100%;
+              background: #fafafa;
+              outline: none;
+              border: none;
+              //text-indent: .2rem;
+              //font-size: .3rem;
+              &::placeholder {
+                color: $gray;
+              }
+            }
+          }
+          .btn-submit {
+            float: right;
+            margin: 1rem 1rem 1rem 0;
+            height: 2.5rem;
+            //padding: 0 2rem;
+            width: 20%;
+          }
+        }
+      }
+    }
+  }
+}
+.form-search-worker {
+  margin-top: 20px;
+  .form-control {
+    display: inline-block;
+    width: 12rem;
+    box-shadow: none;
+  }
+}
+//well-general
+.well-staff {
+  box-shadow: none;
+  width: 100%;
+  float: left;
+  .avator-wrapper-outter {
+    margin-bottom: 0.8rem;
+  }
+  dl, p, ul  {
+    font-size: 1rem;
+    color: lighten($gray, 10%);
+  }
+  ul.avator-meta {
+    .title {
+      color: $black;
+    }
+    li {
+      margin-bottom: 0.3rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  ul.avator-meta-extra {
+    margin-bottom: 1.2rem;
+  }
+  .inner {
+    padding: 1rem 1rem 0 1rem;
+    float: left;
+    width: 100%;
+  }
+  .outter {
+    border-bottom: 1px dotted $gray-tint;
+    float: left;
+    width: 100%;
+  }
+  &:hover {
+    box-shadow: 0 0 10px $gray-tinter;
+  }
+}
+.star {
+  display: inline-block;
+  width: 6rem;
+  img {
+    width: 100%;
+    position: relative;
+    top: -4px;
+  }
+}
+//well-staff-important
+.well-staff-important {
+  position: relative;
+  margin-bottom: 0;
+  text-align: left;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: white;
+  -webkit-background-size: 3.5rem;
+  background-size: 3.5rem;
+  padding: 0 0 2.4rem 0;
+  .avator-wrapper-outter {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+  ul.avator-meta {
+    font-size: 1rem;
+    .title {
+      font-size: 1.5rem;
+      margin: 0.4rem 0;
+    }
+  }
+  ul.avator-meta-extra {
+    //width: 100%;
+    //margin-left: 10px;
+    float: left;
+    display: block;
+    font-size: 1rem;
+    li {
+      width: 48%;
+      display: inline-block;
+      margin-bottom: 0.3rem;
+    }
+  }
+  .btn-wrapper {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    .btn-worker-require {
+      color: $red;
+      background: #f9f9f9;
+      border-radius: 0;
+      width: 100%;
+      padding: 0.8rem 0;
+      border-top: 1px solid #e3e3e3;
+      &:hover {
+        background: lighten(#f9f9f9, 40%);
+      }
+      &:active, &:hover:active {
+        background: darken(#f9f9f9, 5%);
+      }
+    }
+  }
+}
+//well-staff-general
+.well-staff-general {
+  position: relative;
+  margin-bottom: 0;
+  text-align: left;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: white;
+  -webkit-background-size: 3.5rem;
+  background-size: 3.5rem;
+  padding: 0;
+  .avator-wrapper-outter {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+  .avator-wrapper {
+    width: 80px;
+    float: left;
+    img {
+      width: 100%;
+    }
+  }
+  .inner {
+    padding: 0.5rem;
+    float: left;
+    width: 100%;
+  }
+  .star {
+    display: inline-block;
+    width: 4rem;
+    img {
+      width: 100%;
+      position: relative;
+      top: -4px;
+    }
+  }
+
+  ul.avator-meta {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+    .title {
+      font-size: 1.2rem;
+      margin: 0.4rem 0;
+    }
+  }
+  ul.avator-meta-extra {
+    //width: 100%;
+    //margin-left: 10px;
+    float: left;
+    display: block;
+    font-size: 0.7rem;
+    margin-bottom: 0;
+    li {
+      width: 45%;
+      display: inline-block;
+      margin-bottom: 0.3rem;
+    }
+  }
+  .shop-extra {
+    //position: absolute;
+    //bottom: -0.9rem;
+    //left: 3.8rem;
+  }
+  .btn-wrapper {
+    //position: absolute;
+    //bottom: 0;
+    //left:0;
+    //right: 0;
+    .btn-worker-require {
+      color: $red;
+      background: #f9f9f9;
+      border-radius: 0;
+      width: 100%;
+      padding: 0.8rem 0;
+      border-top: 1px solid #e3e3e3;
+      &:hover {
+        background: lighten(#f9f9f9, 40%);
+      }
+      &:active, &:hover:active {
+        background: darken(#f9f9f9, 5%);
+      }
+    }
+  }
+}
+.well-staff-jinpai {
+    background: white url("../images/shop/ico-jinpai.png") no-repeat top right;
+  }
+.well-staff-biaogan {
+  background: white url("../images/shop/ico-biaogan.png") no-repeat top right;
+}
+.well-staff-leader {
+  background: white url("../images/worker/ico-leader.png") no-repeat top right;
+  background-size: 2rem;
+  background-position: 95% 0;
+}
+.sec-worker-important {
+  .spacer {
+    margin-bottom: 30px;
   }
 }

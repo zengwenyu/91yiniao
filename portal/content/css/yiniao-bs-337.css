@@ -28,6 +28,16 @@ body {
 .padding-r-5 {
   padding-right: 5px; }
 
+.padding-l-10 {
+  padding-left: 10px; }
+
+.padding-r-10 {
+  padding-right: 10px; }
+
+.padding-lr-10 {
+  padding-left: 10px;
+  padding-right: 10px; }
+
 .red {
   color: #e8314a; }
 
@@ -114,6 +124,16 @@ body {
 .padding-r-5 {
   padding-right: 5px; }
 
+.padding-l-10 {
+  padding-left: 10px; }
+
+.padding-r-10 {
+  padding-right: 10px; }
+
+.padding-lr-10 {
+  padding-left: 10px;
+  padding-right: 10px; }
+
 .red {
   color: #e8314a; }
 
@@ -198,6 +218,11 @@ a.red {
     font-weight: 300; }
   .block-title h2 {
     font-weight: 600; }
+    .block-title h2 span {
+      margin-left: 1rem;
+      color: #636363;
+      font-size: 0.9rem;
+      font-weight: 400; }
   .block-title:after {
     content: "";
     display: block;
@@ -432,6 +457,8 @@ a.red {
 
 .tab-content .tab-pane {
   width: 100%; }
+  .tab-content .tab-pane .row.spacer {
+    margin-bottom: 20px; }
   .tab-content .tab-pane .tab-pan-item-outter {
     display: table;
     margin-top: 1rem; }
@@ -886,8 +913,13 @@ a.red {
   width: 50%;
   padding: 1rem; }
 
+.tab-pane-worker .table-layout tr > td {
+  vertical-align: top;
+  width: 25%;
+  padding: 0; }
+
 .avator-wrapper {
-  width: 86px;
+  width: 100px;
   float: left; }
   .avator-wrapper img {
     width: 100%; }
@@ -895,9 +927,12 @@ a.red {
 ul.avator-meta {
   margin-left: 10px;
   float: left;
-  display: block; }
+  display: block;
+  color: #636363; }
   ul.avator-meta li.title {
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    color: #3b3b3b;
+    margin: 0.2rem 0; }
   ul.avator-meta .data-left {
     margin-right: 1rem; }
   ul.avator-meta .ico-call-400 {
@@ -924,32 +959,85 @@ ul.avator-meta {
   .well-shop .btn-wrapper .btn-red {
     margin-right: 2rem; }
 
-.well-shop, .well-manager {
-  height: 21rem; }
-  .well-shop dl, .well-manager dl {
-    height: 8rem; }
-    .well-shop dl dd, .well-manager dl dd {
-      line-height: 1.5rem; }
-
-.well-staff {
-  height: auto;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  box-shadow: none;
-  background: white url("../images/shop/ico-biaogan.png") no-repeat top right;
-  -webkit-background-size: 3.5rem;
-  background-size: 3.5rem; }
-  .well-staff .avator-wrapper-outter {
-    border-bottom: 1px dotted #b0b0b0;
-    padding-bottom: 0.5rem;
-    margin-bottom: 0.5rem; }
-  .well-staff p {
+.well-shop dl, .well-shop p, .well-manager dl, .well-manager p {
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  height: 8rem;
+  margin-top: 1rem;
+  color: #636363; }
+  .well-shop dl dd, .well-shop p dd, .well-manager dl dd, .well-manager p dd {
     line-height: 1.5rem; }
-  .well-staff .btn-wrapper {
-    margin: 2rem auto 1rem; }
-    .well-staff .btn-wrapper .btn-red {
-      margin-right: 26rem; }
+
+.well-shop-staff {
+  box-shadow: none;
+  width: 100%;
+  float: left;
+  padding: 0 0 2.4rem 0; }
+  .well-shop-staff .outter {
+    border-bottom: 1px dotted #b0b0b0; }
+  .well-shop-staff .avator-wrapper-outter {
+    margin-bottom: 0.8rem; }
+  .well-shop-staff ul.avator-meta .title {
+    color: #3b3b3b; }
+  .well-shop-staff ul.avator-meta li {
+    margin-bottom: 0.3rem; }
+    .well-shop-staff ul.avator-meta li:last-child {
+      margin-bottom: 0; }
+  .well-shop-staff ul.avator-meta-extra {
+    margin-bottom: 1.2rem; }
+  .well-shop-staff p {
+    color: #636363;
+    font-size: 0.9rem;
+    line-height: 1.8rem; }
+  .well-shop-staff .inner {
+    padding: 1rem 1rem 0 1rem;
+    float: left;
+    width: 100%; }
+  .well-shop-staff .btn-wrapper .btn-red {
+    margin-right: 40%; }
+  .well-shop-staff .btn-wrapper .outter {
+    border-bottom: 1px dotted #b0b0b0;
+    float: left;
+    width: 100%; }
+  .well-shop-staff .star {
+    display: inline-block;
+    width: 6rem; }
+    .well-shop-staff .star img {
+      width: 100%;
+      position: relative;
+      top: -4px; }
+  .well-shop-staff .well-staff {
+    position: relative;
+    margin-bottom: 0;
+    text-align: left;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-color: white;
+    -webkit-background-size: 3.5rem;
+    background-size: 3.5rem;
+    padding: 0 0 2.4rem 0; }
+    .well-shop-staff .well-staff .avator-wrapper-outter {
+      padding-bottom: 0.5rem;
+      margin-bottom: 0; }
+    .well-shop-staff .well-staff ul.avator-meta {
+      font-size: 1rem; }
+      .well-shop-staff .well-staff ul.avator-meta .title {
+        font-size: 1.5rem;
+        margin: 0.4rem 0; }
+    .well-shop-staff .well-staff ul.avator-meta-extra {
+      float: left;
+      display: block;
+      font-size: 1rem; }
+      .well-shop-staff .well-staff ul.avator-meta-extra li {
+        width: 48%;
+        display: inline-block;
+        margin-bottom: 0.3rem;
+        position: relative; }
+      .well-shop-staff .well-staff ul.avator-meta-extra li.shorter {
+        width: 40%; }
+      .well-shop-staff .well-staff ul.avator-meta-extra li.longer {
+        width: 56%; }
 
 .nav-shop-card {
   margin: 20px auto; }
@@ -987,6 +1075,10 @@ ul.avator-meta {
   margin: 0 0 2rem 0; }
   .sec-shop-shot .block-title-shop h2 {
     margin: 0; }
+.sec-shop-shot .stack-down-inverse .mask {
+  opacity: 0; }
+  .sec-shop-shot .stack-down-inverse .mask:hover {
+    opacity: 1; }
 
 .sec-shop-contact {
   background: white url("../images/shop/bg-gray-tri.gif") repeat-x top left;
@@ -1032,6 +1124,7 @@ input[type="submit"] {
   margin: 0 auto 0;
   background: white;
   border: 1px solid #e6e6e6;
+  border-radius: 4px;
   width: 100%;
   font-size: 1rem;
   color: #636363;
@@ -1048,7 +1141,7 @@ input[type="submit"] {
   text-align: center;
   line-height: 2.5rem; }
   .select .sm img {
-    width: 40%; }
+    width: 60%; }
 
 .select .text {
   text-align: left;
@@ -1214,5 +1307,226 @@ input[type="submit"] {
     left: 1rem; }
   .sec-logo-grp .table-layout .logo-qhf {
     left: -2rem; }
+
+.sec-banner-worker {
+  position: relative; }
+  .sec-banner-worker .img-poster-wrapper .outer {
+    width: 100%;
+    position: absolute;
+    text-align: left;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0; }
+    .sec-banner-worker .img-poster-wrapper .outer .form-wrapper {
+      position: absolute;
+      text-align: center;
+      left: 30%;
+      right: 30%;
+      bottom: 18%;
+      top: 70%; }
+      .sec-banner-worker .img-poster-wrapper .outer .form-wrapper .inner {
+        background: rgba(59, 59, 59, 0.8); }
+        .sec-banner-worker .img-poster-wrapper .outer .form-wrapper .inner .selectPicker {
+          position: relative;
+          width: 35%;
+          margin: 1rem 0.5rem 1rem 1rem;
+          float: left; }
+        .sec-banner-worker .img-poster-wrapper .outer .form-wrapper .inner .phoneNub {
+          width: 35%;
+          float: left;
+          margin: 1rem 0 1rem 0;
+          border-radius: 4px;
+          border: 1px solid #e6e6e6;
+          height: 2.5rem;
+          box-sizing: border-box;
+          overflow: hidden;
+          font-size: 1rem;
+          line-height: 2rem;
+          background: #fafafa;
+          color: #a2a1a1;
+          position: relative; }
+          .sec-banner-worker .img-poster-wrapper .outer .form-wrapper .inner .phoneNub .sm {
+            width: 8%;
+            height: 100%;
+            right: 0;
+            cursor: pointer;
+            text-align: center;
+            line-height: 1.5rem;
+            margin-right: 5%;
+            position: absolute; }
+            .sec-banner-worker .img-poster-wrapper .outer .form-wrapper .inner .phoneNub .sm img {
+              width: 100%; }
+          .sec-banner-worker .img-poster-wrapper .outer .form-wrapper .inner .phoneNub input {
+            width: 88%;
+            height: 100%;
+            background: #fafafa;
+            outline: none;
+            border: none; }
+            .sec-banner-worker .img-poster-wrapper .outer .form-wrapper .inner .phoneNub input::placeholder {
+              color: #636363; }
+        .sec-banner-worker .img-poster-wrapper .outer .form-wrapper .inner .btn-submit {
+          float: right;
+          margin: 1rem 1rem 1rem 0;
+          height: 2.5rem;
+          width: 20%; }
+
+.form-search-worker {
+  margin-top: 20px; }
+  .form-search-worker .form-control {
+    display: inline-block;
+    width: 12rem;
+    box-shadow: none; }
+
+.well-staff {
+  box-shadow: none;
+  width: 100%;
+  float: left; }
+  .well-staff .avator-wrapper-outter {
+    margin-bottom: 0.8rem; }
+  .well-staff dl, .well-staff p, .well-staff ul {
+    font-size: 1rem;
+    color: #7d7d7d; }
+  .well-staff ul.avator-meta .title {
+    color: #3b3b3b; }
+  .well-staff ul.avator-meta li {
+    margin-bottom: 0.3rem; }
+    .well-staff ul.avator-meta li:last-child {
+      margin-bottom: 0; }
+  .well-staff ul.avator-meta-extra {
+    margin-bottom: 1.2rem; }
+  .well-staff .inner {
+    padding: 1rem 1rem 0 1rem;
+    float: left;
+    width: 100%; }
+  .well-staff .outter {
+    border-bottom: 1px dotted #b0b0b0;
+    float: left;
+    width: 100%; }
+  .well-staff:hover {
+    box-shadow: 0 0 10px #e3e3e3; }
+
+.star {
+  display: inline-block;
+  width: 6rem; }
+  .star img {
+    width: 100%;
+    position: relative;
+    top: -4px; }
+
+.well-staff-important {
+  position: relative;
+  margin-bottom: 0;
+  text-align: left;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: white;
+  -webkit-background-size: 3.5rem;
+  background-size: 3.5rem;
+  padding: 0 0 2.4rem 0; }
+  .well-staff-important .avator-wrapper-outter {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0; }
+  .well-staff-important ul.avator-meta {
+    font-size: 1rem; }
+    .well-staff-important ul.avator-meta .title {
+      font-size: 1.5rem;
+      margin: 0.4rem 0; }
+  .well-staff-important ul.avator-meta-extra {
+    float: left;
+    display: block;
+    font-size: 1rem; }
+    .well-staff-important ul.avator-meta-extra li {
+      width: 48%;
+      display: inline-block;
+      margin-bottom: 0.3rem; }
+  .well-staff-important .btn-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    .well-staff-important .btn-wrapper .btn-worker-require {
+      color: #e8314a;
+      background: #f9f9f9;
+      border-radius: 0;
+      width: 100%;
+      padding: 0.8rem 0;
+      border-top: 1px solid #e3e3e3; }
+      .well-staff-important .btn-wrapper .btn-worker-require:hover {
+        background: white; }
+      .well-staff-important .btn-wrapper .btn-worker-require:active, .well-staff-important .btn-wrapper .btn-worker-require:hover:active {
+        background: #ececec; }
+
+.well-staff-general {
+  position: relative;
+  margin-bottom: 0;
+  text-align: left;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: white;
+  -webkit-background-size: 3.5rem;
+  background-size: 3.5rem;
+  padding: 0; }
+  .well-staff-general .avator-wrapper-outter {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0; }
+  .well-staff-general .avator-wrapper {
+    width: 80px;
+    float: left; }
+    .well-staff-general .avator-wrapper img {
+      width: 100%; }
+  .well-staff-general .inner {
+    padding: 0.5rem;
+    float: left;
+    width: 100%; }
+  .well-staff-general .star {
+    display: inline-block;
+    width: 4rem; }
+    .well-staff-general .star img {
+      width: 100%;
+      position: relative;
+      top: -4px; }
+  .well-staff-general ul.avator-meta {
+    font-size: 0.7rem;
+    margin-bottom: 0; }
+    .well-staff-general ul.avator-meta .title {
+      font-size: 1.2rem;
+      margin: 0.4rem 0; }
+  .well-staff-general ul.avator-meta-extra {
+    float: left;
+    display: block;
+    font-size: 0.7rem;
+    margin-bottom: 0; }
+    .well-staff-general ul.avator-meta-extra li {
+      width: 45%;
+      display: inline-block;
+      margin-bottom: 0.3rem; }
+  .well-staff-general .btn-wrapper .btn-worker-require {
+    color: #e8314a;
+    background: #f9f9f9;
+    border-radius: 0;
+    width: 100%;
+    padding: 0.8rem 0;
+    border-top: 1px solid #e3e3e3; }
+    .well-staff-general .btn-wrapper .btn-worker-require:hover {
+      background: white; }
+    .well-staff-general .btn-wrapper .btn-worker-require:active, .well-staff-general .btn-wrapper .btn-worker-require:hover:active {
+      background: #ececec; }
+
+.well-staff-jinpai {
+  background: white url("../images/shop/ico-jinpai.png") no-repeat top right; }
+
+.well-staff-biaogan {
+  background: white url("../images/shop/ico-biaogan.png") no-repeat top right; }
+
+.well-staff-leader {
+  background: white url("../images/worker/ico-leader.png") no-repeat top right;
+  background-size: 2rem;
+  background-position: 95% 0; }
+
+.sec-worker-important .spacer {
+  margin-bottom: 30px; }
 
 /*# sourceMappingURL=yiniao-bs-337.css.map */
