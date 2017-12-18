@@ -148,7 +148,7 @@ body {
   .table-layout-0 td {
     padding: 0;
     margin: 0;
-    border: 1px solid #b0b0b0; }
+    border: 1px solid #fbfbfb; }
   .table-layout-0 td.no-padding {
     padding: 0; }
 
@@ -298,7 +298,7 @@ a.red {
   width: 100%; }
 .sec-case ul {
   width: 100%;
-  color: #b0b0b0; }
+  color: #fbfbfb; }
   .sec-case ul li.list-inline-item:not(:last-child) {
     margin-right: 3rem; }
 
@@ -319,7 +319,7 @@ a.red {
 
 .col-wrapper, .col-wrapper-1 {
   display: inline-block;
-  border: 1px solid #c9c9c9;
+  border: 1px solid white;
   background: #eeeeee;
   width: 100%;
   float: left; }
@@ -435,7 +435,7 @@ a.red {
   .block-title-wall h5 {
     font-size: 0.8rem;
     font-weight: normal;
-    color: #b0b0b0; }
+    color: #fbfbfb; }
 
 #coupon-wrapper {
   position: relative; }
@@ -451,7 +451,7 @@ a.red {
 
 .sec-coupon p {
   margin-bottom: 0.5rem;
-  color: #636363; }
+  color: #aeaeae; }
   .sec-coupon p:last-of-type {
     margin-bottom: 2rem; }
 
@@ -467,14 +467,14 @@ a.red {
       margin-right: 0.5rem;
       text-align: center; }
       .tab-content .tab-pane .tab-pan-item-outter .tab-pane-item p {
-        color: #636363;
+        color: #aeaeae;
         font-size: 0.7rem;
         margin-top: 0.3rem; }
     .tab-content .tab-pane .tab-pan-item-outter .last {
       margin: 0; }
 
 .nav-pills {
-  border: 1px solid #636363; }
+  border: 1px solid #aeaeae; }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
@@ -482,12 +482,12 @@ a.red {
 
 .nav-pills .nav-link {
   border-radius: 0;
-  color: #636363;
+  color: #aeaeae;
   display: inline-block;
   float: left; }
 
 .text-wrapper {
-  color: #969696;
+  color: #e1e1e1;
   text-align: center;
   font-size: 0.8rem;
   margin: 1rem 0; }
@@ -518,7 +518,7 @@ a.red {
     width: 50%;
     text-align: center; }
     .swiper-slide .img-wrapper .img-wrapper-dec {
-      color: #636363;
+      color: #aeaeae;
       font-size: 0.8rem;
       margin: 1rem 0; }
 
@@ -578,7 +578,7 @@ a.red {
   .process-const-items dl dd {
     font-size: 0.7rem;
     text-align: left;
-    color: #b0b0b0; }
+    color: #fbfbfb; }
 
 .stack-case {
   display: inline-block; }
@@ -590,7 +590,7 @@ a.red {
     display: inline-block;
     width: 100%;
     padding: 0.4rem;
-    background: #e3e3e3; }
+    background: white; }
     .stack-case .title:hover {
       background: #3b3b3b;
       color: #f9f9f9; }
@@ -711,7 +711,7 @@ a.red {
 .sec-problem .tab-pane-item .img-wrapper {
   padding: 1rem;
   margin-right: 1rem;
-  border: 1px solid #e3e3e3;
+  border: 1px solid white;
   min-height: 16rem; }
   .sec-problem .tab-pane-item .img-wrapper p {
     margin-bottom: 0; }
@@ -721,14 +721,14 @@ a.red {
 .table-layout-1 {
   margin-top: 1rem; }
   .table-layout-1 .img-wrapper {
-    border: 1px solid #e3e3e3;
+    border: 1px solid white;
     padding: 1rem;
     margin-right: 1rem;
     text-align: center; }
     .table-layout-1 .img-wrapper img {
       width: 100%; }
     .table-layout-1 .img-wrapper:hover {
-      box-shadow: 2px 2px 10px #e3e3e3; }
+      box-shadow: 2px 2px 10px white; }
   .table-layout-1 .last {
     margin-right: 0;
     margin-bottom: 0;
@@ -750,7 +750,7 @@ a.red {
 .grid-of-images .title {
   background: blue;
   margin-top: 0.2rem;
-  background: #636363;
+  background: #aeaeae;
   color: #f9f9f9;
   padding: 0.2rem;
   font-size: 0.9rem; }
@@ -906,7 +906,7 @@ a.red {
 .nav-shop-card {
   padding: 0;
   width: 100%;
-  border: 1px solid #b0b0b0; }
+  border: 1px solid #fbfbfb; }
 
 .tab-pane-shop .table-layout tr > td {
   vertical-align: top;
@@ -928,7 +928,7 @@ ul.avator-meta {
   margin-left: 10px;
   float: left;
   display: block;
-  color: #636363; }
+  color: #aeaeae; }
   ul.avator-meta li.title {
     font-size: 1.3rem;
     color: #3b3b3b;
@@ -964,7 +964,7 @@ ul.avator-meta {
   line-height: 1.8rem;
   height: 8rem;
   margin-top: 1rem;
-  color: #636363; }
+  color: #aeaeae; }
   .well-shop dl dd, .well-shop p dd, .well-manager dl dd, .well-manager p dd {
     line-height: 1.5rem; }
 
@@ -974,7 +974,7 @@ ul.avator-meta {
   float: left;
   padding: 0 0 2.4rem 0; }
   .well-shop-staff .outter {
-    border-bottom: 1px dotted #b0b0b0; }
+    border-bottom: 1px dotted #fbfbfb; }
   .well-shop-staff .avator-wrapper-outter {
     margin-bottom: 0.8rem; }
   .well-shop-staff ul.avator-meta .title {
@@ -986,7 +986,7 @@ ul.avator-meta {
   .well-shop-staff ul.avator-meta-extra {
     margin-bottom: 1.2rem; }
   .well-shop-staff p {
-    color: #636363;
+    color: #aeaeae;
     font-size: 0.9rem;
     line-height: 1.8rem; }
   .well-shop-staff .inner {
@@ -996,16 +996,9 @@ ul.avator-meta {
   .well-shop-staff .btn-wrapper .btn-red {
     margin-right: 40%; }
   .well-shop-staff .btn-wrapper .outter {
-    border-bottom: 1px dotted #b0b0b0;
+    border-bottom: 1px dotted #fbfbfb;
     float: left;
     width: 100%; }
-  .well-shop-staff .star {
-    display: inline-block;
-    width: 6rem; }
-    .well-shop-staff .star img {
-      width: 100%;
-      position: relative;
-      top: -4px; }
   .well-shop-staff .well-staff {
     position: relative;
     margin-bottom: 0;
@@ -1091,7 +1084,7 @@ ul.avator-meta {
     text-indent: 0; }
   .sec-shop-contact p {
     font-size: 1rem;
-    color: #636363;
+    color: #aeaeae;
     text-indent: 5rem; }
   .sec-shop-contact .img-worker {
     width: auto;
@@ -1127,7 +1120,7 @@ input[type="submit"] {
   border-radius: 4px;
   width: 100%;
   font-size: 1rem;
-  color: #636363;
+  color: #aeaeae;
   padding: 2px 0; }
   .option > div {
     padding: 2px;
@@ -1187,7 +1180,7 @@ input[type="submit"] {
     text-indent: 0.5rem;
     font-size: 1rem; }
     .phoneNub input::placeholder {
-      color: #b0b0b0; }
+      color: #fbfbfb; }
 
 .block-title-no-line:after {
   display: none; }
@@ -1198,7 +1191,7 @@ input[type="submit"] {
 .sec-community .table-layout {
   font-size: 0.8rem;
   text-align: center;
-  color: #636363;
+  color: #aeaeae;
   font-weight: 300; }
   .sec-community .table-layout td {
     vertical-align: top; }
@@ -1221,14 +1214,14 @@ input[type="submit"] {
     display: block;
     width: 4rem;
     height: 0;
-    border-bottom: 1px solid #636363;
+    border-bottom: 1px solid #aeaeae;
     margin: 0 auto 1rem; }
   .sec-community p:after {
     content: "";
     display: block;
     width: 90%;
     height: 0;
-    border-bottom: 1px solid #e3e3e3;
+    border-bottom: 1px solid white;
     margin: 1rem auto; }
 
 .sec-offline-act .block-title-shop {
@@ -1364,7 +1357,7 @@ input[type="submit"] {
             outline: none;
             border: none; }
             .sec-banner-worker .img-poster-wrapper .outer .form-wrapper .inner .phoneNub input::placeholder {
-              color: #636363; }
+              color: #aeaeae; }
         .sec-banner-worker .img-poster-wrapper .outer .form-wrapper .inner .btn-submit {
           float: right;
           margin: 1rem 1rem 1rem 0;
@@ -1386,7 +1379,7 @@ input[type="submit"] {
     margin-bottom: 0.8rem; }
   .well-staff dl, .well-staff p, .well-staff ul {
     font-size: 1rem;
-    color: #7d7d7d; }
+    color: #c8c8c8; }
   .well-staff ul.avator-meta .title {
     color: #3b3b3b; }
   .well-staff ul.avator-meta li {
@@ -1400,19 +1393,17 @@ input[type="submit"] {
     float: left;
     width: 100%; }
   .well-staff .outter {
-    border-bottom: 1px dotted #b0b0b0;
+    border-bottom: 1px dotted #fbfbfb;
     float: left;
     width: 100%; }
   .well-staff:hover {
-    box-shadow: 0 0 10px #e3e3e3; }
+    box-shadow: 0 0 10px white; }
 
 .star {
   display: inline-block;
-  width: 6rem; }
-  .star img {
-    width: 100%;
-    position: relative;
-    top: -4px; }
+  width: 6rem;
+  position: relative;
+  top: 2px; }
 
 .well-staff-important {
   position: relative;

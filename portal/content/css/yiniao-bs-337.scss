@@ -787,7 +787,7 @@ a.red {
     border: 1px solid $gray-tinter;
     padding: 1rem;
     margin-right: 1rem;
-  
+
     text-align: center;
     img {
       width: 100%;
@@ -1143,16 +1143,7 @@ ul.avator-meta {
   }
 
 }
-.star {
-  display: inline-block;
-  width: 6rem;
-  img {
-    width: 100%;
-    position: relative;
-    top: -4px;
-  }
 
-}
 
 //well-staff
 .well-staff {
@@ -1676,11 +1667,8 @@ input[type="submit"] {
 .star {
   display: inline-block;
   width: 6rem;
-  img {
-    width: 100%;
-    position: relative;
-    top: -4px;
-  }
+  position: relative;
+  top: 2px;
 }
 //well-staff-important
 .well-staff-important {

@@ -29,6 +29,7 @@ $(function(){
         });
         e.stopPropagation();
     });
+
     //set title to chicked list item
     $(".option > div").click(function (e) {
         if (e.target == this ) {
@@ -39,4 +40,24 @@ $(function(){
             $(".option").slideUp("fast");
         };
     })
+
+    var num = ($(".num").text().match(/\d+/));
+    console.log(num);
+    function setRateNub(x, y) {
+     return (x * y);
+    };
+    // alert(setRateNub(3,4));
+    $(".rateYo").each(function (el) {
+        $(this).rateYo({
+        rating: 4.7,
+        maxValue: 5,
+        numStars: 5,
+        precision: 2,
+        starWidth: "18px",
+        spacing: "0",
+        normalFill: "#AEAEAE",
+        ratedFill: "#e8314a",
+        readOnly: true
+        });
+    });
 });
