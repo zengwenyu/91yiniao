@@ -267,3 +267,16 @@ $(function(){
     });
 
 });
+
+// black underline animation
+$(function(){
+    var $processConstItem =  $('.process-const-item')
+    $processConstItem.hover(function(){
+        // on mouse enter
+        $(this).find('dt').addClass('hover');
+    }, function(){
+        // on mouse leave
+        $(this).find('dt').removeClass('hover');
+    });
+
+});

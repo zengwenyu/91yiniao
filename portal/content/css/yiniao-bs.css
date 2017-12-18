@@ -427,16 +427,21 @@ a.red {
     -webkit-transition: all ease-out .2s;
     transition: all ease-out .2s;
     border-bottom: 1px solid #e1e1e1;
+    position: relative;
     width: 100%; }
     .process-const-items dl dt:before {
       position: absolute;
       content: "";
-      width: 10px;
+      width: 5%;
       height: 1px;
       background-color: #3c3c3c;
-      margin-top: 21px;
+      margin-top: 19px;
       -webkit-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
       transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+    .process-const-items dl dt:hover:before {
+      width: 100%; }
+  .process-const-items dl dt.hover:before {
+    width: 100%; }
   .process-const-items dl dd {
     font-size: 0.7rem;
     text-align: left;
@@ -745,7 +750,7 @@ a.red {
       margin-bottom: 0.4rem; }
     .sec-contrast .mask dl dd {
       -webkit-text-size-adjust: none;
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       text-align: left;
       margin-bottom: 0.3rem; }
       .sec-contrast .mask dl dd:last-of-type {
