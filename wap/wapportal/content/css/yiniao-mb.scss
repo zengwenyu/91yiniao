@@ -486,7 +486,14 @@ a.red {
 .sec-con-process {
   background: $gray-tinter;
 }
-
+.swiper-button-sm {
+  background-size: 70%;
+}
+#swiper-container-0 {
+  .swiper-button-sm {
+    top:39%;
+  }
+}
 .stack-case {
 
   cursor: hand;
