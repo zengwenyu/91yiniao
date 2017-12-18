@@ -57,11 +57,8 @@ html, body {
 }
 
 .page1 {
-	/*background:url(../images/topic/page1bg.jpg) no-repeat;
-	background-size: 100%;*/
 	width:100%;
 	height:100%;
-	z-index:1000;
 }
 .bg{
 	position:relative;
@@ -109,6 +106,12 @@ html, body {
 }
 .page1-bigpic img.hover {
     transform: scale(1.1);
+}
+.viewme{
+	display:block;
+}
+.viewnot{
+	display:none;
 }
 .page1-bigpic p {
 	font-size: 30px;

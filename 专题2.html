@@ -178,7 +178,12 @@
     <div id="page1-bigpic" class="page1-bigpic">
         <p>您家<span>墙面</span>一定有这样的问题</p>
         <div class="bigpic-wrapper">
-            <img src="portal/content/images/topic/problem/_0005_problem_big.jpg" />
+            <img class="viewme" src="portal/content/images/topic/problem/_0005_problem_big.jpg" />
+            <img class="viewnot" src="portal/content/images/topic/problem/_0004_problem_big.jpg" />
+            <img class="viewnot" src="portal/content/images/topic/problem/_0003_problem_big.jpg" />
+            <img class="viewnot" src="portal/content/images/topic/problem/_0002_problem_big.jpg" />
+            <img class="viewnot" src="portal/content/images/topic/problem/_0001_problem_big.jpg" />
+            <img class="viewnot" src="portal/content/images/topic/problem/_0000_problem_big.jpg" />
         </div>
     </div>
     <div class="page1-smallpic">
@@ -1074,70 +1079,41 @@
             tli[i].querySelector('div').className=i==(3-n)?"page2menulineactive":"page2menuline";
         }
     }
-function fadein(el,time){
-    if(el.style.opacity === ""){
-        el.style.opacity = 0;
-    }
-    if(el.style.display === "" || el.style.display === 'none'){
-        el.style.display = 'block';
-    }
 
-    var t = setInterval(function(){
-        if(el.style.opacity < 1){
-            el.style.opacity = parseFloat(el.style.opacity)+0.01;
-        }
-        else{
-            clearInterval(t);
-        }
-    },time/100);
-}
-
-function fadeout(el,time){
-    if(el.style.opacity === ""){
-        el.style.opacity = 1;
-    }
-    if(el.style.display === "" || el.style.display === 'none'){
-        el.style.display = 'block';
-    }
-
-    var t = setInterval(function(){
-        if(el.style.opacity > 0){
-            el.style.opacity = parseFloat(el.style.opacity)-0.01;
-        }
-        else{
-            clearInterval(t);
-            el.style.display = 'none'
-        }
-    },time/100);
-}
     $(document).ready(function(){
 
         $("#page1smallpic li").hover(function(){
             //alert($(this).index());
+            var n = $(this).index();
             var bigpic = $("#page1-bigpic").find("img");
             var smallpic = $(this).find("img");
-            //alert($(this).find("img")[0].src);
-            //var temp = bigpic[0].src;
-            //alert(getbig(smallpic[0].src));
-           // bigpic.attr('src',getbig(smallpic[0].src));
-
-            //bigpic.style.display="none";
-           // bigpic.style.opacity=0;
-
-           // fadein(bigpic,600);
-           //  bigpic.animate({opacity:'0'},"fast",null,function(){
-           //    bigpic.attr('src',getbig(smallpic[0].src));
-           //    bigpic.animate({opacity:'1'},"fast");
-           //  });
-
-
-            var zoom = 1.1
-            move = -15;
-
-            bigpic.animate({opacity:'1'},"fast",null,function(){
-                bigpic.attr('src',getbig(smallpic[0].src));
-                bigpic.animate({opacity:'1'},"fast");
+            
+            $("#page1-bigpic img").each(function(){
+            	if($(this).index() == n){
+            		/*$(this).fadeIn(1000,function(){});*/
+            		//$(this).removeClass('viewnot').addClass('viewme');
+            		//$(this).show(600);
+            		//$(this).slideDown(1000);
+            		$(this).stop().animate({opacity:1},"slow",null,function(){
+            			$(this).removeClass('viewnot').addClass('viewme');
+            		});
+            	}
+            	else{
+            		//$(this).removeClass('viewme').addClass('viewnot');
+            		//$(this).style.display="none";
+            		//$(this).style.opacity = 0;
+            		//$(this).fadeOut(1000);
+            		//$(this).hide();
+            		//$(this).slideUp(1000);
+            		$(this).stop().animate({opacity:0},"slow",null,function(){
+            			$(this).removeClass('viewme').addClass('viewnot')
+            		});
+            	}
             });
+            //bigpic.animate({opacity:'1'},"fast",null,function(){
+            //    bigpic.attr('src',getbig(smallpic[0].src));
+            //    bigpic.animate({opacity:'1'},"fast");
+            //});
 
 
 
@@ -1191,6 +1167,42 @@ function fadeout(el,time){
             };
         });
     })
+function fadein(el,time){
+    if(el.style.opacity === ""){
+        el.style.opacity = 0;
+    }
+    if(el.style.display === "" || el.style.display === 'none'){
+        el.style.display = 'block';
+    }
+
+    var t = setInterval(function(){
+        if(el.style.opacity < 1){
+            el.style.opacity = parseFloat(el.style.opacity)+0.01;
+        }
+        else{
+            clearInterval(t);
+        }
+    },time/100);
+}
+
+function fadeout(el,time){
+    if(el.style.opacity === ""){
+        el.style.opacity = 1;
+    }
+    if(el.style.display === "" || el.style.display === 'none'){
+        el.style.display = 'block';
+    }
+
+    var t = setInterval(function(){
+        if(el.style.opacity > 0){
+            el.style.opacity = parseFloat(el.style.opacity)-0.01;
+        }
+        else{
+            clearInterval(t);
+            el.style.display = 'none'
+        }
+    },time/100);
+}
 </script>
 </body>
 </html>
