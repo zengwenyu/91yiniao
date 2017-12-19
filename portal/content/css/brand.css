@@ -38,7 +38,7 @@ html {
 
 .thumbnail {
   height: 220px;
-  border-width: 0; }
+  border: none; }
 
 .cd-timeline-content {
   border: 1px solid #dfdfdf; }
@@ -449,7 +449,7 @@ a.cd-read-more:hover {
 
 .cd-left::before {
   top: 25px;
-  left: -21px;
+  left: -22px;
   border-color: transparent transparent transparent #fff; }
 
 .cd-timeline-img div {
@@ -580,5 +580,9 @@ a.cd-read-more:hover {
 
 .container-inner {
   padding: 0 4rem; }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1224px !important; } }
 
 /*# sourceMappingURL=brand.css.map */
