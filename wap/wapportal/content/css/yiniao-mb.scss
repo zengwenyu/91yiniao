@@ -631,6 +631,9 @@ ul.avator-meta {
   .btn-wrapper {
     .btn-red {
       margin-right: 2rem;
+      width: 9rem;
+      text-align: center;
+      padding: 0.4rem  1rem;
     }
 
   }
@@ -643,7 +646,11 @@ ul.avator-meta {
 .btn-wide {
   padding: 0.4rem 1.4rem;
 }
-
+.btn-go-shop, .btn-question, .btn-more-shifu {
+  width: 9rem;
+  text-align: center;
+  padding: 0.4rem  1rem;
+}
 .star {
   display: inline-block;
   width: 6rem;
@@ -697,6 +704,10 @@ ul.avator-meta {
   }
   p {
     font-size: 8px;
+  }
+  img.img-worker {
+    width: 80%;
+    margin: 1rem 0;
   }
 
 }

@@ -500,13 +500,21 @@ ul.avator-meta {
     padding-bottom: 0.5rem;
     margin-bottom: 0.5rem; }
 .sec-description .btn-wrapper .btn-red {
-  margin-right: 2rem; }
+  margin-right: 2rem;
+  width: 9rem;
+  text-align: center;
+  padding: 0.4rem  1rem; }
 
 .btn-submit {
   padding: 0.2rem 1.5rem; }
 
 .btn-wide {
   padding: 0.4rem 1.4rem; }
+
+.btn-go-shop, .btn-question, .btn-more-shifu {
+  width: 9rem;
+  text-align: center;
+  padding: 0.4rem  1rem; }
 
 .star {
   display: inline-block;
@@ -543,6 +551,9 @@ ul.avator-meta {
     margin: 2rem 0 1rem 0; }
   .sec-shop-contact p {
     font-size: 8px; }
+  .sec-shop-contact img.img-worker {
+    width: 80%;
+    margin: 1rem 0; }
 
 .sec-community .table-layout {
   font-size: 0.6rem;
