@@ -1,711 +1,722 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="renderer" content="webkit">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
 
-<title>demo</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">  
+    <title>demo</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
-<link rel="stylesheet" href="wapportal/content/css/swiper.min.css" />
-<link rel="stylesheet" href="wapportal/content/css/style2.css" />
-<script>   
-(function (doc, win) {
-        var docEl = doc.documentElement,
-            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-            recalc = function () {
-                var clientWidth = docEl.clientWidth;
-                if (!clientWidth) return;
-                if(clientWidth>=640){
-                    docEl.style.fontSize = '100px';
-                }else{
-                    docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
-                }
-            };
+    <link rel="stylesheet" href="wapportal/content/css/swiper.min.css" />
+    <link rel="stylesheet" href="wapportal/content/css/style2.css" />
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth>=640){
+                        docEl.style.fontSize = '100px';
+                    }else{
+                        docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                    }
+                };
 
-        if (!doc.addEventListener) return;
-        win.addEventListener(resizeEvt, recalc, false);
-        doc.addEventListener('DOMContentLoaded', recalc, false);
-    })(document, window);
-</script> 
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
 
 </head>
 <body>
-  <span class="ydtitle">YINIAO</span>
-  <div class="ydheader">
+<span class="ydtitle">YINIAO</span>
+<div class="ydheader">
     <div class="swiper-container ydbanner">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <a href="#">
-              <img src="wapportal/content/images/wall/poster/_0004_poster.jpg" alt=""/>
-            </a>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="wapportal/content/images/wall/poster/_0004_poster.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="wapportal/content/images/wall/poster/_0003_poster.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="wapportal/content/images/wall/poster/_0002_poster.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="wapportal/content/images/wall/poster/_0001_poster.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="wapportal/content/images/wall/poster/_0000_poster.jpg" alt=""/>
+                </a>
+            </div>
         </div>
-        <div class="swiper-slide">
-            <a href="#">
-              <img src="wapportal/content/images/wall/poster/_0003_poster.jpg" alt=""/>
-            </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#">
-            <img src="wapportal/content/images/wall/poster/_0002_poster.jpg" alt=""/>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#">
-            <img src="wapportal/content/images/wall/poster/_0001_poster.jpg" alt=""/>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#">
-            <img src="wapportal/content/images/wall/poster/_0000_poster.jpg" alt=""/>
-          </a>
-        </div>
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-      
-      <div class="swiper-button-prev yhp-button-prev"></div>
-      <div class="swiper-button-next yhp-button-next"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev yhp-button-prev"></div>
+        <div class="swiper-button-next yhp-button-next"></div>
     </div>
     <div class="ydheaderc">您家<span>墙面</span>一定有这样的问题</div>
-  </div>
-  
-  <div class="ydproduct">
+</div>
+
+<div class="ydproduct">
     <span class="ydptitle">产品</span>
     <span class="ydpsubtitle">product</span>
     <div class="ydp01">
-      <img class="ydppic" src="wapportal/content/images/ydp01.png" />
-      <a class="ydpnext"><img src="wapportal/content/images/ydpnext.png" /></a>
-      <span>修补刷新</span>
-      <p>墙面基层施工工艺不达标形成蜘蛛网状裂纹，墙体表面被浸水，墙面被记号笔、圆珠笔、油渍等所污损</p>
+        <img class="ydppic" src="wapportal/content/images/ydp01.png" />
+        <a class="ydpnext"><img src="wapportal/content/images/ydpnext.png" /></a>
+        <span>修补刷新</span>
+        <p>墙面基层施工工艺不达标形成蜘蛛网状裂纹，墙体表面被浸水，墙面被记号笔、圆珠笔、油渍等所污损</p>
     </div>
 
     <div class="ydp01">
-      <img class="ydppic" src="wapportal/content/images/ydp01.png" />
-      <a class="ydpnext"><img src="wapportal/content/images/ydpnext.png" /></a>
-      <span>修补刷新</span>
-      <p>墙面基层施工工艺不达标形成蜘蛛网状裂纹，墙体表面被浸水，墙面被记号笔、圆珠
-笔、油渍等所污损</p>
+        <img class="ydppic" src="wapportal/content/images/ydp01.png" />
+        <a class="ydpnext"><img src="wapportal/content/images/ydpnext.png" /></a>
+        <span>修补刷新</span>
+        <p>墙面基层施工工艺不达标形成蜘蛛网状裂纹，墙体表面被浸水，墙面被记号笔、圆珠
+            笔、油渍等所污损</p>
     </div>
 
     <div class="ydp01">
-      <img class="ydppic" src="wapportal/content/images/ydp01.png" />
-      <a class="ydpnext"><img src="wapportal/content/images/ydpnext.png" /></a>
-      <span>修补刷新</span>
-      <p>墙面基层施工工艺不达标形成蜘蛛网状裂纹，墙体表面被浸水，墙面被记号笔、圆珠
-笔、油渍等所污损</p>
+        <img class="ydppic" src="wapportal/content/images/ydp01.png" />
+        <a class="ydpnext"><img src="wapportal/content/images/ydpnext.png" /></a>
+        <span>修补刷新</span>
+        <p>墙面基层施工工艺不达标形成蜘蛛网状裂纹，墙体表面被浸水，墙面被记号笔、圆珠
+            笔、油渍等所污损</p>
     </div>
 
     <div class="ydp01">
-      <img class="ydppic" src="wapportal/content/images/ydp01.png" />
-      <a class="ydpnext"><img src="wapportal/content/images/ydpnext.png" /></a>
-      <span>修补刷新</span>
-      <p>墙面基层施工工艺不达标形成蜘蛛网状裂纹，墙体表面被浸水，墙面被记号笔、圆珠
-笔、油渍等所污损</p>
+        <img class="ydppic" src="wapportal/content/images/ydp01.png" />
+        <a class="ydpnext"><img src="wapportal/content/images/ydpnext.png" /></a>
+        <span>修补刷新</span>
+        <p>墙面基层施工工艺不达标形成蜘蛛网状裂纹，墙体表面被浸水，墙面被记号笔、圆珠
+            笔、油渍等所污损</p>
     </div>
-  </div>
+</div>
 
-  <div class="ydvideo">
+<div class="ydvideo">
     <span class="ydptitle">视频工艺</span>
     <span class="ydpsubtitle">Video technology</span>
     <div class="ydvtab" id="main">
-      <ul class="menu" id="menu">  
-        <li onclick="setTab(0)" class="hover">修补刷新</li>  
-        <li onclick="setTab(1)">基础修补</li>  
-        <li onclick="setTab(2)">铲除翻新</li>
-        <li onclick="setTab(3)">局部点补</li>   
-      </ul>
-      <ul id="tabcontent">
-        <li class="block">
-          <div class="swiper-container ydvbanner ydvbanner01">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0005_video-shot.jpg" /></a>
-                <span>成品保护</span>
-                <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
-              </div>
-              <div class="swiper-slide">
-                <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0001_video-shot.jpg" /></a>
-                <span>喷涂面漆（两遍）</span>
-                <p>我们面漆采用喷涂机，保证墙壁表面平整光滑，手感极好，丰满度好，堪称极优护</p>
-              </div>
-              <div class="swiper-slide">
-                <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0000s_0002_video-shot.jpg" /></a>
-                <span>墙面修补</span>
-                <p>在小的地方，我们都能做，并且能做好</p>
-              </div>
-              <div class="swiper-slide">
-                <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0000_video-shot.jpg" /></a>
-                <span>完工清洁</span>
-                <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-container ydvbanner ydvbanner0102">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0005_video-shot.jpg" /></a>
-                <span>成品保护</span>
-                <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
-              </div>
-              <div class="swiper-slide">
-                <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0001_video-shot.jpg" /></a>
-                <span>喷涂面漆（两遍）</span>
-                <p>我们面漆采用喷涂机，保证墙壁表面平整光滑，手感极好，丰满度好，堪称极优护</p>
-              </div>
-              <div class="swiper-slide">
-                <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0000s_0002_video-shot.jpg" /></a>
-                <span>墙面修补</span>
-                <p>在小的地方，我们都能做，并且能做好</p>
-              </div>
-              <div class="swiper-slide">
-                <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0000_video-shot.jpg" /></a>
-                <span>完工清洁</span>
-                <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差</p>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="tttttt">
-            <div class="swiper-container ydvbanner ydvbanner02">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0005_video-shot.jpg" /></a>
-                        <span>成品保护</span>
-                        <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0001_video-shot.jpg" /></a>
-                        <span>喷涂面漆（两遍）</span>
-                        <p>我们面漆采用喷涂机，保证墙壁表面平整光滑，手感极好，丰满度好，堪称极优护</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0000s_0002_video-shot.jpg" /></a>
-                        <span>墙面修补</span>
-                        <p>在小的地方，我们都能做，并且能做好</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0000_video-shot.jpg" /></a>
-                        <span>完工清洁</span>
-                        <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差</p>
+        <ul class="menu" id="menu">
+            <li onclick="setTab(0)" class="hover">修补刷新</li>
+            <li onclick="setTab(1)">基础修补</li>
+            <li onclick="setTab(2)">铲除翻新</li>
+            <li onclick="setTab(3)">局部点补</li>
+        </ul>
+        <ul id="tabcontent">
+            <li class="block">
+                <div class="swiper-container ydvbanner ydvbanner01">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0005_video-shot.jpg" /></a>
+                            <span>成品保护</span>
+                            <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0001_video-shot.jpg" /></a>
+                            <span>喷涂面漆（两遍）</span>
+                            <p>我们面漆采用喷涂机，保证墙壁表面平整光滑，手感极好，丰满度好，堪称极优护</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0000s_0002_video-shot.jpg" /></a>
+                            <span>墙面修补</span>
+                            <p>在小的地方，我们都能做，并且能做好</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0000_video-shot.jpg" /></a>
+                            <span>完工清洁</span>
+                            <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="swiper-container ydvbanner ydvbanner0202">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0005_video-shot.jpg" /></a>
-                        <span>成品保护</span>
-                        <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0001_video-shot.jpg" /></a>
-                        <span>喷涂面漆（两遍）</span>
-                        <p>我们面漆采用喷涂机，保证墙壁表面平整光滑，手感极好，丰满度好，堪称极优护</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0000s_0002_video-shot.jpg" /></a>
-                        <span>墙面修补</span>
-                        <p>在小的地方，我们都能做，并且能做好</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0000_video-shot.jpg" /></a>
-                        <span>完工清洁</span>
-                        <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差</p>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li class="tttttt">
-          <div class="swiper-container ydvbanner ydvbanner03">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0005_video-shot.jpg" /></a>
-                        <span>成品保护</span>
-                        <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0002_video-shot.jpg" /></a>
-                        <span>石膏腻子找平</span>
-                        <p>采用益鸟独特配方石膏找平</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0004_video-shot.jpg" /></a>
-                        <span>铲除墙面</span>
-                        <p>将原有墙面的基础铲除至原始墙体，角落，门缝，铲除至原始墙面</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0001_video-shot.jpg" /></a>
-                        <span>喷涂面漆（两遍）</span>
-                        <p>我们面漆采用喷涂机，保证墙壁表面平整光滑手感极好，丰满度好，堪称极优</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0002s_0003_video-shot.jpg" /></a>
-                        <span>界面剂涂刷</span>
-                        <p>对整个墙面，角落都不放过，整齐，有规律的涂刷</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0000_video-shot.jpg" /></a>
-                        <span>完工清洁</span>
-                        <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差</p>
+                <div class="swiper-container ydvbanner ydvbanner0102">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0005_video-shot.jpg" /></a>
+                            <span>成品保护</span>
+                            <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0001_video-shot.jpg" /></a>
+                            <span>喷涂面漆（两遍）</span>
+                            <p>我们面漆采用喷涂机，保证墙壁表面平整光滑，手感极好，丰满度好，堪称极优护</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0000s_0002_video-shot.jpg" /></a>
+                            <span>墙面修补</span>
+                            <p>在小的地方，我们都能做，并且能做好</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0000_video-shot.jpg" /></a>
+                            <span>完工清洁</span>
+                            <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="swiper-container ydvbanner ydvbanner0302">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0005_video-shot.jpg" /></a>
-                        <span>成品保护</span>
-                        <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0002_video-shot.jpg" /></a>
-                        <span>石膏腻子找平</span>
-                        <p>采用益鸟独特配方石膏找平</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0004_video-shot.jpg" /></a>
-                        <span>铲除墙面</span>
-                        <p>将原有墙面的基础铲除至原始墙体，角落，门缝，铲除至原始墙面</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0001_video-shot.jpg" /></a>
-                        <span>喷涂面漆（两遍）</span>
-                        <p>我们面漆采用喷涂机，保证墙壁表面平整光滑手感极好，丰满度好，堪称极优</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0002s_0003_video-shot.jpg" /></a>
-                        <span>界面剂涂刷</span>
-                        <p>对整个墙面，角落都不放过，整齐，有规律的涂刷</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0000_video-shot.jpg" /></a>
-                        <span>完工清洁</span>
-                        <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差</p>
+            </li>
+            <li class="tttttt">
+                <div class="swiper-container ydvbanner ydvbanner02">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0005_video-shot.jpg" /></a>
+                            <span>成品保护</span>
+                            <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0001_video-shot.jpg" /></a>
+                            <span>喷涂面漆（两遍）</span>
+                            <p>我们面漆采用喷涂机，保证墙壁表面平整光滑，手感极好，丰满度好，堪称极优护</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0000s_0002_video-shot.jpg" /></a>
+                            <span>墙面修补</span>
+                            <p>在小的地方，我们都能做，并且能做好</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0000_video-shot.jpg" /></a>
+                            <span>完工清洁</span>
+                            <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </li>
-        <li class="tttttt">
-          <div class="swiper-container ydvbanner ydvbanner04">
-              <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                      <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0005_video-shot.jpg" /></a>
-                      <span>成品保护</span>
-                      <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
-                  </div>
-                  <div class="swiper-slide">
-                      <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0002_video-shot.jpg" /></a>
-                      <span>界面石膏腻子找平</span>
-                      <p>首先使用界面剂均匀涂刷在采用益鸟独特配方石膏找平</p>
-                  </div>
-                  <div class="swiper-slide">
-                      <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0004_video-shot.jpg" /></a>
-                      <span>破损墙面铲除</span>
-                      <p>将原有墙面破损的地方用工具进行铲除，然后在针对性的修补</p>
-                  </div>
-                  <div class="swiper-slide">
-                      <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0001_video-shot.jpg" /></a>
-                      <span>喷涂面漆（两遍）</span>
-                      <p>我们面漆采用喷涂机，保证墙壁表面平整光滑手感极好，丰满度好，堪称极优</p>
-                  </div>
-                  <div class="swiper-slide">
-                      <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0003_video-shot.jpg" /></a>
-                      <span>涂刷防水</span>
-                      <p>对墙面背水面进行防水保护，使用我们独特防水工艺</p>
-                  </div>
-                  <div class="swiper-slide">
-                      <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0000_video-shot.jpg" /></a>
-                      <span>完工清洁</span>
-                      <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差</p>
-                  </div>
-              </div>
-            </div>
-            <div class="swiper-container ydvbanner ydvbanner0402">
-              <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                      <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0005_video-shot.jpg" /></a>
-                      <span>成品保护</span>
-                      <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
-                  </div>
-                  <div class="swiper-slide">
-                      <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0002_video-shot.jpg" /></a>
-                      <span>界面石膏腻子找平</span>
-                      <p>首先使用界面剂均匀涂刷在采用益鸟独特配方石膏找平</p>
-                  </div>
-                  <div class="swiper-slide">
-                      <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0004_video-shot.jpg" /></a>
-                      <span>破损墙面铲除</span>
-                      <p>将原有墙面破损的地方用工具进行铲除，然后在针对性的修补</p>
-                  </div>
-                  <div class="swiper-slide">
-                      <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0001_video-shot.jpg" /></a>
-                      <span>喷涂面漆（两遍）</span>
-                      <p>我们面漆采用喷涂机，保证墙壁表面平整光滑手感极好，丰满度好，堪称极优</p>
-                  </div>
-                  <div class="swiper-slide">
-                      <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0003_video-shot.jpg" /></a>
-                      <span>涂刷防水</span>
-                      <p>对墙面背水面进行防水保护，使用我们独特防水工艺</p>
-                  </div>
-                  <div class="swiper-slide">
-                      <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0000_video-shot.jpg" /></a>
-                      <span>完工清洁</span>
-                      <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差</p>
-                  </div>
-              </div>
-            </div>
-        </li>
-      </ul>
-  </div>
-  </div>
-  
-  <div class="ydtech">
+                <div class="swiper-container ydvbanner ydvbanner0202">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0005_video-shot.jpg" /></a>
+                            <span>成品保护</span>
+                            <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0001_video-shot.jpg" /></a>
+                            <span>喷涂面漆（两遍）</span>
+                            <p>我们面漆采用喷涂机，保证墙壁表面平整光滑，手感极好，丰满度好，堪称极优护</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0000s_0002_video-shot.jpg" /></a>
+                            <span>墙面修补</span>
+                            <p>在小的地方，我们都能做，并且能做好</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0000_video-shot.jpg" /></a>
+                            <span>完工清洁</span>
+                            <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="tttttt">
+                <div class="swiper-container ydvbanner ydvbanner03">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0005_video-shot.jpg" /></a>
+                            <span>成品保护</span>
+                            <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0002_video-shot.jpg" /></a>
+                            <span>石膏腻子找平</span>
+                            <p>采用益鸟独特配方石膏找平</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0004_video-shot.jpg" /></a>
+                            <span>铲除墙面</span>
+                            <p>将原有墙面的基础铲除至原始墙体，角落，门缝，铲除至原始墙面</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0001_video-shot.jpg" /></a>
+                            <span>喷涂面漆（两遍）</span>
+                            <p>我们面漆采用喷涂机，保证墙壁表面平整光滑手感极好，丰满度好，堪称极优</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0002s_0003_video-shot.jpg" /></a>
+                            <span>界面剂涂刷</span>
+                            <p>对整个墙面，角落都不放过，整齐，有规律的涂刷</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0000_video-shot.jpg" /></a>
+                            <span>完工清洁</span>
+                            <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container ydvbanner ydvbanner0302">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0005_video-shot.jpg" /></a>
+                            <span>成品保护</span>
+                            <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0002_video-shot.jpg" /></a>
+                            <span>石膏腻子找平</span>
+                            <p>采用益鸟独特配方石膏找平</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0004_video-shot.jpg" /></a>
+                            <span>铲除墙面</span>
+                            <p>将原有墙面的基础铲除至原始墙体，角落，门缝，铲除至原始墙面</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0001_video-shot.jpg" /></a>
+                            <span>喷涂面漆（两遍）</span>
+                            <p>我们面漆采用喷涂机，保证墙壁表面平整光滑手感极好，丰满度好，堪称极优</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0002s_0003_video-shot.jpg" /></a>
+                            <span>界面剂涂刷</span>
+                            <p>对整个墙面，角落都不放过，整齐，有规律的涂刷</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0000_video-shot.jpg" /></a>
+                            <span>完工清洁</span>
+                            <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="tttttt">
+                <div class="swiper-container ydvbanner ydvbanner04">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0005_video-shot.jpg" /></a>
+                            <span>成品保护</span>
+                            <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0002_video-shot.jpg" /></a>
+                            <span>界面石膏腻子找平</span>
+                            <p>首先使用界面剂均匀涂刷在采用益鸟独特配方石膏找平</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0004_video-shot.jpg" /></a>
+                            <span>破损墙面铲除</span>
+                            <p>将原有墙面破损的地方用工具进行铲除，然后在针对性的修补</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0001_video-shot.jpg" /></a>
+                            <span>喷涂面漆（两遍）</span>
+                            <p>我们面漆采用喷涂机，保证墙壁表面平整光滑手感极好，丰满度好，堪称极优</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0003_video-shot.jpg" /></a>
+                            <span>涂刷防水</span>
+                            <p>对墙面背水面进行防水保护，使用我们独特防水工艺</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0000_video-shot.jpg" /></a>
+                            <span>完工清洁</span>
+                            <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container ydvbanner ydvbanner0402">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0005_video-shot.jpg" /></a>
+                            <span>成品保护</span>
+                            <p>别人做不到的细节，我们能做到360度无死角覆盖，给您姨妈巾的保护</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0002_video-shot.jpg" /></a>
+                            <span>界面石膏腻子找平</span>
+                            <p>首先使用界面剂均匀涂刷在采用益鸟独特配方石膏找平</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0004_video-shot.jpg" /></a>
+                            <span>破损墙面铲除</span>
+                            <p>将原有墙面破损的地方用工具进行铲除，然后在针对性的修补</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0001_video-shot.jpg" /></a>
+                            <span>喷涂面漆（两遍）</span>
+                            <p>我们面漆采用喷涂机，保证墙壁表面平整光滑手感极好，丰满度好，堪称极优</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0003_video-shot.jpg" /></a>
+                            <span>涂刷防水</span>
+                            <p>对墙面背水面进行防水保护，使用我们独特防水工艺</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:;" onclick="popupvideo()"><img src="wapportal/content/images/wall/video-shot/_0003s_0000_video-shot.jpg" /></a>
+                            <span>完工清洁</span>
+                            <p>每日施工后我们都会清扫一遍，保证工地整洁不临乱，杜绝脏、乱、差</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="ydtech">
     <span class="ydptitle">12道专业工艺</span>
     <span class="ydpsubtitle">Professional Technology</span>
     <div class="ydtline"></div>
     <div class="ydtqj">
-      <div class="swiper-container ydtbanner" id="ydtbanner">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-              <span class="ydttitle">完工清洁</span>
-              <p class="ydtp1"><span>我们家的</span><br />当房子装修完，还得你自己和家人来打扫</p>
-              <p class="ydtp2"><span>我们家的</span><br />将所有的垃圾清除，打扫房间的卫生，地面，墙角，窗户，恢复原样</p>
-              <div class="clearfix"></div>
-            <img src="wapportal/content/images/wall/pro-tech/_0011_pro-tech.jpg" alt=""/>
-          </div>
-            <div class="swiper-slide">
-                <span class="ydttitle">喷涂面漆</span>
-                <p class="ydtp1"><span>我们家的(喷涂2遍)</span><br />用独有喷涂机喷刷，是墙面均匀不起点</p>
-                <p class="ydtp2"><span>别人家的（涂刷）</span><br />有的公司在涂刷面漆时兑水过多，导致墙面形不成漆膜，墙面会粉化</p>
-                <div class="clearfix"></div>
-                <img src="wapportal/content/images/wall/pro-tech/_0010_pro-tech.jpg" alt=""/>
+        <div class="swiper-container ydtbanner" id="ydtbanner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <span class="ydttitle">成品保护</span>
+                    <p class="ydtp1"><span>我们家的</span><br />将原有多的物件拆卸，以及对家具，灯具，门窗等等进行保护</p>
+                    <p class="ydtp2"><span>别人家的</span><br />有的公司施工前就随便用东西遮挡一下甚至都不会给你家具进行保护</p>
+                    <div class="clearfix"></div>
+                    <img src="wapportal/content/images/wall/pro-tech/_0000_pro-tech.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <span class="ydttitle">基层铲除</span>
+                    <p class="ydtp1"><span>我们家的</span><br />原有墙面基层铲除只原始的墙面每个小细节、每个角落铲除干净</p>
+                    <p class="ydtp2"><span>别人家的</span><br />有的公司为了省时省力，基层铲除时很多地方没有铲除到，导致...</p>
+                    <div class="clearfix"></div>
+                    <img src="wapportal/content/images/wall/pro-tech/_0001_pro-tech.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <span class="ydttitle">防水涂刷</span>
+                    <p class="ydtp1"><span>我们家的</span><br />对阳台，厨卫，背水面进行防水使用我们独特防水工艺</p>
+                    <p class="ydtp2"><span>别人家的</span><br />有的公司在墙面防水会偷工减料使用劣质防水材料，导致之后再次返潮</p>
+                    <div class="clearfix"></div>
+                    <img src="wapportal/content/images/wall/pro-tech/_0002_pro-tech.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <span class="ydttitle">界面涂刷</span>
+                    <p class="ydtp1"><span>我们家的</span><br />对整个墙面，角落都不放过，整齐，有规律的涂刷</p>
+                    <p class="ydtp2"><span>别人家的</span><br />有的公司在做界面涂刷这一步会省略掉，还有的涂刷不均匀</p>
+                    <div class="clearfix"></div>
+                    <img src="wapportal/content/images/wall/pro-tech/_0003_pro-tech.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <span class="ydttitle">石膏修补</span>
+                    <p class="ydtp1"><span>我们家的</span><br />采用益鸟独特配方石膏找平</p>
+                    <p class="ydtp2"><span>别人家的</span><br />有的公司采用的是普通石膏，导致干的比较慢，耽误施工工期</p>
+                    <div class="clearfix"></div>
+                    <img src="wapportal/content/images/wall/pro-tech/_0004_pro-tech.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <span class="ydttitle">挂网加固</span>
+                    <p class="ydtp1"><span>我们家的</span><br />在有裂缝处，在裂缝做挂网处理</p>
+                    <p class="ydtp2"><span>别人家的</span><br />有的公司在挂网上为了省下材料会使用劣质材料，导致钢丝弯曲掉落</p>
+                    <div class="clearfix"></div>
+                    <img src="wapportal/content/images/wall/pro-tech/_0005_pro-tech.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <span class="ydttitle">边角加固</span>
+                    <p class="ydtp1"><span>我们家的</span><br />安装阴阳角护角，保持水平和垂直</p>
+                    <p class="ydtp2"><span>别人家的</span><br />有的公司在涂刷墙面阴阳角的时候不会加固，就会导致阳角不顺直</p>
+                    <div class="clearfix"></div>
+                    <img src="wapportal/content/images/wall/pro-tech/_0006_pro-tech.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <span class="ydttitle">腻子修补</span>
+                    <p class="ydtp1"><span>我们家的</span><br />采用益鸟独特配方腻子材料</p>
+                    <p class="ydtp2"><span>别人家的</span><br />有的公司师傅施工时对小的细节观察不到位，小的地方腻子修补不到位</p>
+                    <div class="clearfix"></div>
+                    <img src="wapportal/content/images/wall/pro-tech/_0007_pro-tech.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <span class="ydttitle">无尘打磨</span>
+                    <p class="ydtp1"><span>我们家的</span><br />专业无尘机打磨，墙面均匀光滑没有灰尘</p>
+                    <p class="ydtp2"><span>别人家的</span><br />其他公司还在大面积墙面使用砂纸打磨会导致粉尘多，不平滑</p>
+                    <div class="clearfix"></div>
+                    <img src="wapportal/content/images/wall/pro-tech/_0008_pro-tech.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <span class="ydttitle">涂刷底漆</span>
+                    <p class="ydtp1"><span>我们家的</span><br />整体涂刷底漆一遍，按需遮蔽之后清除垃圾</p>
+                    <p class="ydtp2"><span>别人家的</span><br />有的公司为了节约成本，兑水过多，会导致不均匀，甚至有的还不涂底漆</p>
+                    <div class="clearfix"></div>
+                    <img src="wapportal/content/images/wall/pro-tech/_0009_pro-tech.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <span class="ydttitle">喷涂面漆</span>
+                    <p class="ydtp1"><span>我们家的(喷涂2遍)</span><br />用独有喷涂机喷刷，是墙面均匀不起点</p>
+                    <p class="ydtp2"><span>别人家的（涂刷）</span><br />有的公司在涂刷面漆时兑水过多，导致墙面形不成漆膜，墙面会粉化</p>
+                    <div class="clearfix"></div>
+                    <img src="wapportal/content/images/wall/pro-tech/_0010_pro-tech.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <span class="ydttitle">完工清洁</span>
+                    <p class="ydtp1"><span>我们家的</span><br />当房子装修完，还得你自己和家人来打扫</p>
+                    <p class="ydtp2"><span>我们家的</span><br />将所有的垃圾清除，打扫房间的卫生，地面，墙角，窗户，恢复原样</p>
+                    <div class="clearfix"></div>
+                    <img src="wapportal/content/images/wall/pro-tech/_0011_pro-tech.jpg" alt=""/>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
             </div>
-            <div class="swiper-slide">
-                <span class="ydttitle">涂刷底漆</span>
-                <p class="ydtp1"><span>我们家的</span><br />整体涂刷底漆一遍，按需遮蔽之后清除垃圾</p>
-                <p class="ydtp2"><span>别人家的</span><br />有的公司为了节约成本，兑水过多，会导致不均匀，甚至有的还不涂底漆</p>
-                <div class="clearfix"></div>
-                <img src="wapportal/content/images/wall/pro-tech/_0009_pro-tech.jpg" alt=""/>
-            </div>
-            <div class="swiper-slide">
-                <span class="ydttitle">无尘打磨</span>
-                <p class="ydtp1"><span>我们家的</span><br />专业无尘机打磨，墙面均匀光滑没有灰尘</p>
-                <p class="ydtp2"><span>别人家的</span><br />其他公司还在大面积墙面使用砂纸打磨会导致粉尘多，不平滑</p>
-                <div class="clearfix"></div>
-                <img src="wapportal/content/images/wall/pro-tech/_0008_pro-tech.jpg" alt=""/>
-            </div>
-            <div class="swiper-slide">
-                <span class="ydttitle">腻子修补</span>
-                <p class="ydtp1"><span>我们家的</span><br />采用益鸟独特配方腻子材料</p>
-                <p class="ydtp2"><span>别人家的</span><br />有的公司师傅施工时对小的细节观察不到位，小的地方腻子修补不到位</p>
-                <div class="clearfix"></div>
-                <img src="wapportal/content/images/wall/pro-tech/_0007_pro-tech.jpg" alt=""/>
-            </div>
-            <div class="swiper-slide">
-                <span class="ydttitle">边角加固</span>
-                <p class="ydtp1"><span>我们家的</span><br />安装阴阳角护角，保持水平和垂直</p>
-                <p class="ydtp2"><span>别人家的</span><br />有的公司在涂刷墙面阴阳角的时候不会加固，就会导致阳角不顺直</p>
-                <div class="clearfix"></div>
-                <img src="wapportal/content/images/wall/pro-tech/_0006_pro-tech.jpg" alt=""/>
-            </div>
-            <div class="swiper-slide">
-                <span class="ydttitle">挂网加固</span>
-                <p class="ydtp1"><span>我们家的</span><br />在有裂缝处，在裂缝做挂网处理</p>
-                <p class="ydtp2"><span>别人家的</span><br />有的公司在挂网上为了省下材料会使用劣质材料，导致钢丝弯曲掉落</p>
-                <div class="clearfix"></div>
-                <img src="wapportal/content/images/wall/pro-tech/_0005_pro-tech.jpg" alt=""/>
-            </div>
-            <div class="swiper-slide">
-                <span class="ydttitle">石膏修补</span>
-                <p class="ydtp1"><span>我们家的</span><br />采用益鸟独特配方石膏找平</p>
-                <p class="ydtp2"><span>别人家的</span><br />有的公司采用的是普通石膏，导致干的比较慢，耽误施工工期</p>
-                <div class="clearfix"></div>
-                <img src="wapportal/content/images/wall/pro-tech/_0004_pro-tech.jpg" alt=""/>
-            </div>
-            <div class="swiper-slide">
-                <span class="ydttitle">界面涂刷</span>
-                <p class="ydtp1"><span>我们家的</span><br />对整个墙面，角落都不放过，整齐，有规律的涂刷</p>
-                <p class="ydtp2"><span>别人家的</span><br />有的公司在做界面涂刷这一步会省略掉，还有的涂刷不均匀</p>
-                <div class="clearfix"></div>
-                <img src="wapportal/content/images/wall/pro-tech/_0003_pro-tech.jpg" alt=""/>
-            </div>
-            <div class="swiper-slide">
-                <span class="ydttitle">防水涂刷</span>
-                <p class="ydtp1"><span>我们家的</span><br />对阳台，厨卫，背水面进行防水使用我们独特防水工艺</p>
-                <p class="ydtp2"><span>别人家的</span><br />有的公司在墙面防水会偷工减料使用劣质防水材料，导致之后再次返潮</p>
-                <div class="clearfix"></div>
-                <img src="wapportal/content/images/wall/pro-tech/_0002_pro-tech.jpg" alt=""/>
-            </div>
-            <div class="swiper-slide">
-                <span class="ydttitle">基层铲除</span>
-                <p class="ydtp1"><span>我们家的</span><br />原有墙面基层铲除只原始的墙面每个小细节、每个角落铲除干净</p>
-                <p class="ydtp2"><span>别人家的</span><br />有的公司为了省时省力，基层铲除时很多地方没有铲除到，导致...</p>
-                <div class="clearfix"></div>
-                <img src="wapportal/content/images/wall/pro-tech/_0001_pro-tech.jpg" alt=""/>
-            </div>
-            <div class="swiper-slide">
-                <span class="ydttitle">成品保护</span>
-                <p class="ydtp1"><span>我们家的</span><br />将原有多的物件拆卸，以及对家具，灯具，门窗等等进行保护</p>
-                <p class="ydtp2"><span>别人家的</span><br />有的公司施工前就随便用东西遮挡一下甚至都不会给你家具进行保护</p>
-                <div class="clearfix"></div>
-                <img src="wapportal/content/images/wall/pro-tech/_0000_pro-tech.jpg" alt=""/>
-            </div>
+            <div class="swiper-button-prev ydt-button-prev swiper-button-black"></div>
+            <div class="swiper-button-next ydt-button-next swiper-button-black"></div>
         </div>
-        <div class="swiper-button-prev ydt-button-prev swiper-button-black"></div>
-        <div class="swiper-button-next ydt-button-next swiper-button-black"></div>
-      </div>
     </div>
-  </div>
-  
-  <div class="ydprocess">
+</div>
+
+<div class="ydprocess">
     <span class="ydptitle">施工工序</span>
     <span class="ydpsubtitle">Construction Process</span>
     <div class="ydprleft">
-      <div class="ydprpic left">
-        <img src="wapportal/content/images/ydpro01.png" />
-      </div>
-      <div class="ydprc left">
-        <span class="ydprc01">第一步</span>
-        <span class="ydprc02">上门检测</span>
-        <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
-      </div>
-      <div class="clearfix"></div>
+        <div class="ydprpic left">
+            <img src="wapportal/content/images/ydpro01.png" />
+        </div>
+        <div class="ydprc left">
+            <span class="ydprc01">第一步</span>
+            <span class="ydprc02">上门检测</span>
+            <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
+        </div>
+        <div class="clearfix"></div>
     </div>
     <div class="ydprright">
-      <div class="ydprpic right">
-        <img src="wapportal/content/images/ydpro01.png" />
-      </div>
-      <div class="ydprcr right">
-        <span class="ydprc01">第一步</span>
-        <span class="ydprc02">上门检测</span>
-        <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
-      </div>
-      <div class="clearfix"></div>
+        <div class="ydprpic right">
+            <img src="wapportal/content/images/ydpro01.png" />
+        </div>
+        <div class="ydprcr right">
+            <span class="ydprc01">第一步</span>
+            <span class="ydprc02">上门检测</span>
+            <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
+        </div>
+        <div class="clearfix"></div>
     </div>
     <div class="ydprleft">
-      <div class="ydprpic left">
-        <img src="wapportal/content/images/ydpro01.png" />
-      </div>
-      <div class="ydprc left">
-        <span class="ydprc01">第一步</span>
-        <span class="ydprc02">上门检测</span>
-        <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
-      </div>
-      <div class="clearfix"></div>
+        <div class="ydprpic left">
+            <img src="wapportal/content/images/ydpro01.png" />
+        </div>
+        <div class="ydprc left">
+            <span class="ydprc01">第一步</span>
+            <span class="ydprc02">上门检测</span>
+            <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
+        </div>
+        <div class="clearfix"></div>
     </div>
     <div class="ydprright">
-      <div class="ydprpic right">
-        <img src="wapportal/content/images/ydpro01.png" />
-      </div>
-      <div class="ydprcr right">
-        <span class="ydprc01">第一步</span>
-        <span class="ydprc02">上门检测</span>
-        <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
-      </div>
-      <div class="clearfix"></div>
+        <div class="ydprpic right">
+            <img src="wapportal/content/images/ydpro01.png" />
+        </div>
+        <div class="ydprcr right">
+            <span class="ydprc01">第一步</span>
+            <span class="ydprc02">上门检测</span>
+            <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
+        </div>
+        <div class="clearfix"></div>
     </div>
     <div class="ydprleft">
-      <div class="ydprpic left">
-        <img src="wapportal/content/images/ydpro01.png" />
-      </div>
-      <div class="ydprc left">
-        <span class="ydprc01">第一步</span>
-        <span class="ydprc02">上门检测</span>
-        <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
-      </div>
-      <div class="clearfix"></div>
+        <div class="ydprpic left">
+            <img src="wapportal/content/images/ydpro01.png" />
+        </div>
+        <div class="ydprc left">
+            <span class="ydprc01">第一步</span>
+            <span class="ydprc02">上门检测</span>
+            <p>益鸟师傅免费上门检测，了解墙面状况，测量修复面积，测量墙面湿度，检查所存在的隐患问题。</p>
+        </div>
+        <div class="clearfix"></div>
     </div>
-  </div>
-  
-  <div class="ydafter">
+</div>
+
+<div class="ydafter">
     <span class="ydptitle">完善的售后</span>
     <span class="ydpsubtitle">Perfect after-sale</span>
     <div class="ydashouhou">
-      <img src="wapportal/content/images/shouhou.png" />
+        <img src="wapportal/content/images/shouhou.png" />
     </div>
-  </div>
-  
-  <div class="ydcase">
+</div>
+
+<div class="ydcase">
     <span class="ydptitle">案例效果</span>
     <span class="ydpsubtitle">Effect of case</span>
-    
+
     <!-- Swiper -->
-  <div class="swiper-container gallery-top">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="wapportal/content/images/wall/case-personal/_0000_case-personal.jpg" /></div>
-        <div class="swiper-slide"><img src="wapportal/content/images/wall/case-personal/_0001_case-personal.jpg" /></div>
-        <div class="swiper-slide"><img src="wapportal/content/images/wall/case-personal/_0002_case-personal.jpg" /></div>
-        <div class="swiper-slide"><img src="wapportal/content/images/wall/case-personal/_0003_case-personal.jpg" /></div>
-        <div class="swiper-slide"><img src="wapportal/content/images/wall/case-personal/_0004_case-personal.jpg" /></div>
-        <div class="swiper-slide"><img src="wapportal/content/images/wall/case-personal/_0005_case-personal.jpg" /></div>
+    <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="wapportal/content/images/wall/case-personal/_0000_case-personal.jpg" /></div>
+            <div class="swiper-slide"><img src="wapportal/content/images/wall/case-personal/_0001_case-personal.jpg" /></div>
+            <div class="swiper-slide"><img src="wapportal/content/images/wall/case-personal/_0002_case-personal.jpg" /></div>
+            <div class="swiper-slide"><img src="wapportal/content/images/wall/case-personal/_0003_case-personal.jpg" /></div>
+            <div class="swiper-slide"><img src="wapportal/content/images/wall/case-personal/_0004_case-personal.jpg" /></div>
+            <div class="swiper-slide"><img src="wapportal/content/images/wall/case-personal/_0005_case-personal.jpg" /></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next ydt-button-next02 swiper-button-black"></div>
+        <div class="swiper-button-prev ydt-button-prev02 swiper-button-black"></div>
     </div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next ydt-button-next02 swiper-button-black"></div>
-    <div class="swiper-button-prev ydt-button-prev02 swiper-button-black"></div>
-  </div>
-  <div class="swiper-container gallery-thumbs">
-    <div class="swiper-wrapper">
-       <div class="swiper-slide"><img src="wapportal/content/images/wall/color-bar/_0005_color-bar.jpg" /></div>
-        <div class="swiper-slide"><img src="wapportal/content/images/wall/color-bar/_0004_color-bar.jpg" /></div>
-        <div class="swiper-slide"><img src="wapportal/content/images/wall/color-bar/_0003_color-bar.jpg" /></div>
-        <div class="swiper-slide"><img src="wapportal/content/images/wall/color-bar/_0002_color-bar.jpg" /></div>
-        <div class="swiper-slide"><img src="wapportal/content/images/wall/color-bar/_0001_color-bar.jpg" /></div>
-        <div class="swiper-slide"><img src="wapportal/content/images/wall/color-bar/_0000_color-bar.jpg" /></div>
-    </div>
-  </div>
-  </div>
-  
-  <div class="ydupvideo">
-    <a href="javascript:;" onclick="popdownvideo()">X</a>
-    <div class="ydupvideowrap">
-      <video controls="controls">
-        <source src="wapportal/content/video/ccqm.mp4" type="video/mp4">
-      </video>
-        <div style="background: white;">
-      <p>adfa浮动幅度分</p>
-      <p>adfa浮动幅度分</p>
+    <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="wapportal/content/images/wall/color-bar/_0005_color-bar.jpg" /></div>
+            <div class="swiper-slide"><img src="wapportal/content/images/wall/color-bar/_0004_color-bar.jpg" /></div>
+            <div class="swiper-slide"><img src="wapportal/content/images/wall/color-bar/_0003_color-bar.jpg" /></div>
+            <div class="swiper-slide"><img src="wapportal/content/images/wall/color-bar/_0002_color-bar.jpg" /></div>
+            <div class="swiper-slide"><img src="wapportal/content/images/wall/color-bar/_0001_color-bar.jpg" /></div>
+            <div class="swiper-slide"><img src="wapportal/content/images/wall/color-bar/_0000_color-bar.jpg" /></div>
         </div>
     </div>
-  </div>
-  
+</div>
+
+<div class="ydupvideo">
+    <a href="javascript:;" onclick="popdownvideo()">X</a>
+    <div class="ydupvideowrap">
+        <video controls="controls">
+            <source src="wapportal/content/video/ccqm.mp4" type="video/mp4">
+        </video>
+        <div style="background: white;">
+            <p>adfa浮动幅度分</p>
+            <p>adfa浮动幅度分</p>
+        </div>
+    </div>
+</div>
+
 
 <script src="wapportal/content/js/swiper.min.js"></script>
 <script>
-   var swiper = new Swiper('.ydbanner', {
-      // slidesPerView: 1,
-      // spaceBetween: 30,
-      // loop: true,
-      // pagination: {
-      //   el: '.swiper-pagination',
-      //   clickable: true,
-      // },
-      // navigation: {
-      //   nextEl: '.swiper-button-next',
-      //   prevEl: '.swiper-button-prev',
-      // },
-       spaceBetween: 30,
-       centeredSlides: true,
-       autoplay: {
-           delay: 2500,
-           disableOnInteraction: false,
-       },
-       pagination: {
-           el: '.swiper-pagination',
-           clickable: true,
-       },
-       navigation: {
-           nextEl: '.swiper-button-next',
-           prevEl: '.swiper-button-prev',
-       }
+    var swiper = new Swiper('.ydbanner', {
+        // slidesPerView: 1,
+        // spaceBetween: 30,
+        // loop: true,
+        // pagination: {
+        //   el: '.swiper-pagination',
+        //   clickable: true,
+        // },
+        // navigation: {
+        //   nextEl: '.swiper-button-next',
+        //   prevEl: '.swiper-button-prev',
+        // },
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
     });
-   var swiper = new Swiper('.ydtbanner', {
-	      slidesPerView: 1,
-	      spaceBetween: 30,
-	      loop: false,
-	      navigation: {
-	        nextEl: '.swiper-button-next',
-	        prevEl: '.swiper-button-prev',
-	      },
-   });
-   
-   var galleryTop = new Swiper('.gallery-top', {
-	      spaceBetween: 10,
-	      loop:true,
-	      loopedSlides: 5, //looped slides should be the same
-	      navigation: {
-	        nextEl: '.swiper-button-next',
-	        prevEl: '.swiper-button-prev',
-	      },
-	    });
-	    var galleryThumbs = new Swiper('.gallery-thumbs', {
-	      //spaceBetween: 10,
-	      slidesPerView: 4,
-	      touchRatio: 0.2,
-	      loop: true,
-	      loopedSlides: 5, //looped slides should be the same
-	      slideToClickedSlide: true,
-	    });
-	    galleryTop.controller.control = galleryThumbs;
-	    galleryThumbs.controller.control = galleryTop;
-	    
-	    
-	    var swiper = new Swiper('.ydvbanner01', {
-	        slidesPerView: 2.3,
-	        spaceBetween: 10,
-	        slidesPerColumn: 1,
-          observer:true,
-          observeParents:true,
-	      });
-      var swiper = new Swiper('.ydvbanner0102', {
-          slidesPerView: 2.3,
-          spaceBetween: 10,
-          slidesPerColumn: 1,
-          observer:true,
-          observeParents:true,
-        });
-	    var swiper = new Swiper('.ydvbanner02', {
-	        slidesPerView: 2.3,
-	        spaceBetween: 10,
-	        slidesPerColumn: 1,
-          observer:true,
-          observeParents:true,
-	      });
-      var swiper = new Swiper('.ydvbanner0202', {
-          slidesPerView: 2.3,
-          spaceBetween: 10,
-          slidesPerColumn: 1,
-          observer:true,
-          observeParents:true,
-        });
-	    var swiper = new Swiper('.ydvbanner03', {
-	        slidesPerView: 2.3,
-	        spaceBetween: 10,
-	        slidesPerColumn: 1,
-          observer:true,
-          observeParents:true,
-	      });
-      var swiper = new Swiper('.ydvbanner0302', {
-          slidesPerView: 2.3,
-          spaceBetween: 10,
-          slidesPerColumn: 1,
-          observer:true,
-          observeParents:true,
-        });
-	    var swiper = new Swiper('.ydvbanner04', {
-	        slidesPerView: 2.3,
-	        spaceBetween: 10,
-	        slidesPerColumn: 1,
-          observer:true,
-          observeParents:true,
-	      });
-      var swiper = new Swiper('.ydvbanner0402', {
-          slidesPerView: 2.3,
-          spaceBetween: 10,
-          slidesPerColumn: 1,
-          observer:true,
-          observeParents:true,
-        });
-	    function setTab(n){  
-	        var tli=document.getElementById("menu").getElementsByTagName("li");  
-	        var mli=document.getElementById("tabcontent").getElementsByTagName("li");  
-	        for(i=0;i<tli.length;i++){  
-	            tli[i].className=i==n?"hover":"";  
-	            mli[i].style.display=i==n?"block":"none";  
-	        }  
-	   } 
+    var swiper = new Swiper('.ydtbanner', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: false,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        loop:true,
+        loopedSlides: 5, //looped slides should be the same
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        //spaceBetween: 10,
+        slidesPerView: 4,
+        touchRatio: 0.2,
+        loop: true,
+        loopedSlides: 5, //looped slides should be the same
+        slideToClickedSlide: true,
+    });
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
+
+
+    var swiper = new Swiper('.ydvbanner01', {
+        slidesPerView: 2.3,
+        spaceBetween: 10,
+        slidesPerColumn: 1,
+        observer:true,
+        observeParents:true,
+    });
+    var swiper = new Swiper('.ydvbanner0102', {
+        slidesPerView: 2.3,
+        spaceBetween: 10,
+        slidesPerColumn: 1,
+        observer:true,
+        observeParents:true,
+    });
+    var swiper = new Swiper('.ydvbanner02', {
+        slidesPerView: 2.3,
+        spaceBetween: 10,
+        slidesPerColumn: 1,
+        observer:true,
+        observeParents:true,
+    });
+    var swiper = new Swiper('.ydvbanner0202', {
+        slidesPerView: 2.3,
+        spaceBetween: 10,
+        slidesPerColumn: 1,
+        observer:true,
+        observeParents:true,
+    });
+    var swiper = new Swiper('.ydvbanner03', {
+        slidesPerView: 2.3,
+        spaceBetween: 10,
+        slidesPerColumn: 1,
+        observer:true,
+        observeParents:true,
+    });
+    var swiper = new Swiper('.ydvbanner0302', {
+        slidesPerView: 2.3,
+        spaceBetween: 10,
+        slidesPerColumn: 1,
+        observer:true,
+        observeParents:true,
+    });
+    var swiper = new Swiper('.ydvbanner04', {
+        slidesPerView: 2.3,
+        spaceBetween: 10,
+        slidesPerColumn: 1,
+        observer:true,
+        observeParents:true,
+    });
+    var swiper = new Swiper('.ydvbanner0402', {
+        slidesPerView: 2.3,
+        spaceBetween: 10,
+        slidesPerColumn: 1,
+        observer:true,
+        observeParents:true,
+    });
+    function setTab(n){
+        var tli=document.getElementById("menu").getElementsByTagName("li");
+        var mli=document.getElementById("tabcontent").getElementsByTagName("li");
+        for(i=0;i<tli.length;i++){
+            tli[i].className=i==n?"hover":"";
+            mli[i].style.display=i==n?"block":"none";
+        }
+    }
 </script>
 <script src="wapportal/content/js/jquery.js"></script>
 <script>
-function popupvideo(){
-	$('.ydupvideo').show();
-}
-function popdownvideo(){
-	$('.ydupvideo').hide();
-}
+    function popupvideo(){
+        $('.ydupvideo').show();
+    }
+    function popdownvideo(){
+        $('.ydupvideo').hide();
+    }
 </script>
 </body>
 </html>
