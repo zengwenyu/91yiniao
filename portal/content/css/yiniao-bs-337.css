@@ -1195,7 +1195,8 @@ input[type="submit"] {
   color: #636363;
   font-weight: 300; }
   .sec-community .table-layout td {
-    vertical-align: top; }
+    vertical-align: top;
+    width: 14.2%; }
 .sec-community .well {
   box-shadow: none;
   background: white;
