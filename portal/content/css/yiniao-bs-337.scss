@@ -1321,7 +1321,7 @@ input[type="submit"] {
   font-size: 1rem;
   line-height: 2.5rem;
   float: left;
-  background: #fafafa;
+  background: white;
   color: #a2a1a1;
   text-indent: 0.5rem;
 }
@@ -1354,7 +1354,7 @@ input[type="submit"] {
   input {
     width: 100%;
     height: 100%;
-    background: #fafafa;
+    background: white;
     outline: none;
     border: none;
     text-indent: 0.5rem;
@@ -1374,6 +1374,7 @@ input[type="submit"] {
 }
 .sec-banner-shop {
   margin-bottom: 1rem;
+  background: none;
 }
 .sec-community {
   .table-layout {
