@@ -188,10 +188,10 @@ html {
 }
 
 .long {
-  width: 0;
+  width: 1.5rem;
   height: 1px;
   background: #222;
-  transition: width 1s
+  transition: width 1s;
 }
 
 .cultrue_h4 {
@@ -299,7 +299,7 @@ html {
     margin: 4em 0
   }
   .cd-timeline-block:first-child {
-    margin-top: 0
+    margin-top: 4rem;
   }
   .cd-timeline-block:last-child {
     margin-bottom: 0
@@ -333,10 +333,10 @@ html {
 
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
-    width: 20px;
-    height: 20px;
-    left: 52%;
-    margin-left: -30px
+    width: 18px;
+    height: 18px;
+    left: 50%;
+    margin-left: -10px;
   }
   .cssanimations .cd-timeline-img.is-hidden {
     visibility: hidden
@@ -446,7 +446,8 @@ a.cd-read-more:hover {
   .cd-timeline-content {
     margin-left: 0;
     padding: 1.6em;
-    width: 45%
+    width: 40%;
+    top: -27px;
   }
   .cd-timeline-content::before {
     top: 24px;
@@ -506,8 +507,8 @@ a.cd-read-more:hover {
 .cd-right::before {
   content: '';
   position: absolute;
-  top: 25px;
-  left: 30px;
+  top: -2px;
+  left: 60px;
   height: 0;
   width: 0;
   z-index: 3;
@@ -528,14 +529,14 @@ a.cd-read-more:hover {
 }
 
 .cd-left::before {
-  top: 25px;
-  left: -22px;
+  top: -2px;
+  left: -64px;
   border-color: transparent transparent transparent #fff
 }
 
 .cd-timeline-img div {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   background: #ffd24e;
   border-radius: 15px;
   margin: 2px;
@@ -590,7 +591,7 @@ a.cd-read-more:hover {
     margin-bottom: 3em
   }
   #cd-timeline::before {
-    left: 49.2%;
+    left: 50%;
     margin-left: -2px
   }
 }
