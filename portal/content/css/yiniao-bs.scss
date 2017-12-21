@@ -1,5 +1,21 @@
 @import "variables";
 
+/*extra css for old header nav with bootstrap - 20171221-zwy*/
+.header img {
+  vertical-align: top;
+}
+.header a:hover {
+  text-decoration: none;
+}
+.header {
+  font-size: 12px;
+}
+.head {
+  box-sizing: content-box;
+}
+/*end of extra css for old header nav with bootstrap - 20171221-zwy*/
+
+
 //.jumbotron {
 //  background: blue url("../images/rent-house-brushing/poster.jpg") no-repeat top left;
 //  background-size: contain;

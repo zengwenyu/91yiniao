@@ -10,6 +10,20 @@ body {
 .no-margin {
   margin: 0; }
 
+/*extra css for old header nav with bootstrap - 20171221-zwy*/
+.header img {
+  vertical-align: top; }
+
+.header a:hover {
+  text-decoration: none; }
+
+.header {
+  font-size: 12px; }
+
+.head {
+  box-sizing: content-box; }
+
+/*end of extra css for old header nav with bootstrap - 20171221-zwy*/
 body {
   font-family: Tahoma, Arial, Helvetica, STHeiti; }
 
