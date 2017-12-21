@@ -1518,17 +1518,3 @@ body {
     z-index: 10;
     display: none;
 }
-
-/*extra css zwy*/
-.header img {
-    vertical-align: top;
-}
-.header a:hover {
-    text-decoration: none;
-}
-.header {
-    font-size: 12px;
-}
-.head {
-    box-sizing: content-box;
-}

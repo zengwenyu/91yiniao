@@ -2,6 +2,23 @@
 @import "format-bs-337";
 @import "variables-337";
 
+
+/*extra css for old header nav with bootstrap - 20171221-zwy*/
+.header img {
+  vertical-align: top;
+}
+.header a:hover {
+  text-decoration: none;
+}
+.header {
+  font-size: 12px;
+}
+.head {
+  box-sizing: content-box;
+}
+/*end of extra css for old header nav with bootstrap - 20171221-zwy*/
+
+
 body {
   //font-family: arial, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', '宋体', Tahoma, Arial, Helvetica, STHeiti;
   font-family: Tahoma, Arial, Helvetica, STHeiti;
