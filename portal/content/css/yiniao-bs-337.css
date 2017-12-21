@@ -976,7 +976,8 @@ ul.avator-meta {
   float: left;
   padding: 0 0 2.4rem 0; }
   .well-shop-staff .outter {
-    border-bottom: 1px dotted #b0b0b0; }
+    border-bottom: 1px dotted #b0b0b0;
+    width: 100%; }
   .well-shop-staff .avator-wrapper-outter {
     margin-bottom: 0.8rem; }
   .well-shop-staff ul.avator-meta .title {
