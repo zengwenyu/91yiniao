@@ -150,6 +150,9 @@ body {
 .head {
   box-sizing: content-box; }
 
+.nav.us, .nav.xm {
+  background: rgba(255, 255, 255, 0); }
+
 /*end of extra css for old header nav with bootstrap - 20171221-zwy*/
 body {
   font-family: Tahoma, Arial, Helvetica, STHeiti; }
