@@ -1378,6 +1378,10 @@ input[type="submit"] {
 .sec-banner-shop {
   margin-bottom: 1rem;
   background: none;
+  .scroll-wrapper {
+    height: 450px;
+    overflow-y: scroll;
+  }
 }
 .sec-community {
   .table-layout {
