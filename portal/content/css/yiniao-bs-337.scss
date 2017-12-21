@@ -992,16 +992,15 @@ a.red {
 .sec-map {
   padding: 3rem 0;
   background: white url("../images/shop/bg-city.gif") repeat-x bottom left;
-
   .bmap {
     width: 762px;
     height: 500px;
     margin-left: 18px;
     float: left;
-    box-shadow: 0 0 6px gray;
+    box-shadow: 0 0 6px $gray-tinter;
   }
   .shop {
-    box-shadow: 0 0 6px gray;
+    box-shadow: 0 0 6px $gray-tinter;
   }
   .siteBox {
     background: white;
@@ -1052,6 +1051,9 @@ ul.avator-meta {
   }
   .data-left {
     margin-right: 1rem;
+  }
+  .data-right {
+    margin-left: 6rem;
   }
   .ico-call-400 {
     width: 42px;
@@ -1538,7 +1540,7 @@ input[type="submit"] {
   }
 }
 
-//pg-worker ----------------------------------
+//pg-worker ---------------------------------
 .sec-banner-worker {
   position: relative;
   .img-poster-wrapper {
