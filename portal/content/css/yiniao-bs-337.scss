@@ -1124,6 +1124,9 @@ ul.avator-meta {
   width: 100%;
   float: left;
   padding: 0 0 2.4rem 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
   .outter {
     border-bottom: 1px dotted $gray-tint;
     width: 100%;
@@ -1158,7 +1161,7 @@ ul.avator-meta {
   }
   .btn-wrapper {
     .btn-red {
-      margin-right: 40%;
+      margin-right: 2rem;
     }
   .outter {
     border-bottom: 1px dotted $gray-tint;
@@ -1846,6 +1849,9 @@ input[type="submit"] {
   }
 .well-staff-biaogan {
   background: white url("../images/shop/ico-biaogan.png") no-repeat top right;
+}
+.well-staff-youxiu {
+  background: white url("../images/shop/ico-youxiu.png") no-repeat top right;
 }
 .well-staff-leader {
   background: white url("../images/worker/ico-leader.png") no-repeat top right;

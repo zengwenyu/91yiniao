@@ -19,7 +19,7 @@
 
 
     <!--custom CSS-->
-    <link rel="stylesheet" href="portal/content/css/nav.css">
+    <link rel="stylesheet" href="portal/content/css/header.css">
     <link rel="stylesheet" href="portal/content/css/yiniao-bs-337.css">
     <link rel="stylesheet" href="portal/content/css/font.css">
 
@@ -32,73 +32,95 @@
 
 </head>
 <body class="pg-shop">
+<div class="phone">
+    <div class="phone_close">
+        <img src="portal/content/images/phone_close.png" alt="">
+    </div>
+    <div>
+        <div class="input_phone"><input id="callBackNum" type="text"></div>
+        <a href="javascript:submitCallBack();" class="phone_btn">给您回电</a>
+        <div class="clear"></div>
+    </div>
+    <p>我们将立即回电。该通话对您免费，请放心接听！手机请直
+        接输入，座机前加区号：如028158234xxxx</p>
+</div>
+
 <div class="header">
     <div class="head">
-	<span class="tel" style="position: relative;top: 0;right:-652px;z-index: 1;line-height: 23px;font-size: 12px;">24小时咨询热线: 4000-987-009
-		<span class="navs taobao" style="margin-left: 20px;margin-right: 15px;cursor: pointer;"><a
-                href="https://shop128158636.taobao.com" target="_blank"><img src="portal/content/images/taobao.png"
-                                                                             alt=""></a>
+	<span class="tel" style="position: relative;top: 0;right:-600px;z-index: 1;line-height: 23px;font-size: 12px;">24小时咨询热线：4000-987-009
+		<span class="navs taobao" style="margin-left: 20px;margin-right: 15px;cursor: pointer;"><a href="https://shop486696389.taobao.com/" target="_blank"><img src="portal/content/images/taobao.png" alt=""></a>
 			<div class="taobaoTcc" style="display: none;">
 	            <a href="javascript:void(0);"><img src="portal/content/images/taobaoCode.png" alt=""></a>
 	        </div>
 		</span>
 
-		<span class="navs wx" style="cursor: pointer;"><img src="portal/content/images/wx.png" alt="">
+		<span class="navs wx" style="margin-right: 15px;cursor: pointer;"><img src="portal/content/images/wx.png" alt="">
 			<div class="wxTcc" style="display: none;">
 	            <a href="javascript:void(0);"><img src="portal/content/images/wxCode.png" alt=""></a>
 	        </div>
 		</span>
+		<span class="navs" style="cursor: pointer;">
+	        <a href="tencent://message/?uin=3037302719&amp;Site=yunqi.shopex.cn&amp;Menu=yes"><img src="portal/content/images/qq_img.png" alt=""></a>
+	    </span>
 	</span>
-        <img class="logo" src="portal/content/images/indexLogo.png" alt=""/>
+        <img class="logo" src="portal/content/images/indexLogo.png" alt="">
         <span class="text">您身边可靠的维修匠人</span>
-        <span class="nav us" href="">
-        <span>关于我们<img src="portal/content/images/jtDown.png" alt=""></span>
-        <div class="usTcc" style="display: none;">
-            <a href="javascript:void(0);"><img src="portal/content/images/us1.jpg" alt=""><span>品牌故事</span></a>
-            <a href="javascript:void(0);"><img src="portal/content/images/us2.jpg" alt=""><span>企业文化</span></a>
-            <a href="portal/serviceFlow.do#flow7"><img src="portal/content/images/us3.jpg" alt=""><span>常见问题</span></a>
-            <a href="javascript:void(0);"><img src="portal/content/images/us4.jpg" alt=""><span>联系我们</span></a>
+        <div class="nav us" href="">
+            <span>关于我们<img src="portal/content/images/jtDown.png" alt=""></span>
+            <div class="usTcc" style="display: none;">
+                <a href="javascript:void(0);"><img src="portal/content/images/us1.jpg" alt=""><span>品牌故事</span></a>
+                <a href="javascript:void(0);"><img src="portal/content/images/us2.jpg" alt=""><span>企业文化</span></a>
+                <a href="portal/serviceFlow.do#flow7"><img src="portal/content/images/us3.jpg" alt=""><span>常见问题</span></a>
+                <a href="javascript:void(0);"><img src="portal/content/images/us4.jpg" alt=""><span>联系我们</span></a>
+            </div>
         </div>
-    </span>
         <span class="nav" onclick="location.href='portal/maintainer/list.do'">益鸟师傅</span>
         <span class="nav">线下门店</span>
         <span class="nav" onclick="location.href='portal/case/caseList.do'">实际案例</span>
-        <span id="nav-xm" class="nav xm nav-margin">
-    	<span>服务项目<img src="portal/content/images/jtDown.png" alt=""></span>
-    	<div class="tcc">
-        <div class="cnt">
-	        	<div>
-	                <span>墙面刷新</span>
-	                	<a href="portal/newindex/produce.do">铲除刷新</a>
-	                	<a href="portal/newindex/basis.do">基础刷新</a>
-	                	<a href="portal/newindex/part.do">局部点补</a>
-	                	<a href="portal/topic/topicQzqm.do">墙纸翻新</a>
-	                	<a href="portal/newindex/mend.do">修补刷新</a>
-	            </div>
-	        	<div>
-	                <span>局部改造</span>
-	                	<a href="javascript:void(0);">客厅改造</a>
-	                	<a href="javascript:void(0);">厨房改造</a>
-	                	<a href="javascript:void(0);">阳台改造</a>
-	                	<a href="javascript:void(0);">屋顶改造</a>
-	                	<a href="javascript:void(0);">卫生间改造</a>
-	                	<a href="javascript:void(0);">儿童房改造</a>
-	            </div>
-	        	<div>
-	                <span>防水补漏</span>
-	                	<a href="portal/topic/topicWsjls.do">卫生间防水</a>
-	                	<a href="portal/topic/topicLdls.do">楼顶漏水</a>
-	                	<a href="portal/topic/topicQmls.do">墙面渗水</a>
-	                	<a href="portal/topic/topicSgls.do">水管漏水</a>
-	                	<a href="portal/topic/topicPcls.do">飘窗漏水</a>
-	            </div>
+        <div id="nav-xm" class="nav xm nav-margin">
+            <span>服务项目<img src="portal/content/images/jtDown.png" alt=""></span>
+            <div class="tcc" style="display: none;">
+                <div class="cnt">
+                    <div>
+                        <span>墙面刷新</span>
+                        <a href="portal/newindex/produce.do">铲除刷新</a>
+                        <a href="portal/newindex/basis.do">基础刷新</a>
+                        <a href="portal/newindex/part.do">局部点补</a>
+                        <a href="portal/topic/topicQzqm.do">墙纸翻新</a>
+                        <a href="portal/newindex/mend.do">修补刷新</a>
+                        <a href="portal/newindex/leaseRoomBrush.do">出租房快刷</a>
+                        <a href="portal/newindex/newQiangmianPage.do">墙面刷新</a>
+                        <a href="portal/newindex/qiangmianSpecial.do">墙面专题</a>
+                    </div>
+                    <div>
+                        <span>局部改造</span>
+                        <a href="javascript:void(0);">客厅改造</a>
+                        <a href="javascript:void(0);">厨房改造</a>
+                        <a href="javascript:void(0);">阳台改造</a>
+                        <a href="javascript:void(0);">屋顶改造</a>
+                        <a href="javascript:void(0);">卫生间改造</a>
+                        <a href="javascript:void(0);">儿童房改造</a>
+                    </div>
+                    <div>
+                        <span>防水补漏</span>
+                        <a href="portal/topic/topicWsjls.do">卫生间防水</a>
+                        <a href="portal/topic/topicLdls.do">楼顶漏水</a>
+                        <a href="portal/topic/topicQmls.do">墙面渗水</a>
+                        <a href="portal/topic/topicSgls.do">水管漏水</a>
+                        <a href="portal/topic/topicPcls.do">飘窗漏水</a>
+                        <a href="portal/newindex/toiletSeepageRepair.do">卫生间快修</a>
+                    </div>
 
-	    </div>
-	    <div class="clear"></div>
-	    </div>
-    </span>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
         <span class="nav nav-margin">首页
+
+
 </span></div>
+
 </div>
 <!--<nav class="navbar navbar-expand-lg">-->
 <!--<div class="container container-nav">-->
@@ -356,7 +378,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" class="no-padding">
+                                    <td>
                                         <!--well-stuff-->
                                         <!--well-staff-general-->
                                         <div class="well well-shop-staff well-staff-biaogan">
@@ -375,6 +397,48 @@
 
                     </span>
                     </span>
+                                                        </li>
+                                                        <li>业主评分:
+                                                            <span class="star-wrapper">
+                                    <span class="star"><div class="rateYo-48"></div></span>
+                    <span class="">4.8分</span>
+                    </span>
+                                                            <span class="data-right">施工经验：<span class="red">8</span>年</span>
+                                                        </li>
+                                                        <li>工&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;种：<span>全能型师傅</span></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="inner">
+                                                <p>益鸟维修标杆师傅蒋军，加入益鸟维修的第一波师傅，专业乳胶漆师傅，从事乳胶漆施工8年。之前都是在装修公司接活或者自己接工，加入益鸟之后，虽然在一些施工细节上要求比较高，但是蒋师傅觉得严格要求自己之后，不仅提高了施工效率，并且也获得客户一致好评。</p>
+                                                <div class="btn-wrapper text-center">
+                                                    <button class="btn btn-primary btn-wide btn-red" type="submit">预约师傅</button>
+                                                    <button class="btn btn-disable btn-wide" type="submit">查看更多师傅</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                    <td>
+                                        <!--well-stuff-->
+                                        <!--well-staff-general-->
+                                        <div class="well well-shop-staff well-staff-youxiu">
+                                            <div class="outter  clearfix ">
+                                                <div class="avator-wrapper-outter clearfix inner">
+                                                    <div class="avator-wrapper"><img
+                                                            src="portal/content/images/shop/avator-staff.jpg" alt=""></div>
+                                                    <ul class="avator-meta list-unstyled">
+                                                        <li class="title">蒋均</li>
+                                                        <li>专业等级:
+                                                            <span class="star-wrapper">
+                                    <span class="star"><div class="rateYo-47"></div></span>
+                    <span class="">4.7分</span>
+                    </span>
+                                                            <span class="data-right">施工数量：<span class="red">88个</span></span>
+
+                                                            </span>
+                                                            </span>
                                                         </li>
                                                         <li>业主评分:
                                                             <span class="star-wrapper">

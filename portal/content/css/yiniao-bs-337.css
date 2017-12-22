@@ -991,7 +991,10 @@ ul.avator-meta {
   box-shadow: none;
   width: 100%;
   float: left;
-  padding: 0 0 2.4rem 0; }
+  padding: 0 0 2.4rem 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px; }
   .well-shop-staff .outter {
     border-bottom: 1px dotted #b0b0b0;
     width: 100%; }
@@ -1014,7 +1017,7 @@ ul.avator-meta {
     float: left;
     width: 100%; }
   .well-shop-staff .btn-wrapper .btn-red {
-    margin-right: 40%; }
+    margin-right: 2rem; }
   .well-shop-staff .btn-wrapper .outter {
     border-bottom: 1px dotted #b0b0b0;
     float: left;
@@ -1536,6 +1539,9 @@ input[type="submit"] {
 
 .well-staff-biaogan {
   background: white url("../images/shop/ico-biaogan.png") no-repeat top right; }
+
+.well-staff-youxiu {
+  background: white url("../images/shop/ico-youxiu.png") no-repeat top right; }
 
 .well-staff-leader {
   background: white url("../images/worker/ico-leader.png") no-repeat top right;
