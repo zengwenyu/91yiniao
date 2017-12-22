@@ -1041,6 +1041,53 @@ a.red {
       padding: 1rem;
     }
   }
+  .sec-community {
+    .table-layout {
+      font-size: 0.8rem;
+      text-align: center;
+      color: $gray;
+      font-weight: 300;
+      td {
+        vertical-align: top;
+        width: 14.2%;
+      }
+    }
+    .well {
+      box-shadow: none;
+      background: white;
+      border: 0;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      margin-bottom: 0;
+    }
+    ul {
+      li {
+        margin-bottom: 0.1rem;
+      }
+    }
+    p {
+      position: relative;
+      top: 10px;
+      margin: 0;
+      &:before {
+        content: "";
+        display: block;
+        width: 4rem;
+        height: 0;
+        border-bottom: 1px solid $gray;
+        margin: 0 auto 1rem;
+      }
+      &:after {
+        content: "";
+        display: block;
+        width: 90%;
+        height: 0;
+        border-bottom: 1px solid $gray-tinter;
+        margin: 1rem auto;
+      }
+    }
+  }
 }
 .tab-pane-worker {
   .table-layout {
@@ -1250,7 +1297,7 @@ ul.avator-meta {
 }
 .spacer {
   .stack {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 }
 .sec-shop-shot {
@@ -1407,53 +1454,7 @@ input[type="submit"] {
     overflow-y: scroll;
   }
 }
-.sec-community {
-  .table-layout {
-    font-size: 0.8rem;
-    text-align: center;
-    color: $gray;
-    font-weight: 300;
-    td {
-      vertical-align: top;
-      width: 14.2%;
-    }
-  }
-  .well {
-    box-shadow: none;
-    background: white;
-    border: 0;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    margin-bottom: 0;
-  }
-  ul {
-    li {
-      margin-bottom: 0.1rem;
-    }
-  }
-  p {
-    position: relative;
-    top: 10px;
-    margin: 0;
-    &:before {
-      content: "";
-      display: block;
-      width: 4rem;
-      height: 0;
-      border-bottom: 1px solid $gray;
-      margin: 0 auto 1rem;
-    }
-    &:after {
-      content: "";
-      display: block;
-      width: 90%;
-      height: 0;
-      border-bottom: 1px solid $gray-tinter;
-      margin: 1rem auto;
-    }
-  }
-}
+
 .sec-offline-act {
   .block-title-shop {
     margin: 0 0 2rem 0;

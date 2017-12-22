@@ -929,6 +929,42 @@ a.red {
   vertical-align: top;
   width: 50%;
   padding: 1rem; }
+.tab-pane-shop .sec-community .table-layout {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #636363;
+  font-weight: 300; }
+  .tab-pane-shop .sec-community .table-layout td {
+    vertical-align: top;
+    width: 14.2%; }
+.tab-pane-shop .sec-community .well {
+  box-shadow: none;
+  background: white;
+  border: 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 0; }
+.tab-pane-shop .sec-community ul li {
+  margin-bottom: 0.1rem; }
+.tab-pane-shop .sec-community p {
+  position: relative;
+  top: 10px;
+  margin: 0; }
+  .tab-pane-shop .sec-community p:before {
+    content: "";
+    display: block;
+    width: 4rem;
+    height: 0;
+    border-bottom: 1px solid #636363;
+    margin: 0 auto 1rem; }
+  .tab-pane-shop .sec-community p:after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 0;
+    border-bottom: 1px solid #e3e3e3;
+    margin: 1rem auto; }
 
 .tab-pane-worker .table-layout tr > td {
   vertical-align: top;
@@ -1085,7 +1121,7 @@ ul.avator-meta {
       padding: 2.5rem; }
 
 .spacer .stack {
-  margin-bottom: 40px; }
+  margin-bottom: 10px; }
 
 .sec-shop-shot .block-title-shop {
   margin: 0 0 2rem 0; }
@@ -1214,43 +1250,6 @@ input[type="submit"] {
   .sec-banner-shop .scroll-wrapper {
     height: 450px;
     overflow-y: scroll; }
-
-.sec-community .table-layout {
-  font-size: 0.8rem;
-  text-align: center;
-  color: #636363;
-  font-weight: 300; }
-  .sec-community .table-layout td {
-    vertical-align: top;
-    width: 14.2%; }
-.sec-community .well {
-  box-shadow: none;
-  background: white;
-  border: 0;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  margin-bottom: 0; }
-.sec-community ul li {
-  margin-bottom: 0.1rem; }
-.sec-community p {
-  position: relative;
-  top: 10px;
-  margin: 0; }
-  .sec-community p:before {
-    content: "";
-    display: block;
-    width: 4rem;
-    height: 0;
-    border-bottom: 1px solid #636363;
-    margin: 0 auto 1rem; }
-  .sec-community p:after {
-    content: "";
-    display: block;
-    width: 90%;
-    height: 0;
-    border-bottom: 1px solid #e3e3e3;
-    margin: 1rem auto; }
 
 .sec-offline-act .block-title-shop {
   margin: 0 0 2rem 0; }
