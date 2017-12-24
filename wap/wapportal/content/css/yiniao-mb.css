@@ -983,13 +983,47 @@ ul.avator-meta {
       border: 1px solid #848484;
       display: block;
       border-radius: 50%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      background-size: 80%;
+      transition: background 0.4s ease; }
   .thumbnail p {
     font-size: 1rem;
     line-height: 1.5rem;
     color: #848484;
     padding-left: 0.5rem;
     font-weight: 300; }
+  .thumbnail .ico-brush {
+    background: white url("../images/brand/ico/_0000s_0000_brush.png") no-repeat center center; }
+    .thumbnail .ico-brush:hover {
+      background: #848484 url("../images/brand/ico/_0001s_0000_brush.png") no-repeat center center;
+      background-size: 80%; }
+  .thumbnail .ico-brush.hover {
+    background: #848484 url("../images/brand/ico/_0001s_0000_brush.png") no-repeat center center;
+    background-size: 80%; }
+  .thumbnail .ico-deco {
+    background: white url("../images/brand/ico/_0000s_0001_deco.png") no-repeat center center; }
+    .thumbnail .ico-deco:hover {
+      background: #848484 url("../images/brand/ico/_0001s_0001_deco.png") no-repeat center center;
+      background-size: 80%; }
+  .thumbnail .ico-deco.hover {
+    background: #848484 url("../images/brand/ico/_0001s_0001_deco.png") no-repeat center center;
+    background-size: 80%; }
+  .thumbnail .ico-drop {
+    background: white url("../images/brand/ico/_0000s_0003_drop.png") no-repeat center center; }
+    .thumbnail .ico-drop:hover {
+      background: #848484 url("../images/brand/ico/_0001s_0003_drop.png") no-repeat center center;
+      background-size: 80%; }
+  .thumbnail .ico-drop.hover {
+    background: #848484 url("../images/brand/ico/_0001s_0003_drop.png") no-repeat center center;
+    background-size: 80%; }
+  .thumbnail .ico-more {
+    background: white url("../images/brand/ico/_0000s_0002_more.png") no-repeat center center; }
+    .thumbnail .ico-more:hover {
+      background: #848484 url("../images/brand/ico/_0001s_0002_more.png") no-repeat center center;
+      background-size: 80%; }
+  .thumbnail .ico-more.hover {
+    background: #848484 url("../images/brand/ico/_0001s_0002_more.png") no-repeat center center;
+    background-size: 80%; }
 
 .cd-timeline-content {
   border: 1px solid #dfdfdf; }

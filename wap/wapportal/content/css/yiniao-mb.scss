@@ -1292,6 +1292,8 @@ ul.avator-meta {
       display: block;
       border-radius: 50%;
       margin: 0 auto;
+      background-size: 80%;
+      transition: background 0.4s ease;
     }
   }
 
@@ -1301,6 +1303,50 @@ ul.avator-meta {
     color: $gray-tint;
     padding-left: 0.5rem;
     font-weight: 300;
+  }
+  .ico-brush {
+    background: white url("../images/brand/ico/_0000s_0000_brush.png") no-repeat center center;
+    &:hover {
+      background: $gray-tint url("../images/brand/ico/_0001s_0000_brush.png") no-repeat center center;
+      background-size: 80%;
+    }
+  }
+  .ico-brush.hover {
+    background: $gray-tint url("../images/brand/ico/_0001s_0000_brush.png") no-repeat center center;
+    background-size: 80%;
+  }
+  .ico-deco {
+    background: white url("../images/brand/ico/_0000s_0001_deco.png") no-repeat center center;
+    &:hover {
+      background: $gray-tint url("../images/brand/ico/_0001s_0001_deco.png") no-repeat center center;
+      background-size: 80%;
+    }
+  }
+  .ico-deco.hover {
+    background: $gray-tint url("../images/brand/ico/_0001s_0001_deco.png") no-repeat center center;
+    background-size: 80%;
+  }
+  .ico-drop {
+    background: white url("../images/brand/ico/_0000s_0003_drop.png") no-repeat center center;
+    &:hover {
+      background: $gray-tint url("../images/brand/ico/_0001s_0003_drop.png") no-repeat center center;
+      background-size: 80%;
+    }
+  }
+  .ico-drop.hover {
+    background: $gray-tint url("../images/brand/ico/_0001s_0003_drop.png") no-repeat center center;
+    background-size: 80%;
+  }
+  .ico-more {
+    background: white url("../images/brand/ico/_0000s_0002_more.png") no-repeat center center;
+    &:hover {
+      background: $gray-tint url("../images/brand/ico/_0001s_0002_more.png") no-repeat center center;
+      background-size: 80%;
+    }
+  }
+  .ico-more.hover {
+    background: $gray-tint url("../images/brand/ico/_0001s_0002_more.png") no-repeat center center;
+    background-size: 80%;
   }
 }
 
