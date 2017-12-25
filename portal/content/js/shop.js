@@ -19,11 +19,13 @@ $(function(){
 
         e.preventDefault();
     });
+
+    //select list
     var $curTxt = $(".select > .text");
     var $selTrigger = $('#select-trigger');
     //toggle select list content
     $selTrigger.on("click", function (e) {
-        $(this).parents().next(".option").slideToggle("fast");
+        $(this).next(".option").slideToggle("fast");
         $(document).one("click", function(){
             $(".option").slideUp("fast");
         });
