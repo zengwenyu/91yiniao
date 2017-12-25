@@ -2091,7 +2091,7 @@ a.cd-read-more:hover {
   cursor: pointer; }
   .selecPicker-brand .select {
     border-radius: 0;
-    line-height: 2rem;
+    line-height: 0.5rem;
     height: 2rem; }
     .selecPicker-brand .select .text {
       height: 2rem;
