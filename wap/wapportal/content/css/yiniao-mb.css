@@ -1112,7 +1112,7 @@ ul.avator-meta {
   width: 100%; }
 
 .Cultrue_MakeCentent {
-  margin-top: 5px; }
+  margin-top: 20px; }
 
 .txttarea {
   height: 120px; }
@@ -1410,23 +1410,21 @@ ul.avator-meta {
   margin-bottom: 3rem; }
   .sec-logo-grp .table-layout td {
     height: 3rem;
-    border: 1px solid red;
-    position: relative;
-    text-align: center; }
+    text-align: center;
+    padding: 0.6rem; }
   .sec-logo-grp .table-layout img {
-    float: left;
     width: 12%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative; }
     .sec-logo-grp .table-layout img:hover, .sec-logo-grp .table-layout img:focus {
       transform: scale(1.1);
       transition: scale .2s ease-in-out;
       transform-origin: center center; }
   .sec-logo-grp .table-layout .logo-fl {
-    margin-left: 50%;
-    transform: translate(-50%, -50%); }
+    width: 9%; }
   .sec-logo-grp .table-layout .logo-zx {
-    width: 18%;
-    top: -3rem; }
+    width: 19%;
+    top: -1rem; }
   .sec-logo-grp .table-layout .logo-jyj {
     width: 10%;
     top: 1rem;
@@ -1435,27 +1433,28 @@ ul.avator-meta {
     left: -2rem;
     width: 18%; }
   .sec-logo-grp .table-layout .logo-tb {
-    left: -4rem; }
+    left: -4rem;
+    top: 2rem; }
   .sec-logo-grp .table-layout .logo-qd {
-    width: 26%;
+    width: 27%;
     left: -4rem; }
   .sec-logo-grp .table-layout .logo-lm {
     width: 7%;
-    left: -5rem; }
+    left: -2rem; }
   .sec-logo-grp .table-layout .logo-yysh {
     width: 6%;
     left: 0;
     top: -2rem; }
   .sec-logo-grp .table-layout .logo-cc {
-    width: 7%;
-    left: -4rem;
-    top: -4rem; }
+    width: 15%;
+    left: 4rem;
+    top: -6rem; }
   .sec-logo-grp .table-layout .logo-yb {
     width: 7%;
     left: -3rem;
     top: 1rem; }
   .sec-logo-grp .table-layout .logo-bd {
-    width: 12%;
+    width: 18%;
     left: -1rem;
     top: -1rem; }
   .sec-logo-grp .table-layout .logo-jb {
@@ -1464,15 +1463,15 @@ ul.avator-meta {
   .sec-logo-grp .table-layout .logo-ykyj {
     width: 15%;
     left: 2rem;
-    top: -2.5rem; }
+    top: 0rem; }
   .sec-logo-grp .table-layout .logo-dzdp {
-    width: 6%;
+    width: 14%;
     left: 1rem;
     top: 0rem; }
   .sec-logo-grp .table-layout .logo-cdjf {
-    width: 18%;
-    left: -1rem;
-    top: -2rem; }
+    width: 28%;
+    left: 0rem;
+    top: -3rem; }
   .sec-logo-grp .table-layout .logo-xmej {
     width: 6%;
     left: -1rem; }
