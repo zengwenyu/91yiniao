@@ -203,7 +203,8 @@ a.red {
   border: 1px solid #c9c9c9;
   background: #eeeeee;
   width: 100%;
-  float: left; }
+  float: left;
+  margin-bottom: 2rem; }
   .col-wrapper .img-wrapper, .col-wrapper-1 .img-wrapper {
     float: left;
     width: 40%;
@@ -228,7 +229,8 @@ a.red {
 
 .col-wrapper-1 {
   background: white;
-  min-height: 10rem; }
+  min-height: 10rem;
+  margin-bottom: 2rem; }
   .col-wrapper-1 .img-wrapper {
     float: none;
     width: 100%; }

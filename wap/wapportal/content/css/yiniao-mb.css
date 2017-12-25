@@ -709,13 +709,14 @@ ul.avator-meta {
 .select .text {
   text-align: left;
   width: 88%;
-  height: 1rem;
+  height: 100%;
   font-size: 1rem;
   line-height: 2rem;
   float: left;
-  background: #fafafa;
+  background: white;
   color: #a2a1a1;
-  text-indent: 0.5rem; }
+  text-indent: 0.5rem;
+  border-radius: 2px; }
 
 .phoneNub {
   width: 88%;
@@ -1098,12 +1099,6 @@ ul.avator-meta {
   border: 1px solid #f5f5f5;
   text-indent: 0.5rem;
   color: #848484; }
-
-.table-layout img {
-  transition: transform 0.3s ease-in; }
-
-.table-layout img:hover {
-  transform: scale(1.5); }
 
 .Cultrue_Make input {
   margin-top: 20px;

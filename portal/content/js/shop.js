@@ -41,4 +41,47 @@ $(function(){
             $(".option").slideUp("fast");
         };
     })
+
+
+
+    $(function () {
+        removeSection = function (e) {
+            $(e).parents(".section").remove();
+            $('[data-spy="scroll"]').each(function () {
+                var $spy = $(this).scrollspy('refresh')
+            });
+        }
+        $("#myScrollspy").scrollspy();
+        $('#myScrollspy').on('activate.bs.scrollspy', function () {
+            alert(0)
+        })
+    });
+
+    $(function () {
+        $.getJSON("Time.json?v=0.5", function (data) {
+            var str = "";
+            for (var i = 0; i < data.length; i++) {
+                var content1 = "";
+                for (var k = 0; k < data[i].Content.length; k++) {
+                    content1 += '<p>' + data[i].Content[k].li + '</p>'
+
+                }
+                str += ' <div class="cd-timeline-block">' +
+                    ' <div class="cd-timeline-img cd-right"></div>' +
+                    ' <div class="cd-timeline-img cd-left"></div>' +
+                    '<div class="cd-timeline-img cd-picture">' +
+                    ' <div></div></div>' +
+                    '<div class="cd-timeline-content">' +
+                    '<h2>' + data[i].Title + '</h2>'
+                    + content1 + "" +
+                    '</div>' +
+                    '</div>'
+
+            }
+            $("#cd-timeline").html(str);
+
+
+        })
+
+    })
 });

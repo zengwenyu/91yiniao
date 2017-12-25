@@ -269,6 +269,7 @@ a.red {
   background: $white-tint;
   width: 100%;
   float: left;
+  margin-bottom: 2rem;
   .img-wrapper {
     float: left;
     width: 40%;
@@ -300,6 +301,7 @@ a.red {
   @extend  .col-wrapper;
   background: white;
   min-height: 10rem;
+  margin-bottom: 2rem;
   .img-wrapper {
     float: none;
     width: 100%;
