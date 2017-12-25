@@ -94,6 +94,18 @@ body {
   background-color: #cf1730;
   border-color: #cf1730; }
 
+.clearfixs {
+  *zoom: 1; }
+
+.clearfixs:before,
+.clearfixs:after {
+  display: table;
+  line-height: 0;
+  content: ""; }
+
+.clearfixs:after {
+  clear: both; }
+
 .container {
   width: 1224px !important; }
 

@@ -33,3 +33,19 @@
   background-color: #cf1730;
   border-color: #cf1730;
 }
+
+//declare clearfixs instead of bootstrap's default clearfix class for css conflict
+.clearfixs {
+  *zoom: 1;
+}
+
+.clearfixs:before,
+.clearfixs:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfixs:after {
+  clear: both;
+}
