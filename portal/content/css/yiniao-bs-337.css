@@ -1268,6 +1268,8 @@ input[type="submit"] {
 
 .sec-logo-grp .table-layout {
   margin: 2rem 0; }
+  .sec-logo-grp .table-layout td {
+    padding: 1rem; }
   .sec-logo-grp .table-layout img {
     position: relative;
     width: 8%;
@@ -1299,7 +1301,7 @@ input[type="submit"] {
     left: -1rem;
     top: -2rem; }
   .sec-logo-grp .table-layout .logo-cc {
-    width: 7%;
+    width: 9%;
     left: -4rem;
     top: -4rem; }
   .sec-logo-grp .table-layout .logo-yb {
@@ -1338,7 +1340,9 @@ input[type="submit"] {
     width: 10%;
     left: 1rem; }
   .sec-logo-grp .table-layout .logo-qhf {
-    left: -2rem; }
+    width: 8%;
+    left: -2rem;
+    top: -1rem; }
 
 .sec-banner-worker {
   position: relative; }

@@ -1466,6 +1466,9 @@ input[type="submit"] {
 .sec-logo-grp {
   .table-layout {
     margin: 2rem 0;
+    td {
+      padding: 1rem;
+    }
     img {
       position: relative;
       width: 8%;
@@ -1508,7 +1511,7 @@ input[type="submit"] {
       top: -2rem;
     }
     .logo-cc {
-      width: 7%;
+      width: 9%;
       left: -4rem;
       top: -4rem;
     }
@@ -1563,9 +1566,9 @@ input[type="submit"] {
       //top: -2rem;
     }
     .logo-qhf {
-      //width: 10%;
+      width: 8%;
       left: -2rem;
-      //top: -2rem;
+      top: -1rem;
     }
   }
 }
