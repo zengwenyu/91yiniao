@@ -728,7 +728,7 @@ ul.avator-meta {
   overflow: hidden;
   font-size: 1rem;
   line-height: 2rem;
-  background: #fafafa;
+  background: white;
   color: #a2a1a1;
   position: relative; }
   .phoneNub .sm {
@@ -745,7 +745,7 @@ ul.avator-meta {
   .phoneNub input {
     width: 88%;
     height: 100%;
-    background: #fafafa;
+    background: white;
     outline: none;
     border: none; }
     .phoneNub input::placeholder {
