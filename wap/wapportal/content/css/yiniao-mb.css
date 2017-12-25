@@ -1413,35 +1413,37 @@ ul.avator-meta {
 
 .sec-logo-grp {
   margin-bottom: 3rem; }
-  .sec-logo-grp .table-layout img {
+  .sec-logo-grp .table-layout td {
     position: relative;
-    width: 8%;
+    background: beige; }
+  .sec-logo-grp .table-layout img {
+    position: absolute;
+    width: 12%;
     margin: 0 0.5rem; }
     .sec-logo-grp .table-layout img:hover, .sec-logo-grp .table-layout img:focus {
       transform: scale(1.1);
       transition: transform .3s ease-in; }
-  .sec-logo-grp .table-layout .logo-fl {
-    width: 6%; }
   .sec-logo-grp .table-layout .logo-zx {
-    left: -4rem; }
+    left: -2rem;
+    width: 18%; }
   .sec-logo-grp .table-layout .logo-jyj {
-    width: 6%;
+    width: 10%;
     top: 1rem;
-    left: -4rem; }
+    left: -3rem; }
   .sec-logo-grp .table-layout .logo-360 {
-    left: -1rem;
-    width: 10%; }
+    left: -2rem;
+    width: 18%; }
   .sec-logo-grp .table-layout .logo-tb {
-    left: -6rem; }
+    left: -4rem; }
   .sec-logo-grp .table-layout .logo-qd {
-    width: 24%;
-    left: -6rem; }
+    width: 26%;
+    left: -4rem; }
   .sec-logo-grp .table-layout .logo-lm {
-    width: 6%;
-    left: -6rem; }
+    width: 7%;
+    left: -5rem; }
   .sec-logo-grp .table-layout .logo-yysh {
-    width: 4%;
-    left: -1rem;
+    width: 6%;
+    left: 0;
     top: -2rem; }
   .sec-logo-grp .table-layout .logo-cc {
     width: 7%;
@@ -1453,22 +1455,23 @@ ul.avator-meta {
     top: 1rem; }
   .sec-logo-grp .table-layout .logo-bd {
     width: 12%;
-    left: -2rem;
+    left: -1rem;
     top: -1rem; }
   .sec-logo-grp .table-layout .logo-jb {
     width: 4%;
     top: -1rem; }
   .sec-logo-grp .table-layout .logo-ykyj {
-    width: 12%;
-    left: 1rem;
-    top: 0rem; }
+    width: 15%;
+    left: 2rem;
+    top: -2.5rem; }
   .sec-logo-grp .table-layout .logo-dzdp {
     width: 6%;
     left: 1rem;
     top: 0rem; }
   .sec-logo-grp .table-layout .logo-cdjf {
-    width: 14%;
-    top: -3rem; }
+    width: 18%;
+    left: -1rem;
+    top: -2rem; }
   .sec-logo-grp .table-layout .logo-xmej {
     width: 6%;
     left: -1rem; }

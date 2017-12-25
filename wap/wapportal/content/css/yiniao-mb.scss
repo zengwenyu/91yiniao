@@ -1869,9 +1869,13 @@ ul.avator-meta {
 .sec-logo-grp {
   margin-bottom: 3rem;
   .table-layout {
-    img {
+    td {
       position: relative;
-      width: 8%;
+      background: beige;
+    }
+    img {
+      position: absolute;
+      width: 12%;
       margin:0 0.5rem;
       &:hover, &:focus {
         transform: scale(1.1);
@@ -1879,34 +1883,34 @@ ul.avator-meta {
       }
     }
     .logo-fl {
-      width: 6%;
     }
     .logo-zx {
-      left: -4rem;
+      left: -2rem;
+      width: 18%;
     }
     .logo-jyj {
-      width: 6%;
+      width: 10%;
       top: 1rem;
-      left: -4rem;
+      left: -3rem;
     }
     .logo-360 {
-      left: -1rem;
-      width: 10%;
+      left: -2rem;
+      width: 18%;
     }
     .logo-tb {
-      left: -6rem;
+      left: -4rem;
     }
     .logo-qd {
-      width: 24%;
-      left: -6rem;
+      width: 26%;
+      left: -4rem;
     }
     .logo-lm {
-      width: 6%;
-      left: -6rem;
+      width: 7%;
+      left: -5rem;
     }
     .logo-yysh {
-      width: 4%;
-      left: -1rem;
+      width: 6%;
+      left: 0;
       top: -2rem;
     }
     .logo-cc {
@@ -1921,7 +1925,7 @@ ul.avator-meta {
     }
     .logo-bd {
       width: 12%;
-      left: -2rem;
+      left: -1rem;
       top: -1rem;
     }
     .logo-jb {
@@ -1930,9 +1934,9 @@ ul.avator-meta {
       top: -1rem;
     }
     .logo-ykyj {
-      width: 12%;
-      left: 1rem;
-      top: 0rem;
+      width: 15%;
+      left: 2rem;
+      top: -2.5rem;
     }
     .logo-dzdp {
       width: 6%;
@@ -1940,9 +1944,9 @@ ul.avator-meta {
       top: 0rem;
     }
     .logo-cdjf {
-      width: 14%;
-      //left: -2rem;
-      top: -3rem;
+      width: 18%;
+      left: -1rem;
+      top: -2rem;
     }
     .logo-xmej {
       width: 6%;
