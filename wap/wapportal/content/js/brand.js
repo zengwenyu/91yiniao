@@ -1,21 +1,6 @@
 
 
 $(document).ready(function () {
-    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-        var target = $(e.target).attr("href") // activated tab
-        if ($(target).is(':empty')) {
-            $.ajax({
-                type: "GET",
-                url: "/article/",
-                error: function(data){
-                    alert("There was a problem");
-                },
-                success: function(data){
-                    $(target).html(data);
-                }
-            })
-        }
-    });
 
     var mySwiper = new Swiper ('.swiper-container', {
         direction: 'horizontal',
@@ -35,7 +20,16 @@ $(document).ready(function () {
 
         // 如果需要滚动条
         scrollbar: {
-            el: '.swiper-scrollbar',
+        el: '.swiper-scrollbar',
+        draggable : true,
+        hide: false,
+        snapOnRelease: true,
         },
     })
+
+    mySwiper.scrollbar.$el.css('height','2px');
+
+    $(".caption").hover(function () {
+        $(this).find(".ico").toggleClass("hover");
+    });
 });

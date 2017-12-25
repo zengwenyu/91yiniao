@@ -490,16 +490,24 @@ a.red {
   background: $gray-tinter;
   color: $gray-tint;
   font-size: 1rem;
+  margin-top: -22rem;
   p {
     text-indent: 2rem;
     text-align: justify;
-    &:last-child {
+    &:first-child {
       margin-bottom: 0;
     }
   }
 }
-.swiper-brand-shop-shot {
+.sec-brand-shop-shot {
   margin-bottom: 2rem;
+}
+.sec-logo-grp-brand {
+  margin-bottom: 0 !important;
+}
+.swiper-brand-shop-shot {
+  margin-bottom: 0.5rem;
+  overflow-y: visible;
   .img-wrapper {
     width: 100%;
     position: relative;
@@ -517,6 +525,9 @@ a.red {
       font-size: 1rem;
       padding: 0.5rem;
     }
+  }
+  >.swiper-scrollbar {
+    bottom: 1rem;
   }
 }
 .swiper-button-sm {
@@ -1259,6 +1270,11 @@ ul.avator-meta {
   position: relative;
   margin-bottom: 1rem;
 }
+.sec-our-processing {
+  //background: red;
+  //height: 40rem;
+  overflow-y: hidden;
+}
 .CulTrue_cooperation {
   position: absolute;
   top: 50%;
@@ -1283,6 +1299,8 @@ ul.avator-meta {
 .thumbnail {
   //height: 220px;
   border: none;
+  margin-bottom: 0;
+  text-align: justify;
   .caption {
     padding: 0;
     a {
@@ -1301,7 +1319,7 @@ ul.avator-meta {
     font-size: 1rem;
     line-height: 1.5rem;
     color: $gray-tint;
-    padding-left: 0.5rem;
+    padding: 0 0.5rem;
     font-weight: 300;
   }
   .ico-brush {
@@ -1427,6 +1445,10 @@ ul.avator-meta {
   width: 100%;
   height: 30px;
 }
+.Cultrue_Make input.input-0 {
+  margin-top: 0;
+}
+
 
 .Cultrue_Yu, .txttarea {
   width: 100%;
@@ -1545,9 +1567,37 @@ ul.avator-meta {
 
 .cd-timeline-block {
   position: relative;
-  //margin: -5rem 0;
 }
-
+#cd-timeline-block-1 {
+  transform:translate(0, -4rem);
+  .cd-left:before {
+    border: none;
+  }
+}
+#cd-timeline-block-2 {
+  transform:translate(0, -8rem);
+  .cd-right:before {
+    border: none;
+  }
+}
+#cd-timeline-block-3 {
+  transform:translate(0, -12rem);
+  .cd-left:before {
+    border: none;
+  }
+}
+#cd-timeline-block-4 {
+  transform:translate(0, -16rem);
+  .cd-right:before {
+    border: none;
+  }
+}
+#cd-timeline-block-5 {
+  transform:translate(0, -20rem);
+  .cd-left:before {
+    border: none;
+  }
+}
 .cd-timeline-block:after {
   display: table
 }
@@ -1562,7 +1612,7 @@ ul.avator-meta {
 
 
   .cd-timeline-block:first-child {
-    margin-top: 4rem;
+    //margin-top: -4rem;
   }
   .cd-timeline-block:last-child {
     margin-bottom: 0
@@ -1620,7 +1670,7 @@ ul.avator-meta {
 }
 
 .cd-timeline-content {
-  margin-left: 0;
+  //margin: -4rem 0 0 0;
   padding: 0.5rem;
   position: relative;
   border-radius: 0;
@@ -1640,6 +1690,10 @@ ul.avator-meta {
     }
 
   }
+}
+
+#cd-timeline-content-1 {
+  margin-top:0;
 }
 
 //.cd-timeline-content:after {
@@ -1796,7 +1850,7 @@ ul.avator-meta {
   position: absolute;
   top: 0;
   left: 18px;
-  height: 100%;
+  height: 71%;
   width: 1px;
   background: #222
 }
@@ -1922,8 +1976,13 @@ ul.avator-meta {
   background: url("../images/brand/bg-mountain.jpg") no-repeat bottom left;
   background-size: contain;
   margin: 1rem auto 0;
-  padding-bottom: 4rem;
+  padding:0.4rem 0.4rem 4rem;
   img {
     width: 10%;
+  }
+  ul {
+    margin-top: 0.5rem;
+    color: $gray-tint;
+    font-size: 1rem;
   }
 }
