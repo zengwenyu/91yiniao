@@ -6,6 +6,7 @@ $(function(){
         $(this).find("span").toggleClass("glyphicon-chevron-down");
     });
     $(".list-group-item > a").click(function (e) {
+
         var $curTitle = $("#panel-shop-heading > h4 > #panel-title-txt");
         $('.panel-collapse').collapse('toggle');
         // change title according to list item clicked
@@ -20,28 +21,55 @@ $(function(){
         e.preventDefault();
     });
 
+    // //select list
+    // var $curTxt = $(".select > .text");
+    // var $selTrigger = $('#select-trigger');
+    // //toggle select list content
+    // $selTrigger.on("click", function (e) {
+    //     $(this).next(".option").slideToggle("fast");
+    //     $(document).one("click", function(){
+    //         $(".option").slideUp("fast");
+    //     });
+    //     e.stopPropagation();
+    // });
+    // //set title to chicked list item
+    // $(".option > div").click(function (e) {
+    //     if (e.target == this ) {
+    //         var $newTitle = $(this).text();
+    //         $curTxt.text($newTitle);
+    //         $(".option").slideUp("fast");
+    //     } else {
+    //         $(".option").slideUp("fast");
+    //     };
+    // })
+
     //select list
-    var $curTxt = $(".select > .text");
-    var $selTrigger = $('#select-trigger');
-    //toggle select list content
-    $selTrigger.on("click", function (e) {
-        $(this).next(".option").slideToggle("fast");
+
+    var selectPop = function (e) {
+        // console.log(e.target.tagName + " is clicked")
+        var $self = $(this);
+            $(this).next(".option").slideToggle("fast");
         $(document).one("click", function(){
             $(".option").slideUp("fast");
         });
-        e.stopPropagation();
-    });
-    //set title to chicked list item
-    $(".option > div").click(function (e) {
-        if (e.target == this ) {
-            var $newTitle = $(this).text();
-            $curTxt.text($newTitle);
-            $(".option").slideUp("fast");
-        } else {
-            $(".option").slideUp("fast");
-        };
-    })
 
+        // set title to chicked list item
+
+        $(this).next(".option").children("div").click(function (e) {
+        // $(this).next(".option > div").click(function (e) {
+            var $curTxt = $self.children(".text");
+            // console.log($self + " is clicked")
+            if (e.target == this ) {
+                var $newTitle = $(this).text();
+                $curTxt.text($newTitle);
+                $(".option").slideUp("fast");
+            } else {
+                $(".option").slideUp("fast");
+            };
+        })
+    };
+
+    $(document).on("click", ".select-trigger", selectPop);
 
 
     $(function () {
