@@ -430,22 +430,33 @@
                 <!--<p>益鸟维修自有工人、自有店铺</p>-->
             <!--</div>-->
             <div class="col-xs-8 no-padding text-center">
-                <div class="selectPicker">
-                    <div class="select">
-                        <div class="text">选择您的墙面问题</div>
-                        <div class="sm" id="select-trigger"><img src="wapportal/content/images/sm.png" alt=""></div>
+
+                <form>
+                        <div class="form-group">
+                            <div class="selectPicker">
+                                <div class="select select-trigger" id="select-trigger">
+                                    <div class="text">选择您的房屋问题</div>
+                                    <div class="sm"><img src="wapportal/content/images/sm.png" alt=""></div>
+                                </div>
+                                <div class="option" style="display: none;">
+                                    <div typeval="1">墙面翻新</div>
+                                    <div typeval="2">局部改造</div>
+                                    <div typeval="3">防水补漏</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="phoneNub">
+                                <div class="sm"><img src="wapportal/content/images/ico-magnify-sm.jpg" alt=""></div>
+                                <input type="text" id="indexMobile" placeholder="您的电话">
+                            </div>
+                        </div>
+                    <div class="col-md-2 no-padding-l">
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-submit btn-red btn-wide" type="submit">提交</button>
+                        </div>
                     </div>
-                    <div class="option" style="display: none;">
-                        <div typeval="1">墙面翻新</div>
-                        <div typeval="2">局部改造</div>
-                        <div typeval="3">防水补漏</div>
-                    </div>
-                </div>
-                <div class="phoneNub">
-                    <div class="sm"><img src="wapportal/content/images/ico-magnify-sm.jpg" alt=""></div>
-                    <input type="text" id="indexMobile" placeholder="您的电话">
-                </div>
-                <button class="btn btn-primary btn-sm btn-submit btn-red" type="submit">提交</button>
+                </form>
             </div>
         </div>
     </div>
