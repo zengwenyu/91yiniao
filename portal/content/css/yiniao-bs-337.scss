@@ -1600,6 +1600,13 @@ input[type="submit"] {
             width: 35%;
             margin: 1rem 0.5rem 1rem 1rem;
             float: left;
+            .select {
+              .sm {
+                img {
+                  width: 50%;
+                }
+              }
+            }
           }
           .phoneNub {
             width: 35%;
@@ -1655,10 +1662,14 @@ input[type="submit"] {
 }
 .form-search-worker {
   margin-top: 20px;
+  position: relative;
   .form-control {
     display: inline-block;
     width: 12rem;
     box-shadow: none;
+  }
+  .glyphicon-search {
+    color: $gray-tint;
   }
 }
 //well-general

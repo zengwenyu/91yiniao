@@ -48,6 +48,7 @@ $(function(){
     var selectPop = function (e) {
         // console.log(e.target.tagName + " is clicked")
         var $self = $(this);
+        // console.log($self[0].tagName + " is clicked")
         $self.next(".option").slideToggle("fast");
         $(document).one("click", function(){
             $(".option").slideUp("fast");
