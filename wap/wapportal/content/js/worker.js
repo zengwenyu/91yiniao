@@ -19,29 +19,55 @@ $(function(){
 
         e.preventDefault();
     });
-    var $curTxt = $(".select > .text");
-    var $selTrigger = $('#select-trigger');
-    //toggle select list content
-    $selTrigger.on("click", function (e) {
-        $(this).parents().next(".option").slideToggle("fast");
+
+    //div select list
+    var selectPop = function (e) {
+        // console.log(e.target.tagName + " is clicked")
+        var $self = $(this);
+        // console.log($self[0].tagName + " is clicked")
+        $self.next(".option").slideToggle("fast");
         $(document).one("click", function(){
             $(".option").slideUp("fast");
         });
-        $('.option div').click(function () {
-           houseSymptomType = $(this).attr("typeval");
-        });
-        e.stopPropagation();
-    });
-    //set title to chicked list item
-    $(".option > div").click(function (e) {
-        if (e.target == this ) {
-            var $newTitle = $(this).text();
-            $curTxt.text($newTitle);
-            $(".option").slideUp("fast");
-        } else {
-            $(".option").slideUp("fast");
-        };
+
+        // set title to chicked list item
+
+        $(this).next(".option").children("div").click(function (e) {
+            // $(this).next(".option > div").click(function (e) {
+            var $curTxt = $self.children(".text");
+            // console.log($self + " is clicked")
+            if (e.target == this ) {
+                var $newTitle = $(this).text();
+                $curTxt.text($newTitle);
+                $(".option").slideUp("fast");
+            } else {
+                $(".option").slideUp("fast");
+            };
+        })
+    };
+
+    $(document).on("click", ".select-trigger", selectPop);
+
+    //标杆师傅swiper
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        // autoplay:true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+
+
+        // // 如果需要前进后退按钮
+        // nextButton: '.swiper-button-next',
+        // prevButton: '.swiper-button-prev',
+
+        // // 如果需要滚动条
+        // scrollbar: '.swiper-scrollbar',
     })
+
 });
 
 $(document).ready(function () {
@@ -62,139 +88,4 @@ $(document).ready(function () {
     })
 });
 
-$(document).ready(function () {
-    // var num = ($(".num").text().substring(0,3));
-    // console.log(num);
-    $(".rateYo-50").rateYo({
-        rating: 5.0,
-        maxValue: 5,
-        numStars: 5,
-        precision: 2,
-        starWidth: "14px",
-        spacing: "0",
-        normalFill: "#AEAEAE",
-        ratedFill: "#e8314a",
-        readOnly: true
-    });
-    $(".rateYo-49").rateYo({
-        rating: 4.9,
-        maxValue: 5,
-        numStars: 5,
-        precision: 2,
-        starWidth: "14px",
-        spacing: "0",
-        normalFill: "#AEAEAE",
-        ratedFill: "#e8314a",
-        readOnly: true
-    });
-    $(".rateYo-48").rateYo({
-        rating: 4.8,
-        maxValue: 5,
-        numStars: 5,
-        precision: 2,
-        starWidth: "14px",
-        spacing: "0",
-        normalFill: "#AEAEAE",
-        ratedFill: "#e8314a",
-        readOnly: true
-    });
-    $(".rateYo-47").rateYo({
-        rating: 4.7,
-        maxValue: 5,
-        numStars: 5,
-        precision: 2,
-        starWidth: "14px",
-        spacing: "0",
-        normalFill: "#AEAEAE",
-        ratedFill: "#e8314a",
-        readOnly: true
-    });
-    $(".rateYo-46").rateYo({
-        rating: 4.6,
-        maxValue: 5,
-        numStars: 5,
-        precision: 2,
-        starWidth: "14px",
-        spacing: "0",
-        normalFill: "#AEAEAE",
-        ratedFill: "#e8314a",
-        readOnly: true
-    });
-    $(".rateYo-45").rateYo({
-        rating: 4.5,
-        maxValue: 5,
-        numStars: 5,
-        precision: 2,
-        starWidth: "14px",
-        spacing: "0",
-        normalFill: "#AEAEAE",
-        ratedFill: "#e8314a",
-        readOnly: true
-    });
-    $(".rateYo-50-sm").rateYo({
-        rating: 5.0,
-        maxValue: 5,
-        numStars: 5,
-        precision: 2,
-        starWidth: "14px",
-        spacing: "0",
-        normalFill: "#AEAEAE",
-        ratedFill: "#e8314a",
-        readOnly: true
-    });
-    $(".rateYo-49-sm").rateYo({
-        rating: 4.9,
-        maxValue: 5,
-        numStars: 5,
-        precision: 2,
-        starWidth: "14px",
-        spacing: "0",
-        normalFill: "#AEAEAE",
-        ratedFill: "#e8314a",
-        readOnly: true
-    });
-    $(".rateYo-48-sm").rateYo({
-        rating: 4.8,
-        maxValue: 5,
-        numStars: 5,
-        precision: 2,
-        starWidth: "14px",
-        spacing: "0",
-        normalFill: "#AEAEAE",
-        ratedFill: "#e8314a",
-        readOnly: true
-    });
-    $(".rateYo-47-sm").rateYo({
-        rating: 4.7,
-        maxValue: 5,
-        numStars: 5,
-        precision: 2,
-        starWidth: "14px",
-        spacing: "0",
-        normalFill: "#AEAEAE",
-        ratedFill: "#e8314a",
-        readOnly: true
-    });
-    $(".rateYo-46-sm").rateYo({
-        rating: 4.6,
-        maxValue: 5,
-        numStars: 5,
-        precision: 2,
-        starWidth: "14px",
-        spacing: "0",
-        normalFill: "#AEAEAE",
-        ratedFill: "#e8314a",
-        readOnly: true
-    });
-    $(".rateYo-45-sm").rateYo({
-        rating: 4.5,
-        maxValue: 5,
-        numStars: 5,
-        precision: 2,
-        starWidth: "14px",
-        spacing: "0",
-        normalFill: "#AEAEAE",
-        ratedFill: "#e8314a",
-        readOnly: true
-    });
-})
+$
