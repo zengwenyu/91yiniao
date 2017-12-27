@@ -1504,7 +1504,7 @@ ul.avator-meta {
     left: -2rem;
     width: 18%; }
   .sec-logo-grp .table-layout .logo-tb {
-    left: -4rem;
+    left: -5rem;
     top: 2rem; }
   .sec-logo-grp .table-layout .logo-qd {
     width: 27%;
@@ -1531,10 +1531,11 @@ ul.avator-meta {
     top: -1rem; }
   .sec-logo-grp .table-layout .logo-jb {
     width: 8%;
+    left: 0;
     top: -2rem; }
   .sec-logo-grp .table-layout .logo-ykyj {
     width: 18%;
-    left: 0rem;
+    left: 0.5rem;
     top: 0rem; }
   .sec-logo-grp .table-layout .logo-dzdp {
     width: 14%;
@@ -1545,7 +1546,7 @@ ul.avator-meta {
     left: 7rem;
     top: -5rem; }
   .sec-logo-grp .table-layout .logo-xmej {
-    width: 6%;
+    width: 8%;
     left: -1rem;
     top: -2rem; }
   .sec-logo-grp .table-layout .logo-58dj {
@@ -1560,7 +1561,8 @@ ul.avator-meta {
     left: 2rem;
     top: -2rem; }
   .sec-logo-grp .table-layout .logo-qhf {
-    left: 0rem;
+    width: 16%;
+    right: -1rem;
     top: -3rem; }
 
 .sec-contact-meta {
