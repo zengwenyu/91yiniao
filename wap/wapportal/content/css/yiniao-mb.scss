@@ -1094,7 +1094,62 @@ ul.avator-meta {
   border-radius: 0;
   background: url("../images/shop/ico-jinpai.png") no-repeat top right;
   -webkit-background-size: 3.5rem;
-  background-size: 3.5rem;
+  background-size: 4rem;
+  padding: 0 0 2.4rem 0;
+  .avator-wrapper-outter {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  ul.avator-meta {
+    font-size: 1.2rem;
+    .title {
+      font-size: 1.7rem;
+      margin: 0.4rem 0;
+    }
+  }
+  ul.avator-meta-extra {
+    //width: 100%;
+    //margin-left: 10px;
+    float: left;
+    display: block;
+    font-size: 1.2rem;
+    li {
+      width: 48%;
+      display: inline-block;
+      margin-bottom: 0.3rem;
+    }
+  }
+  .btn-wrapper {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    .btn-worker-require {
+      color: $red;
+      background: #f9f9f9;
+      border-radius: 0;
+      width: 100%;
+      padding: 0.8rem 0;
+      border-top: 1px solid #e3e3e3;
+      &:hover {
+        background: lighten(#f9f9f9, 40%);
+      }
+      &:active, &:hover:active {
+        background: darken(#f9f9f9, 30%);
+      }
+    }
+  }
+}
+.well-staff-biaogan {
+  position: relative;
+  margin-bottom: 0;
+  text-align: left;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: url("../images/shop/ico-biaogan.png") no-repeat top right;
+  -webkit-background-size: 3.5rem;
+  background-size: 4rem;
   padding: 0 0 2.4rem 0;
   .avator-wrapper-outter {
     padding-bottom: 0.5rem;

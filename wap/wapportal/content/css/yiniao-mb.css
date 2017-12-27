@@ -60,6 +60,18 @@ html {
   background-color: #e8314a;
   border-color: #e8314a; }
 
+.clearfixs {
+  *zoom: 1; }
+
+.clearfixs:before,
+.clearfixs:after {
+  display: table;
+  line-height: 0;
+  content: ""; }
+
+.clearfixs:after {
+  clear: both; }
+
 .last {
   margin-right: 0; }
 
@@ -831,7 +843,7 @@ ul.avator-meta {
   border-radius: 0;
   background: url("../images/shop/ico-jinpai.png") no-repeat top right;
   -webkit-background-size: 3.5rem;
-  background-size: 3.5rem;
+  background-size: 4rem;
   padding: 0 0 2.4rem 0; }
   .well-staff-jinpai .avator-wrapper-outter {
     padding-bottom: 0.5rem;
@@ -864,6 +876,50 @@ ul.avator-meta {
       .well-staff-jinpai .btn-wrapper .btn-worker-require:hover {
         background: white; }
       .well-staff-jinpai .btn-wrapper .btn-worker-require:active, .well-staff-jinpai .btn-wrapper .btn-worker-require:hover:active {
+        background: #adadad; }
+
+.well-staff-biaogan {
+  position: relative;
+  margin-bottom: 0;
+  text-align: left;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: url("../images/shop/ico-biaogan.png") no-repeat top right;
+  -webkit-background-size: 3.5rem;
+  background-size: 4rem;
+  padding: 0 0 2.4rem 0; }
+  .well-staff-biaogan .avator-wrapper-outter {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem; }
+  .well-staff-biaogan ul.avator-meta {
+    font-size: 1.2rem; }
+    .well-staff-biaogan ul.avator-meta .title {
+      font-size: 1.7rem;
+      margin: 0.4rem 0; }
+  .well-staff-biaogan ul.avator-meta-extra {
+    float: left;
+    display: block;
+    font-size: 1.2rem; }
+    .well-staff-biaogan ul.avator-meta-extra li {
+      width: 48%;
+      display: inline-block;
+      margin-bottom: 0.3rem; }
+  .well-staff-biaogan .btn-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    .well-staff-biaogan .btn-wrapper .btn-worker-require {
+      color: #e8314a;
+      background: #f9f9f9;
+      border-radius: 0;
+      width: 100%;
+      padding: 0.8rem 0;
+      border-top: 1px solid #e3e3e3; }
+      .well-staff-biaogan .btn-wrapper .btn-worker-require:hover {
+        background: white; }
+      .well-staff-biaogan .btn-wrapper .btn-worker-require:active, .well-staff-biaogan .btn-wrapper .btn-worker-require:hover:active {
         background: #adadad; }
 
 .well-staff-worker {

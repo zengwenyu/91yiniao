@@ -52,6 +52,7 @@ $(function(){
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
         loop: true,
+        spaceBetween : 20,
         // autoplay:true,
         pagination: {
             el: '.swiper-pagination',
