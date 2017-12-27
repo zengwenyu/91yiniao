@@ -952,6 +952,14 @@ ul.avator-meta {
       .well-staff-worker ul.avator-meta-extra li:last-child {
         width: 25%;
         float: right; }
+  .well-staff-worker ul.avator-meta-extra-2 {
+    font-size: 0.7rem;
+    display: block;
+    text-align: center; }
+    .well-staff-worker ul.avator-meta-extra-2 li {
+      width: 45%;
+      display: inline-block;
+      padding: 0; }
   .well-staff-worker .btn-wrapper {
     position: absolute;
     bottom: 0;
@@ -970,6 +978,10 @@ ul.avator-meta {
 
 .well-staff-worker-leader {
   background: url("../images/worker/ico-leader.png") no-repeat top right;
+  background-size: 2rem; }
+
+.well-staff-worker-assistant {
+  background: url("../images/worker/ico-assistant.png") no-repeat top right;
   background-size: 2rem; }
 
 .well {
