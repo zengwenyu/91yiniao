@@ -502,9 +502,6 @@ a.red {
 .sec-brand-shop-shot {
   margin-bottom: 2rem;
 }
-.sec-logo-grp-brand {
-  margin-bottom: 0 !important;
-}
 .swiper-brand-shop-shot {
   margin-bottom: 0.5rem;
   .img-wrapper {
@@ -1937,13 +1934,20 @@ ul.avator-meta {
   }
 
 
+.sec-logo-grp-brand {
+  margin-bottom: 0 !important;
+  overflow: hidden;
+  height: 20rem;
+  .table-layout {
 
+  }
+}
 
 .sec-logo-grp {
   margin-bottom: 3rem;
   .table-layout {
     td {
-      height: 3rem;
+      height: 3.5rem;
       text-align: center;
       padding: 0.6rem;
     }
@@ -1970,6 +1974,7 @@ ul.avator-meta {
       left: -3rem;
     }
     .logo-360 {
+      top: -1rem;
       left: -2rem;
       width: 18%;
     }
@@ -1984,6 +1989,7 @@ ul.avator-meta {
     .logo-lm {
       width: 7%;
       left: -2rem;
+      top: -2rem;
     }
     .logo-yysh {
       width: 6%;
@@ -1992,7 +1998,7 @@ ul.avator-meta {
     }
     .logo-cc {
       width: 15%;
-      left: 4rem;
+      left: 2rem;
       top: -6rem;
     }
     .logo-yb {
@@ -2006,13 +2012,13 @@ ul.avator-meta {
       top: -1rem;
     }
     .logo-jb {
-      width: 4%;
+      width: 8%;
       //left: -3rem;
-      top: -1rem;
+      top: -2rem;
     }
     .logo-ykyj {
-      width: 15%;
-      left: 2rem;
+      width: 18%;
+      left: 0rem;
       top: 0rem;
     }
     .logo-dzdp {
@@ -2022,33 +2028,33 @@ ul.avator-meta {
     }
     .logo-cdjf {
       width: 28%;
-      left: 0rem;
-      top: -3rem;
+      left: 7rem;
+      top: -5rem;
     }
     .logo-xmej {
       width: 6%;
       left: -1rem;
-      //top: -3rem;
-    }
-    .logo-58dj {
-      width: 6%;
-      //left: -1rem;
       top: -2rem;
     }
-    .logo-jbwy {
+    .logo-58dj {
       width: 8%;
+      //left: -1rem;
+      top: -3rem;
+    }
+    .logo-jbwy {
+      width: 18%;
       left: 1rem;
       top: -2rem;
     }
     .logo-58 {
       width: 10%;
-      left: 1rem;
-      //top: -2rem;
+      left: 2rem;
+      top: -2rem;
     }
     .logo-qhf {
       //width: 10%;
-      left: -2rem;
-      //top: -2rem;
+      left: 0rem;
+      top: -3rem;
     }
   }
 }

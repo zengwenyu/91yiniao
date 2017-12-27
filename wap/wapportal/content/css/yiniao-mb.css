@@ -420,9 +420,6 @@ a.red {
 .sec-brand-shop-shot {
   margin-bottom: 2rem; }
 
-.sec-logo-grp-brand {
-  margin-bottom: 0 !important; }
-
 .swiper-brand-shop-shot {
   margin-bottom: 0.5rem; }
   .swiper-brand-shop-shot .img-wrapper {
@@ -1474,10 +1471,15 @@ ul.avator-meta {
   left: 50%;
   margin-left: -2px; }
 
+.sec-logo-grp-brand {
+  margin-bottom: 0 !important;
+  overflow: hidden;
+  height: 20rem; }
+
 .sec-logo-grp {
   margin-bottom: 3rem; }
   .sec-logo-grp .table-layout td {
-    height: 3rem;
+    height: 3.5rem;
     text-align: center;
     padding: 0.6rem; }
   .sec-logo-grp .table-layout img {
@@ -1498,6 +1500,7 @@ ul.avator-meta {
     top: 1rem;
     left: -3rem; }
   .sec-logo-grp .table-layout .logo-360 {
+    top: -1rem;
     left: -2rem;
     width: 18%; }
   .sec-logo-grp .table-layout .logo-tb {
@@ -1508,14 +1511,15 @@ ul.avator-meta {
     left: -4rem; }
   .sec-logo-grp .table-layout .logo-lm {
     width: 7%;
-    left: -2rem; }
+    left: -2rem;
+    top: -2rem; }
   .sec-logo-grp .table-layout .logo-yysh {
     width: 6%;
     left: 0;
     top: -2rem; }
   .sec-logo-grp .table-layout .logo-cc {
     width: 15%;
-    left: 4rem;
+    left: 2rem;
     top: -6rem; }
   .sec-logo-grp .table-layout .logo-yb {
     width: 7%;
@@ -1526,11 +1530,11 @@ ul.avator-meta {
     left: -1rem;
     top: -1rem; }
   .sec-logo-grp .table-layout .logo-jb {
-    width: 4%;
-    top: -1rem; }
+    width: 8%;
+    top: -2rem; }
   .sec-logo-grp .table-layout .logo-ykyj {
-    width: 15%;
-    left: 2rem;
+    width: 18%;
+    left: 0rem;
     top: 0rem; }
   .sec-logo-grp .table-layout .logo-dzdp {
     width: 14%;
@@ -1538,23 +1542,26 @@ ul.avator-meta {
     top: 0rem; }
   .sec-logo-grp .table-layout .logo-cdjf {
     width: 28%;
-    left: 0rem;
-    top: -3rem; }
+    left: 7rem;
+    top: -5rem; }
   .sec-logo-grp .table-layout .logo-xmej {
     width: 6%;
-    left: -1rem; }
-  .sec-logo-grp .table-layout .logo-58dj {
-    width: 6%;
+    left: -1rem;
     top: -2rem; }
-  .sec-logo-grp .table-layout .logo-jbwy {
+  .sec-logo-grp .table-layout .logo-58dj {
     width: 8%;
+    top: -3rem; }
+  .sec-logo-grp .table-layout .logo-jbwy {
+    width: 18%;
     left: 1rem;
     top: -2rem; }
   .sec-logo-grp .table-layout .logo-58 {
     width: 10%;
-    left: 1rem; }
+    left: 2rem;
+    top: -2rem; }
   .sec-logo-grp .table-layout .logo-qhf {
-    left: -2rem; }
+    left: 0rem;
+    top: -3rem; }
 
 .sec-contact-meta {
   background: url("../images/brand/bg-mountain.jpg") no-repeat bottom left;
