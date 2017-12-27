@@ -1566,6 +1566,17 @@ ul.avator-meta {
   .sec-contact-meta ul {
     margin-top: 0.5rem;
     color: #848484;
+    font-size: 1rem;
+    margin-bottom: 0.5rem; }
+  .sec-contact-meta .table-layout {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #848484;
     font-size: 1rem; }
+    .sec-contact-meta .table-layout tr td {
+      vertical-align: top;
+      padding: 0; }
+      .sec-contact-meta .table-layout tr td:first-child {
+        width: 20%; }
 
 /*# sourceMappingURL=yiniao-mb.css.map */
