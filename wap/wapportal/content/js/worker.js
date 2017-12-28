@@ -53,7 +53,7 @@ $(function(){
         direction: 'horizontal',
         loop: true,
         spaceBetween : 20,
-        // autoplay:true,
+        autoplay:true,
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
