@@ -1181,7 +1181,6 @@ ul.avator-meta {
   .avator-wrapper-outter {
     margin-bottom: 0.8rem;
   }
-
   ul.avator-meta {
     .title {
       color: $black;
@@ -1593,6 +1592,7 @@ input[type="submit"] {
         bottom: 18%;
         top: 70%;
         .inner {
+          float: left;
           //padding: 1rem;
           background: rgba($black, 0.8);
           .selectPicker {
@@ -1698,6 +1698,18 @@ input[type="submit"] {
   ul.avator-meta-extra {
     margin-bottom: 1.2rem;
   }
+  ul.avator-meta-extra-2 {
+    font-size: 0.7rem;
+    padding: 0.8rem;
+    margin: 0;
+    display: block;
+    text-align: center;
+    li {
+      width: 45%;
+      display: inline-block;
+      padding: 0;
+    }
+  }
   .inner {
     padding: 1rem 1rem 0 1rem;
     float: left;
@@ -1714,7 +1726,7 @@ input[type="submit"] {
 }
 .star {
   display: inline-block;
-  width: 6rem;
+  width: 5rem;
   position: relative;
   top: 2px;
 }
@@ -1802,16 +1814,20 @@ input[type="submit"] {
     float: left;
     width: 100%;
   }
+  > .inner {
+    //background: red;
+    height: 3.5rem;
+    overflow: hidden;
+  }
   .star {
     display: inline-block;
-    width: 4rem;
+    width: 5rem;
     img {
       width: 100%;
       position: relative;
       top: -4px;
     }
   }
-
   ul.avator-meta {
     font-size: 0.7rem;
     margin-bottom: 0;
@@ -1827,6 +1843,7 @@ input[type="submit"] {
     display: block;
     font-size: 0.7rem;
     margin-bottom: 0;
+    margin-top: 3px;
     li {
       width: 45%;
       display: inline-block;
@@ -1873,6 +1890,11 @@ input[type="submit"] {
   background-size: 2rem;
   background-position: 95% 0;
 }
+.well-staff-worker-assistant {
+  background: url("../images/worker/ico-assistant.png") no-repeat top right;
+  background-size: 2rem;
+  background-position: 95% 0;
+}
 .sec-worker-important {
   .spacer {
     margin-bottom: 30px;
@@ -1880,7 +1902,6 @@ input[type="submit"] {
 }
 
 //pg brand
-
 .log {
   width: 1224px;
   margin: 0 auto;

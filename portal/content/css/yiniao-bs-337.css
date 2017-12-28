@@ -1362,6 +1362,7 @@ input[type="submit"] {
       bottom: 18%;
       top: 70%; }
       .sec-banner-worker .img-poster-wrapper .outer .form-wrapper .inner {
+        float: left;
         background: rgba(59, 59, 59, 0.8); }
         .sec-banner-worker .img-poster-wrapper .outer .form-wrapper .inner .selectPicker {
           position: relative;
@@ -1436,6 +1437,16 @@ input[type="submit"] {
       margin-bottom: 0; }
   .well-staff ul.avator-meta-extra {
     margin-bottom: 1.2rem; }
+  .well-staff ul.avator-meta-extra-2 {
+    font-size: 0.7rem;
+    padding: 0.8rem;
+    margin: 0;
+    display: block;
+    text-align: center; }
+    .well-staff ul.avator-meta-extra-2 li {
+      width: 45%;
+      display: inline-block;
+      padding: 0; }
   .well-staff .inner {
     padding: 1rem 1rem 0 1rem;
     float: left;
@@ -1449,7 +1460,7 @@ input[type="submit"] {
 
 .star {
   display: inline-block;
-  width: 6rem;
+  width: 5rem;
   position: relative;
   top: 2px; }
 
@@ -1520,9 +1531,12 @@ input[type="submit"] {
     padding: 0.5rem;
     float: left;
     width: 100%; }
+  .well-staff-general > .inner {
+    height: 3.5rem;
+    overflow: hidden; }
   .well-staff-general .star {
     display: inline-block;
-    width: 4rem; }
+    width: 5rem; }
     .well-staff-general .star img {
       width: 100%;
       position: relative;
@@ -1537,7 +1551,8 @@ input[type="submit"] {
     float: left;
     display: block;
     font-size: 0.7rem;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-top: 3px; }
     .well-staff-general ul.avator-meta-extra li {
       width: 45%;
       display: inline-block;
@@ -1565,6 +1580,11 @@ input[type="submit"] {
 
 .well-staff-leader {
   background: white url("../images/worker/ico-leader.png") no-repeat top right;
+  background-size: 2rem;
+  background-position: 95% 0; }
+
+.well-staff-worker-assistant {
+  background: url("../images/worker/ico-assistant.png") no-repeat top right;
   background-size: 2rem;
   background-position: 95% 0; }
 

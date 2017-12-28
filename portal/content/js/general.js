@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function () {
     // var num = ($(".num").text().substring(0,3));
     // console.log(num);
     $(".rateYo-50").rateYo({
@@ -6,18 +6,18 @@ $(function(){
         maxValue: 5,
         numStars: 5,
         precision: 2,
-        starWidth: "18px",
+        starWidth: "14px",
         spacing: "0",
         normalFill: "#AEAEAE",
         ratedFill: "#e8314a",
         readOnly: true
-        });
+    });
     $(".rateYo-49").rateYo({
         rating: 4.9,
         maxValue: 5,
         numStars: 5,
         precision: 2,
-        starWidth: "18px",
+        starWidth: "14px",
         spacing: "0",
         normalFill: "#AEAEAE",
         ratedFill: "#e8314a",
@@ -28,7 +28,7 @@ $(function(){
         maxValue: 5,
         numStars: 5,
         precision: 2,
-        starWidth: "18px",
+        starWidth: "14px",
         spacing: "0",
         normalFill: "#AEAEAE",
         ratedFill: "#e8314a",
@@ -39,7 +39,7 @@ $(function(){
         maxValue: 5,
         numStars: 5,
         precision: 2,
-        starWidth: "18px",
+        starWidth: "14px",
         spacing: "0",
         normalFill: "#AEAEAE",
         ratedFill: "#e8314a",
@@ -50,7 +50,7 @@ $(function(){
         maxValue: 5,
         numStars: 5,
         precision: 2,
-        starWidth: "18px",
+        starWidth: "14px",
         spacing: "0",
         normalFill: "#AEAEAE",
         ratedFill: "#e8314a",
@@ -61,7 +61,62 @@ $(function(){
         maxValue: 5,
         numStars: 5,
         precision: 2,
-        starWidth: "18px",
+        starWidth: "14px",
+        spacing: "0",
+        normalFill: "#AEAEAE",
+        ratedFill: "#e8314a",
+        readOnly: true
+    });
+    $(".rateYo-44").rateYo({
+        rating: 4.4,
+        maxValue: 5,
+        numStars: 5,
+        precision: 2,
+        starWidth: "14px",
+        spacing: "0",
+        normalFill: "#AEAEAE",
+        ratedFill: "#e8314a",
+        readOnly: true
+    });
+    $(".rateYo-43").rateYo({
+        rating: 4.3,
+        maxValue: 5,
+        numStars: 5,
+        precision: 2,
+        starWidth: "14px",
+        spacing: "0",
+        normalFill: "#AEAEAE",
+        ratedFill: "#e8314a",
+        readOnly: true
+    });
+    $(".rateYo-42").rateYo({
+        rating: 4.2,
+        maxValue: 5,
+        numStars: 5,
+        precision: 2,
+        starWidth: "14px",
+        spacing: "0",
+        normalFill: "#AEAEAE",
+        ratedFill: "#e8314a",
+        readOnly: true
+    });
+    $(".rateYo-41").rateYo({
+        rating: 4.1,
+        maxValue: 5,
+        numStars: 5,
+        precision: 2,
+        starWidth: "14px",
+        spacing: "0",
+        normalFill: "#AEAEAE",
+        ratedFill: "#e8314a",
+        readOnly: true
+    });
+    $(".rateYo-40").rateYo({
+        rating: 4.0,
+        maxValue: 5,
+        numStars: 5,
+        precision: 2,
+        starWidth: "14px",
         spacing: "0",
         normalFill: "#AEAEAE",
         ratedFill: "#e8314a",
@@ -72,7 +127,7 @@ $(function(){
         maxValue: 5,
         numStars: 5,
         precision: 2,
-        starWidth: "12px",
+        starWidth: "14px",
         spacing: "0",
         normalFill: "#AEAEAE",
         ratedFill: "#e8314a",
@@ -83,7 +138,7 @@ $(function(){
         maxValue: 5,
         numStars: 5,
         precision: 2,
-        starWidth: "12px",
+        starWidth: "14px",
         spacing: "0",
         normalFill: "#AEAEAE",
         ratedFill: "#e8314a",
@@ -94,7 +149,7 @@ $(function(){
         maxValue: 5,
         numStars: 5,
         precision: 2,
-        starWidth: "12px",
+        starWidth: "14px",
         spacing: "0",
         normalFill: "#AEAEAE",
         ratedFill: "#e8314a",
@@ -105,7 +160,7 @@ $(function(){
         maxValue: 5,
         numStars: 5,
         precision: 2,
-        starWidth: "12px",
+        starWidth: "14px",
         spacing: "0",
         normalFill: "#AEAEAE",
         ratedFill: "#e8314a",
@@ -116,7 +171,7 @@ $(function(){
         maxValue: 5,
         numStars: 5,
         precision: 2,
-        starWidth: "12px",
+        starWidth: "14px",
         spacing: "0",
         normalFill: "#AEAEAE",
         ratedFill: "#e8314a",
@@ -127,10 +182,65 @@ $(function(){
         maxValue: 5,
         numStars: 5,
         precision: 2,
-        starWidth: "12px",
+        starWidth: "14px",
         spacing: "0",
         normalFill: "#AEAEAE",
         ratedFill: "#e8314a",
         readOnly: true
     });
+    $(".rateYo-44-sm").rateYo({
+        rating: 4.4,
+        maxValue: 5,
+        numStars: 5,
+        precision: 2,
+        starWidth: "14px",
+        spacing: "0",
+        normalFill: "#AEAEAE",
+        ratedFill: "#e8314a",
+        readOnly: true
     });
+    $(".rateYo-43-sm").rateYo({
+        rating: 4.3,
+        maxValue: 5,
+        numStars: 5,
+        precision: 2,
+        starWidth: "14px",
+        spacing: "0",
+        normalFill: "#AEAEAE",
+        ratedFill: "#e8314a",
+        readOnly: true
+    });
+    $(".rateYo-42-sm").rateYo({
+        rating: 4.2,
+        maxValue: 5,
+        numStars: 5,
+        precision: 2,
+        starWidth: "14px",
+        spacing: "0",
+        normalFill: "#AEAEAE",
+        ratedFill: "#e8314a",
+        readOnly: true
+    });
+    $(".rateYo-41-sm").rateYo({
+        rating: 4.1,
+        maxValue: 5,
+        numStars: 5,
+        precision: 2,
+        starWidth: "14px",
+        spacing: "0",
+        normalFill: "#AEAEAE",
+        ratedFill: "#e8314a",
+        readOnly: true
+    });
+    $(".rateYo-40-sm").rateYo({
+        rating: 4.0,
+        maxValue: 5,
+        numStars: 5,
+        precision: 2,
+        starWidth: "14px",
+        spacing: "0",
+        normalFill: "#AEAEAE",
+        ratedFill: "#e8314a",
+        readOnly: true
+    });
+})
