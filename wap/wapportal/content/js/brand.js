@@ -33,4 +33,31 @@ $(document).ready(function () {
     $(".caption").hover(function () {
         $(this).find(".ico").toggleClass("hover");
     });
+
+    var selectPop = function (e) {
+        // console.log(e.target.tagName + " is clicked")
+        var $self = $(this);
+        // console.log($self[0].tagName + " is clicked")
+        $self.next(".option").slideToggle("fast");
+        $(document).one("click", function(){
+            $(".option").slideUp("fast");
+        });
+
+        // set title to chicked list item
+
+        $(this).next(".option").children("div").click(function (e) {
+            // $(this).next(".option > div").click(function (e) {
+            var $curTxt = $self.children(".text");
+            // console.log($self + " is clicked")
+            if (e.target == this ) {
+                var $newTitle = $(this).text();
+                $curTxt.text($newTitle);
+                $(".option").slideUp("fast");
+            } else {
+                $(".option").slideUp("fast");
+            };
+        })
+    };
+
+    $(document).on("click", ".select-trigger", selectPop);
 });
