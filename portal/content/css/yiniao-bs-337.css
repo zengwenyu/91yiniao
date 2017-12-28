@@ -1362,7 +1362,6 @@ input[type="submit"] {
       bottom: 18%;
       top: 70%; }
       .sec-banner-worker .img-poster-wrapper .outer .form-wrapper .inner {
-        float: left;
         background: rgba(59, 59, 59, 0.8); }
         .sec-banner-worker .img-poster-wrapper .outer .form-wrapper .inner .selectPicker {
           position: relative;
