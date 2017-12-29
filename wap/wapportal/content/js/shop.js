@@ -20,7 +20,7 @@ $(function(){
         e.preventDefault();
     });
 
-    var selectPop = function (e) {
+    var selectPop = function (el) {
         // console.log(e.target.tagName + " is clicked")
         var $self = $(this);
         // console.log($self[0].tagName + " is clicked")
@@ -42,7 +42,8 @@ $(function(){
             } else {
                 $(".option").slideUp("fast");
             };
-        })
+        });
+        el.stopPropagation();
     };
 
     $(document).on("click", ".select-trigger", selectPop);

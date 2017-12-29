@@ -34,8 +34,8 @@ $(document).ready(function () {
         $(this).find(".ico").toggleClass("hover");
     });
 
-    var selectPop = function (e) {
-        // console.log(e.target.tagName + " is clicked")
+    var selectPop = function (el) {
+        // console.log(el.target.tagName + " is clicked")
         var $self = $(this);
         // console.log($self[0].tagName + " is clicked")
         $self.next(".option").slideToggle("fast");
@@ -57,6 +57,7 @@ $(document).ready(function () {
                 $(".option").slideUp("fast");
             };
         })
+        el.stopPropagation();
     };
 
     $(document).on("click", ".select-trigger", selectPop);
