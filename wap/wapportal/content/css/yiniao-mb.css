@@ -1334,7 +1334,7 @@ ul.avator-meta {
 .cd-timeline-img {
   position: absolute;
   top: 24px;
-  left: 56.5%;
+  left: 56.7%;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -1446,7 +1446,7 @@ ul.avator-meta {
 
 .cd-left::before {
   top: -7px;
-  left: -26px;
+  left: -27px;
   border-color: transparent transparent transparent #fff; }
 
 .cd-timeline-img div {
