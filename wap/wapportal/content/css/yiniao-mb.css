@@ -1613,4 +1613,66 @@ ul.avator-meta {
       .sec-contact-meta .table-layout tr td:first-child {
         width: 22%; }
 
+.pg-topic-12 .row {
+  position: relative; }
+
+.link-blank {
+  position: absolute;
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-block;
+  overflow: hidden; }
+  .link-blank:hover, .link-blank:active, .link-blank:visited {
+    cursor: pointer !important; }
+
+.sec-topic12 .link-service-big {
+  width: 60%;
+  height: 4rem;
+  left: 20%;
+  top: 38%; }
+.sec-topic12 .link-service-sm {
+  width: 30%;
+  height: 2rem;
+  top: 0; }
+.sec-topic12 .link-service-sm.left {
+  left: 11%; }
+.sec-topic12 .link-service-sm.right {
+  left: 59%; }
+.sec-topic12 .link-blank-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 2rem; }
+.sec-topic12 .link-appoint, .sec-topic12 .link-advice, .sec-topic12 .link-tel {
+  heigth: 2rem;
+  display: inline-block;
+  position: static;
+  float: left; }
+.sec-topic12 .link-appoint {
+  width: 55%; }
+.sec-topic12 .link-advice {
+  width: 22%; }
+.sec-topic12 .link-tel {
+  width: 23%; }
+.sec-topic12 .row-surprise-2 .link-blank-wrapper {
+  bottom: 20%; }
+.sec-topic12 .row-repair .link-blank-wrapper.first {
+  top: 50%; }
+.sec-topic12 .row-repair .link-blank-wrapper.second {
+  top: 82%; }
+.sec-topic12 .row-prompt-products .link-blank-wrapper.first {
+  bottom: 0; }
+.sec-topic12 .row-prompt-products .link-blank-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 1.2rem; }
+  .sec-topic12 .row-prompt-products .link-blank-wrapper .link-blank-grp {
+    overflow: hidden;
+    position: absolute;
+    width: 32%;
+    height: 100%; }
+  .sec-topic12 .row-prompt-products .link-blank-wrapper .link-blank-grp.left {
+    left: 10%; }
+  .sec-topic12 .row-prompt-products .link-blank-wrapper .link-blank-grp.right {
+    left: 58%; }
+
 /*# sourceMappingURL=yiniao-mb.css.map */
