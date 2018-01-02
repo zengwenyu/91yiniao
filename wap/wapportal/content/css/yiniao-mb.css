@@ -1621,8 +1621,6 @@ ul.avator-meta {
   cursor: pointer;
   overflow: hidden;
   display: inline-block; }
-  .link-blank:hover, .link-blank:active, .link-blank:visited {
-    cursor: pointer !important; }
 
 .sec-topic12 .link-service-big {
   width: 60%;
