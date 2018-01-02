@@ -1620,8 +1620,7 @@ ul.avator-meta {
   position: absolute;
   cursor: pointer;
   overflow: hidden;
-  display: inline-block;
-  overflow: hidden; }
+  display: inline-block; }
   .link-blank:hover, .link-blank:active, .link-blank:visited {
     cursor: pointer !important; }
 

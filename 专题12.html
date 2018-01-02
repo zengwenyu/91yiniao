@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+    <title>出租房快刷</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!--<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>-->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--vendor CSS-->
+    <link href="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/rateYo/2.3.2/jquery.rateyo.min.css" rel="stylesheet">
+
+    <!--custom CSS-->
+    <link rel="stylesheet" href="portal/content/css/header.css">
+    <link rel="stylesheet" href="portal/content/css/yiniao-bs-337.css">
+    <link rel="stylesheet" href="portal/content/css/font.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="pg-topic-12 foote-space">
+<div class="header">
+    <div class="head">
+	<span class="tel" style="position: relative;top: 0;right:-600px;z-index: 1;line-height: 23px;font-size: 12px;">24小时咨询热线：4000-987-009
+		<span class="navs taobao" style="margin-left: 20px;margin-right: 15px;cursor: pointer;"><a href="https://shop486696389.taobao.com/" target="_blank"><img src="portal/content/images/taobao.png" alt=""></a>
+			<div class="taobaoTcc" style="display: none;">
+	            <a href="javascript:void(0);"><img src="portal/content/images/taobaoCode.png" alt=""></a>
+	        </div>
+		</span>
+
+		<span class="navs wx" style="margin-right: 15px;cursor: pointer;"><img src="portal/content/images/wx.png" alt="">
+			<div class="wxTcc" style="display: none;">
+	            <a href="javascript:void(0);"><img src="portal/content/images/wxCode.png" alt=""></a>
+	        </div>
+		</span>
+		<span class="navs" style="cursor: pointer;">
+	        <a href="tencent://message/?uin=3037302719&amp;Site=yunqi.shopex.cn&amp;Menu=yes"><img src="portal/content/images/qq_img.png" alt=""></a>
+	    </span>
+	</span>
+        <img class="logo" src="portal/content/images/indexLogo.png" alt="">
+        <span class="text">您身边可靠的维修匠人</span>
+        <div class="nav us" href="">
+            <span>关于我们<img src="portal/content/images/jtDown.png" alt=""></span>
+            <div class="usTcc" style="display: none;">
+                <a href="javascript:void(0);"><img src="portal/content/images/us1.jpg" alt=""><span>品牌故事</span></a>
+                <a href="javascript:void(0);"><img src="portal/content/images/us2.jpg" alt=""><span>企业文化</span></a>
+                <a href="portal/serviceFlow.do#flow7"><img src="portal/content/images/us3.jpg" alt=""><span>常见问题</span></a>
+                <a href="javascript:void(0);"><img src="portal/content/images/us4.jpg" alt=""><span>联系我们</span></a>
+            </div>
+        </div>
+        <span class="nav" onclick="location.href='portal/maintainer/list.do'">益鸟师傅</span>
+        <span class="nav">线下门店</span>
+        <span class="nav" onclick="location.href='portal/case/caseList.do'">实际案例</span>
+        <div id="nav-xm" class="nav xm nav-margin">
+            <span>服务项目<img src="portal/content/images/jtDown.png" alt=""></span>
+            <div class="tcc" style="display: none;">
+                <div class="cnt">
+                    <div>
+                        <span>墙面刷新</span>
+                        <a href="portal/newindex/produce.do">铲除刷新</a>
+                        <a href="portal/newindex/basis.do">基础刷新</a>
+                        <a href="portal/newindex/part.do">局部点补</a>
+                        <a href="portal/topic12/topicQzqm.do">墙纸翻新</a>
+                        <a href="portal/newindex/mend.do">修补刷新</a>
+                        <a href="portal/newindex/leaseRoomBrush.do">出租房快刷</a>
+                        <a href="portal/newindex/newQiangmianPage.do">墙面刷新</a>
+                        <a href="portal/newindex/qiangmianSpecial.do">墙面专题</a>
+                    </div>
+                    <div>
+                        <span>局部改造</span>
+                        <a href="javascript:void(0);">客厅改造</a>
+                        <a href="javascript:void(0);">厨房改造</a>
+                        <a href="javascript:void(0);">阳台改造</a>
+                        <a href="javascript:void(0);">屋顶改造</a>
+                        <a href="javascript:void(0);">卫生间改造</a>
+                        <a href="javascript:void(0);">儿童房改造</a>
+                    </div>
+                    <div>
+                        <span>防水补漏</span>
+                        <a href="portal/topic12/topicWsjls.do">卫生间防水</a>
+                        <a href="portal/topic12/topicLdls.do">楼顶漏水</a>
+                        <a href="portal/topic12/topicQmls.do">墙面渗水</a>
+                        <a href="portal/topic12/topicSgls.do">水管漏水</a>
+                        <a href="portal/topic12/topicPcls.do">飘窗漏水</a>
+                        <a href="portal/newindex/toiletSeepageRepair.do">卫生间快修</a>
+                    </div>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <span class="nav nav-margin">首页
+
+
+</span></div>
+
+</div>
+<!--<nav class="navbar navbar-expand-lg">-->
+<!--<div class="container container-nav">-->
+<!--<a class="navbar-brand" href="#">Container</a>-->
+<!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--<span class="navbar-toggler-icon"></span>-->
+<!--</button>-->
+
+<!--<div class="collapse navbar-collapse" id="navbarsExample07">-->
+<!--<ul class="navbar-nav mr-auto">-->
+<!--<li class="nav-item active">-->
+<!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+<!--</li>-->
+<!--<li class="nav-item">-->
+<!--<a class="nav-link" href="#">Link</a>-->
+<!--</li>-->
+<!--<li class="nav-item">-->
+<!--<a class="nav-link disabled" href="#">Disabled</a>-->
+<!--</li>-->
+<!--<li class="nav-item dropdown">-->
+<!--<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>-->
+<!--<div class="dropdown-menu" aria-labelledby="dropdown07">-->
+<!--<a class="dropdown-item" href="#">Action</a>-->
+<!--<a class="dropdown-item" href="#">Another action</a>-->
+<!--<a class="dropdown-item" href="#">Something else here</a>-->
+<!--</div>-->
+<!--</li>-->
+<!--</ul>-->
+<!--<form class="form-inline my-2 my-md-0">-->
+<!--<input class="form-control" placeholder="Search" aria-label="Search" type="text">-->
+<!--</form>-->
+<!--</div>-->
+<!--</div>-->
+<!--</nav>-->
+
+<!-- Header Poster -->
+<div class="sec sec-topic12 clearfixs">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="img-poster-wrapper">
+                <img class="img-responsive full-width img-poster" src="portal/content/images/topic12/poster.jpg"/>
+            </div>
+            <a class="link-blank link-service-big" href="#" title="咨询客服"><img
+                    src="portal/content/images/blank.png" alt=""></a>
+        </div>
+    </div>
+</div>
+
+<div class="sec sec-1">
+    <div class="container">
+        <div class="row">
+            <div class="img-poster-wrapper">
+                <img class="img-responsive full-width img-poster" src="portal/content/images/topic12/sec-1.png"/>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="sec sec-topic12">
+    <div class="container">
+        <div class="row row-sec-2">
+            <div class="img-poster-wrapper">
+                <img class="img-responsive full-width img-poster" src="portal/content/images/topic12/sec-2.png"/>
+            </div>
+            <div class="link-blank-wrapper">
+                <a class="link-blank link-service-sm vertical" href="#" title="咨询客服"><img
+                        src="portal/content/images/blank.png" alt=""></a>
+            </div>
+            <div class="link-blank-wrapper link-blank-wrapper-2">
+                <a class="link-blank link-service-sm vertical" href="#" title="咨询客服"><img
+                        src="portal/content/images/blank.png" alt=""></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-poster-wrapper">
+                <img class="img-responsive full-width img-poster" src="portal/content/images/topic12/sec-3.jpg"/>
+            </div>
+        </div>
+        <div class="row row-sec-4">
+            <div class="img-poster-wrapper">
+                <img class="img-responsive full-width img-poster" src="portal/content/images/topic12/sec-4.jpg"/>
+            </div>
+            <div class="link-blank-wrapper first">
+                <a class="link-blank link-service-sm link-1" href="#" title="咨询客服"><img
+                        src="portal/content/images/blank.png" alt=""></a>
+                <a class="link-blank link-service-sm link-2" href="#" title="咨询客服"><img
+                        src="portal/content/images/blank.png" alt=""></a>
+                <a class="link-blank link-service-sm link-3" href="#" title="咨询客服"><img
+                        src="portal/content/images/blank.png" alt=""></a>
+                <a class="link-blank link-service-sm link-4" href="#" title="咨询客服"><img
+                        src="portal/content/images/blank.png" alt=""></a>
+            </div>
+        </div>
+        <div class="row row-repair">
+            <div class="img-poster-wrapper">
+                <img class="img-responsive full-width img-poster" src="portal/content/images/topic12/sec-5.jpg"/>
+            </div>
+        </div>
+        <div class="row row-sec-6">
+            <div class="img-poster-wrapper">
+                <img class="img-responsive full-width img-poster" src="portal/content/images/topic12/sec-6.jpg"/>
+            </div>
+            <div class="link-blank-wrapper first">
+                <div class="link-blank-grp clearfixs link-1">
+                    <a class="link-blank link-appoint" href="#" title="立即预约"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                    <a class="link-blank link-advice" href="#" title="咨询"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                    <a class="link-blank link-tel" href="#" title="电话"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                </div>
+                <div class="link-blank-grp clearfixs link-2">
+                    <a class="link-blank link-appoint" href="#" title="立即预约"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                    <a class="link-blank link-advice" href="#" title="咨询"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                    <a class="link-blank link-tel" href="#" title="电话"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                </div>
+                <div class="link-blank-grp clearfixs link-3">
+                    <a class="link-blank link-appoint" href="#" title="立即预约"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                    <a class="link-blank link-advice" href="#" title="咨询"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                    <a class="link-blank link-tel" href="#" title="电话"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                </div>
+                <div class="link-blank-grp clearfixs link-4">
+                    <a class="link-blank link-appoint" href="#" title="立即预约"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                    <a class="link-blank link-advice" href="#" title="咨询"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                    <a class="link-blank link-tel" href="#" title="电话"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                </div>
+            </div>
+            <div class="link-blank-wrapper second">
+                <div class="link-blank-grp clearfixs link-1">
+                    <a class="link-blank link-appoint" href="#" title="立即预约"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                    <a class="link-blank link-advice" href="#" title="咨询"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                    <a class="link-blank link-tel" href="#" title="电话"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                </div>
+                <div class="link-blank-grp clearfixs link-2">
+                    <a class="link-blank link-appoint" href="#" title="立即预约"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                    <a class="link-blank link-advice" href="#" title="咨询"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                    <a class="link-blank link-tel" href="#" title="电话"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                </div>
+                <div class="link-blank-grp clearfixs link-3">
+                    <a class="link-blank link-appoint" href="#" title="立即预约"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                    <a class="link-blank link-advice" href="#" title="咨询"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                    <a class="link-blank link-tel" href="#" title="电话"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                </div>
+                <div class="link-blank-grp clearfixs link-4">
+                    <a class="link-blank link-appoint" href="#" title="立即预约"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                    <a class="link-blank link-advice" href="#" title="咨询"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                    <a class="link-blank link-tel" href="#" title="电话"><img
+                            src="portal/content/images/blank.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="row row-prompt-products">
+            <div class="img-poster-wrapper">
+                <img class="img-responsive full-width img-poster" src="portal/content/images/topic12/sec-7.jpg"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sec sec-go-home last">
+    <a href="#" class="ico-wrapper"><img class="img-responsive" src="portal/content/images/topic12/ico-back-home.png" alt=""></a>
+</div>
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!--<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"-->
+<!--integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"-->
+<!--crossorigin="anonymous"></script>-->
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+<script src="portal/content/js/general.js"></script>
+<script src="portal/content/js/worker.js"></script>
+
+
+<!--vendor js-->
+<!--plugin for 5star rate-->
+<script src="https://cdn.bootcss.com/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+
+<script>
+
+    $(function () {
+        //begin 导航菜单
+        $('.nav.xm').mouseover(function () {
+            $('.tcc').show();
+            $(this).find('img').attr('src', 'portal/content/images/jtUp.png');
+        });
+        $('.nav.xm').mouseout(function () {
+            $('.tcc').hide();
+            $(this).find('img').attr('src', 'portal/content/images/jtDown.png');
+        });
+        $('.nav.us').mouseover(function () {
+            $('.usTcc').show();
+            $(this).find('span img').attr('src', 'portal/content/images/jtUp.png');
+        });
+        $('.nav.us').mouseout(function () {
+            $('.usTcc').hide();
+            $(this).find('span img').attr('src', 'portal/content/images/jtDown.png');
+        });
+
+        $('.navs.taobao').mouseover(function () {
+            $('.taobaoTcc').show();
+        });
+        $('.navs.taobao').mouseout(function () {
+            $('.taobaoTcc').hide();
+        });
+        $('.navs.wx').mouseover(function () {
+            $('.wxTcc').show();
+        });
+        $('.navs.wx').mouseout(function () {
+            $('.wxTcc').hide();
+        });
+        //end 导航菜单
+    });
+
+    $(document).ready(function () {
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            var target = $(e.target).attr("href") // activated tab
+            if ($(target).is(':empty')) {
+                $.ajax({
+                    type: "GET",
+                    url: "/article/",
+                    error: function(data){
+                        alert("There was a problem");
+                    },
+                    success: function(data){
+                        $(target).html(data);
+                    }
+                })
+            }
+        })
+    });
+</script>
+</body>
+</html>
