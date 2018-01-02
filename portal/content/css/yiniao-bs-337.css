@@ -2159,7 +2159,6 @@ a.cd-read-more:hover {
 .link-blank {
   position: absolute;
   cursor: pointer;
-  background: red;
   display: inline-block;
   overflow: hidden; }
   .link-blank:hover, .link-blank:active, .link-blank:visited {
