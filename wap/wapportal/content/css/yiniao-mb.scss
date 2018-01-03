@@ -143,6 +143,11 @@
     font-size: 1.4rem;
   }
   h5 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: lighten($gray, 30%);
+  }
+  h6 {
     font-size: 0.8rem;
     font-weight: normal;
     color: lighten($gray, 30%);
@@ -2295,6 +2300,7 @@ ul.avator-meta {
     .stack-wrapper {
       h6 {
         font-size: 1rem;
+        font-weight: normal;
       }
       h6.sm {
         font-size: 0.7rem;
@@ -2320,6 +2326,34 @@ ul.avator-meta {
   .sec-wall-leak {
     .spacer {
       margin-bottom: 1rem;
+    }
+  }
+  .sec-tech {
+    .block-title-sample {
+      margin: 0.5rem 0 1.5rem;
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+    .stack-wrapper {
+      background: $white;
+      padding: 1rem;
+      border: 1px solid lighten($gray, 50%);
+      h6 {
+        margin-bottom: 0;
+      }
+    }
+    .spacer {
+      margin-bottom: 1rem;
+    }
+  }
+  .stack-wrapper {
+    .title-wrapper {
+      text-align: center;
+    }
+    h6 {
+      font-size: 1.1rem;
+      font-weight: normal;
     }
   }
 }

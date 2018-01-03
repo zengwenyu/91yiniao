@@ -179,6 +179,10 @@ html {
     font-weight: normal;
     font-size: 1.4rem; }
   .block-title-sample h5 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #a6a6a6; }
+  .block-title-sample h6 {
     font-size: 0.8rem;
     font-weight: normal;
     color: #a6a6a6; }
@@ -1733,7 +1737,8 @@ ul.avator-meta {
   padding-left: 5px;
   padding-right: 5px; }
 .pg-water-leak .sec-work-process .stack-wrapper h6 {
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-weight: normal; }
 .pg-water-leak .sec-work-process .stack-wrapper h6.sm {
   font-size: 0.7rem; }
 .pg-water-leak .sec-price {
@@ -1749,5 +1754,22 @@ ul.avator-meta {
     text-align: left; }
 .pg-water-leak .sec-wall-leak .spacer {
   margin-bottom: 1rem; }
+.pg-water-leak .sec-tech .block-title-sample {
+  margin: 0.5rem 0 1.5rem; }
+  .pg-water-leak .sec-tech .block-title-sample h2 {
+    font-size: 1.3rem; }
+.pg-water-leak .sec-tech .stack-wrapper {
+  background: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #d9d9d9; }
+  .pg-water-leak .sec-tech .stack-wrapper h6 {
+    margin-bottom: 0; }
+.pg-water-leak .sec-tech .spacer {
+  margin-bottom: 1rem; }
+.pg-water-leak .stack-wrapper .title-wrapper {
+  text-align: center; }
+.pg-water-leak .stack-wrapper h6 {
+  font-size: 1.1rem;
+  font-weight: normal; }
 
 /*# sourceMappingURL=yiniao-mb.css.map */
