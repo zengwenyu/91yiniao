@@ -257,6 +257,24 @@ html {
   color: #848484; }
   .sec-case ul li.list-inline-item:not(:last-child) {
     margin-right: 3rem; }
+.sec-case .stack-extra {
+  background: #f5f5f5;
+  height: 100%; }
+  .sec-case .stack-extra .dot-wrapper {
+    text-align: center;
+    margin-top: 48%; }
+    .sec-case .stack-extra .dot-wrapper .dot {
+      width: .8rem;
+      height: .8rem;
+      display: inline-block;
+      background: gainsboro;
+      margin-right: .5rem;
+      border-radius: 50%; }
+      .sec-case .stack-extra .dot-wrapper .dot:first-child {
+        background: darkgray; }
+      .sec-case .stack-extra .dot-wrapper .dot:last-child {
+        background: #e8e8e8;
+        margin: 0; }
 
 .sec-scence {
   background: url("../images/wc-water-leak/banner-bg.jpg") no-repeat top left;
@@ -498,7 +516,7 @@ a.red {
     .stack-case .title a {
       color: #f9f9f9; }
   .stack-case .img-wrapper {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
     position: relative; }
   .stack-case .mask {
     position: absolute;
@@ -1715,6 +1733,13 @@ ul.avator-meta {
   .sec-topic12 .row-prompt-products .link-blank-wrapper .link-blank-grp.right {
     left: 58%; }
 
+.pg-water-leak .stack-wrapper .title-wrapper {
+  text-align: center; }
+  .pg-water-leak .stack-wrapper .title-wrapper h5 {
+    margin-bottom: 0; }
+  .pg-water-leak .stack-wrapper .title-wrapper h6 {
+    font-size: 1.1rem;
+    font-weight: normal; }
 .pg-water-leak .sec-poster {
   position: relative; }
   .pg-water-leak .sec-poster .link-service {
@@ -1733,6 +1758,8 @@ ul.avator-meta {
 .pg-water-leak .sec-work-process .row {
   margin-left: -5px;
   margin-right: -5px; }
+.pg-water-leak .sec-work-process .spacer {
+  margin-bottom: 0; }
 .pg-water-leak .sec-work-process .col-xs-4 {
   padding-left: 5px;
   padding-right: 5px; }
@@ -1758,18 +1785,21 @@ ul.avator-meta {
   margin: 0.5rem 0 1.5rem; }
   .pg-water-leak .sec-tech .block-title-sample h2 {
     font-size: 1.3rem; }
+  .pg-water-leak .sec-tech .block-title-sample h5 {
+    margin-bottom: 0; }
+.pg-water-leak .sec-tech .block-title-sample-2 {
+  margin: 0.5rem 0 0rem; }
+  .pg-water-leak .sec-tech .block-title-sample-2 h2 {
+    font-size: 1.3rem; }
+  .pg-water-leak .sec-tech .block-title-sample-2 h5 {
+    margin-bottom: 0; }
 .pg-water-leak .sec-tech .stack-wrapper {
   background: #f9f9f9;
-  padding: 1rem;
+  padding: 1rem 1rem 0;
   border: 1px solid #d9d9d9; }
-  .pg-water-leak .sec-tech .stack-wrapper h6 {
-    margin-bottom: 0; }
 .pg-water-leak .sec-tech .spacer {
   margin-bottom: 1rem; }
-.pg-water-leak .stack-wrapper .title-wrapper {
-  text-align: center; }
-.pg-water-leak .stack-wrapper h6 {
-  font-size: 1.1rem;
-  font-weight: normal; }
+.pg-water-leak .sec-case .spacer {
+  margin-bottom: 1rem; }
 
 /*# sourceMappingURL=yiniao-mb.css.map */
