@@ -135,6 +135,19 @@
     color: lighten($gray, 30%);
   }
 }
+.block-title-sample {
+  width: 100%;
+  margin: 1rem 0;
+  h2 {
+    font-weight: normal;
+    font-size: 1.4rem;
+  }
+  h5 {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: lighten($gray, 30%);
+  }
+}
 
 .block-title-y {
   &:after {
@@ -520,6 +533,45 @@ a.red {
     span {
       font-size: 1rem;
       padding: 0.5rem;
+    }
+  }
+  >.swiper-scrollbar {
+    bottom: 1rem;
+  }
+}
+.swiper-service-process {
+  margin-bottom: 0.5rem;
+  .img-wrapper {
+    width: 100%;
+    position: relative;
+    border-right: 1px solid $white;
+  }
+  .mask-wrapper {
+    position: absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba($black, 0.6);
+    color: $white;
+    //border-right: 1px solid $white;
+    img {
+      width: 40%;
+      margin-top: 1rem;
+      margin-bottom: 0.2rem;
+    }
+    div {
+      font-size: 0.8rem;
+      //font-size: 1rem;
+      //padding: 0.5rem;
+      //position: relative;
+      //top: 0;
+      color: $white;
+    }
+    &:hover {
+    transition: all 0.3s ease-in-out;
+      opacity: 0;
     }
   }
   >.swiper-scrollbar {
@@ -2208,6 +2260,66 @@ ul.avator-meta {
       .link-blank-grp.right {
         left: 58%;
       }
+    }
+  }
+}
+//pg-wall-leak
+.pg-water-leak {
+  .sec-poster {
+    position: relative;
+    .link-service {
+      position: absolute;
+      left: 10%;
+      bottom: 25%;
+      background: $black;
+      border: 1px solid $black;
+      color: $white;
+      padding: 0.1rem 1.2rem;
+      text-decoration: none;
+      &:hover, &:active, &:focus {
+        background: rgba($black, 0);
+        color: black;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+  .sec-work-process {
+    .row {
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+    .col-xs-4 {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .stack-wrapper {
+      h6 {
+        font-size: 1rem;
+      }
+      h6.sm {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .sec-price {
+    margin-top: 2rem;
+  }
+  .gray-wrapper {
+    padding: 1rem;
+    background: $gray-tinter;
+    .block-title-sample {
+      margin-top: 0;
+      h2 {
+        margin: 0;
+      }
+    }
+    p {
+      text-align: left;
+    }
+  }
+  .sec-wall-leak {
+    .spacer {
+      margin-bottom: 1rem;
     }
   }
 }

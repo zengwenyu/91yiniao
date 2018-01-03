@@ -172,6 +172,17 @@ html {
     font-weight: normal;
     color: #a6a6a6; }
 
+.block-title-sample {
+  width: 100%;
+  margin: 1rem 0; }
+  .block-title-sample h2 {
+    font-weight: normal;
+    font-size: 1.4rem; }
+  .block-title-sample h5 {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #a6a6a6; }
+
 .block-title-y:after {
   border-bottom: 3px solid #f4de2a; }
 
@@ -437,6 +448,34 @@ a.red {
       font-size: 1rem;
       padding: 0.5rem; }
   .swiper-brand-shop-shot > .swiper-scrollbar {
+    bottom: 1rem; }
+
+.swiper-service-process {
+  margin-bottom: 0.5rem; }
+  .swiper-service-process .img-wrapper {
+    width: 100%;
+    position: relative;
+    border-right: 1px solid #f9f9f9; }
+  .swiper-service-process .mask-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(68, 68, 68, 0.6);
+    color: #f9f9f9; }
+    .swiper-service-process .mask-wrapper img {
+      width: 40%;
+      margin-top: 1rem;
+      margin-bottom: 0.2rem; }
+    .swiper-service-process .mask-wrapper div {
+      font-size: 0.8rem;
+      color: #f9f9f9; }
+    .swiper-service-process .mask-wrapper:hover {
+      transition: all 0.3s ease-in-out;
+      opacity: 0; }
+  .swiper-service-process > .swiper-scrollbar {
     bottom: 1rem; }
 
 .swiper-button-sm {
@@ -1671,5 +1710,44 @@ ul.avator-meta {
     left: 10%; }
   .sec-topic12 .row-prompt-products .link-blank-wrapper .link-blank-grp.right {
     left: 58%; }
+
+.pg-water-leak .sec-poster {
+  position: relative; }
+  .pg-water-leak .sec-poster .link-service {
+    position: absolute;
+    left: 10%;
+    bottom: 25%;
+    background: #444444;
+    border: 1px solid #444444;
+    color: #f9f9f9;
+    padding: 0.1rem 1.2rem;
+    text-decoration: none; }
+    .pg-water-leak .sec-poster .link-service:hover, .pg-water-leak .sec-poster .link-service:active, .pg-water-leak .sec-poster .link-service:focus {
+      background: rgba(68, 68, 68, 0);
+      color: black;
+      transition: all 0.2s ease-in-out; }
+.pg-water-leak .sec-work-process .row {
+  margin-left: -5px;
+  margin-right: -5px; }
+.pg-water-leak .sec-work-process .col-xs-4 {
+  padding-left: 5px;
+  padding-right: 5px; }
+.pg-water-leak .sec-work-process .stack-wrapper h6 {
+  font-size: 1rem; }
+.pg-water-leak .sec-work-process .stack-wrapper h6.sm {
+  font-size: 0.7rem; }
+.pg-water-leak .sec-price {
+  margin-top: 2rem; }
+.pg-water-leak .gray-wrapper {
+  padding: 1rem;
+  background: #f5f5f5; }
+  .pg-water-leak .gray-wrapper .block-title-sample {
+    margin-top: 0; }
+    .pg-water-leak .gray-wrapper .block-title-sample h2 {
+      margin: 0; }
+  .pg-water-leak .gray-wrapper p {
+    text-align: left; }
+.pg-water-leak .sec-wall-leak .spacer {
+  margin-bottom: 1rem; }
 
 /*# sourceMappingURL=yiniao-mb.css.map */
