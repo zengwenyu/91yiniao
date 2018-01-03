@@ -267,9 +267,14 @@
   .stack-extra {
     background: $gray-tinter;
     height: 100%;
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
     .dot-wrapper {
       text-align: center;
-      margin-top: 48%;
+      padding-top: 48%;
       .dot {
         width: .8rem;
         height: .8rem;
@@ -2341,6 +2346,18 @@ ul.avator-meta {
       }
       h6.sm {
         font-size: 0.7rem;
+      }
+      .title-wrapper {
+        //background: red;
+        position: relative;
+        .arrow-wrapper {
+          position: absolute;
+          top: -0.3rem;
+          right: -1.5rem;
+          img {
+            width: 70%;
+          }
+        }
       }
     }
   }
