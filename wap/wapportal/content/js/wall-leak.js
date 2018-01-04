@@ -48,11 +48,17 @@ $(document).ready(function () {
     // };
     //
     // $(document).on("click", ".select-trigger", selectPop);
-    var stackCaseHeight = $(".stack-case").eq(0).height();
-    // console.log(stackCaseHeight);
-    $("#stack-extra").css({
-        "height": stackCaseHeight,
-        "border": "1px solid #dcdcdc"
-    });
 
+    function extraStack(){
+        var stackCaseHeight = $(".stack-case").eq(0).height();
+        // console.log(stackCaseHeight);
+        $("#stack-extra").css({
+            "height": stackCaseHeight,
+            "border": "1px solid #dcdcdc"
+        });
+    };
+    extraStack();
+    $(window).resize(function() {
+        extraStack();
+    });
 });
